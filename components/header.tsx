@@ -10,6 +10,7 @@ const navItems = [
   { href: '/', label: 'Start' },
   { href: '/projekt', label: 'Co zmienia projekt' },
   { href: '/medycyna-integracyjna', label: 'Medycyna integracyjna' },
+  { href: '/ebm', label: 'EBM' },
   { href: '/prawa-pacjenta', label: 'Prawa pacjenta' },
   { href: '/dlaczego-sprzeciw', label: 'Dlaczego sprzeciw' },
   { href: '/dokumenty', label: 'Dokumenty' },

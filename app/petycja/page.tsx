@@ -218,7 +218,7 @@ export default function PetycjaPage() {
       {/* Counter */}
       <section className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 mb-12 text-center">
         <p className="text-muted-foreground">
-          Dołączyło już: <span className="font-semibold text-navy text-2xl">1 247</span> obywateli
+          <span className="font-semibold text-amber text-2xl">Formularz w przygotowaniu</span> — integracja z platformą petycyjną wkrótce
         </p>
       </section>
 

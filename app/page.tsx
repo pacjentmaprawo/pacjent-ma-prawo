@@ -254,7 +254,7 @@ export default function HomePage() {
             </Button>
           </Link>
           <p className="text-navy/70 mt-6 text-sm">
-            Dołączyło już: <em className="font-medium">1 247</em> obywateli
+            <em className="font-medium">Formularz petycyjny w przygotowaniu</em> — integracja z platformą OpenPetition.pl wkrótce
           </p>
         </div>
       </section>

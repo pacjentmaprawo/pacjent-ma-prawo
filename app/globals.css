@@ -109,11 +109,36 @@
   background: linear-gradient(180deg, rgba(250, 247, 242, 0.7) 0%, rgba(255, 255, 255, 1) 80%);
 }
 
+/* SECTION NAVY — tylko dla bezpośrednich tekstów, NIE dla treści wewnątrz białych kart */
 .section-navy { background-color: #0F2A47; color: #FFFFFF; }
-.section-navy h1, .section-navy h2, .section-navy h3, .section-navy h4 { color: #FFFFFF; }
-.section-navy p { color: rgba(255, 255, 255, 0.85); }
+.section-navy > div > h1,
+.section-navy > div > h2,
+.section-navy > div > h3,
+.section-navy > div > h4,
+.section-navy > div > p,
+.section-navy > div > div > h1,
+.section-navy > div > div > h2,
+.section-navy > div > div > h3,
+.section-navy > div > div > h4,
+.section-navy > div > div > p {
+  color: #FFFFFF;
+}
 .section-navy a { color: #E8C57A; }
 .section-navy a:hover { color: #FFFFFF; }
+
+/* WAŻNE: karty z bg-background WEWNĄTRZ section-navy zachowują swoje style navy/dark */
+.section-navy [class*="bg-background"] h1,
+.section-navy [class*="bg-background"] h2,
+.section-navy [class*="bg-background"] h3,
+.section-navy [class*="bg-background"] h4 {
+  color: #0F2A47 !important;
+}
+.section-navy [class*="bg-background"] p {
+  color: #4B5563 !important;
+}
+.section-navy [class*="bg-background"] a {
+  color: #3D7A7E !important;
+}
 
 .card-accent-navy { border-left: 4px solid #0F2A47; }
 .card-accent-teal { border-left: 4px solid #3D7A7E; }

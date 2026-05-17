@@ -18,106 +18,183 @@ const categories: { id: Category; label: string }[] = [
   { id: 'media', label: 'Materiały dla mediów' },
 ]
 
-const documents = [
+type Doc = {
+  id: number
+  title: string
+  description: string
+  category: Category
+  date: string
+  sourceType: string
+  sourceIcon: typeof FileText
+  externalUrl?: string
+  externalLabel?: string
+  pdfUrl?: string
+  searchHint?: string
+}
+
+const documents: Doc[] = [
   {
     id: 1,
-    title: 'Projekt UD207 — pełny tekst',
-    description: 'Pełny tekst projektu nowelizacji ustawy o prawach pacjenta',
-    category: 'projekt' as Category,
+    title: 'Projekt UD207 — pełny tekst (RCL)',
+    description: 'Projekt nowelizacji ustawy o prawach pacjenta przyjęty przez Radę Ministrów 12.05.2026. Numer projektu: UD207.',
+    category: 'projekt',
     date: '13.05.2026',
     sourceType: 'Dokument rządowy',
     sourceIcon: FileText,
-    url: 'https://legislacja.rcl.gov.pl/projekt/12389401',
+    externalUrl: 'https://legislacja.rcl.gov.pl/',
+    externalLabel: 'Wyszukaj „UD207" w RCL',
+    searchHint: 'Na stronie RCL wpisz w wyszukiwarce „UD207" lub „nowelizacja ustawy o prawach pacjenta".',
   },
   {
     id: 2,
-    title: 'Ocena Skutków Regulacji UD207',
-    description: 'Oficjalna OSR dołączona do projektu ustawy',
-    category: 'projekt' as Category,
+    title: 'Ocena Skutków Regulacji UD207 (OSR)',
+    description: 'Oficjalna OSR dołączona do projektu — z brakami danych ilościowych identyfikowanymi w pakiecie obywatelskim.',
+    category: 'projekt',
     date: '13.05.2026',
     sourceType: 'Dokument rządowy',
     sourceIcon: FileText,
-    url: 'https://legislacja.rcl.gov.pl/projekt/12389401',
+    externalUrl: 'https://www.gov.pl/web/premier/projekt-ustawy-o-zmianie-ustawy-o-prawach-pacjenta-i-rzeczniku-praw-pacjenta2',
+    externalLabel: 'KPRM — karta projektu',
   },
   {
     id: 3,
     title: 'Rezolucja WHA78(14) — WHO TCIM Strategy 2025-2034',
-    description: 'Globalna Strategia WHO ds. Medycyny Tradycyjnej, Komplementarnej i Integracyjnej',
-    category: 'who-ue' as Category,
+    description: 'Globalna Strategia WHO ds. Medycyny Tradycyjnej, Komplementarnej i Integracyjnej (przyjęta konsensusem 27.05.2025).',
+    category: 'who-ue',
     date: '27.05.2025',
     sourceType: 'Dokument WHO',
     sourceIcon: FileText,
-    url: 'https://apps.who.int/gb/ebwha/pdf_files/WHA78/A78_(14)-en.pdf',
+    externalUrl: 'https://apps.who.int/gb/ebwha/pdf_files/WHA78/A78_(14)-en.pdf',
+    externalLabel: 'Pobierz z apps.who.int',
   },
   {
     id: 4,
     title: 'Oświadczenie UE WHA78 pkt 13.8',
-    description: 'Stanowisko Unii Europejskiej ws. strategii WHO TCIM',
-    category: 'who-ue' as Category,
+    description: 'Stanowisko UE (w imieniu 27 państw, w tym Polski) ws. strategii WHO TCIM — z zastrzeżeniami EBM, safety, cost-effectiveness.',
+    category: 'who-ue',
     date: '24.05.2025',
     sourceType: 'Dokument UE',
     sourceIcon: FileText,
-    url: 'https://www.eeas.europa.eu/delegations/un-geneva/eu-statement-wha78-item-138-%E2%80%93-draft-global-traditional-medicine-strategy-2025-2034_en',
+    externalUrl: 'https://www.eeas.europa.eu/delegations/un-geneva/eu-statement-wha78-item-138-%E2%80%93-draft-global-traditional-medicine-strategy-2025-2034_en',
+    externalLabel: 'Otwórz na EEAS',
   },
   {
     id: 5,
-    title: 'Wyrok WSA V SA/Wa 2854/23',
-    description: 'Orzeczenie Wojewódzkiego Sądu Administracyjnego',
-    category: 'orzecznictwo' as Category,
+    title: 'Wyrok WSA V SA/Wa 2854/23 (sprawa Państwa kliniki)',
+    description: 'Orzeczenie WSA w Warszawie — kara 245 tys. zł dla podmiotu leczniczego za stosowanie wit. C dożylnej, kurkuminy, salinomycyny. Data: 29.10.2025.',
+    category: 'orzecznictwo',
     date: '29.10.2025',
     sourceType: 'Orzeczenie',
     sourceIcon: Scale,
-    url: 'https://orzeczenia.nsa.gov.pl',
+    externalUrl: 'https://orzeczenia.nsa.gov.pl/cbo/find?word=V+SA%2FWa+2854%2F23',
+    externalLabel: 'Szukaj w bazie NSA',
+    searchHint: 'Centralna Baza Orzeczeń Sądów Administracyjnych. Wpisz sygnaturę „V SA/Wa 2854/23".',
   },
   {
     id: 6,
     title: 'Postanowienie SN III KK 212/18',
-    description: 'Postanowienie Sądu Najwyższego',
-    category: 'orzecznictwo' as Category,
+    description: 'Sąd Najwyższy o ocenie zgodności z „aktualną wiedzą medyczną" — wymaga dowodu z opinii biegłych, in dubio pro reo (art. 5 § 2 k.p.k.).',
+    category: 'orzecznictwo',
     date: '05.06.2019',
     sourceType: 'Orzeczenie',
     sourceIcon: Scale,
-    url: 'https://www.sn.pl',
+    externalUrl: 'https://www.sn.pl/orzecznictwo/SitePages/Baza_orzeczen.aspx',
+    externalLabel: 'Baza orzeczeń SN',
+    searchHint: 'Baza orzeczeń SN. Wpisz sygnaturę „III KK 212/18" w pole wyszukiwania.',
   },
   {
     id: 7,
     title: 'Stanowisko 7 organizacji pracodawców ws. UD207',
-    description: 'Wspólne stanowisko organizacji sektora zdrowia',
-    category: 'stanowiska' as Category,
+    description: 'Wspólne stanowisko sektora zdrowia (Pracodawcy dla Zdrowia, Lewiatan, Pracodawcy RP, ZPP, ZPL, ZPF, OZPSU). Lipiec 2025.',
+    category: 'stanowiska',
     date: '07.2025',
     sourceType: 'Stanowisko',
     sourceIcon: FileText,
-    url: '#',
+    externalUrl: 'https://pracodawcydlazdrowia.pl/',
+    externalLabel: 'pracodawcydlazdrowia.pl',
+    searchHint: 'Na stronie organizacji znajdź sekcję „Stanowiska" lub „Aktualności" z lipca 2025 r.',
   },
   {
     id: 8,
-    title: 'Analiza konstytucyjna UD207 (Memorandum Prawne v2.0)',
-    description: 'Analiza zgodności projektu z Konstytucją RP',
-    category: 'analizy' as Category,
+    title: 'Memorandum prawne UD207 v2.0',
+    description: 'Analiza zgodności projektu z Konstytucją RP, EKPC i KPP UE — dokument dla BAS i kancelarii prawnych.',
+    category: 'analizy',
     date: '17.05.2026',
-    sourceType: 'Analiza',
+    sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    url: '#',
+    pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.0.pdf',
   },
   {
     id: 9,
     title: 'Memo Ekonomiczne — UD207 w cieniu kryzysu NFZ',
-    description: 'Analiza ekonomicznych skutków regulacji',
-    category: 'analizy' as Category,
+    description: 'Analiza skutków ekonomicznych regulacji + paradoks ekonomiczny + Model Tor 2 jako alternatywa.',
+    category: 'analizy',
     date: '17.05.2026',
-    sourceType: 'Analiza',
+    sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    url: '#',
+    pdfUrl: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.pdf',
   },
   {
     id: 10,
     title: 'Sekcja Konstytucyjna v3.0 — 14 niezgodności',
-    description: 'Szczegółowa analiza potencjalnych niezgodności z Konstytucją',
-    category: 'analizy' as Category,
+    description: 'Szczegółowa analiza 14 niezgodności konstytucyjnych UD207 — z orzecznictwem TK/SN/ETPC/TSUE.',
+    category: 'analizy',
     date: '17.05.2026',
-    sourceType: 'Analiza',
+    sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    url: '#',
+    pdfUrl: '/dokumenty/Sekcja_Konstytucyjna_v3.0_do_Zalacznik_1_v1.10.pdf',
+  },
+  {
+    id: 11,
+    title: 'Załącznik 1 — Policy Paper EBM v1.10',
+    description: 'Kompletny dokument referencyjny pakietu — EBM, OCEBM, GRADE, ESMO-MCBS, dowody dla CAM, paradoks accelerated approval.',
+    category: 'analizy',
+    date: '17.05.2026',
+    sourceType: 'Analiza pakietu',
+    sourceIcon: FileText,
+    pdfUrl: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.10.pdf',
+  },
+  {
+    id: 12,
+    title: 'Brief medialny — Lex Szarlatan',
+    description: 'Pakiet prasowy dla dziennikarzy — fakty, tezy, źródła, gotowe cytaty.',
+    category: 'media',
+    date: '17.05.2026',
+    sourceType: 'Materiał prasowy',
+    sourceIcon: FileText,
+    pdfUrl: '/dokumenty/Brief_Medialny_Lex_Szarlatan.pdf',
+  },
+  {
+    id: 13,
+    title: 'Apel do Prezydenta RP (v2 ACTIVATED)',
+    description: 'Apel obywatelski o weto Prezydenta na podstawie art. 122 ust. 3 Konstytucji RP (wersja aktywowana po przejściu w Sejmie).',
+    category: 'stanowiska',
+    date: '17.05.2026',
+    sourceType: 'Apel obywatelski',
+    sourceIcon: FileText,
+    pdfUrl: '/dokumenty/Apel_do_Prezydenta_Nawrockiego_v2_ACTIVATED.pdf',
+  },
+  {
+    id: 14,
+    title: 'MEMO_DECYZYJNE v3.11 — dokument-centrum pakietu',
+    description: 'Mapa pakietu obywatelskiego — 22 deliverables, hierarchia, bibliografia, system referencyjny.',
+    category: 'analizy',
+    date: '17.05.2026',
+    sourceType: 'Analiza pakietu',
+    sourceIcon: FileText,
+    pdfUrl: '/dokumenty/MEMO_DECYZYJNE_v3.11_dokument_centrum.pdf',
+  },
+  {
+    id: 15,
+    title: 'OCEANic Protocol — przegląd kosztów medycyny integracyjnej w onkologii (w toku)',
+    description: 'Pierwszy systematyczny przegląd kosztów medycyny integracyjnej w onkologii w Europie. Konsorcjum: Charité Berlin + Havelhöhe + EUROCAM + IVAA + NCIO UK. PROSPERO 1019386. Spodziewane zakończenie: październik 2025.',
+    category: 'who-ue',
+    date: '05.05.2025',
+    sourceType: 'Preprint medRxiv',
+    sourceIcon: FileText,
+    externalUrl: 'https://doi.org/10.1101/2025.05.02.25326858',
+    externalLabel: 'Otwórz na medRxiv',
+    pdfUrl: '/dokumenty/OCEANic_preprint_medRxiv_2025.pdf',
   },
 ]
 
@@ -133,94 +210,91 @@ const categoryColors: Record<Category, string> = {
 
 export default function DokumentyPage() {
   const [activeCategory, setActiveCategory] = useState<Category>('all')
-
-  const filteredDocuments = activeCategory === 'all' 
-    ? documents 
+  const filteredDocuments = activeCategory === 'all'
+    ? documents
     : documents.filter(doc => doc.category === activeCategory)
 
   return (
     <div>
-      {/* Header */}
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">
-            Baza wiedzy
+          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">Baza wiedzy</p>
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">Baza dokumentów</h1>
+          <p className="text-lg text-muted-foreground">Materiały źródłowe i opracowania — wszystkie ze źródeł publicznych lub własne analizy pakietu obywatelskiego</p>
+        </div>
+      </section>
+
+      <section className="py-8 bg-cream">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap gap-2">
+            {categories.map((cat) => (
+              <Button
+                key={cat.id}
+                variant={activeCategory === cat.id ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setActiveCategory(cat.id)}
+                className={activeCategory === cat.id ? 'bg-navy text-background hover:bg-navy/90' : 'border-border bg-background text-navy hover:bg-cream'}
+              >
+                {cat.label}
+              </Button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-20 bg-background">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredDocuments.map((doc) => (
+              <Card key={doc.id} className="border border-border rounded-xl shadow-sm card-lift">
+                <CardContent className="p-6">
+                  <Badge className={`${categoryColors[doc.category]} mb-3`}>
+                    {categories.find(c => c.id === doc.category)?.label}
+                  </Badge>
+                  <h3 className="font-semibold text-navy mb-2 line-clamp-3">{doc.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-3 line-clamp-3">{doc.description}</p>
+                  {doc.searchHint && (
+                    <p className="text-xs text-teal italic mb-3">💡 {doc.searchHint}</p>
+                  )}
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground mb-4">
+                    <doc.sourceIcon className="h-3 w-3" />
+                    <span>{doc.sourceType}</span>
+                    <span className="mx-1">•</span>
+                    <span>{doc.date}</span>
+                  </div>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    {doc.externalUrl && (
+                      <a href={doc.externalUrl} target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" size="sm" className="text-xs">
+                          <ExternalLink className="h-3 w-3 mr-1" />
+                          {doc.externalLabel || 'Otwórz źródło'}
+                        </Button>
+                      </a>
+                    )}
+                    {doc.pdfUrl && (
+                      <a href={doc.pdfUrl} download>
+                        <Button variant="outline" size="sm" className="text-xs border-navy text-navy hover:bg-navy/5">
+                          <Download className="h-3 w-3 mr-1" />
+                          Pobierz PDF
+                        </Button>
+                      </a>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-cream border-t border-border">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm text-muted-foreground text-center leading-relaxed">
+            Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, medRxiv)
+            lub stanowią własne opracowania pakietu obywatelskiego. Własne dokumenty są dostępne do bezpłatnego pobrania w formacie PDF.
+            W przypadku linków do baz orzeczeń (NSA, SN) — wpisz sygnaturę podaną w opisie dokumentu w pole wyszukiwania na stronie sądu.
           </p>
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">
-            Baza dokumentów
-          </h1>
-          <p className="text-lg text-muted-foreground">
-            Materiały źródłowe i opracowania — wszystkie ze źródeł publicznych
-          </p>
         </div>
-      </section>
-
-      {/* Filter Bar */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
-        <div className="flex flex-wrap gap-2">
-          {categories.map((cat) => (
-            <Button
-              key={cat.id}
-              variant={activeCategory === cat.id ? 'default' : 'outline'}
-              size="sm"
-              onClick={() => setActiveCategory(cat.id)}
-              className={activeCategory === cat.id 
-                ? 'bg-navy text-background hover:bg-navy/90' 
-                : 'border-border text-muted-foreground hover:bg-secondary'
-              }
-            >
-              {cat.label}
-            </Button>
-          ))}
-        </div>
-      </section>
-
-      {/* Document Grid */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredDocuments.map((doc) => (
-            <Card key={doc.id} className="border border-border rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <CardContent className="p-6">
-                <Badge className={`${categoryColors[doc.category]} mb-3`}>
-                  {categories.find(c => c.id === doc.category)?.label}
-                </Badge>
-                <h3 className="font-semibold text-navy mb-2 line-clamp-2">
-                  {doc.title}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
-                  {doc.description}
-                </p>
-                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-4">
-                  <doc.sourceIcon className="h-3 w-3" />
-                  <span>{doc.sourceType}</span>
-                  <span className="mx-1">•</span>
-                  <span>{doc.date}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <a href={doc.url} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="sm" className="text-xs">
-                      <ExternalLink className="h-3 w-3 mr-1" />
-                      Otwórz
-                    </Button>
-                  </a>
-                  <Button variant="outline" size="sm" className="text-xs">
-                    <Download className="h-3 w-3 mr-1" />
-                    Pobierz PDF
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Note */}
-      <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <p className="text-sm text-muted-foreground text-center leading-relaxed">
-          Wszystkie dokumenty pochodzą ze źródeł publicznych lub oficjalnych baz rządowych. 
-          W przypadku własnych opracowań pakietu obywatelskiego — pochodzą one z analizy 
-          źródeł publicznych i są dostępne do pobrania.
-        </p>
       </section>
     </div>
   )
