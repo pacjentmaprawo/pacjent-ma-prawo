@@ -60,7 +60,6 @@ const downloads = [
 export default function DlaMediaPage() {
   return (
     <div>
-      {/* Header */}
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">
@@ -76,15 +75,11 @@ export default function DlaMediaPage() {
         </div>
       </section>
 
-      {/* Two Column Section */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 my-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* What We Claim */}
           <Card className="border border-border rounded-xl">
             <CardContent className="p-6 lg:p-8">
-              <h2 className="font-serif text-xl font-semibold text-navy mb-6">
-                Co twierdzimy
-              </h2>
+              <h2 className="font-serif text-xl font-semibold text-navy mb-6">Co twierdzimy</h2>
               <ul className="space-y-3">
                 {claims.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
@@ -98,12 +93,9 @@ export default function DlaMediaPage() {
             </CardContent>
           </Card>
 
-          {/* What We Don't Claim */}
           <Card className="border border-border rounded-xl">
             <CardContent className="p-6 lg:p-8">
-              <h2 className="font-serif text-xl font-semibold text-navy mb-6">
-                Czego NIE twierdzimy
-              </h2>
+              <h2 className="font-serif text-xl font-semibold text-navy mb-6">Czego NIE twierdzimy</h2>
               <ul className="space-y-3">
                 {notClaims.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
@@ -119,11 +111,8 @@ export default function DlaMediaPage() {
         </div>
       </section>
 
-      {/* Downloads Section */}
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-16">
-        <h2 className="font-serif text-2xl font-semibold text-navy mb-8">
-          Materiały do pobrania
-        </h2>
+        <h2 className="font-serif text-2xl font-semibold text-navy mb-8">Materiały do pobrania</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {downloads.map((item, index) => (
             <Card key={index} className="border border-border rounded-xl card-lift">
@@ -131,12 +120,8 @@ export default function DlaMediaPage() {
                 <div className="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Download className="h-6 w-6 text-amber" />
                 </div>
-                <h3 className="font-semibold text-navy mb-1 text-sm">
-                  {item.title}
-                </h3>
-                <p className="text-xs text-muted-foreground mb-4">
-                  {item.format}
-                </p>
+                <h3 className="font-semibold text-navy mb-1 text-sm">{item.title}</h3>
+                <p className="text-xs text-muted-foreground mb-4">{item.format}</p>
                 <a href={item.url} download>
                   <Button variant="outline" size="sm" className="w-full border-navy text-navy hover:bg-navy/5">
                     <Download className="h-3 w-3 mr-2" />
@@ -149,12 +134,9 @@ export default function DlaMediaPage() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="bg-secondary py-16">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl font-semibold text-navy mb-8 text-center">
-            Kontakt dla mediów
-          </h2>
+          <h2 className="font-serif text-2xl font-semibold text-navy mb-8 text-center">Kontakt dla mediów</h2>
           <Card className="border border-border rounded-xl bg-background">
             <CardContent className="p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-4">
@@ -169,4 +151,10 @@ export default function DlaMediaPage() {
                   medycyny integracyjnej współpracującym z platformą.
                 </p>
               </div>
-     
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    </div>
+  )
+}

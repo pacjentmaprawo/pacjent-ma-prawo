@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
-import { 
-  Info, 
-  FileCheck, 
-  HeartHandshake, 
-  FileText, 
-  UserCheck, 
-  ShieldAlert, 
-  Scale 
+import {
+  Info,
+  FileCheck,
+  HeartHandshake,
+  FileText,
+  UserCheck,
+  ShieldAlert,
+  Scale
 } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -56,28 +56,24 @@ const rights = [
 export default function PrawaPacjentaPage() {
   return (
     <div>
-      {/* Header */}
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">
-            Fundamenty
-          </p>
+          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">Fundamenty</p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
-          Prawa pacjenta i zasady, które powinny go chronić
-        </h1>
-        <p className="text-lg text-muted-foreground mb-8">
-          Co przysługuje każdemu pacjentowi w polskim i europejskim systemie prawnym — i jakie zasady konstytucyjne powinny chronić go przed nadmierną ingerencją.
-        </p>
-        <p className="text-navy/80 leading-relaxed">
-          Pacjent nie jest petentem systemu ochrony zdrowia. Pacjent jest osobą, której zdrowie, 
-          życie, godność i decyzje muszą być traktowane poważnie — zgodnie z Konstytucją RP, 
-          ustawą o prawach pacjenta i Konwencją o ochronie praw człowieka.
-        </p>
+            Prawa pacjenta i zasady, które powinny go chronić
+          </h1>
+          <p className="text-lg text-muted-foreground mb-8">
+            Co przysługuje każdemu pacjentowi w polskim i europejskim systemie prawnym — i jakie zasady konstytucyjne powinny chronić go przed nadmierną ingerencją.
+          </p>
+          <p className="text-navy/80 leading-relaxed">
+            Pacjent nie jest petentem systemu ochrony zdrowia. Pacjent jest osobą, której zdrowie,
+            życie, godność i decyzje muszą być traktowane poważnie — zgodnie z Konstytucją RP,
+            ustawą o prawach pacjenta i Konwencją o ochronie praw człowieka.
+          </p>
         </div>
       </section>
 
-      {/* Rights Cards */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-16">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {rights.map((right, index) => (
             <Card key={index} className="border border-border rounded-xl shadow-sm hover:shadow-md transition-shadow">
@@ -87,12 +83,24 @@ export default function PrawaPacjentaPage() {
                     <right.icon className="h-6 w-6 text-navy" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-navy mb-2">
-                      {right.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {right.content}
-                    </p>
+                    <h3 className="font-semibold text-navy mb-2">{right.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{right.content}</p>
                   </div>
                 </div>
-              </CardCont
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-secondary py-12">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-navy font-medium leading-relaxed">
+            Każde z tych praw wynika z Konstytucji RP, ustawy o prawach pacjenta
+            lub europejskich standardów ochrony praw człowieka.
+          </p>
+        </div>
+      </section>
+    </div>
+  )
+}

@@ -63,39 +63,31 @@ const proposals = [
 export default function DlaczegoSprzeciwPage() {
   return (
     <div>
-      {/* Header */}
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">
-            Argumentacja
-          </p>
+          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">Argumentacja</p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
-          Osiem powodów obywatelskiego sprzeciwu
-        </h1>
-        <p className="text-navy/80 leading-relaxed">
-          Ten sprzeciw nie dotyczy celu projektu Lex Szarlatan — ten jest słuszny. Dotyczy zakresu, 
-          precyzji i proporcjonalności proponowanych narzędzi prawnych.
-        </p>
+            Osiem powodów obywatelskiego sprzeciwu
+          </h1>
+          <p className="text-navy/80 leading-relaxed">
+            Ten sprzeciw nie dotyczy celu projektu Lex Szarlatan — ten jest słuszny. Dotyczy zakresu,
+            precyzji i proporcjonalności proponowanych narzędzi prawnych.
+          </p>
         </div>
       </section>
 
-      {/* Reasons */}
-      <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-16">
+      <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-16 mt-16">
         <div className="space-y-6">
           {reasons.map((reason) => (
-            <Card key={reason.number} className="border border-border rounded-xl shadow-sm">
-              <CardContent className="p-6">
+            <Card key={reason.number} className="border border-border rounded-xl">
+              <CardContent className="p-6 lg:p-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-navy text-background rounded-full flex items-center justify-center flex-shrink-0 font-semibold">
-                    {reason.number}
+                  <div className="w-10 h-10 bg-amber/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="font-serif font-semibold text-amber">{reason.number}</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-navy mb-2">
-                      {reason.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {reason.content}
-                    </p>
+                    <h3 className="font-semibold text-navy mb-2">{reason.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{reason.content}</p>
                   </div>
                 </div>
               </CardContent>
@@ -104,10 +96,20 @@ export default function DlaczegoSprzeciwPage() {
         </div>
       </section>
 
-      {/* Proposals Section */}
-      <section className="bg-secondary py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-navy mb-8 text-center">
+      <section className="bg-cream py-16 border-t border-border">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-2xl font-semibold text-navy mb-8 text-center">
             Co proponujemy zamiast
           </h2>
-          <div clas
+          <div className="flex flex-wrap gap-3 justify-center">
+            {proposals.map((proposal, index) => (
+              <Badge key={index} className="bg-teal/10 text-teal border border-teal/20 px-4 py-2 text-sm">
+                {proposal}
+              </Badge>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}

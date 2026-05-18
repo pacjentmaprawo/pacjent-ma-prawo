@@ -20,7 +20,7 @@ const faqItems = [
   {
     id: 'q2',
     question: 'Czy medycyna komplementarna oznacza rezygnację z leczenia konwencjonalnego?',
-    answer: 'Nie. To kluczowe rozróżnienie. Medycyna komplementarna stosowana jest OBOK leczenia głównego, nie zamiast niego. Termin "alternatywna" odnosi się do metod stosowanych ZAMIAST leczenia konwencjonalnego — i to jest zupełnie inna kategoria.'
+    answer: 'Nie. To kluczowe rozróżnienie. Medycyna komplementarna stosowana jest OBOK leczenia głównego, nie zamiast niego. Termin „alternatywna" odnosi się do metod stosowanych ZAMIAST leczenia konwencjonalnego — i to jest zupełnie inna kategoria.'
   },
   {
     id: 'q3',
@@ -49,7 +49,7 @@ const faqItems = [
   },
   {
     id: 'q8',
-    question: 'Co oznacza "transparentność interesariuszy"?',
+    question: 'Co oznacza „transparentność interesariuszy"?',
     answer: 'Oznacza obowiązek ujawnienia, kto brał udział w konsultacjach, czyje stanowiska zostały uwzględnione w projekcie, czyje odrzucone, oraz czy osoby opiniujące deklarowały konflikty interesów. Jest to standard ICMJE stosowany w nauce i powinien obowiązywać w stanowieniu prawa zdrowotnego.'
   },
   {
@@ -65,7 +65,7 @@ const faqItems = [
   {
     id: 'q11',
     question: 'Co proponujecie zamiast UD207?',
-    answer: 'Trzy filary: (1) Klauzula świadomej zgody pacjenta jako ustawowe wyłączenie spod sankcji — pacjent po pełnej pisemnej informacji o stanie dowodów i ryzyku może wybrać terapię komplementarną/eksperymentalną bez narażania lekarza na karę 1 mln zł; (2) Gradacja dowodów wg OCEBM lub GRADE zamiast prostego "zgodne/niezgodne"; (3) Obowiązek RPP zapewnienia ciągłości opieki przy każdej decyzji wyłączającej lekarza. Pełen model: zob. /co-proponujemy.'
+    answer: 'Trzy filary: (1) Klauzula świadomej zgody pacjenta jako ustawowe wyłączenie spod sankcji — pacjent po pełnej pisemnej informacji o stanie dowodów i ryzyku może wybrać terapię komplementarną/eksperymentalną bez narażania lekarza na karę 1 mln zł; (2) Gradacja dowodów wg OCEBM lub GRADE zamiast prostego „zgodne/niezgodne"; (3) Obowiązek RPP zapewnienia ciągłości opieki przy każdej decyzji wyłączającej lekarza. Pełen model: zob. /co-proponujemy.'
   },
   {
     id: 'q12',
@@ -75,4 +75,40 @@ const faqItems = [
   {
     id: 'q13',
     question: 'Co stało się z pacjentami lekarza, którego wykluczono w 2025 r.?',
-    answer: 'W styczniu 2025 r. Naczelny Sąd Lekarski zawiesił na 1 rok prawo wykonywania zawodu lekarzowi 
+    answer: 'W styczniu 2025 r. Naczelny Sąd Lekarski zawiesił na 1 rok prawo wykonywania zawodu lekarzowi onkologowi prowadzącemu klinikę integracyjną. Kilkudziesięciu pacjentów onkologicznych straciło opiekę z dnia na dzień. Pisali do urzędów państwowych, w tym do RPP — nie otrzymali pomocy. W grudniu 2025 r. Sąd Najwyższy uchylił orzeczenie samorządu jako wadliwe proceduralnie. Przez 11 miesięcy pacjenci pozostawali bez opieki, mimo apeli. Casus dokumentują pacjenci na pacjencidoktoraszalusia.pl. Pełen opis: zob. /co-z-pacjentami.'
+  },
+]
+
+export default function FAQPage() {
+  return (
+    <div>
+      <section className="hero-gradient py-12 lg:py-20 border-b border-border">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">Pytania</p>
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">
+            Często zadawane pytania
+          </h1>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 my-16">
+        <Accordion type="single" collapsible className="w-full space-y-4">
+          {faqItems.map((item) => (
+            <AccordionItem
+              key={item.id}
+              value={item.id}
+              className="border border-border rounded-xl px-6 data-[state=open]:bg-secondary"
+            >
+              <AccordionTrigger className="text-left font-semibold text-navy hover:text-navy/80 hover:no-underline py-6">
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
+                {item.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
+    </div>
+  )
+}

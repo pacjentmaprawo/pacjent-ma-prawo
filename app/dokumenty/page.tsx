@@ -119,7 +119,7 @@ const documents: Doc[] = [
     title: 'Memorandum prawne UD207 v2.0',
     description: 'Analiza zgodności projektu z Konstytucją RP, EKPC i KPP UE — dokument dla BAS i kancelarii prawnych.',
     category: 'analizy',
-    date: '17.05.2026',
+    date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
     pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.0.pdf',
@@ -127,19 +127,19 @@ const documents: Doc[] = [
   {
     id: 9,
     title: 'Memo Ekonomiczne — UD207 w cieniu kryzysu NFZ',
-    description: 'Analiza skutków ekonomicznych regulacji + paradoks ekonomiczny + Model Tor 2 jako alternatywa.',
+    description: 'Analiza skutków ekonomicznych regulacji + paradoks ekonomiczny + casus 2025 r. (§7) + wnioski dla Polski (§8) + Model Tor 2 jako alternatywa.',
     category: 'analizy',
-    date: '17.05.2026',
+    date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
     pdfUrl: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.pdf',
   },
   {
     id: 10,
-    title: 'Sekcja Konstytucyjna v3.0 — 14 niezgodności',
-    description: 'Szczegółowa analiza 14 niezgodności konstytucyjnych UD207 — z orzecznictwem TK/SN/ETPC/TSUE.',
+    title: 'Sekcja Konstytucyjna v3.0 — 14 niezgodności + klauzula świadomej zgody',
+    description: 'Szczegółowa analiza 14 niezgodności konstytucyjnych UD207 z orzecznictwem TK/SN/ETPC/TSUE + §12a (casus 2025 r.) + Rek.16 (klauzula świadomej zgody).',
     category: 'analizy',
-    date: '17.05.2026',
+    date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
     pdfUrl: '/dokumenty/Sekcja_Konstytucyjna_v3.0_do_Zalacznik_1_v1.10.pdf',
@@ -290,4 +290,12 @@ export default function DokumentyPage() {
       <section className="py-12 bg-cream border-t border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm text-muted-foreground text-center leading-relaxed">
-            Wszystkie dokumenty pochodzą ze źródeł publ
+            Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, alertmedyczny.pl, medRxiv)
+            lub stanowią własne opracowania pakietu obywatelskiego. Własne dokumenty są dostępne do bezpłatnego pobrania w formacie PDF.
+            Linki zewnętrzne prowadzą bezpośrednio do tekstów źródłowych. Wszystkie weryfikowane: maj 2026.
+          </p>
+        </div>
+      </section>
+    </div>
+  )
+}
