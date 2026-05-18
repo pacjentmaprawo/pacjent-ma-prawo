@@ -125,6 +125,16 @@ const documents: Doc[] = [
     pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.0.pdf',
   },
   {
+    id: 16,
+    title: 'Analiza prawna UD207 v2.0 — pełna 16-stronicowa wersja akademicka',
+    description: 'Szczegółowa analiza prawna projektu: 4 części, 36 zarzutów prawnych, pełen przegląd orzecznictwa TK / ETPC / TSUE, kolizje z prawem UE (RODO, KPP, Dyrektywa 2005/29/WE, swoboda usług), z EKPC (art. 6, 8, 10) i z prawem krajowym. Komplementarna do skondensowanego Memorandum.',
+    category: 'analizy',
+    date: '18.05.2026',
+    sourceType: 'Analiza pakietu',
+    sourceIcon: Scale,
+    pdfUrl: '/dokumenty/Analiza_prawna_UD207_v2.0.pdf',
+  },
+  {
     id: 9,
     title: 'Memo Ekonomiczne — UD207 w cieniu kryzysu NFZ',
     description: 'Analiza skutków ekonomicznych regulacji + paradoks ekonomiczny + casus 2025 r. (§7) + wnioski dla Polski (§8) + Model Tor 2 jako alternatywa.',
