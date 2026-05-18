@@ -94,4 +94,17 @@ export function Header() {
                   </nav>
                   <div className="mt-auto pt-8 border-t border-border">
                     <Link href="/petycja" onClick={() => setOpen(false)}>
-                      <Button className="w-full bg-red-orange text-background font-semib
+                      <Button className="w-full bg-red-orange text-background font-semibold hover:bg-red-orange/90">
+                        Podpisz apel
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+        </div>
+      </div>
+    </header>
+  )
+}
