@@ -20,7 +20,7 @@ const timeline = [
   {
     date: '10 stycznia 2025',
     title: 'Pacjenci tracą opiekę z dnia na dzień',
-    body: 'Kilkudziesięciu pacjentów onkologicznych w trakcie aktywnych terapii (witamina C dożylna, kurkumina, salinomycyna w wybranych protokołach, bio-elektroterapia) zostaje pozbawionych lekarza prowadzącego. Żaden organ państwa nie wskazuje procedury awaryjnej ani lekarza zastępczego.',
+    body: 'Kilkudziesięciu pacjentów onkologicznych w trakcie aktywnych terapii zostaje pozbawionych lekarza prowadzącego. Żaden organ państwa nie wskazuje procedury awaryjnej ani lekarza zastępczego.',
     type: 'consequence',
   },
   {
@@ -32,7 +32,7 @@ const timeline = [
   {
     date: 'styczeń – grudzień 2025',
     title: 'Brak publicznej, merytorycznej reakcji RPP',
-    body: 'Mimo udokumentowanych apeli kilkudziesięciu pacjentów, w okresie 11 miesięcy nie odnotowano publicznej, merytorycznej interwencji Rzecznika Praw Pacjenta w sprawie ciągłości opieki nad pacjentami dotkniętymi wykluczeniem ich lekarza.',
+    body: 'Mimo udokumentowanych apeli kilkudziesięciu pacjentów, w publicznie dostępnych materiałach nie odnotowano publicznej, merytorycznej interwencji RPP zapewniającej pacjentom ciągłość opieki w okresie 11 miesięcy.',
     type: 'gap',
   },
   {
@@ -52,7 +52,7 @@ const timeline = [
 const wnioski = [
   {
     title: 'Test sterowności organu nie jest spełniony',
-    body: 'Nie można uzasadniać rozszerzania kompetencji represyjnych RPP do 1 mln zł kary i decyzji tymczasowych, gdy ten sam organ wykazał bezczynność w sytuacji, w której miał realne pole działania w obronie pacjentów. To autonomiczny zarzut z art. 31 ust. 3 Konstytucji RP.',
+    body: 'Nie można uzasadniać rozszerzania kompetencji represyjnych RPP do 1 mln zł kary i decyzji tymczasowych w sytuacji, w której w publicznie dostępnych materiałach nie odnotowano publicznej interwencji organu zapewniającej pacjentom ciągłość opieki. To autonomiczny zarzut z art. 31 ust. 3 Konstytucji RP.',
   },
   {
     title: 'UD207 nie reguluje ciągłości opieki',
@@ -64,7 +64,7 @@ const wnioski = [
   },
   {
     title: 'Efekt mnożnikowy w skali masowej',
-    body: 'Jeśli kilkudziesięciu pacjentów jednego lekarza wymagało pomocy systemu w sytuacji wykluczenia, to po wejściu UD207 — gdy zamykane będą całe segmenty rynku — mówimy o populacji rzędu setek tysięcy pacjentów wymagających opieki NFZ z dnia na dzień, w systemie, który już dziś nie nadąża za potrzebami.',
+    body: 'Jeśli kilkudziesięciu pacjentów jednego lekarza wymagało pomocy systemu w sytuacji wykluczenia, to po wejściu UD207 może dojść do skutków dotyczących znaczącej grupy pacjentów. Bez danych ilościowych w OSR nie można jednak oszacować precyzyjnie, ilu pacjentów może zostać dotkniętych skutkami decyzji administracyjnych — właśnie dlatego konieczna jest rzetelna analiza skali zjawiska.',
   },
 ]
 
@@ -101,7 +101,7 @@ export default function CoZPacjentamiPage() {
                   W styczniu 2025 r. samorząd zawodowy lekarzy zawiesił prawo wykonywania zawodu
                   lekarzowi opiekującemu się pacjentami onkologicznymi w klinice integracyjnej. Kilkudziesięciu pacjentów
                   w trakcie aktywnych terapii zostało pozbawionych lekarza z dnia na dzień.
-                  Pisali do urzędów państwowych — w tym do RPP. <strong>Nie otrzymali pomocy.</strong> W grudniu
+                  Pisali do urzędów państwowych — w tym do RPP. <strong>W publicznie dostępnych materiałach nie odnaleźliśmy informacji o skutecznym mechanizmie zapewnienia tym pacjentom ciągłości opieki.</strong> W grudniu
                   2025 r. Sąd Najwyższy uchylił orzeczenie samorządu jako wadliwe proceduralnie —
                   ale przez 11 miesięcy nikt nie zapewnił pacjentom ciągłości opieki.
                 </p>

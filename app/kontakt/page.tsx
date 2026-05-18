@@ -79,7 +79,7 @@ export default function KontaktPage() {
         </h1>
         <p className="text-navy/80 leading-relaxed">
           Wszystkie zapytania kierujemy na jeden adres kontaktowy. 
-          Odpowiadamy w ciągu 24 godzin w dni robocze.
+          Staramy się odpowiadać możliwie szybko, w pierwszej kolejności na wiadomości od pacjentów, mediów i organizacji społecznych.
         </p>
         </div>
       </section>

@@ -132,7 +132,7 @@ export default function HomePage() {
       <section className="py-16 lg:py-24 risk-section-bg">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-navy text-center mb-12">
-            Pięć głównych ryzyk projektu Lex Szarlatan
+            Pięć głównych ryzyk projektu UD207
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -244,7 +244,7 @@ export default function HomePage() {
             Chcesz, aby projekt został poprawiony?
           </h2>
           <p className="text-navy/80 text-lg mb-8 max-w-2xl mx-auto">
-            Podpisz obywatelski apel o skierowanie projektu Lex Szarlatan do ponownych konsultacji publicznych.
+            Podpisz obywatelski apel o skierowanie projektu UD207 do ponownych konsultacji publicznych.
           </p>
           <Link href="/petycja">
             <Button 

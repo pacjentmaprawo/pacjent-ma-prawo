@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" fill="#0F2A47" rx="8"/>
-  <g transform="translate(8,12)" stroke="#C9952A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <line x1="24" y1="6" x2="24" y2="36"/>
-    <line x1="14" y1="36" x2="34" y2="36"/>
-    <line x1="14" y1="32" x2="14" y2="40"/>
-    <line x1="34" y1="32" x2="34" y2="40"/>
-    <path d="M 4 14 L 14 14 L 9 24 Z"/>
-    <path d="M 34 14 L 44 14 L 39 24 Z"/>
+  <rect width="64" height="64" fill="#FAF7F2" rx="10"/>
+  <g stroke="#0F2A47" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="32" y1="14" x2="32" y2="50"/>
+    <line x1="18" y1="50" x2="46" y2="50"/>
+    <line x1="14" y1="26" x2="22" y2="26"/>
+    <line x1="42" y1="26" x2="50" y2="26"/>
   </g>
-  <path transform="translate(40,38)" d="M 4 6 C 4 4 6 2 8 2 C 9 2 10 2.5 10.5 3.5 C 11 2.5 12 2 13 2 C 15 2 17 4 17 6 C 17 9 13 12 10.5 14 C 8 12 4 9 4 6 Z" fill="#C9952A" stroke="none"/>
-</svg>
+  <path d="M 14 26 L 10 38 L 26 38 L 22 26 Z" fill="#0F2A47" stroke="#0F2A47" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 42 26 L 38 38 L 54 38 L 50 26 Z" fill="#0F2A47" stroke="#0F2A47" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 32 8 C 30 8 28 10 28 12 C 28 15 32 18 32 18 C 32

@@ -31,6 +31,11 @@ const conditions = [
     title: 'Podmiot leczniczy zarejestrowany + dokumentacja',
     body: 'Świadczenie wykonano w podmiocie wpisanym do rejestru podmiotów wykonujących działalność leczniczą, z dokumentacją medyczną zgodnie z rozdziałem 7 u.p.p. To eliminuje szarą strefę i zapewnia śledczość.',
   },
+  {
+    n: 5,
+    title: 'Brak zastępowania leczenia o udokumentowanej skuteczności',
+    body: 'Metoda nie zastępuje leczenia o udokumentowanej skuteczności w sytuacji, w której takie leczenie jest dostępne i medycznie wskazane — chyba że pacjent po pełnej informacji odmawia takiego leczenia zgodnie z przysługującym mu prawem.',
+  },
 ]
 
 const reszims = [
@@ -50,7 +55,7 @@ const foundations = [
   { law: 'art. 8 EKPC', body: 'Pretty v. UK; Vavřička v. Czechy; Jehovah\'s Witnesses of Moscow v. Russia — autonomia decyzji medycznych.' },
   { law: 'art. 5 Konwencji z Oviedo', body: '„An intervention in the health field may only be carried out after the person concerned has given free and informed consent."' },
   { law: 'art. 3 Karty Praw Podstawowych UE', body: 'Integralność osoby z explicytnym wymogiem świadomej zgody.' },
-  { law: 'Modele zagraniczne', body: 'Heilpraktikergesetz (DE, 1939) — model wyboru pacjenta po informacji; art. 118a Konstytucji CH — refundacja CAM.' },
+  { law: 'Modele zagraniczne', body: 'W wybranych państwach europejskich istnieją odrębne modele regulowania praktyk komplementarnych — np. w Niemczech (model Heilpraktiker) i w Szwajcarii (art. 118a Konstytucji, refundacja wybranych metod CAM). Pokazują one, że możliwe jest rozróżnienie między oszustwem, praktyką wspomagającą i autonomią pacjenta.' },
 ]
 
 export default function CoProponujemyPage() {
@@ -88,10 +93,8 @@ export default function CoProponujemyPage() {
                   jeżeli pacjent po pełnej pisemnej informacji o stanie wiedzy medycznej
                   i ryzyku wyraził <strong>pisemną świadomą zgodę</strong>, nie był odwodzony
                   od leczenia konwencjonalnego, a świadczenie wykonano w zarejestrowanym
-                  podmiocie leczniczym z dokumentacją medyczną. Ten model chroni pacjenta
-                  nieświadomego (przez warunki 1–4), pozostawiając autonomię pacjentowi
-                  świadomemu. Jest zgodny z fundamentem europejskiego prawa medycznego —
-                  informed consent.
+                  podmiocie leczniczym z dokumentacją medyczną. Ten model chroni pacjenta nieświadomego (przez warunki 1–5), pozostawiając autonomię pacjentowi
+                  świadomemu. Jest zgodny z fundamentem europejskiego prawa medycznego — informed consent. Świadoma zgoda nie legalizuje oszustwa, ukrywania ryzyka, braku kwalifikacji, fałszywych obietnic wyleczenia ani zastępowania leczenia o udokumentowanej skuteczności.
                 </p>
               </div>
             </div>
@@ -102,7 +105,7 @@ export default function CoProponujemyPage() {
       {/* Cztery warunki */}
       <section className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
         <h2 className="font-serif text-2xl font-semibold text-navy mb-2">
-          Cztery warunki wyłączenia
+          Pięć warunków wyłączenia
         </h2>
         <p className="text-muted-foreground mb-8">
           Warunki muszą być spełnione <strong>łącznie</strong>. Naruszenie któregokolwiek
@@ -214,7 +217,7 @@ export default function CoProponujemyPage() {
           </div>
           <div className="mt-8 p-6 bg-background rounded-xl border border-border">
             <p className="text-sm text-navy/80 leading-relaxed">
-              <strong>Wniosek:</strong> UD207 nie tworzy nowego mechanizmu ochrony — multiplikuje
+              <strong>Wniosek:</strong> UD207 nakłada nowy administracyjny reżim sankcyjny na obszary, które już dziś podlegają odpowiedzialności karnej, zawodowej, cywilnej, konsumenckiej i regulacyjnej. Wymaga dlatego szczególnie mocnych gwarancji proporcjonalności i prawa do obrony. Klauzula świadomej zgody multiplikuje
               istniejące reżimy w sposób nieproporcjonalny i bez gwarancji proceduralnych.
               Klauzula świadomej zgody przywraca zasadę proporcjonalności (art. 31 ust. 3
               Konstytucji RP): chronimy pacjenta nieświadomego, pozostawiamy autonomię pacjentowi

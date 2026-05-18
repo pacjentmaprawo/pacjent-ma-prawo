@@ -14,7 +14,7 @@ const claims = [
   'Regulacja musi być proporcjonalna do celu',
   'Medycyna integracyjna nie jest tożsama z pseudomedycyną',
   'Proces legislacyjny powinien być transparentny',
-  'Polska 27.05.2025 współpoparła Strategię WHO TCIM 2025–2034',
+  'Polska — jako państwo członkowskie WHO i UE — uczestniczyła 27.05.2025 w przyjęciu Strategii WHO TCIM 2025–2034',
 ]
 
 const notClaims = [
@@ -144,7 +144,7 @@ export default function DlaMediaPage() {
                 <span className="font-semibold text-navy">pacjentmaprawo@proton.me</span>
               </div>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p><strong>Zabezpieczenie:</strong> ProtonMail (Szwajcaria, end-to-end encryption)</p>
+                <p><strong>Zabezpieczenie:</strong> ProtonMail (Szwajcaria, bezpieczna komunikacja)</p>
                 <p><strong>Czas odpowiedzi:</strong> 24h w dni robocze</p>
                 <p className="pt-2">
                   Możemy zorganizować rozmowę z prawnikiem konstytucyjnym lub ekspertem

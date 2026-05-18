@@ -105,7 +105,7 @@ export function Footer() {
             <div className="space-y-3">
               <CopyEmailButton />
               <p className="text-xs text-background/60">
-                Szyfrowana komunikacja przez ProtonMail
+                Kontakt e-mail przez ProtonMail
               </p>
               <div className="flex items-center gap-4 pt-2">
                 <a

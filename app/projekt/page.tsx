@@ -11,7 +11,7 @@ import {
 import { ExternalLink, Scale, Shield, Gavel, HeartCrack, Users, AlertOctagon, FileWarning } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Co zmienia projekt Lex Szarlatan?',
+  title: 'Co zmienia projekt UD207?',
   description: 'Faktografia projektu ustawy Lex Szarlatan (oficjalnie UD207). Analiza nowych kompetencji Rzecznika Praw Pacjenta i ryzyk konstytucyjnych.',
 }
 
@@ -104,7 +104,7 @@ export default function ProjektPage() {
             Faktografia
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
-          Co zmienia projekt Lex Szarlatan?
+          Co zmienia projekt UD207?
         </h1>
         <p className="text-lg text-muted-foreground mb-8">
           Faktografia projektu ustawy (oficjalna nazwa: UD207)

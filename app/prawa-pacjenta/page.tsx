@@ -19,7 +19,7 @@ const rights = [
   {
     icon: Info,
     title: 'Prawo do informacji',
-    content: 'Pacjent ma prawo do pełnej informacji o swoim stanie zdrowia, dostępnych metodach leczenia i ich konsekwencjach. Bez informacji świadoma decyzja jest niemożliwa.'
+    content: 'Pacjent ma prawo do rzetelnej informacji o swoim stanie zdrowia, rozpoznaniu, proponowanych i możliwych metodach postępowania medycznego, ich korzyściach, ryzykach i alternatywach. Bez rzetelnej informacji świadoma decyzja jest niemożliwa.'
   },
   {
     icon: FileCheck,

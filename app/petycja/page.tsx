@@ -85,7 +85,7 @@ export default function PetycjaPage() {
             Apel obywatelski
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-6 text-balance">
-          Podpisz apel o poprawę projektu Lex Szarlatan
+          Podpisz apel o poprawę projektu UD207
         </h1>
         <p className="text-navy/80 leading-relaxed">
           Wzywamy Sejm Rzeczypospolitej Polskiej do zatrzymania prac nad projektem ustawy 

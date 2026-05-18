@@ -108,7 +108,7 @@ export default function EBMPage() {
           <div className="flex items-center gap-3 mb-3">
             <AlertTriangle className="h-7 w-7 text-red-orange" />
             <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-navy">
-              Paradoks: leki onkologiczne bez pełnego EBM
+              Poziom dowodów w praktyce klinicznej bywa zróżnicowany
             </h2>
           </div>
           <p className="text-navy/80 leading-relaxed mb-8 max-w-3xl">
