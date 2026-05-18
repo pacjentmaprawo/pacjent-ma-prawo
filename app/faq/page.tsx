@@ -75,7 +75,7 @@ const faqItems = [
   {
     id: 'q13',
     question: 'Co stało się z pacjentami lekarza, którego wykluczono w 2025 r.?',
-    answer: 'W styczniu 2025 r. Naczelny Sąd Lekarski zawiesił na 1 rok prawo wykonywania zawodu lekarzowi onkologowi prowadzącemu klinikę integracyjną. Kilkudziesięciu pacjentów onkologicznych straciło opiekę z dnia na dzień. Pisali do urzędów państwowych, w tym do RPP — nie otrzymali pomocy. W grudniu 2025 r. Sąd Najwyższy uchylił orzeczenie samorządu jako wadliwe proceduralnie. Przez 11 miesięcy pacjenci pozostawali bez opieki, mimo apeli. Casus dokumentują pacjenci na pacjencidoktoraszalusia.pl. Pełen opis: zob. /co-z-pacjentami.'
+    answer: 'W styczniu 2025 r. Naczelny Sąd Lekarski zawiesił na 1 rok prawo wykonywania zawodu lekarzowi opiekującemu się pacjentami onkologicznymi w klinice integracyjnej. Kilkudziesięciu pacjentów onkologicznych straciło opiekę z dnia na dzień. Pisali do urzędów państwowych, w tym do RPP — nie otrzymali pomocy. W grudniu 2025 r. Sąd Najwyższy uchylił orzeczenie samorządu jako wadliwe proceduralnie. Przez 11 miesięcy pacjenci pozostawali bez opieki, mimo apeli. Casus dokumentują pacjenci na pacjencidoktoraszalusia.pl. Pełen opis: zob. /co-z-pacjentami.'
   },
 ]
 
@@ -84,7 +84,7 @@ export default function FAQPage() {
     <div>
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">Pytania</p>
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">Pytania</p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">
             Często zadawane pytania
           </h1>

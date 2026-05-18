@@ -71,7 +71,7 @@ export default function KontaktPage() {
       {/* Header */}
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">
             Skontaktuj się
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">
@@ -247,7 +247,7 @@ export default function KontaktPage() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-amber text-navy font-semibold hover:bg-amber/90 py-6 text-base"
+                className="w-full bg-red-orange text-background font-semibold hover:bg-red-orange/90 py-6 text-base"
               >
                 {isSubmitting ? 'Wysyłanie...' : 'Wyślij wiadomość'}
               </Button>

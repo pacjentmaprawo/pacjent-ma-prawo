@@ -62,7 +62,7 @@ export default function DlaMediaPage() {
     <div>
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">
             Materiały prasowe
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">
@@ -117,7 +117,7 @@ export default function DlaMediaPage() {
           {downloads.map((item, index) => (
             <Card key={index} className="border border-border rounded-xl card-lift">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-red-orange/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Download className="h-6 w-6 text-amber" />
                 </div>
                 <h3 className="font-semibold text-navy mb-1 text-sm">{item.title}</h3>

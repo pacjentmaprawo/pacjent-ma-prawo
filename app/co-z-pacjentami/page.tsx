@@ -14,7 +14,7 @@ const timeline = [
   {
     date: '9 stycznia 2025',
     title: 'Orzeczenie Naczelnego Sądu Lekarskiego',
-    body: 'NSL zawiesza na 1 rok prawo wykonywania zawodu lekarzowi onkologowi prowadzącemu od kilkunastu lat ambulatoryjną klinikę integracyjną. Orzeczenie natychmiast wykonalne.',
+    body: 'NSL zawiesza na 1 rok prawo wykonywania zawodu lekarzowi opiekującemu się od kilkunastu lat pacjentami onkologicznymi w ambulatoryjnej klinice integracyjnej. Orzeczenie natychmiast wykonalne.',
     type: 'event',
   },
   {
@@ -74,7 +74,7 @@ export default function CoZPacjentamiPage() {
       {/* Header */}
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">
             Casus empiryczny — 2025 r.
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
@@ -89,17 +89,17 @@ export default function CoZPacjentamiPage() {
 
       {/* Wprowadzenie */}
       <section className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
-        <Card className="border border-amber/30 bg-amber/5 rounded-xl">
+        <Card className="border border-red-orange/30 bg-red-orange/5 rounded-xl">
           <CardContent className="p-6 lg:p-8">
             <div className="flex items-start gap-3">
-              <AlertTriangle className="h-6 w-6 text-amber flex-shrink-0 mt-0.5" />
+              <AlertTriangle className="h-6 w-6 text-red-orange flex-shrink-0 mt-0.5" />
               <div>
                 <h2 className="font-serif text-lg font-semibold text-navy mb-2">
                   W skrócie
                 </h2>
                 <p className="text-navy/80 leading-relaxed">
                   W styczniu 2025 r. samorząd zawodowy lekarzy zawiesił prawo wykonywania zawodu
-                  lekarzowi onkologowi prowadzącemu klinikę integracyjną. Kilkudziesięciu pacjentów
+                  lekarzowi opiekującemu się pacjentami onkologicznymi w klinice integracyjnej. Kilkudziesięciu pacjentów
                   w trakcie aktywnych terapii zostało pozbawionych lekarza z dnia na dzień.
                   Pisali do urzędów państwowych — w tym do RPP. <strong>Nie otrzymali pomocy.</strong> W grudniu
                   2025 r. Sąd Najwyższy uchylił orzeczenie samorządu jako wadliwe proceduralnie —

@@ -65,7 +65,7 @@ export default function DlaczegoSprzeciwPage() {
     <div>
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">Argumentacja</p>
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">Argumentacja</p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
             Osiem powodów obywatelskiego sprzeciwu
           </h1>
@@ -79,11 +79,11 @@ export default function DlaczegoSprzeciwPage() {
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-16 mt-16">
         <div className="space-y-6">
           {reasons.map((reason) => (
-            <Card key={reason.number} className="border border-border rounded-xl">
+            <Card key={reason.number} className="card-accent-red border border-border rounded-xl card-lift">
               <CardContent className="p-6 lg:p-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-amber/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="font-serif font-semibold text-amber">{reason.number}</span>
+                  <div className="w-10 h-10 bg-red-orange/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="font-serif font-semibold text-red-orange">{reason.number}</span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-navy mb-2">{reason.title}</h3>

@@ -59,7 +59,7 @@ export default function CoProponujemyPage() {
       {/* Header */}
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">
             Pozytywny postulat pakietu
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
@@ -111,11 +111,11 @@ export default function CoProponujemyPage() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {conditions.map((c) => (
-            <Card key={c.n} className="border border-border rounded-xl">
+            <Card key={c.n} className="card-accent-teal border border-border rounded-xl card-lift">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-amber/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="font-serif font-semibold text-amber">{c.n}</span>
+                  <div className="w-10 h-10 bg-red-orange/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="font-serif font-semibold text-red-orange">{c.n}</span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-navy mb-2">{c.title}</h3>
@@ -139,7 +139,7 @@ export default function CoProponujemyPage() {
           </div>
           <Card className="border border-border rounded-xl bg-background">
             <CardContent className="p-6 lg:p-8">
-              <blockquote className="text-navy/90 leading-relaxed italic border-l-4 border-amber pl-4 space-y-3">
+              <blockquote className="text-navy/90 leading-relaxed italic border-l-4 border-red-orange pl-4 space-y-3">
                 <p>
                   „Świadczenie zdrowotne nie stanowi praktyki, o której mowa w ust. 1, jeżeli
                   zostało wykonane wobec pacjenta, który łącznie:
@@ -245,7 +245,7 @@ export default function CoProponujemyPage() {
           </Card>
           <Card className="border border-border rounded-xl">
             <CardContent className="p-6">
-              <div className="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-red-orange/10 rounded-lg flex items-center justify-center mb-4">
                 <Scale className="h-6 w-6 text-amber" />
               </div>
               <h3 className="font-semibold text-navy mb-2">Filar 2: Gradacja dowodów</h3>

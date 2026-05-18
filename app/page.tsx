@@ -36,7 +36,7 @@ export default function HomePage() {
             <Link href="/petycja">
               <Button 
                 size="lg" 
-                className="bg-amber text-navy font-semibold hover:bg-amber/90 hover:scale-[1.02] transition-all px-8 py-6 text-base"
+                className="bg-red-orange text-background font-semibold hover:bg-red-orange/90 hover:scale-[1.02] transition-all px-8 py-6 text-base"
               >
                 Podpisz apel
               </Button>
@@ -157,7 +157,7 @@ export default function HomePage() {
                 desc: 'Bez precyzyjnych definicji projekt może doprowadzić do administracyjnej eliminacji legalnych ośrodków medycyny integracyjnej, działających zgodnie z aktualną wiedzą medyczną.'
               }
             ].map((risk, index) => (
-              <Card key={index} className="border border-border rounded-xl shadow-sm">
+              <Card key={index} className="card-accent-red border border-border rounded-xl shadow-sm card-lift">
                 <CardContent className="p-6">
                   <div className="w-10 h-10 bg-red-orange/10 rounded-lg flex items-center justify-center mb-4">
                     <AlertTriangle className="h-5 w-5 text-red-orange" />

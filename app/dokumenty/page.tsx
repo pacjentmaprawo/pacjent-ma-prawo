@@ -202,7 +202,7 @@ const categoryColors: Record<Category, string> = {
   all: 'bg-secondary text-secondary-foreground',
   projekt: 'bg-navy/10 text-navy',
   'who-ue': 'bg-teal/10 text-teal',
-  analizy: 'bg-amber/10 text-amber',
+  analizy: 'bg-red-orange/10 text-amber',
   orzecznictwo: 'bg-red-orange/10 text-red-orange',
   stanowiska: 'bg-secondary text-secondary-foreground',
   media: 'bg-secondary text-secondary-foreground',
@@ -218,7 +218,7 @@ export default function DokumentyPage() {
     <div>
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">Baza wiedzy</p>
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">Baza wiedzy</p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">Baza dokumentów</h1>
           <p className="text-lg text-muted-foreground">Materiały źródłowe i opracowania — wszystkie ze źródeł publicznych lub własne analizy pakietu obywatelskiego</p>
         </div>
