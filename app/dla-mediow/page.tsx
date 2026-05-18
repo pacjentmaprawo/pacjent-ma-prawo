@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 }
 
 const claims = [
-  'Projekt Lex Szarlatan wymaga precyzyjnych definicji',
+  'Projekt UD207 („lex szarlatan") wymaga precyzyjnych definicji',
   'Pacjent ma prawo do informacji i świadomej decyzji',
   'Regulacja musi być proporcjonalna do celu',
   'Medycyna integracyjna nie jest tożsama z pseudomedycyną',
   'Proces legislacyjny powinien być transparentny',
-  'Polska 27.05.2025 poparła Strategię WHO TCIM 2025–2034',
+  'Polska 27.05.2025 współpoparła Strategię WHO TCIM 2025–2034',
 ]
 
 const notClaims = [
@@ -26,16 +26,34 @@ const notClaims = [
 
 const downloads = [
   {
-    title: 'Brief medialny Lex Szarlatan',
-    format: 'PDF, 12 stron',
+    title: 'Brief medialny publiczny v1 — UD207',
+    format: 'PDF, ok. 8 stron',
+    url: '/dokumenty/Brief_Medialny_Publiczny_v1.pdf',
   },
   {
     title: 'Memorandum prawne UD207 v2.0',
-    format: 'PDF, 18 stron',
+    format: 'PDF, ok. 18 stron',
+    url: '/dokumenty/Memorandum_prawne_UD207_v2.0.pdf',
   },
   {
-    title: 'Infografika: 5 ryzyk projektu',
-    format: 'PDF, 1 strona',
+    title: 'Sekcja Konstytucyjna v3.0 — 14 niezgodności',
+    format: 'PDF, ok. 22 strony',
+    url: '/dokumenty/Sekcja_Konstytucyjna_v3.0_do_Zalacznik_1_v1.10.pdf',
+  },
+  {
+    title: 'Memo Ekonomiczne — UD207 w cieniu kryzysu NFZ',
+    format: 'PDF, ok. 14 stron',
+    url: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.pdf',
+  },
+  {
+    title: 'Załącznik 1 — Policy Paper EBM v1.10',
+    format: 'PDF, ok. 50 stron',
+    url: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.10.pdf',
+  },
+  {
+    title: 'MEMO_DECYZYJNE v3.11 — dokument-centrum pakietu',
+    format: 'PDF, ok. 24 strony',
+    url: '/dokumenty/MEMO_DECYZYJNE_v3.11_dokument_centrum.pdf',
   },
 ]
 
@@ -49,17 +67,17 @@ export default function DlaMediaPage() {
             Materiały prasowe
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">
-          Dla dziennikarzy i mediów
-        </h1>
-        <p className="text-navy/80 leading-relaxed">
-          Pacjent Ma Prawo to obywatelska platforma informacyjna. Poniżej znajdują się 
-          materiały gotowe do publikacji, dane kontaktowe i kluczowe tezy.
-        </p>
+            Dla dziennikarzy i mediów
+          </h1>
+          <p className="text-navy/80 leading-relaxed">
+            Pacjent Ma Prawo to obywatelska platforma informacyjna. Poniżej znajdują się
+            materiały gotowe do publikacji, dane kontaktowe i kluczowe tezy.
+          </p>
         </div>
       </section>
 
       {/* Two Column Section */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mb-16">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 my-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* What We Claim */}
           <Card className="border border-border rounded-xl">
@@ -106,22 +124,25 @@ export default function DlaMediaPage() {
         <h2 className="font-serif text-2xl font-semibold text-navy mb-8">
           Materiały do pobrania
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {downloads.map((item, index) => (
-            <Card key={index} className="border border-border rounded-xl">
+            <Card key={index} className="border border-border rounded-xl card-lift">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Download className="h-6 w-6 text-navy" />
+                <div className="w-12 h-12 bg-amber/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Download className="h-6 w-6 text-amber" />
                 </div>
-                <h3 className="font-semibold text-navy mb-1">
+                <h3 className="font-semibold text-navy mb-1 text-sm">
                   {item.title}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-xs text-muted-foreground mb-4">
                   {item.format}
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
-                  Pobierz
-                </Button>
+                <a href={item.url} download>
+                  <Button variant="outline" size="sm" className="w-full border-navy text-navy hover:bg-navy/5">
+                    <Download className="h-3 w-3 mr-2" />
+                    Pobierz PDF
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
@@ -144,14 +165,8 @@ export default function DlaMediaPage() {
                 <p><strong>Zabezpieczenie:</strong> ProtonMail (Szwajcaria, end-to-end encryption)</p>
                 <p><strong>Czas odpowiedzi:</strong> 24h w dni robocze</p>
                 <p className="pt-2">
-                  Możemy zorganizować rozmowę z prawnikiem konstytucyjnym lub ekspertem 
+                  Możemy zorganizować rozmowę z prawnikiem konstytucyjnym lub ekspertem
                   medycyny integracyjnej współpracującym z platformą.
                 </p>
               </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-    </div>
-  )
-}
+     

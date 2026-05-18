@@ -12,7 +12,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'Prawa pacjenta',
-  description: 'Siedem fundamentalnych praw pacjenta w polskim i europejskim systemie prawnym. Konstytucja RP, ustawa o prawach pacjenta, standardy europejskie.',
+  description: 'Prawa pacjenta i zasady, które powinny chronić pacjenta — w polskim i europejskim systemie prawnym. Konstytucja RP, ustawa o prawach pacjenta, EKPC, Konwencja z Oviedo.',
 }
 
 const rights = [
@@ -23,8 +23,8 @@ const rights = [
   },
   {
     icon: FileCheck,
-    title: 'Prawo do świadomej zgody',
-    content: 'Każda interwencja medyczna wymaga zgody pacjenta po uzyskaniu pełnej informacji. Zgoda musi być świadoma, dobrowolna i może być wycofana.'
+    title: 'Prawo do świadomej zgody (informed consent)',
+    content: 'Każda interwencja medyczna wymaga zgody pacjenta po uzyskaniu pełnej informacji (art. 16–17 u.p.p., art. 5 Konwencji z Oviedo). Zgoda musi być świadoma, dobrowolna i może być wycofana. Świadoma zgoda jest fundamentem europejskiego prawa medycznego — także dla terapii integracyjnych i eksperymentalnych. Pełen model: zob. „Co proponujemy".'
   },
   {
     icon: HeartHandshake,
@@ -48,8 +48,8 @@ const rights = [
   },
   {
     icon: Scale,
-    title: 'Prawo do ochrony przed nadużyciem władzy administracyjnej',
-    content: 'Pacjent ma prawo do tego, by przepisy chroniące go nie odbierały mu jednocześnie prawa do świadomej decyzji o własnym leczeniu.'
+    title: 'Zasada ochrony pacjenta przed arbitralną decyzją administracyjną',
+    content: 'Postulat konstytucyjny (art. 31 ust. 3 Konstytucji RP, art. 6 EKPC): przepisy chroniące pacjenta nie powinny odbierać mu jednocześnie prawa do świadomej decyzji o własnym leczeniu. Ochrona pacjenta nieświadomego nie wymaga eliminacji autonomii pacjenta świadomego.'
   },
 ]
 
@@ -63,10 +63,10 @@ export default function PrawaPacjentaPage() {
             Fundamenty
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
-          Prawa pacjenta — siedem fundamentów
+          Prawa pacjenta i zasady, które powinny go chronić
         </h1>
         <p className="text-lg text-muted-foreground mb-8">
-          Co przysługuje każdemu pacjentowi w polskim i europejskim systemie prawnym
+          Co przysługuje każdemu pacjentowi w polskim i europejskim systemie prawnym — i jakie zasady konstytucyjne powinny chronić go przed nadmierną ingerencją.
         </p>
         <p className="text-navy/80 leading-relaxed">
           Pacjent nie jest petentem systemu ochrony zdrowia. Pacjent jest osobą, której zdrowie, 
@@ -95,21 +95,4 @@ export default function PrawaPacjentaPage() {
                     </p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Bottom Banner */}
-      <section className="bg-secondary py-12">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-navy font-medium leading-relaxed">
-            Każde z tych praw wynika z Konstytucji RP, ustawy o prawach pacjenta 
-            lub europejskich standardów ochrony praw człowieka.
-          </p>
-        </div>
-      </section>
-    </div>
-  )
-}
+              </CardCont

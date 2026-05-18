@@ -9,10 +9,12 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/s
 const navItems = [
   { href: '/', label: 'Start' },
   { href: '/projekt', label: 'Co zmienia projekt' },
+  { href: '/dlaczego-sprzeciw', label: 'Dlaczego sprzeciw' },
+  { href: '/co-proponujemy', label: 'Co proponujemy' },
+  { href: '/co-z-pacjentami', label: 'Co z pacjentami' },
   { href: '/medycyna-integracyjna', label: 'Medycyna integracyjna' },
   { href: '/ebm', label: 'EBM' },
   { href: '/prawa-pacjenta', label: 'Prawa pacjenta' },
-  { href: '/dlaczego-sprzeciw', label: 'Dlaczego sprzeciw' },
   { href: '/dokumenty', label: 'Dokumenty' },
   { href: '/faq', label: 'FAQ' },
   { href: '/dla-mediow', label: 'Dla mediów' },
@@ -96,11 +98,4 @@ export function Header() {
                     </Link>
                   </div>
                 </div>
-              </SheetContent>
-            </Sheet>
-          </div>
-        </div>
-      </div>
-    </header>
-  )
-}
+  

@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge'
 
 export const metadata: Metadata = {
   title: 'Dlaczego sprzeciw',
-  description: 'Siedem powodów obywatelskiego sprzeciwu wobec projektu UD207. Analiza proporcjonalności, precyzji i skutków regulacji.',
+  description: 'Osiem powodów obywatelskiego sprzeciwu wobec projektu UD207. Analiza proporcjonalności, precyzji i skutków regulacji — w tym brak ciągłości opieki pacjentów.',
 }
 
 const reasons = [
@@ -43,6 +43,11 @@ const reasons = [
     title: 'Potrzebny jest model rozróżniający kategorie',
     content: 'Oszustwo, eksperyment kliniczny, użycie off-label, terapia wspomagająca, medycyna integracyjna — to różne kategorie wymagające różnego traktowania prawnego.'
   },
+  {
+    number: 8,
+    title: 'Brakuje przepisów o ciągłości opieki pacjentów',
+    content: 'UD207 rozszerza kompetencje represyjne RPP, ale nie zawiera ŻADNYCH przepisów o tym, co dzieje się z pacjentami wykluczonego lekarza lub zamkniętego podmiotu. Casus z 2025 r. (zob. sekcja „Co dzieje się z pacjentami") pokazuje, że bez takich gwarancji ustawowych pacjenci pozostają sami — mimo apeli do urzędów.'
+  },
 ]
 
 const proposals = [
@@ -65,7 +70,7 @@ export default function DlaczegoSprzeciwPage() {
             Argumentacja
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
-          Siedem powodów obywatelskiego sprzeciwu
+          Osiem powodów obywatelskiego sprzeciwu
         </h1>
         <p className="text-navy/80 leading-relaxed">
           Ten sprzeciw nie dotyczy celu projektu Lex Szarlatan — ten jest słuszny. Dotyczy zakresu, 
@@ -105,17 +110,4 @@ export default function DlaczegoSprzeciwPage() {
           <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-navy mb-8 text-center">
             Co proponujemy zamiast
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {proposals.map((proposal, index) => (
-              <Card key={index} className="border border-border rounded-xl bg-background">
-                <CardContent className="p-4 text-center">
-                  <p className="text-sm font-medium text-navy">{proposal}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
-  )
-}
+          <div clas

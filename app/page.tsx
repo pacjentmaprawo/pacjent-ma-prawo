@@ -26,10 +26,11 @@ export default function HomePage() {
             Wiedzieć. Pytać. Decydować.
           </p>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed text-pretty">
-            Obywatelska platforma o prawach pacjenta, medycynie integracyjnej i skutkach projektu 
-            określanego jako &quot;lex szarlatan&quot;. Popieramy ochronę pacjentów przed oszustwem — 
-            ale sprzeciwiamy się rozwiązaniom, które mogą ograniczyć świadomą decyzję pacjenta, 
-            wolność rozmowy z lekarzem i rozwój bezpiecznej medycyny integracyjnej.
+            Obywatelska platforma o prawach pacjenta, medycynie integracyjnej i skutkach projektu nowelizacji
+            <strong className="text-navy"> (UD207)</strong>, potocznie nazywanego <em>„lex szarlatan"</em>.
+            Popieramy ochronę pacjentów przed oszustwem — ale sprzeciwiamy się rozwiązaniom, które mogą
+            ograniczyć świadomą decyzję pacjenta, wolność rozmowy z lekarzem i rozwój bezpiecznej
+            medycyny integracyjnej.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Link href="/petycja">
@@ -181,7 +182,7 @@ export default function HomePage() {
             Kontekst międzynarodowy
           </p>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-12">
-            Co podpisała Polska 27 maja 2025
+            W czym Polska uczestniczyła 27 maja 2025
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             <Card className="border border-border rounded-xl shadow-sm bg-background">
@@ -258,6 +259,4 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-    </>
-  )
-}
+    </

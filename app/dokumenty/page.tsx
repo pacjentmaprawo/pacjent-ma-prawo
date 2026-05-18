@@ -36,14 +36,14 @@ const documents: Doc[] = [
   {
     id: 1,
     title: 'Projekt UD207 — pełny tekst (RCL)',
-    description: 'Projekt nowelizacji ustawy o prawach pacjenta przyjęty przez Radę Ministrów 12.05.2026. Numer projektu: UD207.',
+    description: 'Projekt nowelizacji ustawy o prawach pacjenta i Rzeczniku Praw Pacjenta przyjęty przez Radę Ministrów 12.05.2026. Numer projektu: UD207.',
     category: 'projekt',
     date: '13.05.2026',
     sourceType: 'Dokument rządowy',
     sourceIcon: FileText,
-    externalUrl: 'https://legislacja.rcl.gov.pl/',
-    externalLabel: 'Wyszukaj „UD207" w RCL',
-    searchHint: 'Na stronie RCL wpisz w wyszukiwarce „UD207" lub „nowelizacja ustawy o prawach pacjenta".',
+    externalUrl: 'https://legislacja.rcl.gov.pl/projekt/12398957',
+    externalLabel: 'Karta projektu UD207 w RCL',
+    searchHint: 'Bezpośredni link do karty projektu UD207 w Rządowym Centrum Legislacji (wraz z tekstem, OSR i opiniami z konsultacji).',
   },
   {
     id: 2,
@@ -86,9 +86,9 @@ const documents: Doc[] = [
     date: '29.10.2025',
     sourceType: 'Orzeczenie',
     sourceIcon: Scale,
-    externalUrl: 'https://orzeczenia.nsa.gov.pl/cbo/find?word=V+SA%2FWa+2854%2F23',
-    externalLabel: 'Szukaj w bazie NSA',
-    searchHint: 'Centralna Baza Orzeczeń Sądów Administracyjnych. Wpisz sygnaturę „V SA/Wa 2854/23".',
+    externalUrl: 'https://alertmedyczny.pl/sad-salinomycyna-wlewy-z-witaminy-c-kurkumina-i-bio-elektroterapie-to-nie-sa-terapie-onkologiczne/',
+    externalLabel: 'Omówienie wyroku (Alert Medyczny)',
+    searchHint: 'Pełny tekst wyroku: orzeczenia.nsa.gov.pl/cbo/find?word=V+SA/Wa+2854/23 (Centralna Baza Orzeczeń Sądów Administracyjnych — wpisz sygnaturę dokładnie, ze spacjami).',
   },
   {
     id: 6,
@@ -98,9 +98,9 @@ const documents: Doc[] = [
     date: '05.06.2019',
     sourceType: 'Orzeczenie',
     sourceIcon: Scale,
-    externalUrl: 'https://www.sn.pl/orzecznictwo/SitePages/Baza_orzeczen.aspx',
-    externalLabel: 'Baza orzeczeń SN',
-    searchHint: 'Baza orzeczeń SN. Wpisz sygnaturę „III KK 212/18" w pole wyszukiwania.',
+    externalUrl: 'http://www.sn.pl/sites/orzecznictwo/OrzeczeniaHTML/iii%20kk%20212-18.docx.html',
+    externalLabel: 'Pełny tekst orzeczenia SN',
+    searchHint: 'Bezpośredni link do tekstu postanowienia w bazie orzeczeń Sądu Najwyższego.',
   },
   {
     id: 7,
@@ -110,9 +110,9 @@ const documents: Doc[] = [
     date: '07.2025',
     sourceType: 'Stanowisko',
     sourceIcon: FileText,
-    externalUrl: 'https://pracodawcydlazdrowia.pl/',
-    externalLabel: 'pracodawcydlazdrowia.pl',
-    searchHint: 'Na stronie organizacji znajdź sekcję „Stanowiska" lub „Aktualności" z lipca 2025 r.',
+    externalUrl: 'https://pracodawcydlazdrowia.pl/wp-content/uploads/2025/07/Stanowisko-ws.-nowelizacji-ustawy-o-RPP-UD-207_FINAL.pdf',
+    externalLabel: 'Pobierz PDF stanowiska',
+    searchHint: 'Bezpośredni link do PDF wspólnego stanowiska sektora. Strona macierzysta: pracodawcydlazdrowia.pl (sekcja Publikacje).',
   },
   {
     id: 8,
@@ -156,13 +156,13 @@ const documents: Doc[] = [
   },
   {
     id: 12,
-    title: 'Brief medialny — Lex Szarlatan',
-    description: 'Pakiet prasowy dla dziennikarzy — fakty, tezy, źródła, gotowe cytaty.',
+    title: 'Brief medialny publiczny v1 — UD207',
+    description: 'Pakiet prasowy: fakty, problemy konstytucyjne, propozycja klauzuli świadomej zgody, casus 2025 r. Wersja publiczna (Obieg A) — neutralna, oparta o publiczne źródła.',
     category: 'media',
-    date: '17.05.2026',
+    date: '18.05.2026',
     sourceType: 'Materiał prasowy',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Brief_Medialny_Lex_Szarlatan.pdf',
+    pdfUrl: '/dokumenty/Brief_Medialny_Publiczny_v1.pdf',
   },
   {
     id: 13,
@@ -290,12 +290,4 @@ export default function DokumentyPage() {
       <section className="py-12 bg-cream border-t border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm text-muted-foreground text-center leading-relaxed">
-            Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, medRxiv)
-            lub stanowią własne opracowania pakietu obywatelskiego. Własne dokumenty są dostępne do bezpłatnego pobrania w formacie PDF.
-            W przypadku linków do baz orzeczeń (NSA, SN) — wpisz sygnaturę podaną w opisie dokumentu w pole wyszukiwania na stronie sądu.
-          </p>
-        </div>
-      </section>
-    </div>
-  )
-}
+            Wszystkie dokumenty pochodzą ze źródeł publ

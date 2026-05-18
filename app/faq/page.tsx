@@ -62,42 +62,17 @@ const faqItems = [
     question: 'Gdzie znajdę dokumenty źródłowe?',
     answer: 'Wszystkie cytowane dokumenty są dostępne w sekcji /dokumenty — z linkami do oficjalnych źródeł (rcl.gov.pl, sejm.gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl) oraz własnymi opracowaniami do pobrania w formacie PDF.'
   },
-]
-
-export default function FAQPage() {
-  return (
-    <div>
-      {/* Header */}
-      <section className="hero-gradient py-12 lg:py-20 border-b border-border">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">
-            Pytania
-          </p>
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">
-          Często zadawane pytania
-        </h1>
-        </div>
-      </section>
-
-      {/* FAQ Accordion */}
-      <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <Accordion type="single" collapsible className="w-full space-y-4">
-          {faqItems.map((item) => (
-            <AccordionItem 
-              key={item.id} 
-              value={item.id} 
-              className="border border-border rounded-xl px-6 data-[state=open]:bg-secondary"
-            >
-              <AccordionTrigger className="text-left font-semibold text-navy hover:text-navy/80 hover:no-underline py-6">
-                {item.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                {item.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </section>
-    </div>
-  )
-}
+  {
+    id: 'q11',
+    question: 'Co proponujecie zamiast UD207?',
+    answer: 'Trzy filary: (1) Klauzula świadomej zgody pacjenta jako ustawowe wyłączenie spod sankcji — pacjent po pełnej pisemnej informacji o stanie dowodów i ryzyku może wybrać terapię komplementarną/eksperymentalną bez narażania lekarza na karę 1 mln zł; (2) Gradacja dowodów wg OCEBM lub GRADE zamiast prostego "zgodne/niezgodne"; (3) Obowiązek RPP zapewnienia ciągłości opieki przy każdej decyzji wyłączającej lekarza. Pełen model: zob. /co-proponujemy.'
+  },
+  {
+    id: 'q12',
+    question: 'Czy pacjent może otrzymać terapię nieposiadającą statusu EBM?',
+    answer: 'Tak — pod warunkiem świadomej, pisemnej zgody po pełnej informacji o stanie wiedzy, alternatywach i ryzyku. To fundament europejskiego prawa medycznego: art. 5 Konwencji z Oviedo, art. 8 EKPC, art. 16–17 ustawy o prawach pacjenta. Nasza propozycja klauzuli świadomej zgody (zob. /co-proponujemy) operacjonalizuje to prawo w kontekście UD207. Pacjent oszukany pozostaje chroniony art. 286 k.k. (oszustwo), art. 58 ust. o zawodach lekarza, UOKiK i samorządem zawodowym.'
+  },
+  {
+    id: 'q13',
+    question: 'Co stało się z pacjentami lekarza, którego wykluczono w 2025 r.?',
+    answer: 'W styczniu 2025 r. Naczelny Sąd Lekarski zawiesił na 1 rok prawo wykonywania zawodu lekarzowi 
