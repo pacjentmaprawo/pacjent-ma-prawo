@@ -19,7 +19,7 @@ const accordionItems = [
   {
     id: 'ostrzezenia',
     title: 'Ostrzeżenia publiczne',
-    content: 'Projekt umożliwia Rzecznikowi Praw Pacjenta wydawanie publicznych ostrzeżeń wobec konkretnych podmiotów leczniczych jeszcze przed prawomocnym zakończeniem postępowania.'
+    content: 'Projekt umożliwia Rzecznikowi Praw Pacjenta wydawanie publicznych ostrzeżeń wobec konkretnych podmiotów leczniczych jeszcze przed ostatecznym zakończeniem postępowania.'
   },
   {
     id: 'decyzje',
@@ -34,7 +34,7 @@ const accordionItems = [
   {
     id: 'publikacja',
     title: 'Publikacja decyzji',
-    content: 'Decyzje RPP mogą być publikowane na stronie urzędu, również przed prawomocnym zakończeniem postępowania. Stwarza to ryzyko nieodwracalnej szkody reputacyjnej.'
+    content: 'Decyzje RPP mogą być publikowane na stronie urzędu, również przed ostatecznym zakończeniem postępowania. Stwarza to ryzyko nieodwracalnej szkody reputacyjnej.'
   },
   {
     id: 'osr',

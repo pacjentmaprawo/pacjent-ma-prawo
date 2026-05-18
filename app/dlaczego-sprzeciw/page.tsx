@@ -21,7 +21,7 @@ const reasons = [
   {
     number: 3,
     title: 'Decyzje tymczasowe mogą wywołać nieodwracalne skutki',
-    content: 'Ostrzeżenie publiczne lub kara wymierzona przed prawomocnym zakończeniem sprawy może zniszczyć reputację i działalność, nawet jeśli ostatecznie postępowanie zostanie umorzone.'
+    content: 'Ostrzeżenie publiczne lub kara wymierzona przed ostatecznym zakończeniem postępowania może zniszczyć reputację i działalność, nawet jeśli ostatecznie postępowanie zostanie umorzone.'
   },
   {
     number: 4,

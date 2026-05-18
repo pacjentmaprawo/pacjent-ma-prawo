@@ -142,7 +142,7 @@ export default function HomePage() {
               },
               {
                 title: 'Decyzje administracyjne przed pełnym wyjaśnieniem',
-                desc: 'Możliwość wydania ostrzeżenia publicznego lub decyzji tymczasowej przed prawomocnym wyjaśnieniem sprawy może powodować nieodwracalne skutki dla lekarza i pacjenta.'
+                desc: 'Możliwość wydania ostrzeżenia publicznego lub decyzji tymczasowej przed ostatecznym zakończeniem postępowania może powodować nieodwracalne skutki dla lekarza i pacjenta.'
               },
               {
                 title: 'Efekt mrożący dla lekarzy',
