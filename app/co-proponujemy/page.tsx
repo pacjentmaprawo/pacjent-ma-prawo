@@ -217,11 +217,7 @@ export default function CoProponujemyPage() {
           </div>
           <div className="mt-8 p-6 bg-background rounded-xl border border-border">
             <p className="text-sm text-navy/80 leading-relaxed">
-              <strong>Wniosek:</strong> UD207 nakłada nowy administracyjny reżim sankcyjny na obszary, które już dziś podlegają odpowiedzialności karnej, zawodowej, cywilnej, konsumenckiej i regulacyjnej. Wymaga dlatego szczególnie mocnych gwarancji proporcjonalności i prawa do obrony. Klauzula świadomej zgody multiplikuje
-              istniejące reżimy w sposób nieproporcjonalny i bez gwarancji proceduralnych.
-              Klauzula świadomej zgody przywraca zasadę proporcjonalności (art. 31 ust. 3
-              Konstytucji RP): chronimy pacjenta nieświadomego, pozostawiamy autonomię pacjentowi
-              świadomemu.
+              <strong>Wniosek:</strong> UD207 nakłada nowy administracyjny reżim sankcyjny na obszary, które już dziś podlegają odpowiedzialności karnej, zawodowej, cywilnej, konsumenckiej i regulacyjnej. UD207 multiplikuje istniejące reżimy w sposób nieproporcjonalny i bez wystarczających gwarancji proceduralnych. Klauzula świadomej zgody przywraca zasadę proporcjonalności (art. 31 ust. 3 Konstytucji RP): chronimy pacjenta nieświadomego, pozostawiamy autonomię pacjentowi świadomemu.
             </p>
           </div>
         </div>

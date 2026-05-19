@@ -21,7 +21,7 @@ export default function RegulaminPage() {
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">§1. Postanowienia ogólne</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
             Platforma pacjentmaprawo.pl jest niekomercyjną inicjatywą obywatelską prowadzoną w celu informowania
-            opinii publicznej o projekcie ustawy określanym jako „Lex Szarlatan" (UD207), prawach pacjenta
+            opinii publicznej o projekcie ustawy UD207 (potocznie określanym jako „lex szarlatan"), prawach pacjenta
             i medycynie integracyjnej. Korzystanie z platformy jest bezpłatne.
           </p>
 

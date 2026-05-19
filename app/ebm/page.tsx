@@ -59,10 +59,11 @@ export default function EBMPage() {
           </p>
           <p className="text-navy/80 leading-relaxed">
             Projekt UD207 wprowadza pojęcie „zgodności z aktualną wiedzą medyczną" jako kryterium kar
-            administracyjnych do 1 mln zł. Ale samo to pojęcie — nawet w medycynie konwencjonalnej —
-            jest znacznie bardziej skomplikowane, niż wydaje się w debacie publicznej. Wiele leków
-            onkologicznych w polskim systemie ochrony zdrowia <strong>nie spełnia pełnych kryteriów
-            evidence-based medicine</strong> — a mimo to są rutynowo stosowane.
+            administracyjnych do 1 mln zł. Samo to pojęcie — nawet w medycynie konwencjonalnej —
+            jest znacznie bardziej zróżnicowane, niż wydaje się w debacie publicznej. Część procedur
+            i produktów objętych reżimem rejestracyjnym opiera się na randomizowanych badaniach
+            kontrolowanych; część na danych porejestracyjnych, punktach końcowych zastępczych,
+            decyzjach off-label lub konsensusie eksperckim.
           </p>
         </div>
       </section>
@@ -112,10 +113,13 @@ export default function EBMPage() {
             </h2>
           </div>
           <p className="text-navy/80 leading-relaxed mb-8 max-w-3xl">
-            Mówienie o „aktualnej wiedzy medycznej" jako kryterium karania zakłada, że granica między
-            „medycyną z dowodami" a „pseudomedycyną" jest ostra. <strong>W onkologii ta granica jest
-            znacznie bardziej rozmyta, niż wydaje się publicznie</strong>. Wiele leków dopuszczonych do
-            obrotu i refundowanych w Polsce — nigdy nie miało pełnych dowodów klinicznych klasy I EBM.
+            Projekt UD207 posługuje się pojęciem „aktualnej wiedzy medycznej" jako kryterium sankcji
+            administracyjnych. Problem polega na tym, że w praktyce klinicznej poziom dowodów bywa
+            zróżnicowany: część procedur i produktów objętych reżimem rejestracyjnym opiera się na
+            randomizowanych badaniach kontrolowanych, część na danych porejestracyjnych, punktach
+            końcowych zastępczych, decyzjach off-label lub konsensusie eksperckim. Nie oznacza to,
+            że są pseudomedycyną. Oznacza to, że „aktualna wiedza medyczna" wymaga gradacji, a nie
+            prostego podziału: zgodne / niezgodne.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {paradoxes.map((p, i) => (
@@ -141,7 +145,7 @@ export default function EBMPage() {
             Implikacje prawne
           </p>
           <h2 className="font-serif text-2xl sm:text-3xl font-semibold mb-6">
-            Co to znaczy dla projektu Lex Szarlatan?
+            Co to znaczy dla projektu UD207?
           </h2>
           <div className="space-y-4 text-lg leading-relaxed">
             <p>

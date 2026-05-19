@@ -48,8 +48,10 @@ export default function PolitykaPrywatnosciPage() {
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">5. Odbiorcy danych</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
-            Twoich danych <strong>nie udostępniamy podmiotom trzecim</strong>. Komunikacja prowadzona
-            jest przez szyfrowaną pocztę ProtonMail (Szwajcaria, RODO compliant).
+            Dane mogą być przetwarzane przez dostawców usług technicznych niezbędnych do działania platformy,
+            komunikacji i obsługi petycji — w szczególności dostawcę hostingu (Vercel), poczty elektronicznej
+            (ProtonMail) oraz planowanej platformy petycyjnej. Dane nie są sprzedawane ani udostępniane
+            komercyjnie.
           </p>
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">6. Twoje prawa</h2>
@@ -76,8 +78,7 @@ export default function PolitykaPrywatnosciPage() {
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">8. Zmiany polityki</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
-            Zastrzegamy sobie prawo do aktualizacji niniejszej polityki. Aktualna wersja jest zawsze
-            dostępna na tej stronie. Data ostatniej aktualizacji widnieje u góry dokumentu.
+            Zastrzegamy sobie prawo do aktualizacji niniejszej polityki. Aktualna wersja jest zawsze dostępna na tej stronie. Data ostatniej aktualizacji widnieje u góry dokumentu.
           </p>
         </div>
       </section>

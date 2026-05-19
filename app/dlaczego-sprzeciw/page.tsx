@@ -70,7 +70,7 @@ export default function DlaczegoSprzeciwPage() {
             Osiem powodów obywatelskiego sprzeciwu
           </h1>
           <p className="text-navy/80 leading-relaxed">
-            Ten sprzeciw nie dotyczy celu projektu Lex Szarlatan — ten jest słuszny. Dotyczy zakresu,
+            Ten sprzeciw nie dotyczy celu projektu UD207 — ten jest słuszny. Dotyczy zakresu,
             precyzji i proporcjonalności proponowanych narzędzi prawnych.
           </p>
         </div>

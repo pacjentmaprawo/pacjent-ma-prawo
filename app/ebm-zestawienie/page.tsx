@@ -212,7 +212,7 @@ export default function EBMZestawieniePage() {
             (wywiad Termedia z 21.01.2025) lub Wojewódzki Sąd Administracyjny w Warszawie
             (V SA/Wa 2854/23 z 29.10.2025; V SA/Wa 767/24 z 23.10.2024) — zebraliśmy najwyższe
             dostępne dowody EBM. Wszystkie sygnatury, daty i PMID/DOI zweryfikowane w bazach
-            pierwotnych (Perplexity v18, 19.05.2026).
+            pierwotnych.
           </p>
         </div>
       </section>

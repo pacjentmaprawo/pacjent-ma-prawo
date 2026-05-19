@@ -29,7 +29,7 @@ const faqItems = [
   },
   {
     id: 'q4',
-    question: 'Dlaczego projekt Lex Szarlatan może być niebezpieczny?',
+    question: 'Dlaczego projekt UD207 może być niebezpieczny?',
     answer: 'Z trzech głównych powodów: (1) nieprecyzyjne definicje mogą objąć legalne terapie; (2) decyzje administracyjne przed ostatecznym zakończeniem postępowania mogą powodować nieodwracalne skutki; (3) wysokie kary tworzą efekt mrożący dla wolności rozmowy medycznej.'
   },
   {

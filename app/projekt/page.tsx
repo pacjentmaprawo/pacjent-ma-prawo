@@ -12,7 +12,7 @@ import { ExternalLink, Scale, Shield, Gavel, HeartCrack, Users, AlertOctagon, Fi
 
 export const metadata: Metadata = {
   title: 'Co zmienia projekt UD207?',
-  description: 'Faktografia projektu ustawy Lex Szarlatan (oficjalnie UD207). Analiza nowych kompetencji Rzecznika Praw Pacjenta i ryzyk konstytucyjnych.',
+  description: 'Faktografia projektu UD207 (potocznie określanego jako lex szarlatan). Analiza nowych kompetencji Rzecznika Praw Pacjenta i ryzyk konstytucyjnych.',
 }
 
 const accordionItems = [
@@ -110,7 +110,7 @@ export default function ProjektPage() {
           Faktografia projektu ustawy (oficjalna nazwa: UD207)
         </p>
         <p className="text-navy/80 leading-relaxed">
-          Projekt ustawy określany jako Lex Szarlatan (oficjalna nazwa: UD207) jest nowelizacją ustawy o prawach pacjenta i Rzeczniku Praw Pacjenta. 
+          Projekt ustawy UD207 (potocznie określany jako „lex szarlatan") jest nowelizacją ustawy o prawach pacjenta i Rzeczniku Praw Pacjenta.
           Został przyjęty przez Radę Ministrów 12 maja 2026 roku i obecnie zmierza do Sejmu. 
           Celem projektu jest ochrona pacjentów przed praktykami o niepotwierdzonej skuteczności. 
           Ten cel jest słuszny. Nasz sprzeciw dotyczy nie celu, lecz zakresu, precyzji i proporcjonalności 

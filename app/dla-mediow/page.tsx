@@ -144,8 +144,8 @@ export default function DlaMediaPage() {
                 <span className="font-semibold text-navy">pacjentmaprawo@proton.me</span>
               </div>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p><strong>Zabezpieczenie:</strong> ProtonMail (Szwajcaria, bezpieczna komunikacja)</p>
-                <p><strong>Czas odpowiedzi:</strong> 24h w dni robocze</p>
+                <p><strong>Poczta:</strong> ProtonMail (bezpieczna komunikacja). Nie przesyłaj danych medycznych przez e-mail.</p>
+                <p><strong>Czas odpowiedzi:</strong> zwykle 2–3 dni robocze</p>
                 <p className="pt-2">
                   Możemy zorganizować rozmowę z prawnikiem konstytucyjnym lub ekspertem
                   medycyny integracyjnej współpracującym z platformą.

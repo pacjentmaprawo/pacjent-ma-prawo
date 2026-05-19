@@ -20,7 +20,7 @@ const timeline = [
   {
     date: '10 stycznia 2025',
     title: 'Pacjenci tracą opiekę z dnia na dzień',
-    body: 'Kilkudziesięciu pacjentów onkologicznych w trakcie aktywnych terapii zostaje pozbawionych lekarza prowadzącego. Żaden organ państwa nie wskazuje procedury awaryjnej ani lekarza zastępczego.',
+    body: 'Kilkudziesięciu pacjentów onkologicznych w trakcie aktywnych terapii zostaje pozbawionych lekarza prowadzącego. W publicznie dostępnych materiałach nie odnaleźliśmy informacji o wskazanej procedurze awaryjnej ani o lekarzu zastępczym.',
     type: 'consequence',
   },
   {
@@ -44,7 +44,7 @@ const timeline = [
   {
     date: 'styczeń 2026',
     title: 'Bilans: ~11 miesięcy bez opieki',
-    body: 'Przez około jedenaście miesięcy kilkudziesięciu pacjentów onkologicznych pozostawało bez lekarza w wyniku decyzji, którą SN ocenił jako wadliwą proceduralnie. Żaden organ państwa nie zapewnił w tym okresie ciągłości opieki.',
+    body: 'Przez około jedenaście miesięcy kilkudziesięciu pacjentów onkologicznych pozostawało bez lekarza w wyniku decyzji, którą SN ocenił jako wadliwą proceduralnie. W publicznie dostępnych materiałach nie odnaleźliśmy informacji o skutecznym mechanizmie zapewnienia pacjentom ciągłości opieki w tym okresie.',
     type: 'bilans',
   },
 ]
@@ -242,7 +242,7 @@ export default function CoZPacjentamiPage() {
             (TVN24, Rzeczpospolita, Termedia, Medexpress, baza orzeczeń NSA, baza orzeczeń SN),
             świadectwie organizacji pacjentów (pacjencidoktoraszalusia.pl) oraz na własnej analizie
             prawnej pakietu obywatelskiego. Nazwisko lekarza w pakiecie publicznym celowo pomijane —
-            argument dotyczy luki systemowej, nie konkretnej osoby. Aktualizacja: maj 2026.
+            argument dotyczy llekarza generycznie, nie indywidualnego przypadku.
           </p>
         </div>
       </section>

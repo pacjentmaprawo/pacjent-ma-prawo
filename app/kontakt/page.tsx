@@ -147,7 +147,7 @@ export default function KontaktPage() {
               WAŻNE — bezpieczeństwo komunikacji:
             </h3>
             <ul className="space-y-2 text-sm text-navy/80">
-              <li>• Używamy ProtonMail (Szwajcaria) z szyfrowaniem end-to-end.</li>
+              <li>• Korzystamy z ProtonMail jako bezpiecznej poczty.</li>
               <li>• Nie przesyłaj danych medycznych ani dokumentacji medycznej przez ten kanał.</li>
               <li>• Jeśli chcesz opisać swoją historię, zanonimizuj dane osobowe i dane placówek.</li>
               <li>• Twoje dane przetwarzamy wyłącznie w celu odpowiedzi na zapytanie, zgodnie z RODO. Nie udostępniamy ich podmiotom trzecim.</li>
