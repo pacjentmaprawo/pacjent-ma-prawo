@@ -59,9 +59,9 @@ const documents: Doc[] = [
   {
     id: 3,
     title: 'Rezolucja WHA78(14) — WHO TCIM Strategy 2025-2034',
-    description: 'Globalna Strategia WHO ds. Medycyny Tradycyjnej, Komplementarnej i Integracyjnej (przyjęta konsensusem 27.05.2025).',
+    description: 'Globalna Strategia WHO ds. Medycyny Tradycyjnej, Komplementarnej i Integracyjnej (przyjęta konsensusem 26.05.2025).',
     category: 'who-ue',
-    date: '27.05.2025',
+    date: '26.05.2025',
     sourceType: 'Dokument WHO',
     sourceIcon: FileText,
     externalUrl: 'https://apps.who.int/gb/ebwha/pdf_files/WHA78/A78_(14)-en.pdf',
@@ -113,6 +113,17 @@ const documents: Doc[] = [
     externalUrl: 'https://pracodawcydlazdrowia.pl/wp-content/uploads/2025/07/Stanowisko-ws.-nowelizacji-ustawy-o-RPP-UD-207_FINAL.pdf',
     externalLabel: 'Pobierz PDF stanowiska',
     searchHint: 'Bezpośredni link do PDF wspólnego stanowiska sektora. Strona macierzysta: pracodawcydlazdrowia.pl (sekcja Publikacje).',
+  },
+  {
+    id: 16,
+    title: 'Raport Stowarzyszenia Integralni w Zdrowiu — krytyka Stanowiska NRL Nr 2/21/VIII',
+    description: 'Niezależna 121-stronicowa analiza merytoryczna wskazująca błędy w kwerendzie literatury Raportu Ekspertów NRL (2020), na którym oparte jest Stanowisko NRL Nr 2/21/VIII z 12.03.2021 — fundament intelektualny projektu UD207. Marzec 2022.',
+    category: 'stanowiska',
+    date: '23.03.2022',
+    sourceType: 'Stanowisko organizacji',
+    sourceIcon: FileText,
+    pdfUrl: '/dokumenty/Raport_Integralni_NRL_2022.pdf',
+    searchHint: 'Raport opracowany przez Stowarzyszenie Integralni w Zdrowiu — niezależna analiza, na którą Naczelna Rada Lekarska nie odpowiedziała merytorycznie. Pełna lista 11 substancji wskazanych przez NRL: artesunat, witamina C dożylna, resweratrol, DMSO, salinomycyna, kurkumina, tlenoterapia dożylna, naświetlanie laserowe krwi, akupunktura laserowa, galwanoterapia, hipertermia ogólnoustrojowa.',
   },
   {
     id: 8,
@@ -290,7 +301,7 @@ export default function DokumentyPage() {
       <section className="py-12 bg-cream border-t border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm text-muted-foreground text-center leading-relaxed">
-            Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, alertmedyczny.pl, medRxiv)
+            Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, alertmedyczny.pl, medRxiv, nil.org.pl, termedia.pl, pacjencidoktoraszalusia.pl)
             lub stanowią własne opracowania pakietu obywatelskiego. Własne dokumenty są dostępne do bezpłatnego pobrania w formacie PDF.
             Linki zewnętrzne prowadzą bezpośrednio do tekstów źródłowych. Wszystkie weryfikowane: maj 2026.
           </p>

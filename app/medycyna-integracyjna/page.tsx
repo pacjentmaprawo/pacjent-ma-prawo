@@ -82,8 +82,8 @@ export default function MedycynaIntegracyjnaPage() {
           Czym jest medycyna integracyjna i czym nie jest
         </p>
         <p className="text-navy/80 leading-relaxed">
-          Pojęcia z obszaru medycyny komplementarnej i integracyjnej są często mylone — także 
-          w debacie publicznej. Ta strona wyjaśnia, czym te terminy faktycznie oznaczają według 
+          Pojęcia z obszaru medycyny komplementarnej i integracyjnej są często mylone — także
+          w debacie publicznej. Ta strona wyjaśnia, co te terminy faktycznie oznaczają według
           definicji Światowej Organizacji Zdrowia i międzynarodowych standardów medycznych.
         </p>
         </div>
@@ -187,7 +187,7 @@ export default function MedycynaIntegracyjnaPage() {
           </h2>
           <p className="text-navy/80 leading-relaxed mb-6">
             Według Globalnej Strategii Medycyny Tradycyjnej, Komplementarnej i Integracyjnej WHO 
-            2025–2034 (rezolucja WHA78(14) z 27.05.2025), medycyna integracyjna powinna rozwijać się 
+            2025–2034 (rezolucja WHA78(14) z 26.05.2025), medycyna integracyjna powinna rozwijać się
             w oparciu o cztery filary: wzmocnienie dowodów naukowych, bezpieczeństwo i regulacje, 
             integrację z systemami zdrowia oraz innowacje.
           </p>

@@ -94,7 +94,7 @@ Pierwszy systematyczny przegląd kosztów medycyny integracyjnej w onkologii w E
 | 2. medRxiv preprint v1 | 02.05.2025 | OCEANic — publiczne udostępnienie protokołu | EU: transparentność |
 | 3. medRxiv preprint v2 | 05.05.2025 | OCEANic — aktualizacja | EU: iteracja naukowa |
 | 4. Oświadczenie UE WHA78 | 24.05.2025 | UE wzywa WHO do regulacji opartej na evidence | EU: ostrożna integracja |
-| 5. WHA78(14) | 27.05.2025 | WHO przyjmuje Strategię TCIM 2025–2034 | WHO: integracja przez evidence |
+| 5. WHA78(14) | 26.05.2025 | WHO przyjmuje Strategię TCIM 2025–2034 | WHO: integracja przez evidence |
 | 6. **UD207 Rada Ministrów** | **12.05.2026** | **Polska wprowadza penalizację administracyjną** | **PL: zaprzeczenie europejskiej linii** |
 
 Europa systematycznie buduje evidence base dla medycyny integracyjnej (PROSPERO, peer-review, WHO TCIM). Polska — w tym samym czasie — wprowadza model penalizacji administracyjnej z karami do 1 mln zł. **To jest sprzeczność polityki państwa z międzynarodowym zobowiązaniem politycznym Polski** (art. 9 Konstytucji RP — przestrzeganie prawa międzynarodowego, art. 2 — zasada zaufania obywateli do państwa).

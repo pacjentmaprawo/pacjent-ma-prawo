@@ -184,9 +184,25 @@ export default function EBMPage() {
             (GRADE, OCEBM, ESMO-MCBS) — z gradacją poziomu dowodów, a nie binarnym „zgodne / niezgodne".
             Plus gwarancji proceduralnych: opinii biegłych, prawa do obrony, in dubio pro reo.
           </p>
-          <p className="font-serif text-xl text-navy italic">
+          <p className="font-serif text-xl text-navy italic mb-8">
             Pełna analiza w <strong>Załączniku 1 — Policy Paper EBM v1.10</strong> (dostępny w bazie dokumentów).
-          </p>
+          <div className="bg-secondary border border-border rounded-xl p-6">
+            <h3 className="font-serif text-lg font-semibold text-navy mb-2">
+              Zobacz konkretne dane
+            </h3>
+            <p className="text-navy/80 leading-relaxed mb-4">
+              W Załączniku 3 zebraliśmy 15 substancji wskazanych przez RPP, NRL i WSA jako
+              „pseudomedycyna" z dostępnymi dowodami EBM, OCEBM i GRADE — oraz 3 reprezentatywne
+              pary paradoksu refundacyjnego (witamina C dożylna vs bewacizumab GBM; Iscador vs
+              olaratumab; FDA Project Confirm jako fakt systemowy).
+            </p>
+            <a
+              href="/ebm-zestawienie"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-orange text-background font-medium rounded-lg hover:bg-red-orange/90 transition-colors"
+            >
+              Zobacz zestawienie 15 substancji
+            </a>
+          </div>
         </div>
       </section>
     </div>

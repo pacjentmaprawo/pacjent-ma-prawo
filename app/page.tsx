@@ -1,13 +1,15 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { 
-  Info, 
-  MessageCircleQuestion, 
-  ShieldCheck, 
+import {
+  Info,
+  MessageCircleQuestion,
+  ShieldCheck,
   AlertTriangle,
   Globe,
-  Building2
+  Building2,
+  HeartCrack,
+  ArrowRight
 } from 'lucide-react'
 
 export default function HomePage() {
@@ -175,6 +177,59 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Patient Casus Teaser Section */}
+      <section className="py-16 lg:py-20 bg-background">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <Card className="card-accent-red border border-border rounded-2xl shadow-sm overflow-hidden">
+            <CardContent className="p-8 lg:p-12">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-red-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <HeartCrack className="h-6 w-6 text-red-orange" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-2">
+                    Wymiar humanitarny
+                  </p>
+                  <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-navy mb-3">
+                    Co stało się z pacjentami onkologicznymi w 2025 roku
+                  </h2>
+                </div>
+              </div>
+              <p className="text-navy/80 leading-relaxed mb-4">
+                9 stycznia 2025 r. Naczelny Sąd Lekarski zawiesił na rok prawo wykonywania zawodu
+                lekarzowi opiekującemu się pacjentami onkologicznymi w klinice integracyjnej. Z dnia
+                na dzień kilkudziesięciu pacjentów straciło opiekę. Pisali do urzędów państwowych —
+                w tym do Rzecznika Praw Pacjenta — w publicznie dostępnych materiałach
+                nie odnaleźliśmy informacji o udzielonej im pomocy.
+              </p>
+              <p className="text-navy/80 leading-relaxed mb-6">
+                W grudniu 2025 r. orzeczenie zostało uchylone w toku postępowania kasacyjnego jako
+                wadliwe proceduralnie. Przez 11 miesięcy pacjenci pozostawali bez opieki, mimo apeli.
+                Casus pokazuje, jak nieprecyzyjne kryteria mogą przerwać ciągłość opieki onkologicznej.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="/co-z-pacjentami"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-red-orange text-background font-medium rounded-lg hover:bg-red-orange/90 transition-colors"
+                >
+                  Czytaj pełną historię
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+                <a
+                  href="https://pacjencidoktoraszalusia.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 border border-border text-navy font-medium rounded-lg hover:bg-secondary transition-colors"
+                >
+                  Strona pacjentów
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* International Context Section */}
       <section className="py-16 lg:py-24 section-navy">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -182,7 +237,7 @@ export default function HomePage() {
             Kontekst międzynarodowy
           </p>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-12">
-            W czym Polska uczestniczyła 27 maja 2025
+            W czym Polska uczestniczyła 26 maja 2025
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             <Card className="border border-border rounded-xl shadow-sm bg-background">
@@ -194,11 +249,11 @@ export default function HomePage() {
                   Rezolucja WHA78(14)
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  27 maja 2025 roku Światowe Zgromadzenie Zdrowia (WHA78) przyjęło w drodze konsensusu 
+                  26 maja 2025 roku Światowe Zgromadzenie Zdrowia (WHA78) przyjęło w drodze konsensusu
                   Globalną Strategię WHO ds. Medycyny Tradycyjnej, Komplementarnej i Integracyjnej (TCIM) 
                   2025–2034. Polska — jako państwo członkowskie WHO i UE — była stroną przyjęcia tej rezolucji.
                 </p>
-                <a 
+                <a
                   href="https://apps.who.int/gb/ebwha/pdf_files/WHA78/A78_(14)-en.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -218,12 +273,12 @@ export default function HomePage() {
                   Oświadczenie Unii Europejskiej
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  24 maja 2025 roku Unia Europejska — w imieniu 27 państw członkowskich, w tym Polski — 
-                  złożyła oświadczenie wskazujące na potrzebę odpowiedzialnej integracji medycyny tradycyjnej 
-                  i komplementarnej, w oparciu o evidence-based medicine, bezpieczeństwo, jakość, skuteczność 
+                  24 maja 2025 roku Unia Europejska — w imieniu 27 państw członkowskich, w tym Polski —
+                  złożyła oświadczenie wskazujące na potrzebę odpowiedzialnej integracji medycyny tradycyjnej
+                  i komplementarnej, w oparciu o evidence-based medicine, bezpieczeństwo, jakość, skuteczność
                   i efektywność kosztową.
                 </p>
-                <a 
+                <a
                   href="https://www.eeas.europa.eu/delegations/un-geneva/eu-statement-wha78-item-138-%E2%80%93-draft-global-traditional-medicine-strategy-2025-2034_en"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -238,23 +293,23 @@ export default function HomePage() {
       </section>
 
       {/* Petition CTA Banner */}
-      <section className="py-16 lg:py-20 bg-amber">
+      <section className="py-16 lg:py-20 bg-red-orange">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-navy mb-6">
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-background mb-6">
             Chcesz, aby projekt został poprawiony?
           </h2>
-          <p className="text-navy/80 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-background/90 text-lg mb-8 max-w-2xl mx-auto">
             Podpisz obywatelski apel o skierowanie projektu UD207 do ponownych konsultacji publicznych.
           </p>
           <Link href="/petycja">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-background text-navy font-semibold hover:bg-background/90 hover:scale-[1.02] transition-all px-10 py-6 text-base"
             >
               Podpisz apel obywatelski
             </Button>
           </Link>
-          <p className="text-navy/70 mt-6 text-sm">
+          <p className="text-background/80 mt-6 text-sm">
             <em className="font-medium">Formularz petycyjny w przygotowaniu</em> — integracja z platformą OpenPetition.pl wkrótce
           </p>
         </div>
