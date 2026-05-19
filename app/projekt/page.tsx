@@ -90,7 +90,7 @@ const patientImpactCards = [
   {
     icon: Users,
     title: 'Wymiar humanitarny — także efekty cząstkowe mają wartość',
-    body: 'Nawet jeśli terapia wspomagająca daje 10–20% obiecywanej korzyści w postaci ulgi w bólu, lepszej tolerancji chemioterapii, lepszego odżywiania czy jakości życia — to jest realna wartość dla pacjenta i jego rodziny. Tej wartości nikt nie zastąpi z dnia na dzień. W okresie wykluczenia jednego lekarza opiekującego się pacjentami onkologicznymi w 2025 r. udokumentowano przypadki pogorszenia stanu zdrowia pacjentów; udokumentowane pogorszenie stanu zdrowia w okresie wykluczenia lekarza — w tym przypadki, w których pacjenci onkologiczni zmarli w trakcie zakazu — może stanowić podstawę do rozważenia drogi prawnej przez dotknięte rodziny (jeśli takie podstawy istnieją). Pakiet obywatelski nie formułuje tezy o bezpośredniej przyczynowości — wskazuje na strukturalną lukę: system państwowy potrafi szybko wykluczyć podmiot z rynku, ale nie ma analogicznie szybkiego mechanizmu zapewnienia pacjentom kontynuacji leczenia.'
+    body: 'Nawet jeśli terapia wspomagająca daje cząstkową korzyść w postaci ulgi w bólu, lepszej tolerancji chemioterapii, lepszego odżywiania czy jakości życia — jest to realna wartość dla pacjenta i jego rodziny. Wartości tej nikt nie zastąpi z dnia na dzień. Nie przesądzamy związku przyczynowego między decyzją organu a stanem zdrowia konkretnych pacjentów. Wskazujemy wyłącznie na lukę systemową: decyzja wykluczająca lekarza lub podmiot może nastąpić natychmiast, natomiast projekt nie przewiduje równie szybkiego mechanizmu zapewnienia pacjentom ciągłości opieki.'
   },
 ]
 

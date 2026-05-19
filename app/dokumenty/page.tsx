@@ -123,7 +123,7 @@ const documents: Doc[] = [
     sourceType: 'Stanowisko organizacji',
     sourceIcon: FileText,
     pdfUrl: '/dokumenty/Raport_Integralni_NRL_2022.pdf',
-    searchHint: 'Raport opracowany przez Stowarzyszenie Integralni w Zdrowiu — niezależna analiza, na którą Naczelna Rada Lekarska nie odpowiedziała merytorycznie. Pełna lista 11 substancji wskazanych przez NRL: artesunat, witamina C dożylna, resweratrol, DMSO, salinomycyna, kurkumina, tlenoterapia dożylna, naświetlanie laserowe krwi, akupunktura laserowa, galwanoterapia, hipertermia ogólnoustrojowa.',
+    searchHint: 'Raport opracowany przez Stowarzyszenie Integralni w Zdrowiu — niezależna analiza krytyczna metodologii Raportu Ekspertów NRL z 2020 r. Publikacja dokumentu nie oznacza rekomendowania żadnej z wymienionych metod. Materiał służy analizie jakości argumentacji i kwerendy literatury w debacie publicznej.',
   },
   {
     id: 8,
