@@ -186,16 +186,6 @@ const documents: Doc[] = [
     pdfUrl: '/dokumenty/Apel_do_Prezydenta_Nawrockiego_v2_ACTIVATED.pdf',
   },
   {
-    id: 14,
-    title: 'MEMO_DECYZYJNE v3.11 — dokument-centrum pakietu',
-    description: 'Mapa pakietu obywatelskiego — 22 deliverables, hierarchia, bibliografia, system referencyjny.',
-    category: 'analizy',
-    date: '17.05.2026',
-    sourceType: 'Analiza pakietu',
-    sourceIcon: FileText,
-    pdfUrl: '/dokumenty/MEMO_DECYZYJNE_v3.11_dokument_centrum.pdf',
-  },
-  {
     id: 15,
     title: 'OCEANic Protocol — przegląd kosztów medycyny integracyjnej w onkologii (w toku)',
     description: 'Protokół przeglądu systematycznego dotyczącego kosztów medycyny integracyjnej w onkologii. Źródło: medRxiv. Materiał nie jest dokumentem WHO ani UE i nie stanowi finalnego przeglądu wyników — przegląd w toku.',
