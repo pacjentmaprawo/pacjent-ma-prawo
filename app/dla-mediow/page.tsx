@@ -50,11 +50,6 @@ const downloads = [
     format: 'PDF, ok. 50 stron',
     url: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.10.pdf',
   },
-  {
-    title: 'MEMO_DECYZYJNE v3.11 — dokument-centrum pakietu',
-    format: 'PDF, ok. 24 strony',
-    url: '/dokumenty/MEMO_DECYZYJNE_v3.11_dokument_centrum.pdf',
-  },
 ]
 
 export default function DlaMediaPage() {
