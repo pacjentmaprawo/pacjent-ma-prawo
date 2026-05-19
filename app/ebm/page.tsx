@@ -186,6 +186,7 @@ export default function EBMPage() {
           </p>
           <p className="font-serif text-xl text-navy italic mb-8">
             Pełna analiza w <strong>Załączniku 1 — Policy Paper EBM v1.10</strong> (dostępny w bazie dokumentów).
+          </p>
           <div className="bg-secondary border border-border rounded-xl p-6">
             <h3 className="font-serif text-lg font-semibold text-navy mb-2">
               Zobacz konkretne dane
