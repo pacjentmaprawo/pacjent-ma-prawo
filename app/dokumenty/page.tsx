@@ -128,7 +128,7 @@ const documents: Doc[] = [
   {
     id: 8,
     title: 'Memorandum prawne UD207 v2.1',
-    description: 'Analiza zgodności projektu z Konstytucją RP, EKPC i KPP UE — dokument dla BAS i kancelarii prawnych. Wersja v2.1 (21.05.2026) zawiera nowe sekcje B.7 (komparatystyka 7 modeli regulacyjnych UE/UK) oraz B.8 (polski kontekst regulacyjny CAM przed UD207).',
+    description: 'Analiza zgodności projektu z Konstytucją RP, EKPC i KPP UE — dokument dla BAS i kancelarii prawnych. Zawiera siedem zarzutów głównych, osiem zarzutów pomocniczych (w tym komparatystykę 7 modeli regulacyjnych UE/UK oraz polski kontekst regulacyjny CAM), dziesięć rekomendowanych poprawek oraz tabelę synoptyczną.',
     category: 'analizy',
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
@@ -206,7 +206,7 @@ const documents: Doc[] = [
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
     pdfUrl: '/dokumenty/Zalacznik_3_v2.2_Mapa_onkologii_integracyjnej_EBM.pdf',
-    searchHint: 'Najnowsza wersja Załącznika 3 — wdrożenie korekt z weryfikacji w 7 państwach UE/UK (Perplexity v20C + ChatGPT v20C, 21.05.2026). Kluczowa teza: państwa europejskie stosują gradację, nie blankietowe etykiety. UD207 odchyla się od europejskiego standardu regulacyjnego.',
+    searchHint: 'Mapa współczesnej onkologii integracyjnej obejmująca 40 obszarów EBM oraz 7 modeli regulacyjnych Wielkiej Brytanii, Niemiec, Francji, Belgii, Holandii, Włoch i Austrii. Kluczowa teza: państwa europejskie stosują gradację, nie blankietowe etykiety. UD207 odchyla się od europejskiego standardu regulacyjnego.',
   },
 ]
 

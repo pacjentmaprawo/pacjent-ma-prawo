@@ -231,7 +231,7 @@ export default function HomePage() {
       </section>
 
 
-      {/* Banner 7 modeli UE/UK — POZIOM E v3 */}
+      {/* Banner 7 modeli UE/UK */}
       <section className="py-16 lg:py-20 bg-cream">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <Card className="border-2 border-navy/30 rounded-2xl shadow-sm">

@@ -136,7 +136,7 @@ export default function MedycynaIntegracyjnaPage() {
         </Card>
       </section>
 
-      {/* Wzorzec języka — Macmillan — POZIOM B v3 */}
+      {/* Wzorzec języka — Macmillan */}
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-12">
         <Card className="border border-teal/30 rounded-xl bg-teal/5">
           <CardContent className="p-6 lg:p-8">
@@ -238,7 +238,7 @@ export default function MedycynaIntegracyjnaPage() {
         </div>
       </section>
 
-      {/* 7 modeli regulacyjnych UE/UK — POZIOM A v3 */}
+      {/* 7 modeli regulacyjnych UE/UK */}
       <section className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">
@@ -372,7 +372,7 @@ export default function MedycynaIntegracyjnaPage() {
         </div>
       </section>
 
-      {/* Tabela zbiorcza refundacji — POZIOM C v3 */}
+      {/* Tabela zbiorcza refundacji */}
       <section className="bg-secondary/30 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl lg:text-3xl font-semibold text-navy mb-6 text-center">
