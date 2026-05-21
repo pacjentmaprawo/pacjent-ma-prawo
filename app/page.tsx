@@ -230,6 +230,42 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* Banner 7 modeli UE/UK — POZIOM E v3 */}
+      <section className="py-16 lg:py-20 bg-cream">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <Card className="border-2 border-navy/30 rounded-2xl shadow-sm">
+            <CardContent className="p-8 lg:p-12">
+              <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">
+                Stanowisko akademickie
+              </p>
+              <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-navy mb-4">
+                Jak ten projekt wygląda na tle Europy?
+              </h3>
+              <p className="text-navy/80 leading-relaxed mb-4">
+                Żaden z 7 sprawdzonych europejskich systemów ochrony zdrowia
+                (Wielka Brytania, Niemcy, Francja, Belgia, Holandia, Włochy, Austria)
+                nie stosuje blankietowej definicji „pseudomedycyny". Wszystkie stosują
+                <strong> gradację dowodową</strong>: rozróżniają metodę, wskazanie,
+                kwalifikacje osoby wykonującej, status dowodowy i ryzyko dla pacjenta.
+              </p>
+              <p className="text-navy/80 leading-relaxed mb-6">
+                UD207 — operując jedną definicją w art. 67zj niezależnie od tych
+                rozróżnień — odchyla się od europejskiego standardu regulacyjnego
+                i ryzykuje niezgodność z zasadą określoności prawa (art. 2 Konstytucji RP,
+                <em> lex certa</em>) oraz proporcjonalności (art. 31 ust. 3).
+              </p>
+              <a
+                href="/medycyna-integracyjna"
+                className="inline-flex items-center gap-2 text-teal hover:underline underline-offset-4 font-medium"
+              >
+                Zobacz 7 modeli regulacyjnych UE/UK →
+              </a>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* International Context Section */}
       <section className="py-16 lg:py-24 section-navy">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -237,7 +273,7 @@ export default function HomePage() {
             Kontekst międzynarodowy
           </p>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-12">
-            W czym Polska uczestniczyła 26 maja 2025
+            W czym Polska uczestniczyła 27 maja 2025
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             <Card className="border border-border rounded-xl shadow-sm bg-background">
@@ -249,7 +285,7 @@ export default function HomePage() {
                   Rezolucja WHA78(14)
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  26 maja 2025 roku Światowe Zgromadzenie Zdrowia (WHA78) przyjęło w drodze konsensusu
+                  27 maja 2025 roku Światowe Zgromadzenie Zdrowia (WHA78) przyjęło w drodze konsensusu
                   Globalną Strategię WHO ds. Medycyny Tradycyjnej, Komplementarnej i Integracyjnej (TCIM) 
                   2025–2034. Polska — jako państwo członkowskie WHO i UE — była stroną przyjęcia tej rezolucji.
                 </p>

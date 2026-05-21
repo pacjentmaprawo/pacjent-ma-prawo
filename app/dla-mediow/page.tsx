@@ -14,7 +14,7 @@ const claims = [
   'Regulacja musi być proporcjonalna do celu',
   'Medycyna integracyjna nie jest tożsama z pseudomedycyną',
   'Proces legislacyjny powinien być transparentny',
-  'Polska — jako państwo członkowskie WHO i UE — uczestniczyła 26.05.2025 w przyjęciu Strategii WHO TCIM 2025–2034',
+  'Polska — jako państwo członkowskie WHO i UE — uczestniczyła 27.05.2025 w przyjęciu Strategii WHO TCIM 2025–2034',
 ]
 
 const notClaims = [

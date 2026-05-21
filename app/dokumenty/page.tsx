@@ -59,9 +59,9 @@ const documents: Doc[] = [
   {
     id: 3,
     title: 'Rezolucja WHA78(14) — WHO TCIM Strategy 2025-2034',
-    description: 'Globalna Strategia WHO ds. Medycyny Tradycyjnej, Komplementarnej i Integracyjnej (przyjęta konsensusem 26.05.2025).',
+    description: 'Globalna Strategia WHO ds. Medycyny Tradycyjnej, Komplementarnej i Integracyjnej (przyjęta konsensusem 27.05.2025).',
     category: 'who-ue',
-    date: '26.05.2025',
+    date: '27.05.2025',
     sourceType: 'Dokument WHO',
     sourceIcon: FileText,
     externalUrl: 'https://apps.who.int/gb/ebwha/pdf_files/WHA78/A78_(14)-en.pdf',
@@ -127,13 +127,13 @@ const documents: Doc[] = [
   },
   {
     id: 8,
-    title: 'Memorandum prawne UD207 v2.0',
-    description: 'Analiza zgodności projektu z Konstytucją RP, EKPC i KPP UE — dokument dla BAS i kancelarii prawnych.',
+    title: 'Memorandum prawne UD207 v2.1',
+    description: 'Analiza zgodności projektu z Konstytucją RP, EKPC i KPP UE — dokument dla BAS i kancelarii prawnych. Wersja v2.1 (21.05.2026) zawiera nowe sekcje B.7 (komparatystyka 7 modeli regulacyjnych UE/UK) oraz B.8 (polski kontekst regulacyjny CAM przed UD207).',
     category: 'analizy',
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.0.pdf',
+    pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.1.pdf',
   },
   {
     id: 9,
@@ -196,6 +196,17 @@ const documents: Doc[] = [
     externalUrl: 'https://doi.org/10.1101/2025.05.02.25326858',
     externalLabel: 'Otwórz na medRxiv',
     pdfUrl: '/dokumenty/OCEANic_preprint_medRxiv_2025.pdf',
+  },
+  {
+    id: 17,
+    title: 'Załącznik 3 v2.2 — Mapa onkologii integracyjnej + komparatystyka 7 krajów UE/UK',
+    description: 'Rozszerzona analiza obejmująca: (I) 15 substancji wskazywanych przez polskie organy + (II) 25 metod onkologii integracyjnej z gradacją dowodową A-E + (III) 3 pary paradoksu refundacyjnego + (IV) wnioski + (V) modele regulacyjne 7 państw UE/UK (UK NICE, Niemcy G-BA, Francja HAS, Belgia Loi Colla, Holandia, Włochy Toskania, Austria ÖÄK) z tabelą zbiorczą. Argument konstytucyjny: lex certa + proporcjonalność.',
+    category: 'analizy',
+    date: '21.05.2026',
+    sourceType: 'Analiza pakietu',
+    sourceIcon: FileText,
+    pdfUrl: '/dokumenty/Zalacznik_3_v2.2_Mapa_onkologii_integracyjnej_EBM.pdf',
+    searchHint: 'Najnowsza wersja Załącznika 3 — wdrożenie korekt z weryfikacji w 7 państwach UE/UK (Perplexity v20C + ChatGPT v20C, 21.05.2026). Kluczowa teza: państwa europejskie stosują gradację, nie blankietowe etykiety. UD207 odchyla się od europejskiego standardu regulacyjnego.',
   },
 ]
 
