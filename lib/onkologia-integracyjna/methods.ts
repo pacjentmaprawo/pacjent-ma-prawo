@@ -187,7 +187,7 @@ export const METHODS: Method[] = [
     warning: 'NIE myllić z hipertermią ogólnoustrojową (WBH) krytykowaną przez NRL pkt 11.',
   },
   {
-    slug: 'tlenoterapia-hiperbaryczna-hbot',
+    slug: 'tlenoterapia-hiperbaryczna',
     name: 'Tlenoterapia hiperbaryczna (HBOT)',
     shortName: 'HBOT',
     category: 'B',
@@ -207,7 +207,7 @@ export const METHODS: Method[] = [
     warning: 'NIE myllić z "tlenoterapią dożylną" (NRL pkt 7) — inna metoda fizyczna.',
   },
   {
-    slug: 'terapia-fotodynamiczna-pdt',
+    slug: 'terapia-fotodynamiczna',
     name: 'Terapia fotodynamiczna (PDT)',
     shortName: 'PDT',
     category: 'B',
@@ -250,7 +250,7 @@ export const METHODS: Method[] = [
 
   // ============ KATEGORIA C — MEDYCYNA STYLU ŻYCIA (GUIDELINE-SUPPORTED) ============
   {
-    slug: 'aktywnosc-fizyczna',
+    slug: 'aktywnosc-fizyczna-w-onkologii',
     name: 'Aktywność fizyczna w onkologii',
     shortName: 'Aktywność fizyczna',
     category: 'C',
@@ -290,7 +290,7 @@ export const METHODS: Method[] = [
     warning: 'NIE "dieta cudowna" w leczeniu. Korzyść głównie prewencyjna pierwotna i kardiologiczna.',
   },
   {
-    slug: 'akupunktura-aimss',
+    slug: 'akupunktura-w-onkologii',
     name: 'Akupunktura w onkologii',
     shortName: 'Akupunktura',
     category: 'C',
@@ -333,7 +333,7 @@ export const METHODS: Method[] = [
 
   // ============ KATEGORIA D — MODULACJA IMMUNOLOGICZNA I EKSPERYMENTALNE ============
   {
-    slug: 'lentinan-psk-grzyby-lecznicze',
+    slug: 'lentinan-psk',
     name: 'Lentinan / PSK — grzyby lecznicze',
     shortName: 'Lentinan/PSK',
     category: 'D',
@@ -351,7 +351,7 @@ export const METHODS: Method[] = [
     warning: 'Dowody głównie z Japonii. Suplementy w PL nie są tożsame z farmaceutycznym PSK.',
   },
   {
-    slug: 'artesunat',
+    slug: 'artesunat-off-label',
     name: 'Artesunat off-label w onkologii',
     shortName: 'Artesunat',
     category: 'D',
