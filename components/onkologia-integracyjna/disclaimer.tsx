@@ -42,7 +42,7 @@ export function SectionDisclaimer({ variant = 'compact' }: { variant?: 'compact'
           stosuje się <strong>wyłącznie pod nadzorem lekarza z pełnymi kwalifikacjami zawodowymi</strong>.
         </li>
         <li>
-          Strona <strong>nie zachęca do rezygnacji z leczenia konwencjonalnego</strong>
+          Strona <strong>nie zachęca do rezygnacji z leczenia konwencjonalnego</strong>{' '}
           (chemioterapii, radioterapii, immunoterapii, chirurgii). Terapie integracyjne
           uzupełniają standardowe leczenie, nie zastępują go.
         </li>
@@ -52,8 +52,10 @@ export function SectionDisclaimer({ variant = 'compact' }: { variant?: 'compact'
           jest obowiązkowa.
         </li>
         <li>
-          Wszystkie informacje pochodzą z publikacji peer-reviewed (PMID, DOI). Stan wiedzy
-          medycznej zmienia się — strona aktualizowana jest okresowo.
+          Informacje opierają się na publikacjach peer-reviewed (PMID, DOI), wytycznych klinicznych
+          oraz dokumentach instytucjonalnych (NCCN, ESMO, ASCO/SIO, MASCC/ISOO, EMA, FDA, URPL, BAG, G-BA).
+          Tam, gdzie dane mają charakter wstępny, mechanistyczny lub eksperymentalny, jest to wyraźnie
+          oznaczone. Stan wiedzy medycznej zmienia się — strona aktualizowana jest okresowo.
         </li>
         <li>
           Redakcja nie przyjmuje finansowania od firm farmaceutycznych, producentów suplementów,

@@ -83,7 +83,9 @@ export default function CordycepsPage() {
             <li>Standaryzacja: deklarowana zawartość cordycepiny i polisacharydów</li>
           </ul>
           <p>
-            W Polsce: ShroomMe Reishi &amp; Cordyceps (Health Labs Care), preparaty CS-4 dostępne w aptekach i drogeriach.
+            W Polsce dostępne są suplementy zawierające standaryzowane ekstrakty Cordyceps (głównie CS-4
+            z hodowli C. militaris), jakość, skład i deklarowana zawartość aktywnych związków różnią się
+            między produktami. Ta strona nie rekomenduje konkretnych marek ani preparatów.
           </p>
         </>
       }

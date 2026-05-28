@@ -43,8 +43,9 @@ export default function WilcacoraPage() {
             immunologicznych. Bez wzrostu toksyczności chemio.
           </p>
           <p>
-            Sheng 2000 (<PMIDLink pmid="10996277">PMID 10996277</PMIDLink>) wykazał przeciwstawny efekt frakcji POA i TOA —
-            stąd kluczowy wymóg standaryzacji preparatu.
+            <strong>EMA HMPC Assessment Report 2015</strong> (Uncaria tomentosa) potwierdza tradycyjne
+            zastosowanie immunostymulacyjne POA oraz przeciwstawny efekt frakcji POA vs TOA — stąd
+            kluczowy wymóg standaryzacji preparatu POA-only.
           </p>
         </>
       }

@@ -55,7 +55,7 @@ export default function BezpiecznaPraktykaPage() {
           </li>
           <li>
             <strong>Wilcacora bez POA-only</strong> — preparaty mieszane POA+TOA znoszą się nawzajem
-            (Sheng 2000, <code>PMID 10996277</code>). Wymóg: standaryzacja POA-only, zwykle deklarowane na etykiecie.
+            (EMA HMPC Assessment Report 2015, Uncaria tomentosa). Wymóg: standaryzacja POA-only, zwykle deklarowane na etykiecie.
           </li>
           <li>
             <strong>Maitake bez D-fraction</strong> — surowy proszek z maitake nie zawiera wystandaryzowanej

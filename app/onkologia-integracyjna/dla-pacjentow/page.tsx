@@ -13,7 +13,7 @@ export default function DlaPacjentowPage() {
 
       <h2>1. Przygotowanie do rozmowy z onkologiem</h2>
       <ol>
-        <li><strong>Wydrukuj abstraktów publikacji EBM</strong> dotyczących metody którą rozważasz (każda metoda na tej stronie ma listę PMID — kliknij i pobierz)</li>
+        <li><strong>Wydrukuj abstrakty publikacji EBM</strong> dotyczących metody którą rozważasz (każda metoda na tej stronie ma listę PMID — kliknij i pobierz)</li>
         <li><strong>Zapisz wszystkie leki</strong> które przyjmujesz — w tym suplementy, zioła, OTC</li>
         <li><strong>Sprawdź wyniki badań</strong> które mogą być potrzebne (np. G6PD przed IVC, 25-OH-D dla witaminy D, ferrytyna dla artesunatu)</li>
         <li>Przygotuj <strong>3-5 konkretnych pytań</strong> — nie ogólnych „czy mogę"</li>

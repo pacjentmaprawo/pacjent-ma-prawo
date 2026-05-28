@@ -14,6 +14,7 @@ export default function DlaLekarzyPage() {
       <h2>1. Standardy międzynarodowe</h2>
       <ul>
         <li><strong>ASCO/SIO</strong> — Pain 2022 (Mao JJ et al.), Anxiety/Depression 2023 (Carlson LE et al.), Fatigue 2024 (Bower JE et al.)</li>
+        <li><strong>ASCO</strong> — Cannabis and Cannabinoids in Adults With Cancer 2024 (Braun IM et al., PMID 38478773): klinicyści powinni odradzać stosowanie cannabis/kannabinoidów jako leczenia przeciwnowotworowego poza badaniem klinicznym</li>
         <li><strong>MASCC/ISOO</strong> — Mucositis 2020 (Elad S et al.)</li>
         <li><strong>ESMO</strong> — Clinical Practice Guidelines (supportive/survivorship, zależnie od wskazania)</li>
         <li><strong>NCCN</strong> — Distress Management / Survivorship / Supportive Care (zależnie od wersji)</li>

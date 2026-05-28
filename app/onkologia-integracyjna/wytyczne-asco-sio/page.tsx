@@ -31,7 +31,7 @@ const GUIDELINES = [
     journal: 'Journal of Clinical Oncology',
     pmid: '38754041',
     link: 'https://pubmed.ncbi.nlm.nih.gov/38754041/',
-    desc: 'Management of Fatigue in Adult Survivors of Cancer: ASCO-Society for Integrative Oncology Guideline Update. Oparte na 113 RCT z lat 2013-2023. Silne zalecenia: ćwiczenia fizyczne, CBT (z hipnozą lub bez), programy oparte na uważności (mindfulness), tai chi/qigong. UWAGA: poprawna nazwa to ASCO-SIO, NIE ASCO/SIO/MASCC/ESMO (poprawka po audycie).',
+    desc: 'Management of Fatigue in Adult Survivors of Cancer: ASCO-Society for Integrative Oncology Guideline Update. Oparte na 113 RCT z lat 2013-2023. Silne zalecenia: ćwiczenia fizyczne, CBT (z hipnozą lub bez), programy oparte na uważności (mindfulness), tai chi/qigong. Oficjalna nazwa wytycznych: ASCO-Society for Integrative Oncology Guideline Update.',
   },
   {
     name: 'ASCO Cannabis and Cannabinoids Guidelines',
@@ -158,7 +158,7 @@ export default function WytycznePage() {
 
       <section>
         <h2 className="mb-4 font-serif text-2xl font-semibold">
-          Nowe dane 2024-2026 (uzupełnienia po audycie)
+          Nowe dane 2024-2026
         </h2>
         <ul className="space-y-4">
           {NEW_DATA_2024_2026.map((d) => (
@@ -207,10 +207,8 @@ export default function WytycznePage() {
         <p>
           <strong>Uwaga:</strong> wytyczne ASCO/SIO/NCCN/ESMO są aktualizowane co 2-3 lata.
           Daty publikacji powyżej dotyczą aktualnych wersji na dzień rewizji strony (28 maja 2026).
-          Strona zaktualizowana po audycie Perplexity + ChatGPT — korekty obejmują m.in. nazwy
-          autorów (Qu vs Vissers, He vs Zhao, Bower), prawidłowe klasyfikacje (Mucositis Guidelines —
-          rekomendacja PRZECIWKO parenteralnej glutaminie w HSCT) oraz dodanie ASCO Cannabis 2024
-          i WHO TCIM 2025-2034.
+          Strona aktualizowana po przeglądzie źródeł bibliograficznych. Klasyfikacje wytycznych zgodne
+          z oficjalnymi publikacjami ASCO/SIO/MASCC/ISOO/ESMO/NCCN.
         </p>
       </aside>
     </div>

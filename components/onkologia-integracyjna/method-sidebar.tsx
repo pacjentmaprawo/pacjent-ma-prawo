@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { METHODS_BY_CATEGORY, type MethodCategory } from '@/lib/onkologia-integracyjna/methods'
+import { METHODS, METHODS_BY_CATEGORY, type MethodCategory } from '@/lib/onkologia-integracyjna/methods'
 import { CATEGORY_LABELS } from '@/lib/onkologia-integracyjna/types'
 import { GradeBadge } from './badges'
 
@@ -62,7 +62,7 @@ export function MethodSidebar() {
 
       <div className="space-y-4">
         <h2 className="px-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          Metody (19)
+          Metody ({METHODS.length})
         </h2>
         {CATEGORY_ORDER.map((cat) => {
           const methods = METHODS_BY_CATEGORY[cat]

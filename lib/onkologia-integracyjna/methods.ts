@@ -20,7 +20,7 @@ export const METHODS: Method[] = [
       { country: 'PL', status: 'off-label', note: 'Brak rejestracji jako lek onkologiczny; stosowane off-label na podstawie art. 5 ust. 1 dyr. 2001/83/WE' },
       { country: 'DE', status: 'off-label', note: 'Stosowane przez Heilpraktikerów i lekarzy CAM' },
       { country: 'USA', status: 'off-label', note: 'Stosowane w klinikach integracyjnych' },
-      { country: 'CH', status: 'dopuszczone', note: 'Refundowane częściowo w ramach 5 metod CAM (od 2017)' },
+      { country: 'CH', status: 'off-label', note: 'BAG potwierdza refundację 5 metod CAM (akupunktura, antropozofia, farmakoterapia TCM, homeopatia, fitoterapia) wykonywanych przez kwalifikowanych lekarzy — IVC nie figuruje jako odrębnie refundowana metoda. Status per świadczenie do weryfikacji w danej kasie.' },
     ],
     keySources: [
       { cite: 'Qu et al. 2025 metaanaliza', journal: 'Int J Vitam Nutr Res', pmid: '40613397', type: 'metaanaliza', finding: 'Pooled median survival ratio 1,83 (95% CI 1,40–2,40; p<0,001) — n=2722, 8 badań. GRADE: moderate' },
@@ -267,6 +267,7 @@ export const METHODS: Method[] = [
       { cite: 'Bower et al. 2024 (ASCO/SIO)', journal: 'JCO', pmid: '38754041', type: 'wytyczne', finding: 'Aktywność fizyczna — REKOMENDACJA 1 dla cancer-related fatigue' },
       { cite: 'Campbell et al. 2019 (ACSM)', journal: 'Med Sci Sports Exerc', pmid: '31626055', type: 'wytyczne', finding: 'Roundtable on Exercise — guideline dla pacjentów onkologicznych' },
       { cite: 'McTiernan et al. 2019', journal: 'Med Sci Sports Exerc', pmid: '31626056', type: 'metaanaliza', finding: 'Aktywność fizyczna obniża ryzyko nawrotu raka piersi/jelita' },
+      { cite: 'Metaanaliza 2026', journal: 'systematic review meta-analysis', pmid: '41894932', type: 'metaanaliza', finding: 'Aktywność fizyczna obniża śmiertelność całkowitą u pacjentów onkologicznych — 13 RCT, n=3282, HR 0,74 (moderate certainty)' },
     ],
     warning: 'Indywidualizacja programu — konsultacja w przypadku przerzutów kostnych, anemii.',
   },
@@ -521,7 +522,7 @@ export const METHODS: Method[] = [
     ],
     keySources: [
       { cite: 'Farias et al. 2012', journal: 'Evid Based Complement Alternat Med', pmid: '22811748', type: 'RCT-II', finding: 'RCT n~50, IDC stage II + chemio FAC: U. tomentosa 300 mg/d → znamienna redukcja neutropenii (p<0,05), odbudowa DNA damage, poprawa immunologii; bez wzrostu toksyczności' },
-      { cite: 'Sheng et al. 2000', journal: 'J Ethnopharmacol', pmid: '10996277', type: 'mechanistyczne', finding: 'Pierwotne badanie immunomodulacyjne POA/TOA — wykazany przeciwstawny efekt frakcji' },
+      { cite: 'EMA HMPC 2015', journal: 'EMA Assessment Report Uncaria tomentosa', doi: 'EMA/HMPC/Uncaria-tomentosa-2015', type: 'wytyczne', finding: 'Tradycyjne zastosowanie immunostymulacyjne POA; przeciwstawny efekt frakcji POA vs TOA — wymóg standaryzacji POA-only dla preparatów farmakologicznie aktywnych' },
       { cite: 'EMA HMPC 2015', journal: 'EMA Assessment Report', type: 'wytyczne', finding: 'Brak well-established medical use; tradycyjne zastosowanie w immunostymulacji (TU)' },
     ],
     warning: 'ABSOLUTNE PRZECIWWSKAZANIE: transplantacja narządów (immunostymulacja POA → ryzyko odrzucenia). Leki immunosupresyjne (takrolimus, cyklosporyna): antagonizm farmakodynamiczny. CIĄŻA: contraindicated — tradycyjnie stosowana jako środek poronny u Asháninka. ER+/PR+ raki: ostrożność (estrogenne alkaloidy w danych zwierzęcych). KRYTYCZNE: tylko preparaty POA-only — POA+TOA się znoszą.',

@@ -77,7 +77,7 @@ export default function ReishiPage() {
           <ul>
             <li><strong>Ekstrakt wodny lub etanolowy</strong> — preferowany; standaryzacja na β-glukany lub triterpeny</li>
             <li><strong>Proszek surowy</strong> — gorsza biodostępność, ryzyko hepatotoksyczności</li>
-            <li>Polskie preparaty: Reishi Aktiv, MycoMedica Reishi, ShroomMe</li>
+            <li>W Polsce dostępne są suplementy zawierające standaryzowane ekstrakty Reishi (β-glukany i/lub triterpeny), jakość i zawartość deklarowana różnią się między produktami. Ta strona nie rekomenduje konkretnych marek ani preparatów.</li>
           </ul>
           <p>
             <strong>Interakcje CYP3A4:</strong> G. lucidum hamuje CYP3A4 in vitro, efekt kliniczny słabo udokumentowany —
