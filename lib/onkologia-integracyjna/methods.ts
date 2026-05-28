@@ -398,7 +398,7 @@ export const METHODS: Method[] = [
     shortDesc: 'Antybiotyk jonoforowy aktywny in vitro wobec CSC. KLUCZOWE: NIE zarejestrowany dla ludzi. Figuruje na liście NRL Nr 2/21/VIII jako "bez podstaw" — pomimo realnych dowodów przedklinicznych.',
     mainIndications: ['NIE leczenie standardowe ani off-label rutynowy', 'wyłącznie ścieżka badania klinicznego (URPL + Komisja Bioetyczna)', 'wskazania badane: rak jajnika, piersi, jelita grubego, prostaty, trzustki, żołądka, glejak (in vitro, xenograft, pilotażowe kliniczne)'],
     regulatory: [
-      { country: 'PL', status: 'eksperymentalne', note: 'BRAK rejestracji dla ludzi. Tylko protokół badania klinicznego z URPL i Komisją Bioetyczną.' },
+      { country: 'PL', status: 'eksperymentalne', note: 'Brak rejestracji jako produkt leczniczy dla ludzi. Możliwe ścieżki stosowania klinicznego: badanie kliniczne (URPL + Komisja Bioetyczna), compassionate use (art. 83 rozp. 726/2004), named patient program, indywidualne sprowadzenie z zagranicy (art. 4 ust. 7–9 Prawa farmaceutycznego).' },
       { country: 'EU', status: 'eksperymentalne', note: 'Brak rejestracji EMA dla ludzi. Możliwa compassionate use (art. 83 rozp. 726/2004)' },
       { country: 'USA', status: 'eksperymentalne', note: 'Brak rejestracji FDA dla ludzi. Tylko IND lub badania kliniczne' },
     ],
@@ -407,7 +407,7 @@ export const METHODS: Method[] = [
       { cite: 'Gupta et al. 2009 (Weinberg MIT)', journal: 'Cell', pmid: '19682730', type: 'mechanistyczne', finding: 'Salinomycyna 100-krotnie skuteczniejsza od paklitakselu w eliminowaniu CSC raka piersi (in vitro)' },
       { cite: 'Antoszczak & Huczynski 2015 (UAM Poznan)', journal: 'Bioorg Med Chem Lett', pmid: '25553435', type: 'mechanistyczne', finding: 'Pochodne salinomycyny — synteza i aktywność przeciwnowotworowa (polski wkład)' },
     ],
-    warning: 'KRYTYCZNE: BRAK rejestracji dla ludzi. Jakiekolwiek użycie wymaga ścieżki badania klinicznego z URPL i Komisją Bioetyczną. Toksyczność systemowa (neuro, kardio). Substancja figuruje na liście NRL Nr 2/21/VIII jako "bez podstaw" mimo realnych dowodów przedklinicznych — paradoks pokazujący że klasyfikacja NRL nie odpowiada stanowi wiedzy biomedycznej.',
+    warning: 'Brak rejestracji jako produkt leczniczy dla ludzi (EMA/FDA/URPL). Stosowanie kliniczne odbywa się na różnych podstawach prawnych: badanie kliniczne, compassionate use (art. 83 rozp. 726/2004), named patient program, indywidualne sprowadzenie z zagranicy (art. 4 ust. 7–9 Prawa farmaceutycznego). Decyzja należy do kwalifikowanego klinicysty i pacjenta po pełnej świadomej zgodzie. Konieczne monitorowanie toksyczności systemowej (neurologicznej, kardiologicznej). Substancja figuruje na liście NRL Nr 2/21/VIII jako „bez podstaw" — paradoks wobec realnych dowodów przedklinicznych.',
   },
   {
     slug: 'boswellia-serrata',

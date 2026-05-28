@@ -22,11 +22,21 @@ export default function SalinomycynaPage() {
             u drobiu i bydła (preparaty SACOX-60, Bio-Cox-60).
           </p>
           <p>
-            <strong>KRYTYCZNE OSTRZEŻENIE PRAWNE:</strong> Salinomycyna <strong>NIE jest zarejestrowana
-            jako lek dla ludzi</strong> w żadnej jurysdykcji (EMA, FDA, URPL). Jakiekolwiek użycie
-            u człowieka wymaga ścieżki badania klinicznego z protokołem zatwierdzonym przez URPL,
-            zgody Komisji Bioetycznej oraz pełnej świadomej zgody pacjenta. Stosowanie poza tą ścieżką
-            jest <strong>nielegalne</strong>.
+            <strong>Status regulacyjny:</strong> Salinomycyna <strong>nie ma rejestracji jako produkt
+            leczniczy dla ludzi</strong> w EMA, FDA ani URPL. Jest jednak stosowana klinicznie w wybranych
+            ośrodkach onkologii integracyjnej w Europie (m.in. Niemcy, Szwajcaria) oraz w Polsce —
+            w oparciu o <strong>różne podstawy prawne</strong>:
+          </p>
+          <ul>
+            <li><strong>badania kliniczne</strong> z protokołem zatwierdzonym przez URPL i Komisję Bioetyczną</li>
+            <li><strong>compassionate use</strong> — art. 83 rozporządzenia 726/2004 (dla pacjentów bez alternatyw terapeutycznych)</li>
+            <li><strong>named patient program</strong> — indywidualne sprowadzenie dla konkretnego pacjenta</li>
+            <li><strong>indywidualne sprowadzenie z zagranicy</strong> — art. 4 ust. 7–9 Prawa farmaceutycznego</li>
+          </ul>
+          <p>
+            Decyzja o włączeniu salinomycyny do leczenia pozostaje w gestii <strong>kwalifikowanego klinicysty</strong>
+            oraz pacjenta <strong>po pełnej świadomej zgodzie</strong>. Wymaga monitorowania toksyczności systemowej
+            (neurologicznej, kardiologicznej).
           </p>
           <p>
             <strong>Dlaczego o niej piszemy:</strong> mimo braku rejestracji dla ludzi, salinomycyna
@@ -99,23 +109,12 @@ export default function SalinomycynaPage() {
       contraindications={
         <>
           <p>
-            <strong>Bezwzględne przeciwwskazania regulacyjno-prawne:</strong>
+            <strong>Uwagi regulacyjne:</strong> salinomycyna nie ma rejestracji jako produkt leczniczy
+            dla ludzi (EMA, FDA, URPL). Nie wchodzi w zakres art. 5 ust. 1 dyrektywy 2001/83/WE (off-label),
+            bo ta podstawa dotyczy leków zarejestrowanych dla ludzi. Możliwe ścieżki stosowania klinicznego
+            opisano w sekcji <em>Co to jest</em> powyżej (badanie kliniczne, compassionate use, named patient
+            program, indywidualne sprowadzenie z zagranicy).
           </p>
-          <ul>
-            <li>
-              <strong>Brak rejestracji dla ludzi</strong> — salinomycyna nie ma autoryzacji EMA, FDA, URPL.
-              Stosowanie poza protokołem badania klinicznego jest <strong>nielegalne</strong>.
-            </li>
-            <li>
-              Nie wchodzi w zakres <strong>art. 5 ust. 1 dyrektywy 2001/83/WE</strong> (off-label) — bo
-              ta podstawa dotyczy leków zarejestrowanych dla ludzi, a salinomycyna jest zarejestrowana
-              wyłącznie weterynaryjnie.
-            </li>
-            <li>
-              Możliwa ścieżka prawna: <strong>compassionate use</strong> (art. 83 rozp. 726/2004) lub
-              <strong> named-patient basis</strong> — wymaga indywidualnej decyzji regulatora.
-            </li>
-          </ul>
           <p>
             <strong>Bezwzględne przeciwwskazania medyczne:</strong>
           </p>
@@ -170,9 +169,10 @@ export default function SalinomycynaPage() {
       howToTalkToDoctor={
         <>
           <p>
-            <strong>WAŻNE:</strong> jeśli ktokolwiek oferuje Ci salinomycynę jako „leczenie nowotworu"
-            poza ścieżką badania klinicznego — <strong>to jest nielegalne</strong>. Salinomycyna nie ma
-            rejestracji dla ludzi w żadnej jurysdykcji.
+            <strong>Salinomycyna nie ma rejestracji jako produkt leczniczy dla ludzi.</strong>
+            Decyzja o jej zastosowaniu należy do kwalifikowanego klinicysty oraz pacjenta po pełnej
+            świadomej zgodzie — w ramach jednej z dostępnych ścieżek prawnych (badanie kliniczne,
+            compassionate use, named patient program, indywidualne sprowadzenie z zagranicy).
           </p>
           <p>
             <strong>Pytania do onkologa:</strong>
@@ -184,17 +184,17 @@ export default function SalinomycynaPage() {
             salinomycyny) jest dostępny eksperymentalny protokół?</li>
             <li>Czy w moim wskazaniu istnieją bardziej zaawansowane (faza II/III) terapie skierowane
             na komórki macierzyste raka (CSC) z lepszą bazą EBM?</li>
+            <li>Na jakiej podstawie prawnej można by zastosować salinomycynę w mojej sytuacji (badanie kliniczne, compassionate use, named patient program, indywidualne sprowadzenie)?</li>
+            <li>Jakie monitorowanie toksyczności (EKG, parametry neurologiczne, kardiologiczne) będzie potrzebne i jak często?</li>
           </ol>
           <p>
-            <strong>Co zrobić jeśli zobaczysz ofertę salinomycyny w sieci:</strong>
+            <strong>Jeśli rozważasz włączenie salinomycyny:</strong>
           </p>
           <ul>
-            <li>Sprawdź czy oferent ma prawo wykonywania zawodu lekarza</li>
-            <li>Sprawdź czy posiada zatwierdzenie URPL i Komisji Bioetycznej dla protokołu badania klinicznego</li>
-            <li>Sprawdź źródło substancji (preparaty weterynaryjne SACOX-60/Bio-Cox-60 NIE są przeznaczone
-            do podania ludziom)</li>
-            <li>Możliwość zgłoszenia nielegalnej oferty: Rzecznik Praw Pacjenta, Naczelna Izba Lekarska,
-            URPL</li>
+            <li>Wybierz klinicystę z doświadczeniem w onkologii integracyjnej i ścieżkach off-registration (compassionate use, named patient)</li>
+            <li>Upewnij się że substancja pochodzi ze źródła medycznego, nie weterynaryjnego (preparaty SACOX-60/Bio-Cox-60 nie są przeznaczone dla ludzi)</li>
+            <li>Wymóg jasnej dokumentacji: pisemna świadoma zgoda, opis monitorowania, plan reagowania na działania niepożądane</li>
+            <li>Skonsultuj z lekarzem prowadzącym chemio/RT — monitoring interakcji z głównym leczeniem onkologicznym</li>
           </ul>
           <p>
             <strong>Paradoks NRL:</strong> Stanowisko NRL Nr 2/21/VIII (z 12.03.2021) wymienia salinomycynę
