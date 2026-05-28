@@ -4,7 +4,7 @@ import { PMIDLink, CategoryBadge } from '@/components/onkologia-integracyjna/bad
 
 export const metadata: Metadata = {
   title: 'Wszystkie źródła',
-  description: 'Pełna lista publikacji peer-reviewed cytowanych na stronie — 100+ pozycji PMID/DOI.',
+  description: 'Pełna lista publikacji peer-reviewed cytowanych na stronie — wszystkie pozycje PMID/DOI.',
 }
 
 export default function ZrodlaPage() {

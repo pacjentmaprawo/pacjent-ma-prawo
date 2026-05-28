@@ -10,14 +10,14 @@ const COUNTRIES = [
     code: 'DE',
     name: 'Niemcy',
     framework: 'Heilpraktikergesetz + GKV (Gesetzliche Krankenversicherung)',
-    refunded: ['Hipertermia lokoregionalna (wybrane wskazania)', 'Jemioła w paliatywie', 'Akupunktura (chronic back/knee pain)', 'IVC (wybrane Krankenkassen)'],
+    refunded: ['Hipertermia lokoregionalna (wybrane wskazania DEGRO)', 'Jemioła w paliatywie (obligatoryjnie GKV — paliacja onko)', 'Akupunktura (chronic low back pain i chronic knee pain — G-BA)'],
     note: '50+ tys. Heilpraktikerów; refundacja zależna od konkretnej Krankenkasse',
   },
   {
     code: 'CH',
     name: 'Szwajcaria',
     framework: 'Art. 118a Konstytucji Federalnej (2009), KVG',
-    refunded: ['5 metod CAM od 2017 (akupunktura, homeopatia klasyczna, fitoterapia, antropozofia, farmakoterapia TCM)', 'Jemioła całkowita refundacja', 'IVC w klinikach onkologii integracyjnej'],
+    refunded: ['5 metod CAM od 2017 (akupunktura, homeopatia klasyczna, fitoterapia, antropozofia, farmakoterapia TCM) wykonywanych przez kwalifikowanych lekarzy w ramach obowiązkowego ubezpieczenia (AOS/KVG, źródło BAG)'],
     note: 'Najszerszy zakres refundacji CAM w Europie',
   },
   {
@@ -38,7 +38,7 @@ const COUNTRIES = [
     code: 'BE',
     name: 'Belgia',
     framework: 'Loi Colla 1999',
-    refunded: ['Akupunktura (wybrane wskazania)', 'Homeopatia (visa od 14.05.2024)'],
+    refunded: ['Wybrane praktyki niekonwencjonalne w ramie Loi Colla 1999 (akupunktura, homeopatia, osteopatia, chiropraktyka) — implementacja ograniczona/niepełna'],
     note: 'Loi Colla reguluje CAM od 1999; ograniczona refundacja',
   },
   {
@@ -91,7 +91,7 @@ export default function RefundacjaPage() {
       <aside className="rounded-lg border bg-muted/30 p-4 text-sm">
         <p>
           <strong>Wniosek:</strong> systemy regulacyjne CAM w UE są bardzo zróżnicowane.
-          Szwajcaria ma najszerszy zakres refundacji (5 metod od 2017 + jemioła). Niemcy mają
+          Szwajcaria refunduje 5 wyspecjalizowanych metod CAM od 2017 r. wykonywanych przez kwalifikowanych lekarzy w ramach obowiązkowego ubezpieczenia. Niemcy mają
           najlepiej rozwinięty system Heilpraktikerów (50+ tys.). Polska nie ma odpowiednika —
           stosuje wyłącznie konwencjonalną medycynę systemu publicznego, a CAM dostępna jest
           w gabinetach prywatnych jako świadczenia indywidualne.

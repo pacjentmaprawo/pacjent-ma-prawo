@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: '%s — Onkologia integracyjna | Pacjent Ma Prawo',
   },
   description:
-    'Niezależna baza wiedzy EBM o terapiach uzupełniających leczenie onkologiczne. 19 metod, 100+ publikacji peer-reviewed, GRADE, refundacja w UE.',
+    'Niezależna baza wiedzy EBM o terapiach uzupełniających leczenie onkologiczne. Kilkadziesiąt metod, kilkadziesiąt publikacji peer-reviewed, GRADE, refundacja w UE.',
   keywords: [
     'onkologia integracyjna',
     'CAM',

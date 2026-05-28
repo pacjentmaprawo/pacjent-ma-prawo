@@ -13,7 +13,10 @@ export default function DlaLekarzyPage() {
 
       <h2>1. Standardy międzynarodowe</h2>
       <ul>
-        <li><strong>ASCO/SIO/MASCC/ESMO</strong> — wytyczne onkologii integracyjnej (Pain 2022, Anxiety 2023, Fatigue 2024)</li>
+        <li><strong>ASCO/SIO</strong> — Pain 2022 (Mao JJ et al.), Anxiety/Depression 2023 (Carlson LE et al.), Fatigue 2024 (Bower JE et al.)</li>
+        <li><strong>MASCC/ISOO</strong> — Mucositis 2020 (Elad S et al.)</li>
+        <li><strong>ESMO</strong> — Clinical Practice Guidelines (supportive/survivorship, zależnie od wskazania)</li>
+        <li><strong>NCCN</strong> — Distress Management / Survivorship / Supportive Care (zależnie od wersji)</li>
         <li><strong>ICMJE Recommendations</strong> — standardy ujawniania KOI (36 miesięcy)</li>
         <li><strong>EFPIA Code</strong> — Code of Practice on the Promotion of Prescription-Only Medicines</li>
         <li><strong>Sunshine Act</strong> (USA) — wzorzec transparentności płatności od pharma</li>

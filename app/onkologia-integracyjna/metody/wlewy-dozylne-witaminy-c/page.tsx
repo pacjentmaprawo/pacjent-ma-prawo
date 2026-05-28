@@ -65,10 +65,11 @@ export default function WlewyDozylneWitaminyC() {
             (kwas dehydroaskorbinowy), który uszkadza ich metabolizm.
           </p>
           <p>
-            <strong>Najnowszy mechanizm — vitcylation (2025):</strong> Zhao et al. (
+            <strong>Najnowszy mechanizm — lysine vitcylation (2025):</strong> He et al. (
             <em>Cell</em> 2025, <PMIDLink pmid="40023152">PMID 40023152</PMIDLink>) opisali nowy
             mechanizm: witamina C może kowalencyjnie modyfikować białko STAT1 w komórkach układu
             odpornościowego, wzmacniając odpowiedź interferonową przeciwko nowotworom.
+            Pierwszy autor: Xiadi He; senior author: Jean J. Zhao.
           </p>
         </>
       }
@@ -171,7 +172,7 @@ export default function WlewyDozylneWitaminyC() {
           </p>
           <ul>
             <li>
-              Wydrukuj abstrakt metaanalizy Vissers 2025 (
+              Wydrukuj abstrakt metaanalizy Qu 2025 (
               <PMIDLink pmid="40613397">PMID 40613397</PMIDLink>)
             </li>
             <li>

@@ -51,6 +51,7 @@ export default function DlaPacjentowPage() {
       </ul>
 
       <h2>5. Kalkulator kosztów leczenia zagranicznego</h2>
+      <div className="mb-4 rounded-md border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900"><strong>Ważne — szacunki orientacyjne, nieoficjalne.</strong> Poniższe widełki nie stanowią rekomendacji korzystania z leczenia za granicą. Koszty zależą od kraju, placówki, wskazania, zakresu leczenia i kursu walut. Przedstawione dane służą wyłącznie ogólnemu zarysowi rzędu wielkości.</div>
       <p>Jeśli rozważasz leczenie integracyjne za granicą (Niemcy, Szwajcaria, Austria), typowe koszty roczne:</p>
       <table>
         <thead><tr><th>Pozycja</th><th>Koszt roczny</th></tr></thead>

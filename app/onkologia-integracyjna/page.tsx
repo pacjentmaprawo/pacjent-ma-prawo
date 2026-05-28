@@ -4,6 +4,9 @@ import { CATEGORY_LABELS } from '@/lib/onkologia-integracyjna/types'
 import { GradeBadge, CategoryBadge } from '@/components/onkologia-integracyjna/badges'
 import { SectionDisclaimer } from '@/components/onkologia-integracyjna/disclaimer'
 
+const TOTAL_SOURCES = METHODS.reduce((sum, m) => sum + m.keySources.length, 0)
+const TOTAL_METHODS = METHODS.length
+
 export default function OnkologiaIntegracyjnaPage() {
   const featured = [
     getMethodBySlug('wlewy-dozylne-witaminy-c'),
@@ -22,22 +25,30 @@ export default function OnkologiaIntegracyjnaPage() {
           Onkologia integracyjna. Dowody. Konkretnie.
         </h1>
         <p className="max-w-3xl text-lg text-muted-foreground md:text-xl">
-          Niezależna baza wiedzy EBM o terapiach uzupełniających standardowe leczenie onkologiczne.
-          19 metod w 4 kategoriach. Każda metoda z publikacjami peer-reviewed (PMID), poziomem
-          dowodów GRADE i statusem regulacyjnym w wybranych krajach UE.
+          Niezależna baza wiedzy o terapiach uzupełniających standardowe leczenie onkologiczne oraz
+          o wybranych konwencjonalnych technologiach i procedurach. Każda metoda opisana przez pryzmat
+          publikacji peer-reviewed, wytycznych, poziomu dowodów (GRADE), bezpieczeństwa i statusu
+          regulacyjnego. Poziom dowodów różni się znacząco między metodami — od interwencji
+          guideline-supported po zastosowania eksperymentalne i off-label.
         </p>
         <div className="flex flex-wrap gap-3">
           <Link
             href="/onkologia-integracyjna/metody"
             className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:bg-primary/90"
           >
-            Zobacz wszystkie 19 metod →
+            Zobacz wszystkie {TOTAL_METHODS} metod →
           </Link>
           <Link
             href="/onkologia-integracyjna/jak-czytac-ebm"
             className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium transition hover:bg-muted"
           >
             Jak czytać dowody EBM →
+          </Link>
+          <Link
+            href="/onkologia-integracyjna/bezpieczna-praktyka"
+            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium transition hover:bg-muted"
+          >
+            Bezpieczna praktyka →
           </Link>
         </div>
       </section>
@@ -47,7 +58,7 @@ export default function OnkologiaIntegracyjnaPage() {
         <div className="rounded-lg border bg-card p-6">
           <h2 className="mb-2 font-serif text-lg font-semibold">Co znajdziesz na stronie</h2>
           <p className="text-sm text-muted-foreground">
-            19 podstron metod onkologii integracyjnej w 4 kategoriach. Każda metoda opisana w 9
+            {TOTAL_METHODS} podstron metod onkologii integracyjnej w 4 kategoriach. Każda metoda opisana w 9
             sekcjach: mechanizm, dowody EBM (PMID, GRADE), wskazania, przeciwwskazania,
             bezpieczeństwo, status w UE, jak rozmawiać o niej z lekarzem.
           </p>
@@ -132,9 +143,9 @@ export default function OnkologiaIntegracyjnaPage() {
         <h2 className="mb-6 font-serif text-2xl font-semibold">W liczbach</h2>
         <dl className="grid gap-6 md:grid-cols-5">
           {[
-            { value: METHODS.length, label: 'Metod opisanych' },
-            { value: '100+', label: 'Publikacji peer-reviewed' },
-            { value: '4', label: 'Wytycznych ASCO/SIO' },
+            { value: METHODS.length, label: 'Metod i procedur opisanych' },
+            { value: '60+', label: 'Publikacji peer-reviewed i wytycznych' },
+            { value: '4', label: 'Wytyczne ASCO/SIO (Pain, Anxiety, Fatigue, Cannabis)' },
             { value: '7', label: 'Krajów UE w porównaniu' },
             { value: '0', label: 'Reklam i sponsorów pharma' },
           ].map((s) => (

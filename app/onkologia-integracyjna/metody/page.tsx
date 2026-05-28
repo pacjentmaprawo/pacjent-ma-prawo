@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { METHODS_BY_CATEGORY, type MethodCategory } from '@/lib/onkologia-integracyjna/methods'
+import { METHODS, METHODS_BY_CATEGORY, type MethodCategory } from '@/lib/onkologia-integracyjna/methods'
 import { CATEGORY_LABELS } from '@/lib/onkologia-integracyjna/types'
 import { GradeBadge, CategoryBadge } from '@/components/onkologia-integracyjna/badges'
 
 export const metadata: Metadata = {
   title: 'Wszystkie metody',
-  description: 'Lista 19 metod onkologii integracyjnej w 4 kategoriach z poziomem dowodów GRADE.',
+  description: 'Pełna lista metod onkologii integracyjnej w 4 kategoriach z poziomem dowodów GRADE.',
 }
 
 const CATEGORY_ORDER: MethodCategory[] = ['A', 'B', 'C', 'D']
@@ -19,7 +19,7 @@ export default function MetodyPage() {
           Wszystkie metody onkologii integracyjnej
         </h1>
         <p className="text-lg text-muted-foreground">
-          19 metod w 4 kategoriach. Każda metoda z poziomem dowodów GRADE i linkami do publikacji
+          {METHODS.length} metod w 4 kategoriach. Każda metoda z poziomem dowodów GRADE i linkami do publikacji
           peer-reviewed.
         </p>
       </header>
