@@ -11,8 +11,8 @@ export type MethodCategory = 'A' | 'B' | 'C' | 'D'
 
 export const CATEGORY_LABELS: Record<MethodCategory, string> = {
   A: 'Farmakologiczne uzupełniające',
-  B: 'Niefarmakologiczne fizyczne',
-  C: 'Medycyna stylu życia',
+  B: 'Konwencjonalne technologie/procedury (nie CAM)',
+  C: 'Medycyna stylu życia (guideline-supported)',
   D: 'Modulacja immunologiczna i eksperymentalne',
 }
 
@@ -76,6 +76,4 @@ export interface Method {
   keySources: Source[]
   /** Krótkie ostrzeżenie/przeciwwskazanie (do karty) */
   warning?: string
-  /** Czy metoda została WYŁĄCZONA z scope (sygnalne dla redakcji, nie wyświetlane) */
-  excluded?: boolean
-}
+  /** Czy metoda została WYŁĄCZONA z scope (sygnalne dla redakcji, nie

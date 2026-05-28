@@ -102,10 +102,4 @@ export function Header() {
                   </div>
                 </div>
               </SheetContent>
-            </Sheet>
-          </div>
-        </div>
-      </div>
-    </header>
-  )
-}
+            </

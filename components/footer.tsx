@@ -146,10 +146,4 @@ export function Footer() {
               <Link href="/nota-prawna" className="hover:text-amber transition-colors">
                 Nota prawna
               </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  )
-}
+            
