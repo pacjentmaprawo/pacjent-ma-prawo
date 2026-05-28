@@ -8,6 +8,7 @@ const navLinks = [
   { href: '/', label: 'Start' },
   { href: '/projekt', label: 'Co zmienia projekt' },
   { href: '/medycyna-integracyjna', label: 'Medycyna integracyjna' },
+  { href: '/onkologia-integracyjna', label: 'Onkologia integracyjna' },
   { href: '/ebm', label: 'EBM' },
   { href: '/prawa-pacjenta', label: 'Prawa pacjenta' },
   { href: '/dlaczego-sprzeciw', label: 'Dlaczego sprzeciw' },

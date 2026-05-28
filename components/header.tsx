@@ -13,6 +13,7 @@ const navItems = [
   { href: '/co-proponujemy', label: 'Co proponujemy' },
   { href: '/co-z-pacjentami', label: 'Co z pacjentami' },
   { href: '/medycyna-integracyjna', label: 'Medycyna integracyjna' },
+  { href: '/onkologia-integracyjna', label: 'Onkologia integracyjna' },
   { href: '/ebm', label: 'EBM' },
   { href: '/prawa-pacjenta', label: 'Prawa pacjenta' },
   { href: '/dokumenty', label: 'Dokumenty' },
