@@ -9,7 +9,7 @@ import { GradeBadge } from './badges'
 const CATEGORY_ORDER: MethodCategory[] = ['A', 'B', 'C', 'D']
 
 /**
- * Boczna nawigacja sekcji "Onkologia integracyjna" z listą 19 metod
+ * Boczna nawigacja sekcji "Onkologia integracyjna" z listą wszystkich metod
  * pogrupowanych w 4 kategorie (A/B/C/D). Aktywna podstrona jest podświetlona.
  */
 export function MethodSidebar() {

@@ -208,7 +208,7 @@ export function MethodPage({
         </h2>
         <p className="mb-4 text-sm text-muted-foreground">
           Powyżej w sekcji „Dowody naukowe" zaprezentowano kluczowe publikacje. Pełna lista
-          wszystkich źródeł cytowanych na stronie (ponad 100 publikacji peer-reviewed):
+          wszystkich źródeł cytowanych na stronie:
         </p>
         <a
           href="/onkologia-integracyjna/zrodla"
