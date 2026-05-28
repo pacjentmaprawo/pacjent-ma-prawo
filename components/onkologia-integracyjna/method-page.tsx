@@ -60,6 +60,11 @@ export function MethodPage({
         </div>
         <h1 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">{method.name}</h1>
         <p className="text-lg text-muted-foreground">{method.shortDesc}</p>
+        {method.experimental && (
+          <div className="rounded-md border border-amber-400 bg-amber-50 px-4 py-3 text-sm text-amber-900 dark:border-amber-700 dark:bg-amber-900/20 dark:text-amber-100">
+            <strong>Obszar eksperymentalny / wczesny.</strong> Dane głównie dotyczą tolerancji leczenia, objawów, markerów zapalenia lub mechanizmów biologicznych. NIE jako leczenie przeciwnowotworowe. Wszelkie zastosowanie wymaga konsultacji z onkologiem.
+          </div>
+        )}
         {method.warning && (
           <div className="rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-900 dark:border-rose-700 dark:bg-rose-900/20 dark:text-rose-100">
             <strong>Ważne:</strong> {method.warning}

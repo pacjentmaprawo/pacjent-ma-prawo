@@ -78,4 +78,6 @@ export interface Method {
   warning?: string
   /** Czy metoda została WYŁĄCZONA z scope (sygnalne dla redakcji, nie wyświetlane) */
   excluded?: boolean
+  /** Czy metoda jest eksperymentalna / wczesna baza dowodowa — pokazuje box ostrzegawczy w karcie */
+  experimental?: boolean
 }

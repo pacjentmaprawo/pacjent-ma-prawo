@@ -49,7 +49,7 @@ export const METHODS: Method[] = [
     keySources: [
       { cite: 'Kienle & Kiene 2010', journal: 'Integr Cancer Ther', pmid: '20483874', type: 'review', finding: 'Systematic review — sygnał poprawy QoL i przeżycia w wybranych RCT' },
       { cite: 'Loef & Walach 2020', journal: 'Cochrane Database', doi: '10.1002/14651858.CD007893.pub2', type: 'metaanaliza', finding: 'Cochrane — sygnał korzyści w QoL, brak twardych dowodów dla OS' },
-      { cite: 'Tröger et al. 2014', journal: 'Eur J Cancer', pmid: '24074764', type: 'RCT-III', finding: 'Rak trzustki zaawansowany — OS 4,8 vs 2,7 mies. (p<0,001), n=220' },
+      { cite: 'Tröger et al. 2013', journal: 'Eur J Cancer', pmid: '23890767', type: 'RCT-III', finding: 'Rak trzustki zaawansowany — OS 4,8 vs 2,7 mies. (p<0,001), n=220 — wieloośrodkowy RCT (z 2013 r.)' },
     ],
     warning: 'Stosowanie wymaga wykwalifikowanego lekarza. NIE zamiast leczenia standardowego.',
   },
@@ -67,7 +67,7 @@ export const METHODS: Method[] = [
       { country: 'USA', status: 'OTC', note: 'Dietary supplement (FDA GRAS)' },
     ],
     keySources: [
-      { cite: 'Howells et al. 2019', journal: 'J Nutr', pmid: '31132110', type: 'RCT-II', finding: 'Curcumin + FOLFOX w mCRC — PFS poprawione, n=27' },
+      { cite: 'Howells et al. 2019', journal: 'J Nutr', pmid: '31132111', type: 'RCT-II', finding: 'Curcumin + FOLFOX w mCRC — PFS poprawione, n=27' },
       { cite: 'Kanai et al. 2011', journal: 'Cancer Chemother Pharmacol', pmid: '20859741', type: 'RCT-I', finding: 'Bezpieczeństwo w raku trzustki + gemcitabine' },
     ],
     warning: 'Niska biodostępność doustna. Interakcje z lekami CYP3A4.',
@@ -87,8 +87,8 @@ export const METHODS: Method[] = [
       { country: 'DE', status: 'dopuszczone', note: 'Lek na receptę dla wybranych wskazań snu' },
     ],
     keySources: [
-      { cite: 'Seely et al. 2012', journal: 'Integr Cancer Ther', pmid: '22588462', type: 'metaanaliza', finding: 'Adjuwant chemio — sygnał redukcji śmiertelności 1-roku i toksyczności' },
-      { cite: 'Wang et al. 2012', journal: 'Cancer Chemother Pharmacol', pmid: '22526301', type: 'metaanaliza', finding: 'Solid tumors — sygnał poprawy odpowiedzi i przeżycia' },
+      { cite: 'Seely et al. 2012', journal: 'Integr Cancer Ther', pmid: '22019490', type: 'metaanaliza', finding: 'Adjuwant chemio — sygnał redukcji śmiertelności 1-roku i toksyczności' },
+      { cite: 'Wang et al. 2012', journal: 'Cancer Chemother Pharmacol', pmid: '22271210', type: 'metaanaliza', finding: 'Solid tumors — sygnał poprawy odpowiedzi i przeżycia' },
     ],
     warning: 'Interakcje z immunosupresantami i lekami przeciwkrzepliwymi.',
   },
@@ -124,7 +124,7 @@ export const METHODS: Method[] = [
       { country: 'PL', status: 'OTC', note: 'Suplement i lek (Omacor/Lovaza Rx)' },
     ],
     keySources: [
-      { cite: 'Werner et al. 2017', journal: 'Br J Nutr', pmid: '28162126', type: 'metaanaliza', finding: 'Poprawa masy ciała i jakości życia w kacheksji' },
+      { cite: 'Meta-analiza RCT 2024', journal: 'meta-analiza', pmid: '38220400', type: 'metaanaliza', finding: 'Omega-3 + masa ciała w kacheksji onkologicznej — istotny wzrost masy w podgrupach RCT (WMD+0,99 kg; 95% CI)' },
     ],
     warning: 'Działanie przeciwzakrzepowe — uwzględnić przy leczeniu przeciwkrzepliwym.',
   },
@@ -159,7 +159,7 @@ export const METHODS: Method[] = [
       { country: 'PL', status: 'dopuszczone', note: 'Rejestracja jako mukolityk i odtrutka paracetamolu (NIE onko)' },
     ],
     keySources: [
-      { cite: 'Sayin et al. 2014', journal: 'Sci Transl Med', pmid: '24500407', type: 'mechanistyczne', finding: 'NAC może promować progresję nowotworu w modelach przedklinicznych' },
+      { cite: 'Sayin et al. 2014', journal: 'Sci Transl Med', pmid: '24477002', type: 'mechanistyczne', finding: 'NAC może promować progresję nowotworu w modelach przedklinicznych' },
     ],
     warning: 'KONTROWERSJA: dane przedkliniczne sugerują przyspieszenie progresji.',
   },
@@ -181,7 +181,7 @@ export const METHODS: Method[] = [
       { country: 'PL', status: 'off-label', note: 'Brak refundacji NFZ; ośrodki prywatne' },
     ],
     keySources: [
-      { cite: 'Issels et al. 2018', journal: 'JAMA Oncol', pmid: '29800103', type: 'RCT-III', finding: 'Mięsaki — DFS 67% vs 50% przy 10 latach z hipertermią' },
+      { cite: 'Issels et al. 2018', journal: 'JAMA Oncol', pmid: '29450452', type: 'RCT-III', finding: 'Mięsaki — DFS 67% vs 50% przy 10 latach z hipertermią' },
       { cite: 'van der Zee et al. 2000', journal: 'Lancet', pmid: '10841125', type: 'RCT-III', finding: 'Rak szyjki — CR 83% vs 57%; OS 51% vs 27% przy 3 latach' },
     ],
     warning: 'NIE myllić z hipertermią ogólnoustrojową (WBH) krytykowaną przez NRL pkt 11.',
@@ -243,7 +243,7 @@ export const METHODS: Method[] = [
     ],
     keySources: [
       { cite: 'Stupp et al. 2017 (EF-14)', journal: 'JAMA', pmid: '29260225', type: 'RCT-III', finding: 'GBM newly diagnosed — OS 20,9 vs 16,0 mies. (HR 0,63; p<0,001), n=695' },
-      { cite: 'Ceresoli et al. 2019 (STELLAR)', journal: 'Lancet Oncol', pmid: '31628015', type: 'RCT-II', finding: 'Mezothelioma — OS 18,2 mies. z TTFields + chemio' },
+      { cite: 'Ceresoli et al. 2019 (STELLAR)', journal: 'Lancet Oncol', pmid: '31628016', type: 'RCT-II', finding: 'Mezothelioma — OS 18,2 mies. z TTFields + chemio' },
     ],
     warning: 'NIE to samo co "leczenie laptopem" (Chmielowiec 21.01.2025) — TTFields to FDA-approved.',
   },
@@ -346,7 +346,7 @@ export const METHODS: Method[] = [
       { country: 'PL', status: 'OTC', note: 'Suplement diety; brak rejestracji onko' },
     ],
     keySources: [
-      { cite: 'Oba et al. 2007', journal: 'Cancer Immunol Immunother', pmid: '17256117', type: 'metaanaliza', finding: 'PSK adjuwant raka żołądka — sygnał poprawy OS (Japonia)' },
+      { cite: 'Oba et al. 2007', journal: 'Cancer Immunol Immunother', pmid: '17106715', type: 'metaanaliza', finding: 'PSK adjuwant raka żołądka — sygnał poprawy OS (Japonia)' },
     ],
     warning: 'Dowody głównie z Japonii. Suplementy w PL nie są tożsame z farmaceutycznym PSK.',
   },
@@ -365,8 +365,8 @@ export const METHODS: Method[] = [
       { country: 'USA', status: 'dopuszczone', note: 'FDA approved dla ciężkiej malarii (2020)' },
     ],
     keySources: [
-      { cite: 'Krishna et al. 2014', journal: 'EBioMedicine', pmid: '26137533', type: 'RCT-I', finding: 'Faza I — bezpieczeństwo artesunatu w mCRC' },
-      { cite: 'Efferth 2017', journal: 'Semin Cancer Biol', pmid: '28935402', type: 'review', finding: 'Mechanizm + dane przedkliniczne i wczesne kliniczne' },
+      { cite: 'Krishna et al. 2014', journal: 'EBioMedicine', pmid: '26137537', type: 'RCT-I', finding: 'Faza I — bezpieczeństwo artesunatu w mCRC' },
+      { cite: 'Efferth 2017', journal: 'Semin Cancer Biol', pmid: '28254675', type: 'review', finding: 'Mechanizm + dane przedkliniczne i wczesne kliniczne' },
     ],
     warning: 'BRAK badań III fazy. Off-label NIE oznacza rutynowego użycia onkologicznego.',
   },
@@ -384,7 +384,7 @@ export const METHODS: Method[] = [
       { country: 'USA', status: 'off-label', note: 'Recepta off-label — wybrane kliniki' },
     ],
     keySources: [
-      { cite: 'Brown & Panksepp 2009', journal: 'Med Hypotheses', pmid: '19167739', type: 'review', finding: 'Hipoteza mechanizmu — TLR-4, oś opioidowa' },
+      { cite: 'Brown & Panksepp 2009', journal: 'Med Hypotheses', pmid: '19041189', type: 'review', finding: 'Hipoteza mechanizmu — TLR-4, oś opioidowa' },
     ],
     warning: 'BARDZO niska baza dowodowa w onkologii. Stosowanie eksperymentalne.',
   },
@@ -405,7 +405,7 @@ export const METHODS: Method[] = [
     keySources: [
       { cite: 'Naujokat & Steinhart 2012', journal: 'BioMed Res Int', pmid: '23251084', type: 'review', finding: 'Salinomycyna jako lek targetujący nowotworowe komórki macierzyste (CSC)' },
       { cite: 'Gupta et al. 2009 (Weinberg MIT)', journal: 'Cell', pmid: '19682730', type: 'mechanistyczne', finding: 'Salinomycyna 100-krotnie skuteczniejsza od paklitakselu w eliminowaniu CSC raka piersi (in vitro)' },
-      { cite: 'Antoszczak & Huczynski 2015 (UAM Poznan)', journal: 'Bioorg Med Chem Lett', pmid: '25813154', type: 'mechanistyczne', finding: 'Pochodne salinomycyny — synteza i aktywność przeciwnowotworowa (polski wkład)' },
+      { cite: 'Antoszczak & Huczynski 2015 (UAM Poznan)', journal: 'Bioorg Med Chem Lett', pmid: '25553435', type: 'mechanistyczne', finding: 'Pochodne salinomycyny — synteza i aktywność przeciwnowotworowa (polski wkład)' },
     ],
     warning: 'KRYTYCZNE: BRAK rejestracji dla ludzi. Jakiekolwiek użycie wymaga ścieżki badania klinicznego z URPL i Komisją Bioetyczną. Toksyczność systemowa (neuro, kardio). Substancja figuruje na liście NRL Nr 2/21/VIII jako "bez podstaw" mimo realnych dowodów przedklinicznych — paradoks pokazujący że klasyfikacja NRL nie odpowiada stanowi wiedzy biomedycznej.',
   },
@@ -415,8 +415,8 @@ export const METHODS: Method[] = [
     shortName: 'Boswellia',
     category: 'D',
     categoryIndex: 5,
-    grade: 'moderate',
-    shortDesc: 'Inhibitor 5-LOX i NF-κB; AKBA przenika barierę krew-mózg. Najsilniejszy sygnał kliniczny: redukcja obrzęku mózgu po radioterapii (RCT Kirste 2011).',
+    grade: 'low',
+    shortDesc: 'Inhibitor 5-LOX i NF-κB; AKBA przenika barierę krew-mózg. Najsilniejszy sygnał kliniczny: redukcja obrzęku mózgu po radioterapii (RCT Kirste 2011) — GRADE moderate dla tego wskazania; GRADE low dla pozostałych.',
     mainIndications: ['obrzęk mózgu po radioterapii (najsilniejsze dowody)', 'stany zapalne w onkologii', 'wsparcie przy GBM i przerzutach mózgowych'],
     regulatory: [
       { country: 'PL', status: 'OTC', note: 'Suplement diety; preparaty Sallaki, Boswellin dostępne w aptekach' },
@@ -430,6 +430,7 @@ export const METHODS: Method[] = [
       { cite: 'Morikawa et al. 2024', journal: 'Front Pharmacol', pmid: '38194131', type: 'RCT-I', finding: 'Faza Ia window-of-opportunity (rak piersi): BS hamuje proliferację nowotworową' },
     ],
     warning: 'Koagulopatie, DVT, zaburzenia krzepnięcia — przeciwwskazane. Ostrożność: ciąża, laktacja, przeszczepy. Jakość preparatu krytyczna: BSE-018 (30% AKBA) lub H15 > zwykłe proszki ziołowe.',
+    experimental: true,
   },
   {
     slug: 'cordyceps',
@@ -453,6 +454,7 @@ export const METHODS: Method[] = [
       { cite: 'Pleiotropic review 2026', journal: 'Frontiers', doi: 'PMC13029327', type: 'review', finding: 'C. militaris CS-4 jako alternatywa dla dzikiego C. sinensis; profil adaptogenny i immunomodulacyjny' },
     ],
     warning: 'Transplantacja narządów — ostrożność (aktywacja NK = potencjalne ryzyko odrzucenia). Choroby autoimmunologiczne. Jakość: dziki C. sinensis (Himalaje) ≠ hodowlany CS-4 — CS-4 bardziej spójny i tańszy, problem zafałszowań rynkowych. Brak danych w ciąży.',
+    experimental: true,
   },
   {
     slug: 'reishi-ganoderma',
@@ -476,6 +478,7 @@ export const METHODS: Method[] = [
       { cite: 'Medicinal mushrooms 2026', journal: 'Front Cancer Control Soc', doi: '10.3389/fcacs.2026.1774081', type: 'review', finding: 'G. lucidum obiecujące w supportive care; PSK i lentinan najsilniej przebadane' },
     ],
     warning: 'BEZWZGLĘDNA OSTROŻNOŚĆ przy przeszczepach (aktywacja NK/T może spowodować odrzucenie). Interakcje z warfaryną (case reports trombocytopenii). Hepatotoksyczność: rzadka przy proszku z całych grzybów. Ostrzeżenie przy ER+/PR+ raku piersi (estrogen-like in vitro przy niektórych frakcjach). Jakość: ekstrakt wodny/etanolowy > proszek surowy.',
+    experimental: true,
   },
   {
     slug: 'maitake-d-fraction',
@@ -498,6 +501,7 @@ export const METHODS: Method[] = [
       { cite: 'Synergy with vitamin C 2009', journal: 'PMC', doi: 'PMC2840554', type: 'mechanistyczne', finding: 'Wzajemne potęgowanie efektu immunostymulacyjnego (in vitro/in vivo)' },
     ],
     warning: 'Analogicznie jak Reishi: ostrożność przy transplantacji i autoimmunologii. Standaryzacja KLUCZOWA: D-fraction ≠ surowy proszek z maitake — preparaty Nanba/Yukiguni Maitake mają deklarowany poziom D-fraction. Potencjalne działanie hipoglikemiczne (ostrożność przy cukrzycy + chemio). Brak danych w ciąży.',
+    experimental: true,
   },
   {
     slug: 'wilcacora',
@@ -521,6 +525,7 @@ export const METHODS: Method[] = [
       { cite: 'EMA HMPC 2015', journal: 'EMA Assessment Report', type: 'wytyczne', finding: 'Brak well-established medical use; tradycyjne zastosowanie w immunostymulacji (TU)' },
     ],
     warning: 'ABSOLUTNE PRZECIWWSKAZANIE: transplantacja narządów (immunostymulacja POA → ryzyko odrzucenia). Leki immunosupresyjne (takrolimus, cyklosporyna): antagonizm farmakodynamiczny. CIĄŻA: contraindicated — tradycyjnie stosowana jako środek poronny u Asháninka. ER+/PR+ raki: ostrożność (estrogenne alkaloidy w danych zwierzęcych). KRYTYCZNE: tylko preparaty POA-only — POA+TOA się znoszą.',
+    experimental: true,
   },
   {
     slug: 'inhalacje-wodorowe-h2',
@@ -545,6 +550,7 @@ export const METHODS: Method[] = [
       { cite: 'Chen et al. 2020', journal: 'Med Gas Res', pmid: '32541132', type: 'kohortowe', finding: 'n=58 NSCLC, H₂ inhalacja 4-5h/d × 5 mies.: ↓ objawy płucne; H₂ + immunoterapia/chemo > H₂ alone > kontrola w PFS' },
     ],
     warning: 'WAŻNE: H₂ neutralizuje SELEKTYWNIE •OH i ONOO⁻ — RECIST w RCT nie wykazał interferencji z RT/chemio. Jednak: ostrożność z fazami pro-ROS w protokołach integracyjnych (artesunat IV, witC IV wysokie dawki — NIE łączyć w tym samym dniu jeśli celem jest indukcja ferroptozy). POChP/ciężka obturacja: ostrożność z kaniulą. Stężenia >4% H₂ łatwopalne — urządzenia medyczne <3%. Ciąża: brak danych. Jakość urządzenia krytyczna: CE jako wyrób medyczny, nie "wellness".',
+    experimental: true,
   },
 ]
 
