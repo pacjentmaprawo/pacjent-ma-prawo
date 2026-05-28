@@ -93,6 +93,25 @@ export default function BoswelliaPage() {
           <p>
             <strong>Unikaj</strong> proszków ziołowych bez deklarowanej zawartości AKBA — efekt kliniczny zależy od standaryzacji aktywnych związków.
           </p>
+          <div className="my-4 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm">
+            <p className="font-semibold mb-2">Paradoks medialny — argument „brak RCT III fazy = brak dowodów"</p>
+            <p>
+              Część krytyki Boswellii w mediach formułuje argument: <em>„nie ma RCT III fazy, więc nie ma
+              dowodów EBM"</em>. To prawda dla większości wskazań Boswellii — ale ignoruje fakt, że dla
+              konkretnego wskazania <strong>obrzęk mózgu po radioterapii</strong> istnieje <strong>RCT
+              fazy II double-blind, placebo-controlled</strong> (Kirste 2011, DOI 10.1002/cncr.26101) z
+              istotnym statystycznie wynikiem (60% vs 26% redukcji obrzęku ≥75%, p=0,023, n=44) — oraz
+              <strong> systematic review 2025</strong> (Dejonckheere et al., PMC11904484) potwierdzający
+              te dane. RCT II z istotnym wynikiem to <strong>NIE „brak dowodów"</strong> — to dowód
+              kategorii GRADE moderate (dla tego konkretnego wskazania).
+            </p>
+            <p className="mt-2">
+              Wymaganie RCT III fazy jako jedynego standardu dowodowego pomija to, że dla wielu
+              wskazań niszowych (rzadkie nowotwory, supportive care, off-label) RCT III nigdy
+              nie powstanie — bo nie ma finansowania (Boswellia nie jest opatentowana). To strukturalne
+              ograniczenie systemu badań klinicznych, nie świadectwo „braku skuteczności".
+            </p>
+          </div>
         </>
       }
       howToTalkToDoctor={

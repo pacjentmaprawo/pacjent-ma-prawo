@@ -265,6 +265,81 @@ export default function BezpiecznaPraktykaPage() {
         </ul>
       </section>
 
+      {/* 7 — JAK CZYTAĆ KRYTYKĘ CAM W MEDIACH */}
+      <section className="space-y-4">
+        <h2 className="font-serif text-2xl font-semibold">7. Jak czytać krytykę CAM w mediach — 4 częste błędy argumentacyjne</h2>
+        <p className="text-muted-foreground">
+          Onkologia integracyjna jest często krytykowana w mediach przez lekarzy o znanych nazwiskach.
+          Część tej krytyki jest <strong>merytorycznie uzasadniona</strong> (np. faza I bez efektu skuteczności,
+          niedostateczna baza dowodowa, brak standaryzacji). Część jednak opiera się na <strong>powtarzalnych
+          błędach argumentacyjnych</strong>, które warto rozpoznawać.
+        </p>
+
+        <div className="space-y-4">
+          <div className="rounded-lg border bg-card p-5">
+            <h3 className="mb-2 font-semibold">Błąd 1 — zamiana formy lub dawki substancji</h3>
+            <p className="text-sm text-muted-foreground">
+              Krytyk powołuje się na badanie jednej formy substancji (np. doustna witamina C, Mayo Clinic
+              1979/1985), a wniosek formułuje przeciwko innej formie (np. <strong>IVC w wysokich dawkach</strong>).
+              To są różne substancje farmakologicznie mimo identycznej cząsteczki — różnią się farmakokinetyką,
+              stężeniem, mechanizmem. Klasyczny przykład: doustna witC osiąga ~200 µmol/L w surowicy, IVC
+              50&nbsp;g osiąga 20–30&nbsp;mmol/L (100–150× więcej) — i przy tych stężeniach zmienia mechanizm
+              z antyoksydanta na selektywny pro-oksydant (efekt Fentona).
+            </p>
+          </div>
+
+          <div className="rounded-lg border bg-card p-5">
+            <h3 className="mb-2 font-semibold">Błąd 2 — wniosek o skuteczności z fazy I/II</h3>
+            <p className="text-sm text-muted-foreground">
+              Faza I ma na celu ocenę <strong>bezpieczeństwa i farmakokinetyki</strong>, nie skuteczności.
+              Krytyk cytuje fazę I „bez efektu skuteczności" nie wspominając, że celem fazy I <em>nigdy nie była</em>
+              ocena skuteczności. Działanie odwrotne — pilotażowe wyniki fazy II/III są przedstawiane jako
+              „dowód" pełnej skuteczności mimo małej próby i braku randomizacji wieloośrodkowej.
+            </p>
+          </div>
+
+          <div className="rounded-lg border bg-card p-5">
+            <h3 className="mb-2 font-semibold">Błąd 3 — hipoteza biologiczna jako dowód kliniczny</h3>
+            <p className="text-sm text-muted-foreground">
+              <em>„Substancja X może w teorii przeszkadzać w chemio"</em> → traktowane jako fakt kliniczny
+              mimo braku potwierdzenia w RCT. Klasyczny przykład: argument „antyoksydanty neutralizują
+              ROS-zależną chemio/RT" — hipoteza z lat 90. nie potwierdzona w VITALITY 2022 (PMID 35929990),
+              PACMAN 2.1 (PMID 39369582), Moss 2007 (PMID 17873117), Liu 2025 H₂ RCT (PMID 41020280).
+              Hipoteza mechanistyczna wymaga walidacji klinicznej.
+            </p>
+          </div>
+
+          <div className="rounded-lg border bg-card p-5">
+            <h3 className="mb-2 font-semibold">Błąd 4 — pomijanie standaryzacji preparatu</h3>
+            <p className="text-sm text-muted-foreground">
+              Krytyk odnosi się do „niskiej biodostępności kurkuminy" ignorując że istnieją formy
+              o 5–20-krotnie lepszej biodostępności (liposomalne, Meriva, BioPerine, nano-dyspersyjne)
+              — a aktualne badania kliniczne (Howells 2019, PMID 31132111) używają właśnie tych form.
+              Analogicznie: krytyka jemioły bez wskazania preparatu (Iscador vs Helixor vs Abnoba viscum
+              — różne profile lektyn), Wilcacora bez specyfikacji POA-only vs POA+TOA (frakcje
+              antagonistyczne), Boswellia bez deklaracji AKBA (od 0% do 30%).
+            </p>
+          </div>
+        </div>
+
+        <div className="rounded-lg border border-primary/30 bg-primary/5 p-5">
+          <p className="font-semibold mb-2">Praktyczna zasada — 4 pytania do każdej krytyki publicznej</p>
+          <p className="text-sm text-muted-foreground">
+            Czytając publiczne wypowiedzi „eksperckie" o CAM, zadawaj 4 pytania:
+          </p>
+          <ol className="mt-2 list-decimal pl-5 text-sm text-muted-foreground space-y-1">
+            <li><strong>Jaka forma substancji</strong> jest badana (doustna vs dożylna, surowy proszek vs standaryzowany ekstrakt, sc. vs IV)?</li>
+            <li><strong>Jaka dawka</strong> (RDA vs farmakologiczna, eskalacja, długość terapii)?</li>
+            <li><strong>Jaka faza badania</strong> (I bezpieczeństwo / II skuteczność wstępna / III rejestracyjne / metaanaliza)?</li>
+            <li><strong>Jaki konkretny preparat</strong> standaryzowany (z deklarowaną zawartością aktywnych związków)?</li>
+          </ol>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Bez odpowiedzi na te 4 pytania ocena „działa / nie działa" jest niepełna — niezależnie od
+            autorytetu osoby formułującej krytykę.
+          </p>
+        </div>
+      </section>
+
       {/* CTA POWRÓT DO BAZY */}
       <section className="rounded-lg border bg-muted p-6 text-center">
         <h2 className="mb-2 font-serif text-xl font-semibold">Wróć do bazy wiedzy</h2>

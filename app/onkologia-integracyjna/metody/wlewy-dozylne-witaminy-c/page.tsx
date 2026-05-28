@@ -71,6 +71,27 @@ export default function WlewyDozylneWitaminyC() {
             odpornościowego, wzmacniając odpowiedź interferonową przeciwko nowotworom.
             Pierwszy autor: Xiadi He; senior author: Jean J. Zhao.
           </p>
+          <div className="my-4 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm">
+            <p className="font-semibold mb-2">Paradoks medialny — błąd argumentacyjny „witamina C nie działa w raku"</p>
+            <p>
+              W publicznych wypowiedziach „eksperckich" o bezskuteczności witaminy C w onkologii często
+              powołuje się na klasyczne badania <strong>Mayo Clinic (Creagan 1979 NEJM, Moertel 1985 NEJM)</strong>.
+              Te badania faktycznie wykazały brak korzyści — ale dotyczyły <strong>doustnej</strong> witaminy C
+              (10 g/dobę), która osiąga w surowicy maks. ~200 µmol/L (saturacja transporterów SVCT).
+            </p>
+            <p className="mt-2">
+              IVC w wysokich dawkach osiąga stężenia <strong>100–150 razy wyższe</strong> (15–30 mmol/L), gdzie
+              mechanizm działania ulega odwróceniu — z antyoksydacji na <strong>selektywną pro-oksydację</strong>
+              (efekt Fentona, generowanie H₂O₂ w mikrośrodowisku guza). To są <strong>dwie różne metody
+              farmakologicznie</strong> mimo identycznej cząsteczki — porównywanie ich to klasyczny błąd
+              „zamiany formy/dawki".
+            </p>
+            <p className="mt-2">
+              <strong>Praktyczna zasada dla pacjenta:</strong> każda krytyczna wypowiedź o IVC wymaga sprawdzenia
+              — czy powołuje się na dane o <em>doustnej</em> witaminie C (Mayo Clinic 1979/1985), czy na nowsze
+              dane o IVC (Qu 2025, PACMAN 2.1, VITALITY).
+            </p>
+          </div>
         </>
       }
       indications={
@@ -135,6 +156,32 @@ export default function WlewyDozylneWitaminyC() {
               wykazano nawet efekty addytywne lub synergistyczne (Klimant et al. 2018).
             </li>
           </ul>
+          <div className="my-4 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm">
+            <p className="font-semibold mb-2">Mit interferencji IVC z chemio/RT — co mówią aktualne RCT</p>
+            <p>
+              Drugi częsty argument medialny przeciwko IVC: <em>„witamina C może przeszkadzać w chemio/radioterapii,
+              neutralizując ROS-zależny mechanizm tych terapii"</em>. To hipoteza z lat 90., której współczesne
+              dane kliniczne nie potwierdzają:
+            </p>
+            <ul className="mt-2 list-disc pl-5 space-y-1">
+              <li><strong>VITALITY 2022</strong> (PMID 35929990, RCT-III n=442) — IVC + FOLFOX vs FOLFOX
+                w mCRC: brak istotnej różnicy w odpowiedzi RECIST (PFS 8,6 vs 8,3 mies., p=0,1). Brak dowodu interferencji.</li>
+              <li><strong>PACMAN 2.1</strong> (Bodeker 2024, PMID 39369582) — IVC + gemcytabina w raku trzustki:
+                OS 16,0 vs 8,3 mies. (HR 0,46) — sygnał synergii, nie interferencji.</li>
+              <li><strong>Moss 2007</strong> (Integr Cancer Ther PMID 17873117) — przegląd 33 badań antyoksydantów
+                + chemio: brak konsekwentnego dowodu na interferencję kliniczną.</li>
+            </ul>
+            <p className="mt-2">
+              <strong>Mechanizm braku interferencji:</strong> IVC w stężeniach farmakologicznych (mmol/L) nie
+              działa jak antyoksydant — działa <em>pro-oksydacyjnie</em> w komórkach nowotworowych (efekt Fentona).
+              To dwa różne tryby działania zależne od stężenia.
+            </p>
+            <p className="mt-2">
+              <strong>Bezpieczeństwo:</strong> decyzja o włączeniu IVC podczas aktywnej chemio/RT pozostaje
+              w gestii onkologa prowadzącego, z monitorowaniem (G6PD, funkcja nerek, hydration). Argument
+              „IVC neutralizuje chemio" nie ma jednak poparcia w dotychczasowych RCT.
+            </p>
+          </div>
         </>
       }
       safety={
