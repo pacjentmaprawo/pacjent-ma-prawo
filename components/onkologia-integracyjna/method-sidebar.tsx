@@ -99,7 +99,7 @@ export function MethodSidebar() {
                       >
                         <span className="flex items-center justify-between gap-2">
                           <span className="truncate">{m.shortName}</span>
-                          {m.highestEvidenceType && <EvidenceTypeBadge type={m.highestEvidenceType} className="hidden lg:inline-flex shrink-0" />}
+                          {m.highestEvidenceType && <EvidenceTypeBadge type={m.highestEvidenceType} compact className="hidden lg:inline-flex shrink-0" />}
                         </span>
                       </Link>
                     </li>

@@ -89,9 +89,12 @@ export function PMIDLink({
 export function EvidenceTypeBadge({
   type,
   className = '',
+  compact = false,
 }: {
   type: NonNullable<Method['highestEvidenceType']>
   className?: string
+  /** Kompaktowa wersja — tylko litera, bez etykiety (do sidebar / wąskich kontekstów). */
+  compact?: boolean
 }) {
   const colors: Record<NonNullable<Method['highestEvidenceType']>, string> = {
     A: 'bg-emerald-100 text-emerald-900 border-emerald-300 dark:bg-emerald-900/30 dark:text-emerald-200 dark:border-emerald-700',
@@ -105,7 +108,7 @@ export function EvidenceTypeBadge({
       title={`Najwyższy typ danych klinicznych: ${EVIDENCE_TYPE_LABELS[type]}`}
     >
       <span className="font-mono font-bold">{type}</span>
-      <span className="hidden xl:inline">{EVIDENCE_TYPE_LABELS[type]}</span>
+      {!compact && <span className="hidden 2xl:inline">{EVIDENCE_TYPE_LABELS[type]}</span>}
     </span>
   )
 }
@@ -116,9 +119,12 @@ export function EvidenceTypeBadge({
 export function ClinicalStatusBadge({
   status,
   className = '',
+  compact = false,
 }: {
   status: NonNullable<Method['clinicalStatus']>
   className?: string
+  /** Kompaktowa wersja — tylko ikona/skrót, bez pełnej etykiety. */
+  compact?: boolean
 }) {
   const colors: Record<NonNullable<Method['clinicalStatus']>, string> = {
     'guideline-supported': 'bg-emerald-100 text-emerald-900 border-emerald-300 dark:bg-emerald-900/30 dark:text-emerald-200 dark:border-emerald-700',
@@ -127,12 +133,19 @@ export function ClinicalStatusBadge({
     'experimental': 'bg-violet-100 text-violet-900 border-violet-300 dark:bg-violet-900/30 dark:text-violet-200 dark:border-violet-700',
     'not-recommended': 'bg-rose-100 text-rose-900 border-rose-300 dark:bg-rose-900/30 dark:text-rose-200 dark:border-rose-700',
   }
+  const shortLabels: Record<NonNullable<Method['clinicalStatus']>, string> = {
+    'guideline-supported': 'wytyczne',
+    'supportive-care': 'supportive',
+    'off-label-adjunct': 'off-label',
+    'experimental': 'eksperym.',
+    'not-recommended': 'nie rekom.',
+  }
   return (
     <span
       className={`inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded border ${colors[status]} ${className}`}
       title={CLINICAL_STATUS_LABELS[status]}
     >
-      {CLINICAL_STATUS_LABELS[status]}
+      {compact ? shortLabels[status] : CLINICAL_STATUS_LABELS[status]}
     </span>
   )
 }

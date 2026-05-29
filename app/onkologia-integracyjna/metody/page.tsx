@@ -48,9 +48,9 @@ export default function MetodyPage() {
                       <h3 className="font-serif text-lg font-semibold group-hover:text-primary">
                         {m.shortName}
                       </h3>
-                      <div className="flex flex-col items-end gap-1 shrink-0">
+                      <div className="flex flex-col items-end gap-1 shrink-0 max-w-[140px]">
                         {m.highestEvidenceType && <EvidenceTypeBadge type={m.highestEvidenceType} />}
-                        {m.clinicalStatus && <ClinicalStatusBadge status={m.clinicalStatus} className="text-[10px]" />}
+                        {m.clinicalStatus && <ClinicalStatusBadge status={m.clinicalStatus} compact className="text-[10px] whitespace-nowrap" />}
                       </div>
                     </div>
                     <p className="text-sm text-muted-foreground line-clamp-3">{m.shortDesc}</p>
