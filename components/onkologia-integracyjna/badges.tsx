@@ -1,5 +1,5 @@
-import type { EvidenceGrade, MethodCategory } from '@/lib/onkologia-integracyjna/types'
-import { GRADE_LABELS, CATEGORY_LABELS } from '@/lib/onkologia-integracyjna/types'
+import type { EvidenceGrade, MethodCategory, Method } from '@/lib/onkologia-integracyjna/types'
+import { GRADE_LABELS, CATEGORY_LABELS, EVIDENCE_TYPE_LABELS, CLINICAL_STATUS_LABELS } from '@/lib/onkologia-integracyjna/types'
 
 /**
  * Badge poziomu dowodów GRADE.
@@ -77,5 +77,62 @@ export function PMIDLink({
     >
       {children ?? `PMID ${pmid ?? doi}`}
     </a>
+  )
+}
+
+
+/**
+ * Badge typu najsilniejszych danych klinicznych (A/B/C/P).
+ * A=wiele RCT/metaanaliza, B=jedno RCT/duże nierandom., C=małe/rejestry, P=przedkliniczne.
+ * Kolory: A=zielony (najmocniejsze), B=niebieski, C=żółty, P=fioletowy (eksperymentalne, nie negatywne).
+ */
+export function EvidenceTypeBadge({
+  type,
+  className = '',
+}: {
+  type: NonNullable<Method['highestEvidenceType']>
+  className?: string
+}) {
+  const colors: Record<NonNullable<Method['highestEvidenceType']>, string> = {
+    A: 'bg-emerald-100 text-emerald-900 border-emerald-300 dark:bg-emerald-900/30 dark:text-emerald-200 dark:border-emerald-700',
+    B: 'bg-sky-100 text-sky-900 border-sky-300 dark:bg-sky-900/30 dark:text-sky-200 dark:border-sky-700',
+    C: 'bg-amber-100 text-amber-900 border-amber-300 dark:bg-amber-900/30 dark:text-amber-200 dark:border-amber-700',
+    P: 'bg-violet-100 text-violet-900 border-violet-300 dark:bg-violet-900/30 dark:text-violet-200 dark:border-violet-700',
+  }
+  return (
+    <span
+      className={`inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded border ${colors[type]} ${className}`}
+      title={`Najwyższy typ danych klinicznych: ${EVIDENCE_TYPE_LABELS[type]}`}
+    >
+      <span className="font-mono font-bold">{type}</span>
+      <span className="hidden xl:inline">{EVIDENCE_TYPE_LABELS[type]}</span>
+    </span>
+  )
+}
+
+/**
+ * Badge statusu klinicznego (rekomendowana / supportive / off-label / experimental / not-recommended).
+ */
+export function ClinicalStatusBadge({
+  status,
+  className = '',
+}: {
+  status: NonNullable<Method['clinicalStatus']>
+  className?: string
+}) {
+  const colors: Record<NonNullable<Method['clinicalStatus']>, string> = {
+    'guideline-supported': 'bg-emerald-100 text-emerald-900 border-emerald-300 dark:bg-emerald-900/30 dark:text-emerald-200 dark:border-emerald-700',
+    'supportive-care': 'bg-teal-100 text-teal-900 border-teal-300 dark:bg-teal-900/30 dark:text-teal-200 dark:border-teal-700',
+    'off-label-adjunct': 'bg-amber-100 text-amber-900 border-amber-300 dark:bg-amber-900/30 dark:text-amber-200 dark:border-amber-700',
+    'experimental': 'bg-violet-100 text-violet-900 border-violet-300 dark:bg-violet-900/30 dark:text-violet-200 dark:border-violet-700',
+    'not-recommended': 'bg-rose-100 text-rose-900 border-rose-300 dark:bg-rose-900/30 dark:text-rose-200 dark:border-rose-700',
+  }
+  return (
+    <span
+      className={`inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded border ${colors[status]} ${className}`}
+      title={CLINICAL_STATUS_LABELS[status]}
+    >
+      {CLINICAL_STATUS_LABELS[status]}
+    </span>
   )
 }

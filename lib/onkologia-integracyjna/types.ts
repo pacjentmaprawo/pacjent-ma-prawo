@@ -80,4 +80,36 @@ export interface Method {
   excluded?: boolean
   /** Czy metoda jest eksperymentalna / wczesna baza dowodowa — pokazuje box ostrzegawczy w karcie */
   experimental?: boolean
+  /** Krótki opis sygnału klinicznego / biologicznego z badań */
+  evidenceSignal?: string
+  /** Najwyższy typ danych klinicznych: A — wiele RCT/metaanaliz; B — jedno RCT/duże nierandom.; C — małe badania/rejestry; P — głównie przedkliniczne/mechanistyczne */
+  highestEvidenceType?: 'A' | 'B' | 'C' | 'P'
+  /** Status praktycznego zastosowania */
+  clinicalStatus?: 'guideline-supported' | 'supportive-care' | 'off-label-adjunct' | 'experimental' | 'not-recommended'
+  /** Główna luka dowodowa — czego brakuje w bazie badań */
+  evidenceGap?: string
+  /** Kontekst dowodowy — dlaczego dowody są ograniczone (np. brak sponsora, populacja niszowa, off-patent) */
+  evidenceContext?: string
+}
+
+export const EVIDENCE_TYPE_LABELS: Record<NonNullable<Method['highestEvidenceType']>, string> = {
+  A: 'Wiele RCT lub metaanaliza RCT',
+  B: 'Jedno RCT lub duże badanie nierandomizowane',
+  C: 'Małe badania / rejestry / retrospektywne / opinia ekspertów',
+  P: 'Głównie dane przedkliniczne lub mechanistyczne',
+}
+
+export const EVIDENCE_TYPE_DESCRIPTIONS: Record<NonNullable<Method['highestEvidenceType']>, string> = {
+  A: 'Najwyższy typ danych klinicznych: wiele niezależnych badań randomizowanych lub metaanaliza je integrująca. Standard wytycznych klinicznych.',
+  B: 'Pojedyncze RCT z istotnym wynikiem klinicznym lub duże badania nierandomizowane (kohortowe, rejestry pacjentów). Bezpieczna baza decyzyjna.',
+  C: 'Małe badania kliniczne (mała próba, pilotaż), rejestry pacjentów, opinie ekspertów. Sygnał obserwacyjny — wymaga dalszego potwierdzenia.',
+  P: 'Dane przedkliniczne (in vitro, modele zwierzęce) lub mechanistyczne. Bez dojrzałych badań klinicznych — substancja w obszarze eksperymentalnym.',
+}
+
+export const CLINICAL_STATUS_LABELS: Record<NonNullable<Method['clinicalStatus']>, string> = {
+  'guideline-supported': 'Rekomendowana w wytycznych klinicznych',
+  'supportive-care': 'Supportive care — wsparcie standardowego leczenia',
+  'off-label-adjunct': 'Stosowanie off-label jako adjunkt',
+  'experimental': 'Obszar eksperymentalny — w fazie badań',
+  'not-recommended': 'Brak rekomendacji w wytycznych klinicznych',
 }

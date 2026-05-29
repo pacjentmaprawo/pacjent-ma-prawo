@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { METHODS, METHODS_BY_CATEGORY, type MethodCategory } from '@/lib/onkologia-integracyjna/methods'
 import { CATEGORY_LABELS } from '@/lib/onkologia-integracyjna/types'
-import { GradeBadge } from './badges'
+import { EvidenceTypeBadge } from './badges'
 
 const CATEGORY_ORDER: MethodCategory[] = ['A', 'B', 'C', 'D']
 
@@ -49,6 +49,16 @@ export function MethodSidebar() {
           Jak czytać EBM
         </Link>
         <Link
+          href="/onkologia-integracyjna/jak-czytac-dowody"
+          className={`block rounded px-2 py-1.5 transition ${
+            pathname === '/onkologia-integracyjna/jak-czytac-dowody'
+              ? 'bg-primary/10 text-primary font-medium'
+              : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+          }`}
+        >
+          Jak czytać dowody
+        </Link>
+        <Link
           href="/onkologia-integracyjna/slownik"
           className={`block rounded px-2 py-1.5 transition ${
             pathname === '/onkologia-integracyjna/slownik'
@@ -89,7 +99,7 @@ export function MethodSidebar() {
                       >
                         <span className="flex items-center justify-between gap-2">
                           <span className="truncate">{m.shortName}</span>
-                          <GradeBadge grade={m.grade} className="hidden lg:inline-flex shrink-0" />
+                          {m.highestEvidenceType && <EvidenceTypeBadge type={m.highestEvidenceType} className="hidden lg:inline-flex shrink-0" />}
                         </span>
                       </Link>
                     </li>

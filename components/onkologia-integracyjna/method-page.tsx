@@ -1,6 +1,8 @@
 import type { Method } from '@/lib/onkologia-integracyjna/types'
+import { EVIDENCE_TYPE_LABELS, EVIDENCE_TYPE_DESCRIPTIONS, CLINICAL_STATUS_LABELS } from '@/lib/onkologia-integracyjna/types'
+import Link from 'next/link'
 import { CATEGORY_LABELS, GRADE_DESCRIPTIONS } from '@/lib/onkologia-integracyjna/types'
-import { GradeBadge, CategoryBadge, PMIDLink } from './badges'
+import { GradeBadge, CategoryBadge, PMIDLink, EvidenceTypeBadge, ClinicalStatusBadge } from './badges'
 import { SectionDisclaimer } from './disclaimer'
 
 /**
@@ -68,6 +70,34 @@ export function MethodPage({
         {method.warning && (
           <div className="rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-900 dark:border-rose-700 dark:bg-rose-900/20 dark:text-rose-100">
             <strong>Ważne:</strong> {method.warning}
+          </div>
+        )}
+
+        {/* PROFIL DOWODOWY — Wariant B+ wg Perplexity v25 */}
+        {(method.highestEvidenceType || method.clinicalStatus || method.evidenceSignal || method.evidenceContext || method.evidenceGap) && (
+          <div className="mt-4 rounded-lg border bg-card p-5 text-sm space-y-3">
+            <div className="flex flex-wrap items-center gap-2 border-b pb-2">
+              <h2 className="font-serif text-base font-semibold mr-1">Profil dowodowy</h2>
+              {method.highestEvidenceType && <EvidenceTypeBadge type={method.highestEvidenceType} />}
+              {method.clinicalStatus && <ClinicalStatusBadge status={method.clinicalStatus} />}
+              <GradeBadge grade={method.grade} />
+              <Link href="/onkologia-integracyjna/jak-czytac-dowody" className="ml-auto text-xs underline text-muted-foreground hover:text-foreground">Jak czytać te oznaczenia →</Link>
+            </div>
+            {method.evidenceSignal && (
+              <div><strong className="text-foreground">Sygnał efektu:</strong>{' '}<span className="text-muted-foreground">{method.evidenceSignal}</span></div>
+            )}
+            {method.highestEvidenceType && (
+              <div><strong className="text-foreground">Najwyższy typ danych klinicznych ({method.highestEvidenceType}):</strong>{' '}<span className="text-muted-foreground">{EVIDENCE_TYPE_DESCRIPTIONS[method.highestEvidenceType]}</span></div>
+            )}
+            {method.evidenceGap && (
+              <div><strong className="text-foreground">Główna luka dowodowa:</strong>{' '}<span className="text-muted-foreground">{method.evidenceGap}</span></div>
+            )}
+            {method.evidenceContext && (
+              <div className="rounded-md bg-muted/50 p-3"><strong className="text-foreground">Kontekst dowodowy:</strong>{' '}<span className="text-muted-foreground">{method.evidenceContext}</span></div>
+            )}
+            <div className="text-xs text-muted-foreground italic pt-1 border-t">
+              GRADE mierzy pewność oszacowania efektu — nie sam efekt. „Niska pewność" nie oznacza „brak efektu". Substancje nieopatentowane strukturalnie nie dostają RCT III bo brak sponsora. Więcej: <Link href="/onkologia-integracyjna/jak-czytac-dowody" className="underline">Jak czytać dowody</Link>.
+            </div>
           </div>
         )}
       </header>
