@@ -2,11 +2,11 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { METHODS, METHODS_BY_CATEGORY, type MethodCategory } from '@/lib/onkologia-integracyjna/methods'
 import { CATEGORY_LABELS } from '@/lib/onkologia-integracyjna/types'
-import { GradeBadge, CategoryBadge } from '@/components/onkologia-integracyjna/badges'
+import { EvidenceTypeBadge, ClinicalStatusBadge, CategoryBadge } from '@/components/onkologia-integracyjna/badges'
 
 export const metadata: Metadata = {
   title: 'Wszystkie metody',
-  description: 'Pełna lista metod onkologii integracyjnej w 4 kategoriach z poziomem dowodów GRADE.',
+  description: 'Pełna lista metod onkologii integracyjnej w 4 kategoriach z profilem dowodowym (typ danych A/B/C/P, status kliniczny, GRADE, kontekst).',
 }
 
 const CATEGORY_ORDER: MethodCategory[] = ['A', 'B', 'C', 'D']
@@ -19,8 +19,9 @@ export default function MetodyPage() {
           Wszystkie metody onkologii integracyjnej
         </h1>
         <p className="text-lg text-muted-foreground">
-          {METHODS.length} metod w 4 kategoriach. Każda metoda z poziomem dowodów GRADE i linkami do publikacji
-          peer-reviewed.
+          {METHODS.length} metod w 4 kategoriach. Każda z pełnym profilem dowodowym: typ danych klinicznych
+          (A/B/C/P), status zastosowania, pewność dowodów (GRADE) i kontekst dowodowy. Więcej:{' '}
+          <a href="/onkologia-integracyjna/jak-czytac-dowody" className="underline text-primary">jak czytać te oznaczenia</a>.
         </p>
       </header>
 
@@ -43,11 +44,14 @@ export default function MetodyPage() {
                     href={`/onkologia-integracyjna/metody/${m.slug}`}
                     className="group block h-full rounded-lg border bg-card p-5 transition hover:border-primary/50 hover:shadow-md"
                   >
-                    <div className="mb-2 flex items-center justify-between gap-3">
+                    <div className="mb-2 flex items-start justify-between gap-3">
                       <h3 className="font-serif text-lg font-semibold group-hover:text-primary">
                         {m.shortName}
                       </h3>
-                      <GradeBadge grade={m.grade} className="shrink-0" />
+                      <div className="flex flex-col items-end gap-1 shrink-0">
+                        {m.highestEvidenceType && <EvidenceTypeBadge type={m.highestEvidenceType} />}
+                        {m.clinicalStatus && <ClinicalStatusBadge status={m.clinicalStatus} className="text-[10px]" />}
+                      </div>
                     </div>
                     <p className="text-sm text-muted-foreground line-clamp-3">{m.shortDesc}</p>
                     <p className="mt-3 flex flex-wrap gap-1">

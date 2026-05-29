@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { METHODS_BY_CATEGORY, METHODS, getMethodBySlug } from '@/lib/onkologia-integracyjna/methods'
 import { CATEGORY_LABELS } from '@/lib/onkologia-integracyjna/types'
-import { GradeBadge, CategoryBadge } from '@/components/onkologia-integracyjna/badges'
+import { EvidenceTypeBadge, ClinicalStatusBadge, CategoryBadge } from '@/components/onkologia-integracyjna/badges'
 import { SectionDisclaimer } from '@/components/onkologia-integracyjna/disclaimer'
 
 const TOTAL_SOURCES = METHODS.reduce((sum, m) => sum + m.keySources.length, 0)
@@ -122,9 +122,10 @@ export default function OnkologiaIntegracyjnaPage() {
               href={`/onkologia-integracyjna/metody/${m!.slug}`}
               className="group rounded-lg border bg-card p-6 transition hover:border-primary/50 hover:shadow-md"
             >
-              <div className="mb-3 flex items-center gap-2">
+              <div className="mb-3 flex flex-wrap items-center gap-2">
                 <CategoryBadge category={m!.category} />
-                <GradeBadge grade={m!.grade} />
+                {m!.highestEvidenceType && <EvidenceTypeBadge type={m!.highestEvidenceType} />}
+                {m!.clinicalStatus && <ClinicalStatusBadge status={m!.clinicalStatus} />}
               </div>
               <h3 className="mb-2 font-serif text-lg font-semibold group-hover:text-primary">
                 {m!.name}
