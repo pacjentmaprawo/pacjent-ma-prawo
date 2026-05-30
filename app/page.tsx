@@ -215,15 +215,6 @@ export default function HomePage() {
                   Czytaj pełną historię
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <a
-                  href="https://pacjencidoktoraszalusia.pl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 border border-border text-navy font-medium rounded-lg hover:bg-secondary transition-colors"
-                >
-                  Strona pacjentów
-                  <ArrowRight className="h-4 w-4" />
-                </a>
               </div>
             </CardContent>
           </Card>
@@ -346,7 +337,7 @@ export default function HomePage() {
             </Button>
           </Link>
           <p className="text-background/80 mt-6 text-sm">
-            <em className="font-medium">Formularz petycyjny w przygotowaniu</em> — integracja z platformą OpenPetition.pl wkrótce
+            <em className="font-medium">Zbieranie podpisów zostanie uruchomione wkrótce</em>
           </p>
         </div>
       </section>

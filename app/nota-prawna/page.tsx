@@ -65,7 +65,7 @@ export default function NotaPrawnaPage() {
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">Kontakt prawny</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
             W sprawach formalnych dotyczących treści platformy — np. zastrzeżeń, sprostowań, wniosków
-            prasowych — prosimy o kontakt na <a href="mailto:pacjentmaprawo@proton.me" className="text-teal underline">pacjentmaprawo@proton.me</a>.
+            prasowych — prosimy o kontakt na <a href="mailto:kontakt@pacjentmaprawo.pl" className="text-teal underline">kontakt@pacjentmaprawo.pl</a>.
             Czas reakcji: do 7 dni roboczych.
           </p>
         </div>

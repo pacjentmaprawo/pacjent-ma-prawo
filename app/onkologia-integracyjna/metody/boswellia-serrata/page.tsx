@@ -85,13 +85,12 @@ export default function BoswelliaPage() {
             <strong>Jakość preparatu jest krytyczna:</strong>
           </p>
           <ul>
-            <li><strong>BSE-018 (Sabinsa)</strong> — standaryzowany ekstrakt 30% AKBA, najlepiej przebadany</li>
-            <li><strong>H15 (Steigerwald, DE)</strong> — preparat kliniczny używany w badaniach Kirste i Dejonckheere</li>
-            <li><strong>Sallaki (Himalaya)</strong> — popularny preparat dostępny w polskich aptekach</li>
-            <li><strong>Boswellin® Super</strong> — bezpieczeństwo i biodostępność potwierdzone w 2024</li>
+            <li>Ekstrakty <strong>standaryzowane na zawartość AKBA</strong> (kwas acetylo-11-keto-beta-boswelliowy) — to one były przedmiotem badań klinicznych</li>
+            <li>Preparaty z <strong>deklarowaną, powtarzalną zawartością aktywnych boswelliowych kwasów</strong></li>
           </ul>
           <p>
-            <strong>Unikaj</strong> proszków ziołowych bez deklarowanej zawartości AKBA — efekt kliniczny zależy od standaryzacji aktywnych związków.
+            <strong>Unikaj</strong> proszków ziołowych bez deklarowanej zawartości AKBA — efekt zależy od standaryzacji aktywnych związków.
+            Strona nie rekomenduje żadnego konkretnego produktu ani marki; jakość, skład i dawka preparatów dostępnych na rynku mogą się różnić.
           </p>
           <div className="my-4 rounded-md border border-amber-300 bg-amber-50 p-4 text-sm">
             <p className="font-semibold mb-2">Paradoks medialny — argument „brak RCT III fazy = brak dowodów"</p>
@@ -123,7 +122,7 @@ export default function BoswelliaPage() {
           <ul>
             <li>RCT Kirste 2011 (<em>Cancer</em>, DOI 10.1002/cncr.26101) — fundament dowodowy</li>
             <li>Systematic review Dejonckheere 2025 (Adv Radiat Oncol, PMC11904484) — aktualne podsumowanie</li>
-            <li>Konkretny preparat: BSE-018 lub H15 (z deklarowaną zawartością AKBA)</li>
+            <li>Preparat standaryzowany na AKBA (z deklarowaną zawartością aktywnych związków)</li>
             <li>Plan monitorowania: parametry krzepnięcia, obraz MRI, dawka deksametazonu</li>
             <li>NCT03149081 (MUSC) — aktywny trial w USA</li>
           </ul>

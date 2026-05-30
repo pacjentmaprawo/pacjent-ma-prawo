@@ -155,9 +155,10 @@ export default function EBMPage() {
               w trybie accelerated approval, conditional marketing authorisation i stosowanych off-label.
             </p>
             <p>
-              Inaczej powstaje sytuacja dwóch standardów: leki firm farmaceutycznych mogą być stosowane
-              bez pełnego EBM (pod warunkiem rejestracji EMA/FDA), ale podobne metody komplementarne —
-              nawet z porównywalną bazą dowodową — są karane jako „niezgodne z aktualną wiedzą medyczną".
+              Inaczej powstaje sytuacja dwóch standardów: produkty i procedury objęte reżimem rejestracyjnym
+              mogą być stosowane przy zróżnicowanym poziomie dowodów (po rejestracji EMA/FDA), natomiast
+              podobne metody wspomagające — nawet z porównywalną bazą dowodową — mogą być traktowane jako
+              „niezgodne z aktualną wiedzą medyczną".
             </p>
             <p>
               Sąd Najwyższy w postanowieniu <strong className="text-amber">III KK 212/18 (5.06.2019)</strong> wskazał,
@@ -189,7 +190,7 @@ export default function EBMPage() {
             Plus gwarancji proceduralnych: opinii biegłych, prawa do obrony, in dubio pro reo.
           </p>
           <p className="font-serif text-xl text-navy italic mb-8">
-            Pełna analiza w <strong>Załączniku 1 — Policy Paper EBM v1.10</strong> (dostępny w bazie dokumentów).
+            Pełna analiza w <strong>Załączniku 1 — Policy Paper EBM</strong> (dostępny w bazie dokumentów).
           </p>
           <div className="bg-secondary border border-border rounded-xl p-6">
             <h3 className="font-serif text-lg font-semibold text-navy mb-2">

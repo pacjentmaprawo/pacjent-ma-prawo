@@ -33,7 +33,7 @@ function Logo() {
 }
 
 function CopyEmailButton() {
-  const email = 'pacjentmaprawo@proton.me'
+  const email = 'kontakt@pacjentmaprawo.pl'
   
   const handleCopy = async () => {
     try {
@@ -106,7 +106,7 @@ export function Footer() {
             <div className="space-y-3">
               <CopyEmailButton />
               <p className="text-xs text-background/60">
-                Kontakt e-mail przez ProtonMail
+                Kontakt e-mail
               </p>
               <div className="flex items-center gap-4 pt-2">
                 <a

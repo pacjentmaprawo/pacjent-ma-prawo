@@ -57,7 +57,7 @@ export default function RegulaminPage() {
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">§6. Kontakt</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
             Pytania i uwagi dotyczące regulaminu prosimy kierować na adres:
-            <a href="mailto:pacjentmaprawo@proton.me" className="text-teal underline ml-1">pacjentmaprawo@proton.me</a>.
+            <a href="mailto:kontakt@pacjentmaprawo.pl" className="text-teal underline ml-1">kontakt@pacjentmaprawo.pl</a>.
           </p>
         </div>
       </section>

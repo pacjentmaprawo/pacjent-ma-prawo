@@ -20,8 +20,7 @@ export default function JakCzytacDowodyPage() {
         </h1>
         <p className="max-w-3xl text-lg text-muted-foreground">
           Nie pokazujemy tylko jednego badge'a „GRADE: low". Pokazujemy pięć warstw dowodowych —
-          żeby diament nie został skreślony tylko dlatego, że nigdy nie miał sponsora na badanie
-          fazy III. Każda metoda ma profil dowodowy złożony z: <strong>sygnału efektu</strong>,
+          aby ograniczona baza badań nie była automatycznie utożsamiana z brakiem efektu — zwłaszcza gdy metoda nigdy nie miała finansowania na badanie fazy III. Każda metoda ma profil dowodowy złożony z: <strong>sygnału efektu</strong>,
           <strong> pewności dowodów (GRADE)</strong>, <strong>najwyższego typu danych klinicznych</strong>,
           <strong> statusu zastosowania</strong> oraz <strong>głównej luki dowodowej</strong>.
         </p>
@@ -68,13 +67,13 @@ export default function JakCzytacDowodyPage() {
       {/* 2 — PROBLEM FINANSOWANIA */}
       <section className="space-y-4 rounded-lg border-2 border-primary/40 bg-primary/5 p-6">
         <h2 className="font-serif text-2xl font-semibold">
-          2. Problem finansowania — dlaczego diamenty mogą mieć GRADE „niska"
+          2. Problem finansowania — dlaczego skuteczne metody mogą mieć GRADE „niska"
         </h2>
         <p className="text-muted-foreground">
           Badania kliniczne fazy III kosztują od <strong>50 do 500 mln USD</strong>. Substancje
           <strong> nieopatentowane</strong> — witaminy, zioła, leki weterynaryjne z potencjałem
           onkologicznym, naturalne metabolity, leki repurposed — nie pozwalają na zwrot tej inwestycji.
-          <strong> Żaden sponsor ich nie sfinansuje.</strong>
+          <strong> Finansowanie dużych badań fazy III bywa dla nich trudne do pozyskania</strong> — brak oczywistego modelu zwrotu inwestycji.
         </p>
         <p className="text-muted-foreground">
           To jest <strong>strukturalna luka w systemie dowodów</strong>, nie problem skuteczności.
@@ -90,7 +89,7 @@ export default function JakCzytacDowodyPage() {
           </p>
           <ul className="mt-2 list-disc pl-5 space-y-1 text-muted-foreground">
             <li><strong>Realnie mało skuteczna</strong> — brak sygnału w istniejących badaniach</li>
-            <li><strong>Diament niedofinansowany</strong> — istnieje sygnał kliniczny + mechanizm + tradycja, ale brak RCT III bo brak sponsora</li>
+            <li><strong>Niedofinansowana</strong> — istnieje sygnał kliniczny, mechanizm i tradycja stosowania, ale brak RCT III z powodu braku finansowania</li>
           </ul>
           <p className="mt-2 text-muted-foreground">
             Dlatego pokazujemy obok GRADE dodatkowe wymiary — żeby pacjent mógł rozpoznać różnicę.

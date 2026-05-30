@@ -279,8 +279,8 @@ export default function CoProponujemyPage() {
             Pełna analiza prawna
           </h2>
           <p className="text-navy/80 leading-relaxed mb-8">
-            Klauzula świadomej zgody jest opisana w Rekomendacji 16 (Sekcja Konstytucyjna v3.0)
-            i Rekomendacji 12 (Memorandum prawne v2.0) wraz z pełnym uzasadnieniem konstytucyjnym.
+            Klauzula świadomej zgody jest opisana w Rekomendacji 16 (Sekcja Konstytucyjna)
+            i Rekomendacji 12 (Memorandum prawne) wraz z pełnym uzasadnieniem konstytucyjnym.
             Dokumenty dostępne do pobrania w bazie dokumentów.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
@@ -308,8 +308,8 @@ export default function CoProponujemyPage() {
       <section className="py-12 bg-background border-t border-border">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Treść opracowana w oparciu o Sekcję Konstytucyjną v3.0 (§10 i §13 Rekomendacja 16)
-            oraz Memorandum prawne UD207 v2.0 (sekcja C Rekomendacja 12) pakietu obywatelskiego.
+            Treść opracowana w oparciu o Sekcję Konstytucyjną (§10 i §13 Rekomendacja 16)
+            oraz Memorandum prawne UD207 (sekcja C Rekomendacja 12) pakietu obywatelskiego.
             Postulat klauzuli świadomej zgody jest spójny z międzynarodowym standardem informed
             consent — art. 5 Konwencji z Oviedo, art. 8 EKPC (orzecznictwo *Pretty*, *Vavřička*,
             *Jehovah's Witnesses of Moscow*), art. 3 Karty Praw Podstawowych UE, art. 47 i 41

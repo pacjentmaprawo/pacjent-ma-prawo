@@ -206,8 +206,9 @@ export default function WlewyDozylneWitaminyC() {
             mocznik, elektrolity, glikemia, morfologia.
           </p>
           <p>
-            <strong>Riordan IVC Protocol:</strong> standardowy protokół postępowania, stosowany od
-            1995 r. (Riordan Clinic, USA). Określa kwalifikację pacjenta, dawkowanie (eskalacja
+            <strong>Protokoły podawania IVC:</strong> w literaturze opisano różne protokoły (m.in. opracowany od
+            1995 r. w Riordan Clinic, USA), ale nie stanowią one jednolitego standardu leczenia onkologicznego.
+            Opisują kwalifikację pacjenta, dawkowanie (eskalacja
             15→25→50→75→100 g), tempo wlewu (max 1 g/min), monitorowanie.
           </p>
         </>
@@ -241,7 +242,7 @@ export default function WlewyDozylneWitaminyC() {
           </p>
           <ol>
             <li>Czy moja diagnoza i obecne leczenie wykluczają stosowanie wlewów dożylnej witaminy C?</li>
-            <li>Czy zna Pan/Pani protokół Riordan IVC i czy może go Pan/Pani prowadzić?</li>
+            <li>Czy zna Pan/Pani protokoły podawania IVC i czy może Pan/Pani prowadzić kwalifikację oraz monitorowanie?</li>
             <li>
               Czy jeśli nie prowadzi Pan/Pani IVC osobiście, może mnie Pan/Pani skierować do
               lekarza, który prowadzi tę terapię z protokolarną ostrożnością?

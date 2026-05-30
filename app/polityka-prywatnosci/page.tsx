@@ -22,14 +22,14 @@ export default function PolitykaPrywatnosciPage() {
           <p className="text-navy/80 leading-relaxed mb-6">
             Administratorem danych osobowych przetwarzanych w związku z korzystaniem z platformy
             pacjentmaprawo.pl jest <strong>inicjatywa obywatelska Pacjent Ma Prawo</strong>.
-            Kontakt z administratorem: <a href="mailto:pacjentmaprawo@proton.me" className="text-teal underline">pacjentmaprawo@proton.me</a>.
+            Kontakt z administratorem: <a href="mailto:kontakt@pacjentmaprawo.pl" className="text-teal underline">kontakt@pacjentmaprawo.pl</a>.
           </p>
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">2. Jakie dane zbieramy</h2>
           <p className="text-navy/80 leading-relaxed mb-2">Przetwarzamy wyłącznie dane, które dobrowolnie podasz:</p>
           <ul className="list-disc pl-6 text-navy/80 mb-6 space-y-1">
             <li>Formularz kontaktowy: imię (opcjonalne), adres e-mail (wymagany), treść wiadomości.</li>
-            <li>Formularz petycji (gdy zostanie zintegrowany z OpenPetition.pl): imię i nazwisko, e-mail, miejscowość (opcjonalna).</li>
+            <li>Formularz petycji (po uruchomieniu zbierania podpisów): imię i nazwisko, e-mail, miejscowość (opcjonalna).</li>
           </ul>
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">3. Cel i podstawa prawna przetwarzania</h2>
@@ -43,14 +43,14 @@ export default function PolitykaPrywatnosciPage() {
           <p className="text-navy/80 leading-relaxed mb-6">
             Wiadomości z formularza kontaktowego przechowujemy przez okres niezbędny do udzielenia odpowiedzi
             i przez 12 miesięcy później (dla ewentualnych pytań uzupełniających). Dane z petycji
-            — zgodnie z polityką platformy OpenPetition.pl.
+            — wyłącznie w celu udokumentowania poparcia apelu, na podstawie zgody (art. 6 ust. 1 lit. a RODO).
           </p>
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">5. Odbiorcy danych</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
             Dane mogą być przetwarzane przez dostawców usług technicznych niezbędnych do działania platformy,
             komunikacji i obsługi petycji — w szczególności dostawcę hostingu (Vercel), poczty elektronicznej
-            (ProtonMail) oraz planowanej platformy petycyjnej. Dane nie są sprzedawane ani udostępniane
+            (dostawca szyfrowanej poczty na terenie UE) oraz platformy petycyjnej. Dane nie są sprzedawane ani udostępniane
             komercyjnie.
           </p>
 
@@ -66,7 +66,7 @@ export default function PolitykaPrywatnosciPage() {
             <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO, ul. Stawki 2, 00-193 Warszawa)</li>
           </ul>
           <p className="text-navy/80 leading-relaxed mb-6">
-            Aby zrealizować dowolne z tych praw, wyślij wiadomość na <a href="mailto:pacjentmaprawo@proton.me" className="text-teal underline">pacjentmaprawo@proton.me</a>.
+            Aby zrealizować dowolne z tych praw, wyślij wiadomość na <a href="mailto:kontakt@pacjentmaprawo.pl" className="text-teal underline">kontakt@pacjentmaprawo.pl</a>.
           </p>
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">7. Cookies i analytics</h2>

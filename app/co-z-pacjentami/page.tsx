@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { ExternalLink, AlertTriangle, FileText, Users } from 'lucide-react'
+import { AlertTriangle, FileText, Users } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ const timeline = [
   {
     date: 'styczeń – grudzień 2025',
     title: 'Apele pacjentów do urzędów państwowych',
-    body: 'Pacjenci kierują pisemne apele do Ministerstwa Zdrowia, Naczelnej Izby Lekarskiej, Narodowego Funduszu Zdrowia oraz Rzecznika Praw Pacjenta — organu, którego ustawowym zadaniem jest ochrona praw pacjentów. Uruchamiają własną stronę dokumentującą sytuację: pacjencidoktoraszalusia.pl',
+    body: 'Pacjenci kierują pisemne apele do Ministerstwa Zdrowia, Naczelnej Izby Lekarskiej, Narodowego Funduszu Zdrowia oraz Rzecznika Praw Pacjenta — organu, którego ustawowym zadaniem jest ochrona praw pacjentów. Pacjenci publicznie dokumentują swoją sytuację i apelują o przywrócenie ciągłości opieki.',
     type: 'action',
   },
   {
@@ -51,7 +51,7 @@ const timeline = [
 
 const wnioski = [
   {
-    title: 'Test sterowności organu nie jest spełniony',
+    title: 'Pytanie o zdolność systemu do zapewnienia ciągłości opieki',
     body: 'Nie można uzasadniać rozszerzania kompetencji represyjnych RPP do 1 mln zł kary i decyzji tymczasowych w sytuacji, w której w publicznie dostępnych materiałach nie odnotowano publicznej interwencji organu zapewniającej pacjentom ciągłość opieki. To autonomiczny zarzut z art. 31 ust. 3 Konstytucji RP.',
   },
   {
@@ -149,20 +149,12 @@ export default function CoZPacjentamiPage() {
                     Głos pacjentów
                   </h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Pacjenci dotknięci wykluczeniem swojego lekarza w 2025 r. uruchomili
-                    własną stronę dokumentującą sytuację. To autentyczny głos osób, których
-                    bezpośrednio dotyczy luka systemowa opisana wyżej.
+                    Pacjenci dotknięci wykluczeniem swojego lekarza w 2025 r. publicznie
+                    udokumentowali swoją sytuację. To autentyczny głos osób, których
+                    bezpośrednio dotyczy luka systemowa opisana wyżej. Sprawę rozstrzygnął
+                    Sąd Najwyższy — Izba Odpowiedzialności Zawodowej — orzeczeniem z grudnia
+                    2025 r., uchylając wcześniejsze rozstrzygnięcie samorządu lekarskiego.
                   </p>
-                  <a
-                    href="https://pacjencidoktoraszalusia.pl"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="outline" className="border-navy text-navy hover:bg-navy/5">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      pacjencidoktoraszalusia.pl
-                    </Button>
-                  </a>
                 </div>
               </div>
             </CardContent>
@@ -213,8 +205,9 @@ export default function CoZPacjentamiPage() {
               instytucji, której ochrona była rzekomym celem projektu.
             </p>
             <p>
-              Casus z 2025 r. pokazuje, że <strong>system represji w polskim modelu funkcjonuje, ale system
-              zapewnienia ciągłości opieki nie istnieje</strong>. UD207 zwiększa intensywność pierwszego, nie
+              Casus z 2025 r. pokazuje asymetrię systemu: <strong>mechanizmy sankcji administracyjnych są
+              operacyjnie sprawne, natomiast mechanizm zapewnienia pacjentom ciągłości opieki — w publicznie
+              dostępnych materiałach — nie został uruchomiony</strong>. UD207 wzmacnia pierwszy element, nie
               naprawiając drugiego.
             </p>
           </div>
@@ -240,7 +233,7 @@ export default function CoZPacjentamiPage() {
           <p className="text-sm text-muted-foreground leading-relaxed">
             Strona opisuje udokumentowany casus z 2025 r. Treści oparte na publicznych źródłach
             (TVN24, Rzeczpospolita, Termedia, Medexpress, baza orzeczeń NSA, baza orzeczeń SN),
-            świadectwie organizacji pacjentów (pacjencidoktoraszalusia.pl) oraz na własnej analizie
+            publicznych relacjach pacjentów oraz na własnej analizie
             prawnej pakietu obywatelskiego. Nazwisko lekarza w pakiecie publicznym celowo pomijane —
             argument dotyczy llekarza generycznie, nie indywidualnego przypadku.
           </p>

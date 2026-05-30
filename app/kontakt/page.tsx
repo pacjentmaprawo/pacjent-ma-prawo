@@ -35,7 +35,7 @@ export default function KontaktPage() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const email = 'pacjentmaprawo@proton.me'
+  const email = 'kontakt@pacjentmaprawo.pl'
 
   const handleCopy = async () => {
     try {
@@ -62,7 +62,7 @@ export default function KontaktPage() {
     await new Promise(resolve => setTimeout(resolve, 1000))
     
     setIsSubmitting(false)
-    toast.success('Wiadomość zostanie wysłana na pacjentmaprawo@proton.me')
+    toast.success('Wiadomość zostanie wysłana na kontakt@pacjentmaprawo.pl')
     setFormData({ name: '', email: '', subject: '', message: '', rodoConsent: false })
   }
 
@@ -147,10 +147,10 @@ export default function KontaktPage() {
               WAŻNE — bezpieczeństwo komunikacji:
             </h3>
             <ul className="space-y-2 text-sm text-navy/80">
-              <li>• Korzystamy z ProtonMail jako bezpiecznej poczty.</li>
+              <li>• Korzystamy z bezpiecznej, szyfrowanej poczty.</li>
               <li>• Nie przesyłaj danych medycznych ani dokumentacji medycznej przez ten kanał.</li>
               <li>• Jeśli chcesz opisać swoją historię, zanonimizuj dane osobowe i dane placówek.</li>
-              <li>• Twoje dane przetwarzamy wyłącznie w celu odpowiedzi na zapytanie, zgodnie z RODO. Nie udostępniamy ich podmiotom trzecim.</li>
+              <li>• Twoje dane przetwarzamy wyłącznie w celu odpowiedzi na zapytanie, zgodnie z RODO. Dane mogą być przetwarzane przez dostawców technicznych niezbędnych do obsługi komunikacji (hosting, poczta). Nie są sprzedawane ani udostępniane komercyjnie.</li>
             </ul>
           </CardContent>
         </Card>
@@ -253,7 +253,7 @@ export default function KontaktPage() {
               </Button>
 
               <p className="text-xs text-muted-foreground text-center">
-                Wiadomość zostanie wysłana na pacjentmaprawo@proton.me. 
+                Wiadomość zostanie wysłana na kontakt@pacjentmaprawo.pl. 
                 Twój email jest używany wyłącznie jako adres zwrotny.
               </p>
             </form>

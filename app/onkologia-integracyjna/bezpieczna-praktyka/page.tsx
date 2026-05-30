@@ -50,8 +50,8 @@ export default function BezpiecznaPraktykaPage() {
         <ul className="space-y-2 text-muted-foreground">
           <li>
             <strong>Boswellia bez AKBA</strong> — zwykły proszek ziołowy bez deklarowanej zawartości
-            acetyl-11-keto-β-boswelic acid jest bezużyteczny klinicznie. Wymóg: BSE-018 (Sabinsa, 30% AKBA),
-            H15 lub Boswellin® Super z deklaracją.
+            acetyl-11-keto-β-boswelic acid jest bezużyteczny klinicznie. Wymóg: ekstrakt standaryzowany (np. 30% AKBA),
+            ekstrakt standaryzowany na AKBA z deklarowaną zawartością aktywnych związków.
           </li>
           <li>
             <strong>Wilcacora bez POA-only</strong> — preparaty mieszane POA+TOA znoszą się nawzajem

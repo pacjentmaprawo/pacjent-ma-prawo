@@ -364,7 +364,7 @@ export default function MedycynaIntegracyjnaPage() {
                   className="inline-flex items-center gap-2 text-teal hover:underline underline-offset-4 font-medium"
                 >
                   <ExternalLink className="h-4 w-4" />
-                  Pełna analiza: Załącznik 3 v2.2 — Część V (komparatystyka 7 krajów)
+                  Pełna analiza: Załącznik 3 — Część V (komparatystyka 7 krajów)
                 </a>
               </div>
             </CardContent>
@@ -468,7 +468,7 @@ export default function MedycynaIntegracyjnaPage() {
           </div>
           <p className="text-sm text-muted-foreground mt-4">
             <strong>Legenda</strong>: wpisy w komórkach wskazują podstawę regulacyjną
-            lub status. Pełna analiza w Załączniku 3 v2.2, Część V.
+            lub status. Pełna analiza w Załączniku 3, Część V.
           </p>
         </div>
       </section>

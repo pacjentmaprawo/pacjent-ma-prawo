@@ -35,20 +35,8 @@ export default function PetycjaPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    
-    if (!formData.name || !formData.email || !formData.rodoConsent) {
-      toast.error('Proszę wypełnić wymagane pola')
-      return
-    }
-
-    setIsSubmitting(true)
-    
-    // Simulate submission
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    toast.success('Dziękujemy za podpisanie apelu')
+    // Zbieranie podpisów nie jest jeszcze uruchomione — formularz nie zapisuje danych.
+    toast.info('Zbieranie podpisów zostanie uruchomione wkrótce. Obecnie nie zapisujemy danych.')
   }
 
   if (isSubmitted) {
@@ -113,6 +101,14 @@ export default function PetycjaPage() {
         </ul>
       </section>
 
+      {/* Informacja: zbieranie nieuruchomione */}
+      <section className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 mb-6">
+        <div className="rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900">
+          <strong>Zbieranie podpisów zostanie uruchomione wkrótce.</strong> Obecnie nie zapisujemy
+          żadnych danych. Formularz poniżej ma charakter poglądowy.
+        </div>
+      </section>
+
       {/* Form Section */}
       <section className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 mb-12">
         <Card className="border border-border rounded-xl">
@@ -161,13 +157,13 @@ export default function PetycjaPage() {
               </div>
 
               <div className="space-y-3">
-                <Label className="text-navy">Jestem:</Label>
+                <Label className="text-navy">W jakim charakterze podpisujesz? (opcjonalnie)</Label>
                 <RadioGroup
                   value={formData.role}
                   onValueChange={(value) => setFormData({ ...formData, role: value })}
                   className="space-y-2"
                 >
-                  {['pacjentem', 'lekarzem', 'prawnikiem', 'przedstawicielem organizacji', 'inną osobą'].map((role) => (
+                  {['osoba prywatna / obywatel', 'pacjent lub osoba bliska pacjentowi', 'pracownik ochrony zdrowia', 'prawnik / ekspert', 'przedstawiciel organizacji'].map((role) => (
                     <div key={role} className="flex items-center space-x-2">
                       <RadioGroupItem value={role} id={role} />
                       <Label htmlFor={role} className="font-normal text-muted-foreground cursor-pointer">
@@ -205,10 +201,10 @@ export default function PetycjaPage() {
 
               <Button
                 type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-red-orange text-background font-semibold hover:bg-red-orange/90 py-6 text-base"
+                disabled
+                className="w-full bg-red-orange/60 text-background font-semibold py-6 text-base cursor-not-allowed"
               >
-                {isSubmitting ? 'Wysyłanie...' : 'Podpisuję apel'}
+                Zbieranie podpisów wkrótce
               </Button>
             </form>
           </CardContent>
@@ -218,7 +214,7 @@ export default function PetycjaPage() {
       {/* Counter */}
       <section className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 mb-12 text-center">
         <p className="text-muted-foreground">
-          <span className="font-semibold text-red-orange text-2xl">Formularz w przygotowaniu</span> — integracja z platformą petycyjną wkrótce
+          Po uruchomieniu zbierania podpisów w tym miejscu pojawi się licznik poparcia.
         </p>
       </section>
 
@@ -227,9 +223,12 @@ export default function PetycjaPage() {
         <Card className="border border-border rounded-xl bg-secondary">
           <CardContent className="p-6">
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Twoje dane są chronione zgodnie z RODO. Nie udostępniamy ich podmiotom trzecim. 
-              Formularz jest obecnie makietą — integracja z platformą petycyjną (OpenPetition.pl) 
-              zostanie dodana w najbliższym czasie.
+              Po uruchomieniu zbierania podpisów Twoje dane (imię, nazwisko, miejscowość, e-mail) będą
+              przetwarzane wyłącznie w celu udokumentowania poparcia apelu, na podstawie zgody
+              (art. 6 ust. 1 lit. a RODO), zgodnie z{' '}
+              <a href="/polityka-prywatnosci" className="text-teal underline">polityką prywatności</a>.
+              Nie zbieramy informacji o stanie zdrowia. Poparcie będzie można w każdej chwili wycofać.
+              Dane nie są sprzedawane ani udostępniane komercyjnie.
             </p>
           </CardContent>
         </Card>

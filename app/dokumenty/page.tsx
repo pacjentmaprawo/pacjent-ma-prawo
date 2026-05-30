@@ -127,7 +127,7 @@ const documents: Doc[] = [
   },
   {
     id: 8,
-    title: 'Memorandum prawne UD207 v2.1',
+    title: 'Memorandum prawne UD207',
     description: 'Analiza zgodności projektu z Konstytucją RP, EKPC i KPP UE — dokument dla BAS i kancelarii prawnych. Zawiera siedem zarzutów głównych, osiem zarzutów pomocniczych (w tym komparatystykę 7 modeli regulacyjnych UE/UK oraz polski kontekst regulacyjny CAM), dziesięć rekomendowanych poprawek oraz tabelę synoptyczną.',
     category: 'analizy',
     date: '18.05.2026',
@@ -147,7 +147,7 @@ const documents: Doc[] = [
   },
   {
     id: 10,
-    title: 'Sekcja Konstytucyjna v3.0 — 14 niezgodności + klauzula świadomej zgody',
+    title: 'Sekcja Konstytucyjna — 14 niezgodności + klauzula świadomej zgody',
     description: 'Szczegółowa analiza 14 niezgodności konstytucyjnych UD207 z orzecznictwem TK/SN/ETPC/TSUE + §12a (casus 2025 r.) + Rek.16 (klauzula świadomej zgody).',
     category: 'analizy',
     date: '18.05.2026',
@@ -157,7 +157,7 @@ const documents: Doc[] = [
   },
   {
     id: 11,
-    title: 'Załącznik 1 — Policy Paper EBM v1.10',
+    title: 'Załącznik 1 — Policy Paper EBM',
     description: 'Kompletny dokument referencyjny pakietu — EBM, OCEBM, GRADE, ESMO-MCBS, dowody dla CAM, paradoks accelerated approval.',
     category: 'analizy',
     date: '17.05.2026',
@@ -193,13 +193,11 @@ const documents: Doc[] = [
     date: '05.05.2025',
     sourceType: 'Publikacja naukowa',
     sourceIcon: FileText,
-    externalUrl: 'https://doi.org/10.1101/2025.05.02.25326858',
-    externalLabel: 'Otwórz na medRxiv',
     pdfUrl: '/dokumenty/OCEANic_preprint_medRxiv_2025.pdf',
   },
   {
     id: 17,
-    title: 'Załącznik 3 v2.2 — Mapa onkologii integracyjnej + komparatystyka 7 krajów UE/UK',
+    title: 'Załącznik 3 — Mapa onkologii integracyjnej + komparatystyka 7 krajów UE/UK',
     description: 'Rozszerzona analiza obejmująca: (I) 15 substancji wskazywanych przez polskie organy + (II) 25 metod onkologii integracyjnej z gradacją dowodową A-E + (III) 3 pary paradoksu refundacyjnego + (IV) wnioski + (V) modele regulacyjne 7 państw UE/UK (UK NICE, Niemcy G-BA, Francja HAS, Belgia Loi Colla, Holandia, Włochy Toskania, Austria ÖÄK) z tabelą zbiorczą. Argument konstytucyjny: lex certa + proporcjonalność.',
     category: 'analizy',
     date: '21.05.2026',
@@ -302,7 +300,7 @@ export default function DokumentyPage() {
       <section className="py-12 bg-cream border-t border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm text-muted-foreground text-center leading-relaxed">
-            Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, alertmedyczny.pl, medRxiv, nil.org.pl, termedia.pl, pacjencidoktoraszalusia.pl)
+            Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, alertmedyczny.pl, medRxiv, nil.org.pl, termedia.pl)
             lub stanowią własne opracowania pakietu obywatelskiego. Własne dokumenty są dostępne do bezpłatnego pobrania w formacie PDF.
             Linki zewnętrzne prowadzą bezpośrednio do tekstów źródłowych. Wszystkie weryfikowane: maj 2026.
           </p>

@@ -57,9 +57,11 @@ export default function SalinomycynaPage() {
           <p>
             <strong>Kluczowe odkrycie 2009</strong> — zespół Roberta Weinberga w MIT (Gupta et al.,{' '}
             <PMIDLink pmid="19682730">Cell, PMID 19682730</PMIDLink>) zidentyfikował salinomycynę
-            jako substancję <strong>100-krotnie skuteczniejszą</strong> od paklitakselu w eliminowaniu
-            komórek macierzystych raka piersi (<em>in vitro</em>). To było przełomowe odkrycie, bo CSCs
-            są uznawane za główną przyczynę oporności na chemioterapię i nawrotów choroby.
+            jako substancję o silnym działaniu wobec komórek macierzystych raka piersi w warunkach
+            laboratoryjnych (<em>in vitro</em>) — w tym modelu skuteczniejszą od paklitakselu w eliminowaniu
+            tych komórek. <strong>Są to wyłącznie dane przedkliniczne (in vitro); nie istnieją dojrzałe
+            badania kliniczne potwierdzające skuteczność u pacjentów.</strong> CSCs są uznawane za jedną
+            z przyczyn oporności na chemioterapię i nawrotów choroby.
           </p>
           <p>
             <strong>Mechanizmy molekularne</strong> opisane w późniejszych pracach (Naujokat & Steinhart 2012,{' '}

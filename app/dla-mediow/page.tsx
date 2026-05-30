@@ -31,12 +31,12 @@ const downloads = [
     url: '/dokumenty/Brief_Medialny_Publiczny_v1.pdf',
   },
   {
-    title: 'Memorandum prawne UD207 v2.0',
+    title: 'Memorandum prawne UD207',
     format: 'PDF, ok. 18 stron',
     url: '/dokumenty/Memorandum_prawne_UD207_v2.0.pdf',
   },
   {
-    title: 'Sekcja Konstytucyjna v3.0 — 14 niezgodności',
+    title: 'Sekcja Konstytucyjna — 14 niezgodności',
     format: 'PDF, ok. 22 strony',
     url: '/dokumenty/Sekcja_Konstytucyjna_v3.0_do_Zalacznik_1_v1.10.pdf',
   },
@@ -46,7 +46,7 @@ const downloads = [
     url: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.pdf',
   },
   {
-    title: 'Załącznik 1 — Policy Paper EBM v1.10',
+    title: 'Załącznik 1 — Policy Paper EBM',
     format: 'PDF, ok. 50 stron',
     url: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.10.pdf',
   },
@@ -136,10 +136,10 @@ export default function DlaMediaPage() {
             <CardContent className="p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Mail className="h-5 w-5 text-navy" />
-                <span className="font-semibold text-navy">pacjentmaprawo@proton.me</span>
+                <span className="font-semibold text-navy">kontakt@pacjentmaprawo.pl</span>
               </div>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p><strong>Poczta:</strong> ProtonMail (bezpieczna komunikacja). Nie przesyłaj danych medycznych przez e-mail.</p>
+                <p><strong>Poczta:</strong> bezpieczna, szyfrowana komunikacja. Nie przesyłaj danych medycznych przez e-mail.</p>
                 <p><strong>Czas odpowiedzi:</strong> zwykle 2–3 dni robocze</p>
                 <p className="pt-2">
                   Możemy zorganizować rozmowę z prawnikiem konstytucyjnym lub ekspertem

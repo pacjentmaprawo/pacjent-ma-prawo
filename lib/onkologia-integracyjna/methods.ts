@@ -500,7 +500,7 @@ export const METHODS: Method[] = [
     ],
     keySources: [
       { cite: 'Naujokat & Steinhart 2012', journal: 'BioMed Res Int', pmid: '23251084', type: 'review', finding: 'Salinomycyna jako lek targetujący nowotworowe komórki macierzyste (CSC)' },
-      { cite: 'Gupta et al. 2009 (Weinberg MIT)', journal: 'Cell', pmid: '19682730', type: 'mechanistyczne', finding: 'Salinomycyna 100-krotnie skuteczniejsza od paklitakselu w eliminowaniu CSC raka piersi (in vitro)' },
+      { cite: 'Gupta et al. 2009 (Weinberg MIT)', journal: 'Cell', pmid: '19682730', type: 'mechanistyczne', finding: 'Silne działanie wobec CSC raka piersi w modelu in vitro (skuteczniejsza od paklitakselu w tym modelu); dane wyłącznie przedkliniczne, brak potwierdzenia klinicznego' },
       { cite: 'Antoszczak & Huczynski 2015 (UAM Poznan)', journal: 'Bioorg Med Chem Lett', pmid: '25553435', type: 'mechanistyczne', finding: 'Pochodne salinomycyny — synteza i aktywność przeciwnowotworowa (polski wkład)' },
     ],
     warning: 'Brak rejestracji jako produkt leczniczy dla ludzi (EMA/FDA/URPL). Stosowanie kliniczne odbywa się na różnych podstawach prawnych: badanie kliniczne, compassionate use (art. 83 rozp. 726/2004), named patient program, indywidualne sprowadzenie z zagranicy (art. 4 ust. 7–9 Prawa farmaceutycznego). Decyzja należy do kwalifikowanego klinicysty i pacjenta po pełnej świadomej zgodzie. Konieczne monitorowanie toksyczności systemowej (neurologicznej, kardiologicznej). Substancja figuruje na liście NRL Nr 2/21/VIII jako „bez podstaw" — paradoks wobec realnych dowodów przedklinicznych.',
@@ -520,8 +520,8 @@ export const METHODS: Method[] = [
     shortDesc: 'Inhibitor 5-LOX i NF-κB; AKBA przenika barierę krew-mózg. Najsilniejszy sygnał kliniczny: redukcja obrzęku mózgu po radioterapii (RCT Kirste 2011) — GRADE moderate dla tego wskazania; GRADE low dla pozostałych.',
     mainIndications: ['obrzęk mózgu po radioterapii (najsilniejsze dowody)', 'stany zapalne w onkologii', 'wsparcie przy GBM i przerzutach mózgowych'],
     regulatory: [
-      { country: 'PL', status: 'OTC', note: 'Suplement diety; preparaty Sallaki, Boswellin dostępne w aptekach' },
-      { country: 'DE', status: 'dopuszczone', note: 'Heilpraktiker; H15 (Steigerwald) stosowany klinicznie; bez refundacji GKV' },
+      { country: 'PL', status: 'OTC', note: 'Suplement diety; ekstrakty standaryzowane na AKBA dostępne w aptekach' },
+      { country: 'DE', status: 'dopuszczone', note: 'Heilpraktiker; standaryzowane ekstrakty boswellii stosowane klinicznie; bez refundacji GKV' },
       { country: 'CH', status: 'refundowane', note: 'W zakresie fitoterapii (1 z 5 refundowanych metod CAM)' },
       { country: 'USA', status: 'OTC', note: 'Dietary supplement; trial NCT03149081 (phase I, MUSC)' },
     ],
@@ -530,7 +530,7 @@ export const METHODS: Method[] = [
       { cite: 'Dejonckheere et al. 2025', journal: 'Adv Radiat Oncol', doi: 'PMC11904484', type: 'review', finding: 'Meta-narrative systematic review: kliniczne potwierdzenie BA przy obrzęku mózgu po RT; redukcja zależności od deksametazonu' },
       { cite: 'Morikawa et al. 2024', journal: 'Front Pharmacol', pmid: '38194131', type: 'RCT-I', finding: 'Faza Ia window-of-opportunity (rak piersi): BS hamuje proliferację nowotworową' },
     ],
-    warning: 'Koagulopatie, DVT, zaburzenia krzepnięcia — przeciwwskazane. Ostrożność: ciąża, laktacja, przeszczepy. Jakość preparatu krytyczna: BSE-018 (30% AKBA) lub H15 > zwykłe proszki ziołowe.',
+    warning: 'Koagulopatie, DVT, zaburzenia krzepnięcia — przeciwwskazane. Ostrożność: ciąża, laktacja, przeszczepy. Jakość preparatu krytyczna: ekstrakt standaryzowany na AKBA > zwykłe proszki ziołowe.',
     evidenceSignal: 'RCT II double-blind Kirste 2011 (n=44): 60% pacjentów ≥75% redukcja obrzęku mózgu po RT vs 26% placebo (p=0,023). Systematic review Dejonckheere 2025.',
     highestEvidenceType: 'B',
     clinicalStatus: 'supportive-care',
