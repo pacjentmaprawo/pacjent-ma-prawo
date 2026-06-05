@@ -1,13 +1,13 @@
-import type { Method } from '@/lib/onkologia-integracyjna/types'
-import { EVIDENCE_TYPE_LABELS, EVIDENCE_TYPE_DESCRIPTIONS, CLINICAL_STATUS_LABELS } from '@/lib/onkologia-integracyjna/types'
+import type { Method } from '@/lib/terapie-wspomagajace/types'
+import { EVIDENCE_TYPE_LABELS, EVIDENCE_TYPE_DESCRIPTIONS, CLINICAL_STATUS_LABELS } from '@/lib/terapie-wspomagajace/types'
 import Link from 'next/link'
-import { CATEGORY_LABELS, GRADE_DESCRIPTIONS } from '@/lib/onkologia-integracyjna/types'
+import { CATEGORY_LABELS, GRADE_DESCRIPTIONS } from '@/lib/terapie-wspomagajace/types'
 import { GradeBadge, CategoryBadge, PMIDLink, EvidenceTypeBadge, ClinicalStatusBadge } from './badges'
 import { SectionDisclaimer } from './disclaimer'
 
 /**
  * Wzorzec podstrony pojedynczej metody onkologii integracyjnej.
- * Dane przekazywane jako prop `method` z lib/onkologia-integracyjna/methods.ts.
+ * Dane przekazywane jako prop `method` z lib/terapie-wspomagajace/methods.ts.
  *
  * Struktura 9 sekcji:
  *  1. WHAT — co to jest
@@ -81,7 +81,7 @@ export function MethodPage({
               {method.highestEvidenceType && <EvidenceTypeBadge type={method.highestEvidenceType} />}
               {method.clinicalStatus && <ClinicalStatusBadge status={method.clinicalStatus} />}
               <GradeBadge grade={method.grade} />
-              <Link href="/onkologia-integracyjna/jak-czytac-dowody" className="ml-auto text-xs underline text-muted-foreground hover:text-foreground">Jak czytać te oznaczenia →</Link>
+              <Link href="/terapie-wspomagajace/jak-czytac-dowody" className="ml-auto text-xs underline text-muted-foreground hover:text-foreground">Jak czytać te oznaczenia →</Link>
             </div>
             {method.evidenceSignal && (
               <div><strong className="text-foreground">Sygnał efektu:</strong>{' '}<span className="text-muted-foreground">{method.evidenceSignal}</span></div>
@@ -96,7 +96,7 @@ export function MethodPage({
               <div className="rounded-md bg-muted/50 p-3"><strong className="text-foreground">Kontekst dowodowy:</strong>{' '}<span className="text-muted-foreground">{method.evidenceContext}</span></div>
             )}
             <div className="text-xs text-muted-foreground italic pt-1 border-t">
-              GRADE mierzy pewność oszacowania efektu — nie sam efekt. „Niska pewność" nie oznacza „brak efektu". Substancje nieopatentowane strukturalnie nie dostają RCT III bo brak sponsora. Więcej: <Link href="/onkologia-integracyjna/jak-czytac-dowody" className="underline">Jak czytać dowody</Link>.
+              GRADE mierzy pewność oszacowania efektu — nie sam efekt. „Niska pewność" nie oznacza „brak efektu". Substancje nieopatentowane strukturalnie nie dostają RCT III bo brak sponsora. Więcej: <Link href="/terapie-wspomagajace/jak-czytac-dowody" className="underline">Jak czytać dowody</Link>.
             </div>
           </div>
         )}
@@ -216,7 +216,7 @@ export function MethodPage({
         <p className="mt-4 text-xs text-muted-foreground">
           Status regulacyjny zmienia się — informacje aktualne na dzień rewizji podstrony.
           Szczegółowe porównanie 7 krajów UE:{' '}
-          <a href="/onkologia-integracyjna/refundacja-w-ue" className="text-primary underline">
+          <a href="/terapie-wspomagajace/refundacja-w-ue" className="text-primary underline">
             Refundacja w UE
           </a>
           .
@@ -241,7 +241,7 @@ export function MethodPage({
           wszystkich źródeł cytowanych na stronie:
         </p>
         <a
-          href="/onkologia-integracyjna/zrodla"
+          href="/terapie-wspomagajace/zrodla"
           className="inline-block rounded-md border border-input bg-background px-4 py-2 text-sm font-medium transition hover:bg-muted"
         >
           Zobacz wszystkie źródła →

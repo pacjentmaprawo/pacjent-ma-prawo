@@ -1,5 +1,5 @@
-import type { EvidenceGrade, MethodCategory, Method } from '@/lib/onkologia-integracyjna/types'
-import { GRADE_LABELS, CATEGORY_LABELS, EVIDENCE_TYPE_LABELS, CLINICAL_STATUS_LABELS } from '@/lib/onkologia-integracyjna/types'
+import type { EvidenceGrade, MethodCategory, Method } from '@/lib/terapie-wspomagajace/types'
+import { GRADE_LABELS, CATEGORY_LABELS, EVIDENCE_TYPE_LABELS, CLINICAL_STATUS_LABELS } from '@/lib/terapie-wspomagajace/types'
 
 /**
  * Badge poziomu dowodów GRADE.

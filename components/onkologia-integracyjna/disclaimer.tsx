@@ -18,7 +18,7 @@ export function SectionDisclaimer({ variant = 'compact' }: { variant?: 'compact'
               integracyjne stosuje się <strong>wyłącznie pod nadzorem lekarza</strong> z pełnymi
               kwalifikacjami zawodowymi. Strona <strong>nie zachęca do rezygnacji</strong> z leczenia
               konwencjonalnego.{' '}
-              <a href="/onkologia-integracyjna/disclaimer" className="font-medium underline">
+              <a href="/terapie-wspomagajace/disclaimer" className="font-medium underline">
                 Pełny disclaimer →
               </a>
             </p>

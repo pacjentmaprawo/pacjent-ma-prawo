@@ -2,14 +2,14 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { METHODS, METHODS_BY_CATEGORY, type MethodCategory } from '@/lib/onkologia-integracyjna/methods'
-import { CATEGORY_LABELS } from '@/lib/onkologia-integracyjna/types'
+import { METHODS, METHODS_BY_CATEGORY, type MethodCategory } from '@/lib/terapie-wspomagajace/methods'
+import { CATEGORY_LABELS } from '@/lib/terapie-wspomagajace/types'
 import { EvidenceTypeBadge } from './badges'
 
 const CATEGORY_ORDER: MethodCategory[] = ['A', 'B', 'C', 'D']
 
 /**
- * Boczna nawigacja sekcji "Onkologia integracyjna" z listą wszystkich metod
+ * Boczna nawigacja sekcji "Terapie wspomagające" z listą wszystkich metod
  * pogrupowanych w 4 kategorie (A/B/C/D). Aktywna podstrona jest podświetlona.
  */
 export function MethodSidebar() {
@@ -19,9 +19,9 @@ export function MethodSidebar() {
     <nav aria-label="Spis metod onkologii integracyjnej" className="space-y-6 text-sm">
       <div className="space-y-1">
         <Link
-          href="/onkologia-integracyjna"
+          href="/terapie-wspomagajace"
           className={`block rounded px-2 py-1.5 font-medium transition ${
-            pathname === '/onkologia-integracyjna'
+            pathname === '/terapie-wspomagajace'
               ? 'bg-primary/10 text-primary'
               : 'text-foreground hover:bg-muted'
           }`}
@@ -29,9 +29,9 @@ export function MethodSidebar() {
           Strona główna sekcji
         </Link>
         <Link
-          href="/onkologia-integracyjna/o-bazie"
+          href="/terapie-wspomagajace/o-bazie"
           className={`block rounded px-2 py-1.5 transition ${
-            pathname === '/onkologia-integracyjna/o-bazie'
+            pathname === '/terapie-wspomagajace/o-bazie'
               ? 'bg-primary/10 text-primary font-medium'
               : 'text-muted-foreground hover:bg-muted hover:text-foreground'
           }`}
@@ -39,9 +39,9 @@ export function MethodSidebar() {
           O bazie
         </Link>
         <Link
-          href="/onkologia-integracyjna/jak-czytac-ebm"
+          href="/terapie-wspomagajace/jak-czytac-ebm"
           className={`block rounded px-2 py-1.5 transition ${
-            pathname === '/onkologia-integracyjna/jak-czytac-ebm'
+            pathname === '/terapie-wspomagajace/jak-czytac-ebm'
               ? 'bg-primary/10 text-primary font-medium'
               : 'text-muted-foreground hover:bg-muted hover:text-foreground'
           }`}
@@ -49,9 +49,9 @@ export function MethodSidebar() {
           Jak czytać EBM
         </Link>
         <Link
-          href="/onkologia-integracyjna/jak-czytac-dowody"
+          href="/terapie-wspomagajace/jak-czytac-dowody"
           className={`block rounded px-2 py-1.5 transition ${
-            pathname === '/onkologia-integracyjna/jak-czytac-dowody'
+            pathname === '/terapie-wspomagajace/jak-czytac-dowody'
               ? 'bg-primary/10 text-primary font-medium'
               : 'text-muted-foreground hover:bg-muted hover:text-foreground'
           }`}
@@ -59,9 +59,9 @@ export function MethodSidebar() {
           Jak czytać dowody
         </Link>
         <Link
-          href="/onkologia-integracyjna/slownik"
+          href="/terapie-wspomagajace/slownik"
           className={`block rounded px-2 py-1.5 transition ${
-            pathname === '/onkologia-integracyjna/slownik'
+            pathname === '/terapie-wspomagajace/slownik'
               ? 'bg-primary/10 text-primary font-medium'
               : 'text-muted-foreground hover:bg-muted hover:text-foreground'
           }`}
@@ -85,7 +85,7 @@ export function MethodSidebar() {
               </h3>
               <ul className="space-y-0.5">
                 {methods.map((m) => {
-                  const href = `/onkologia-integracyjna/metody/${m.slug}`
+                  const href = `/terapie-wspomagajace/metody/${m.slug}`
                   const isActive = pathname === href
                   return (
                     <li key={m.slug}>
@@ -116,37 +116,37 @@ export function MethodSidebar() {
           Materiały referencyjne
         </h2>
         <Link
-          href="/onkologia-integracyjna/wytyczne-asco-sio"
+          href="/terapie-wspomagajace/wytyczne-asco-sio"
           className="block rounded px-2 py-1 text-muted-foreground hover:bg-muted hover:text-foreground"
         >
           Wytyczne ASCO/SIO/NCCN
         </Link>
         <Link
-          href="/onkologia-integracyjna/refundacja-w-ue"
+          href="/terapie-wspomagajace/refundacja-w-ue"
           className="block rounded px-2 py-1 text-muted-foreground hover:bg-muted hover:text-foreground"
         >
           Refundacja w UE
         </Link>
         <Link
-          href="/onkologia-integracyjna/dla-pacjentow"
+          href="/terapie-wspomagajace/dla-pacjentow"
           className="block rounded px-2 py-1 text-muted-foreground hover:bg-muted hover:text-foreground"
         >
           Dla pacjentów
         </Link>
         <Link
-          href="/onkologia-integracyjna/dla-lekarzy"
+          href="/terapie-wspomagajace/dla-lekarzy"
           className="block rounded px-2 py-1 text-muted-foreground hover:bg-muted hover:text-foreground"
         >
           Dla lekarzy
         </Link>
         <Link
-          href="/onkologia-integracyjna/zrodla"
+          href="/terapie-wspomagajace/zrodla"
           className="block rounded px-2 py-1 text-muted-foreground hover:bg-muted hover:text-foreground"
         >
           Wszystkie źródła
         </Link>
         <Link
-          href="/onkologia-integracyjna/disclaimer"
+          href="/terapie-wspomagajace/disclaimer"
           className="block rounded px-2 py-1 text-muted-foreground hover:bg-muted hover:text-foreground"
         >
           Disclaimer pełny
