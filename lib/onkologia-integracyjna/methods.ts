@@ -2,7 +2,7 @@ import type { Method } from './types'
 
 /**
  * Lista wszystkich metod onkologii integracyjnej w naszej bazie wiedzy.
- * Każda metoda ma własny wpis i podstronę pod /onkologia-integracyjna/metody/[slug].
+ * Każda metoda ma własny wpis i podstronę pod /terapie-wspomagajace/metody/[slug].
  * Wszystkie publikacje zweryfikowane PMID/DOI w bazach pierwotnych (PubMed, Cochrane, JCO).
  */
 export const METHODS: Method[] = [
