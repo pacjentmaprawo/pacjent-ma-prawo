@@ -15,7 +15,7 @@ const navLinks = [
   { href: '/dokumenty', label: 'Dokumenty' },
   { href: '/faq', label: 'FAQ' },
   { href: '/dla-mediow', label: 'Dla mediów' },
-  { href: '/petycja-ud207', label: 'Wyślij petycję' },
+  { href: '/petycja-ud207', label: 'Wyślij apel ws. UD207' },
   { href: '/kontakt', label: 'Kontakt' },
 ]
 

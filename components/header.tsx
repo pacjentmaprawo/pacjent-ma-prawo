@@ -26,7 +26,7 @@ const groups: NavGroup[] = [
       { href: '/dlaczego-sprzeciw', label: 'Dlaczego sprzeciw' },
       { href: '/co-proponujemy', label: 'Co proponujemy' },
       { href: '/co-z-pacjentami', label: 'Co z pacjentami' },
-      { href: '/petycja-ud207', label: 'Wyślij petycję' },
+      { href: '/petycja-ud207', label: 'Wyślij apel ws. UD207' },
     ],
   },
   {
@@ -112,7 +112,7 @@ export function Header() {
             {/* CTA Button - Desktop */}
             <Link href="/petycja-ud207" className="hidden sm:block">
               <Button className="bg-red-orange text-background font-semibold hover:bg-red-orange/90 hover:scale-[1.02] transition-all whitespace-nowrap focus-visible:ring-2 focus-visible:ring-red-orange focus-visible:ring-offset-2 focus-visible:ring-offset-navy">
-                Wyślij petycję
+                Wyślij apel
               </Button>
             </Link>
 
@@ -169,7 +169,7 @@ export function Header() {
                   <div className="mt-auto pt-6 border-t border-border">
                     <Link href="/petycja-ud207" onClick={() => setOpen(false)}>
                       <Button className="w-full bg-red-orange text-background font-semibold hover:bg-red-orange/90">
-                        Wyślij petycję
+                        Wyślij apel
                       </Button>
                     </Link>
                   </div>

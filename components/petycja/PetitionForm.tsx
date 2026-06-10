@@ -11,6 +11,12 @@ import {
   CheckCircle2,
   AlertTriangle,
   ArrowDown,
+  FileDown,
+  FileText,
+  Share2,
+  Facebook,
+  Twitter,
+  Link2,
 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -23,6 +29,7 @@ import { SelfIntroduction } from './SelfIntroduction'
 import {
   ALL_ADDRESSEES,
   PRIORITY_ADDRESSEES,
+  CORE_DEFAULT_IDS,
   type Addressee,
   type VariantId,
 } from '@/lib/petycja/addressees'
@@ -33,12 +40,18 @@ import {
   buildMailtoUrl,
   CONTACT_BCC,
 } from '@/lib/petycja/variants'
+import { FULL_PETITION_TEXT } from '@/lib/petycja/petitionText'
+import { downloadLetterPdf, downloadPetitionPdf } from '@/lib/petycja/pdf'
+import { registerSubmission } from '@/lib/petycja/counter'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 function defaultSelected(): Set<string> {
-  return new Set(PRIORITY_ADDRESSEES.filter((a) => a.defaultChecked).map((a) => a.id))
+  return new Set(CORE_DEFAULT_IDS)
 }
+
+const SHARE_URL = 'https://pacjentmaprawo.pl/petycja-ud207'
+const SHARE_HASHTAGS = ['#PacjentMaPrawo', '#UD207', '#PrawoDoBezpiecznejOpieki']
 
 interface SendGroup {
   variant: VariantId
@@ -46,9 +59,17 @@ interface SendGroup {
   emails: string[]
 }
 
+function fireAnalytics(event: string) {
+  try {
+    ;(window as unknown as { va?: (e: string, n: string) => void }).va?.('event', event)
+  } catch {
+    /* analytics opcjonalne */
+  }
+}
+
 export function PetitionForm() {
   const [selectedIds, setSelectedIds] = useState<Set<string>>(defaultSelected)
-  const [manualEmail, setManualEmail] = useState('')
+  const [manualEmails, setManualEmails] = useState<Record<string, string>>({})
   const [selfIntro, setSelfIntro] = useState('')
   const [sendCopy, setSendCopy] = useState(false)
   const [showSend, setShowSend] = useState(false)
@@ -70,23 +91,27 @@ export function PetitionForm() {
     })
   }
 
+  const onManualEmailChange = (id: string, value: string) =>
+    setManualEmails((prev) => ({ ...prev, [id]: value }))
+
   const selectAllPriority = () =>
     setSelectedIds(new Set(PRIORITY_ADDRESSEES.filter((a) => a.id !== 'moj-posel').map((a) => a.id)))
   const clearAll = () => setSelectedIds(new Set())
 
-  const manualValid = EMAIL_RE.test(manualEmail.trim())
-
-  // Adresat e-mailowy / formularzowy gotowy do wysyłki?
   const resolvedEmail = (a: Addressee): string | null => {
-    if (a.deliveryMode === 'manual') return manualValid ? manualEmail.trim() : null
     if (a.deliveryMode === 'external_form') return null
+    if (a.deliveryMode === 'manual') {
+      const v = (manualEmails[a.id] ?? '').trim()
+      return EMAIL_RE.test(v) ? v : null
+    }
     return a.email || null
   }
 
   const selectedAddressees = useMemo(
     () =>
       ALL_ADDRESSEES.filter((a) => selectedIds.has(a.id)).sort(
-        (x, y) => VARIANT_ORDER.indexOf(x.variantSuggestion) - VARIANT_ORDER.indexOf(y.variantSuggestion),
+        (x, y) =>
+          VARIANT_ORDER.indexOf(x.variantSuggestion) - VARIANT_ORDER.indexOf(y.variantSuggestion),
       ),
     [selectedIds],
   )
@@ -108,7 +133,7 @@ export function PetitionForm() {
     }
     return VARIANT_ORDER.filter((v) => map.has(v)).map((v) => map.get(v)!)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedAddressees, manualEmail, manualValid])
+  }, [selectedAddressees, manualEmails])
 
   const externalTargets = useMemo(
     () => selectedAddressees.filter((a) => a.deliveryMode === 'external_form'),
@@ -118,8 +143,12 @@ export function PetitionForm() {
   const totalRecipients =
     mailtoGroups.reduce((sum, g) => sum + g.emails.length, 0) + externalTargets.length
 
-  const manualSelectedButInvalid =
-    selectedIds.has('moj-posel') && manualEmail.trim().length > 0 && !manualValid
+  const manualSelectedButInvalid = selectedAddressees.some(
+    (a) =>
+      a.deliveryMode === 'manual' &&
+      (manualEmails[a.id] ?? '').trim().length > 0 &&
+      !EMAIL_RE.test((manualEmails[a.id] ?? '').trim()),
+  )
 
   const handlePrepare = () => {
     if (totalRecipients === 0) {
@@ -127,25 +156,40 @@ export function PetitionForm() {
       return
     }
     setShowSend(true)
-    try {
-      // Lekki, anonimowy licznik zdarzeń (bez danych osobowych).
-      ;(window as unknown as { va?: (e: string, n: string) => void }).va?.('event', 'petition_prepared')
-    } catch {
-      /* analytics opcjonalne */
-    }
+    fireAnalytics('petition_prepared')
     requestAnimationFrame(() => {
       document.getElementById('sekcja-wyslij')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     })
   }
 
-  const copyMessage = async (variant: VariantId) => {
-    const msg = composeMessage(VARIANTS[variant], selfIntro)
+  // Po otwarciu wiadomości / formularza — anonimowy licznik (raz na przeglądarkę).
+  const handleSendClick = () => {
+    fireAnalytics('mailto_opened')
+    registerSubmission().then((res) => {
+      if (res && res.configured && res.count != null) {
+        window.dispatchEvent(new CustomEvent('petycja-counted', { detail: res.count }))
+      }
+    })
+  }
+
+  const copyText = async (text: string, okMsg: string) => {
     try {
-      await navigator.clipboard.writeText(`${msg.subject}\n\n${msg.body}`)
-      toast.success('Treść skopiowana do schowka.')
+      await navigator.clipboard.writeText(text)
+      toast.success(okMsg)
     } catch {
       toast.error('Nie udało się skopiować. Zaznacz tekst ręcznie.')
     }
+  }
+
+  const copyMessage = (variant: VariantId) => {
+    const msg = composeMessage(VARIANTS[variant], selfIntro)
+    return copyText(`${msg.subject}\n\n${msg.body}`, 'Treść pisma skopiowana do schowka.')
+  }
+
+  const pdfMessage = (variant: VariantId, recipients?: string) => {
+    const msg = composeMessage(VARIANTS[variant], selfIntro)
+    const ok = downloadLetterPdf({ subject: msg.subject, body: msg.body, recipients })
+    if (!ok) toast.error('Przeglądarka zablokowała okno PDF — zezwól na wyskakujące okna.')
   }
 
   const mailtoForGroup = (group: SendGroup): string => {
@@ -157,6 +201,21 @@ export function PetitionForm() {
       bcc: sendCopy ? CONTACT_BCC : undefined,
     })
   }
+
+  const shareFacebook = () =>
+    window.open(
+      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(SHARE_URL)}`,
+      '_blank',
+      'noopener,noreferrer',
+    )
+  const shareX = () =>
+    window.open(
+      `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+        'Wysłałem/am apel obywatelski ws. projektu UD207. Dołącz:',
+      )}&url=${encodeURIComponent(SHARE_URL)}&hashtags=PacjentMaPrawo,UD207`,
+      '_blank',
+      'noopener,noreferrer',
+    )
 
   return (
     <div className="space-y-10">
@@ -171,9 +230,10 @@ export function PetitionForm() {
           </h2>
         </div>
         <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-          Domyślnie zaznaczyliśmy {PRIORITY_ADDRESSEES.filter((a) => a.defaultChecked).length}{' '}
-          najważniejszych adresatów. Możesz dowolnie odznaczać i zaznaczać kolejne osoby —
-          każda otrzyma pismo dopasowane do swojej roli.
+          Domyślnie zaznaczyliśmy {CORE_DEFAULT_IDS.length} najważniejszych adresatów (prezydium
+          Komisji Zdrowia Sejmu, przewodnicząca Komisji Zdrowia Senatu, Prezydent i RPO). Pozostałych
+          — w tym Twojego lokalnego posła — możesz dodać poniżej. Każdy adresat otrzyma pismo
+          dopasowane do swojej roli.
         </p>
 
         <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -205,14 +265,14 @@ export function PetitionForm() {
           selectedIds={selectedIds}
           onToggle={toggle}
           onSetMany={setMany}
-          manualEmail={manualEmail}
-          onManualEmailChange={setManualEmail}
+          manualEmails={manualEmails}
+          onManualEmailChange={onManualEmailChange}
         />
 
         {manualSelectedButInvalid && (
           <p className="mt-2 flex items-center gap-1.5 text-xs text-red-orange">
             <AlertTriangle className="h-3.5 w-3.5" />
-            Adres e-mail Twojego posła wygląda na niepełny — sprawdź go przed wysyłką.
+            Jeden z wpisanych ręcznie adresów e-mail wygląda na niepełny — sprawdź go przed wysyłką.
           </p>
         )}
       </section>
@@ -226,7 +286,8 @@ export function PetitionForm() {
             2
           </span>
           <h2 id="krok-2" className="font-serif text-2xl font-semibold text-navy">
-            Przybliż siebie <span className="text-base font-normal text-muted-foreground">(opcjonalne)</span>
+            Przybliż siebie{' '}
+            <span className="text-base font-normal text-muted-foreground">(opcjonalne)</span>
           </h2>
         </div>
         <SelfIntroduction value={selfIntro} onChange={setSelfIntro} />
@@ -252,7 +313,10 @@ export function PetitionForm() {
             onCheckedChange={(c) => setSendCopy(c as boolean)}
             className="mt-0.5"
           />
-          <Label htmlFor="send-copy" className="cursor-pointer font-normal text-sm text-muted-foreground leading-relaxed">
+          <Label
+            htmlFor="send-copy"
+            className="cursor-pointer font-normal text-sm text-muted-foreground leading-relaxed"
+          >
             <span className="font-medium text-navy">Prześlij nam też kopię (opcjonalnie).</span>{' '}
             Adres {CONTACT_BCC} zostanie dodany do ukrytej kopii (BCC). Otrzymamy treść i Twój
             adres e-mail wyłącznie do statystyk kampanii. Pole odznaczone domyślnie.
@@ -288,14 +352,57 @@ export function PetitionForm() {
           <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
             Pogrupowaliśmy adresatów według rodzaju pisma. Kliknij „Otwórz wiadomość” przy każdej
             grupie — Twój program pocztowy otworzy gotowy e-mail z wpisanymi adresatami i treścią.
-            Wystarczy go wysłać. Jeśli wolisz wkleić treść ręcznie, użyj „Kopiuj treść”.
+            Możesz też pobrać kopię pisma w PDF dla siebie.
           </p>
+
+          {/* Pełna treść petycji — kopiuj / PDF */}
+          <Card className="card-accent-navy border border-border rounded-xl mb-6 bg-secondary/40">
+            <CardContent className="p-5">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  <h3 className="font-serif text-base font-semibold text-navy">
+                    Pełna treść petycji (pkt I–VI)
+                  </h3>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    Maile zawierają zwięzły list. Jeśli chcesz wysłać pełną petycję, skopiuj jej
+                    całość i wklej do wiadomości lub pobierz jako PDF.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    className="border-navy/30 text-navy"
+                    onClick={() => copyText(FULL_PETITION_TEXT, 'Pełna treść petycji skopiowana.')}
+                  >
+                    <Copy className="h-4 w-4 mr-2" />
+                    Kopiuj pełną treść
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    className="border-navy/30 text-navy"
+                    onClick={() => downloadPetitionPdf()}
+                  >
+                    <FileText className="h-4 w-4 mr-2" />
+                    Pełna petycja (PDF)
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
           <div className="space-y-4">
             {mailtoGroups.map((group) => {
               const variant = VARIANTS[group.variant]
+              const recipientLabel = group.addressees.map((a) => a.label).join(', ')
               return (
-                <Card key={group.variant} className="card-accent-teal border border-border rounded-xl">
+                <Card
+                  key={group.variant}
+                  className="card-accent-teal border border-border rounded-xl"
+                >
                   <CardContent className="p-5 lg:p-6">
                     <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
                       <div>
@@ -325,7 +432,7 @@ export function PetitionForm() {
                     </div>
 
                     <div className="flex flex-wrap gap-2">
-                      <a href={mailtoForGroup(group)}>
+                      <a href={mailtoForGroup(group)} onClick={handleSendClick}>
                         <Button
                           type="button"
                           className="bg-navy text-background font-medium hover:bg-navy/90"
@@ -342,6 +449,15 @@ export function PetitionForm() {
                       >
                         <Copy className="h-4 w-4 mr-2" />
                         Kopiuj treść
+                      </Button>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        className="border-navy/30 text-navy"
+                        onClick={() => pdfMessage(group.variant, recipientLabel)}
+                      >
+                        <FileDown className="h-4 w-4 mr-2" />
+                        Kopia PDF
                       </Button>
                     </div>
                   </CardContent>
@@ -361,7 +477,12 @@ export function PetitionForm() {
                     <h3 className="font-serif text-lg font-semibold text-navy mb-1">{a.label}</h3>
                     {a.note && <p className="text-sm text-muted-foreground mb-4">{a.note}</p>}
                     <div className="flex flex-wrap gap-2">
-                      <a href={a.externalUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={a.externalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={handleSendClick}
+                      >
                         <Button
                           type="button"
                           className="bg-navy text-background font-medium hover:bg-navy/90"
@@ -379,12 +500,75 @@ export function PetitionForm() {
                         <Copy className="h-4 w-4 mr-2" />
                         Kopiuj treść wniosku
                       </Button>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        className="border-navy/30 text-navy"
+                        onClick={() => pdfMessage(a.variantSuggestion, a.label)}
+                      >
+                        <FileDown className="h-4 w-4 mr-2" />
+                        Kopia PDF
+                      </Button>
                     </div>
                   </CardContent>
                 </Card>
               )
             })}
           </div>
+
+          {/* Udostępnij po wysłaniu */}
+          <Card className="card-accent-amber border border-border rounded-xl mt-6 bg-cream">
+            <CardContent className="p-5 lg:p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <Share2 className="h-5 w-5 text-amber" />
+                <h3 className="font-serif text-lg font-semibold text-navy">
+                  Wysłałeś? Pomóż dotrzeć dalej
+                </h3>
+              </div>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                Im więcej osób wyśle apel, tym większa presja na poprawę projektu. Udostępnij
+                znajomym — to zajmuje sekundę.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <Button
+                  type="button"
+                  className="bg-navy text-background font-medium hover:bg-navy/90"
+                  onClick={shareFacebook}
+                >
+                  <Facebook className="h-4 w-4 mr-2" />
+                  Udostępnij na Facebooku
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="border-navy/30 text-navy"
+                  onClick={shareX}
+                >
+                  <Twitter className="h-4 w-4 mr-2" />
+                  Udostępnij na X
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="border-navy/30 text-navy"
+                  onClick={() => copyText(SHARE_URL, 'Link skopiowany do schowka.')}
+                >
+                  <Link2 className="h-4 w-4 mr-2" />
+                  Kopiuj link
+                </Button>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {SHARE_HASHTAGS.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full bg-navy/5 px-3 py-1 text-xs font-medium text-navy"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
 
           {sendCopy && (
             <p className="mt-4 text-xs text-muted-foreground">

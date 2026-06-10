@@ -29,8 +29,8 @@ interface AddresseePickerProps {
   selectedIds: Set<string>
   onToggle: (id: string) => void
   onSetMany: (ids: string[], checked: boolean) => void
-  manualEmail: string
-  onManualEmailChange: (value: string) => void
+  manualEmails: Record<string, string>
+  onManualEmailChange: (id: string, value: string) => void
 }
 
 function DeliveryIcon({ mode }: { mode: Addressee['deliveryMode'] }) {
@@ -47,38 +47,57 @@ function AddresseeRow({
   addressee,
   checked,
   onToggle,
+  manualEmails,
+  onManualEmailChange,
 }: {
   addressee: Addressee
   checked: boolean
   onToggle: (id: string) => void
+  manualEmails: Record<string, string>
+  onManualEmailChange: (id: string, value: string) => void
 }) {
+  const isManual = addressee.deliveryMode === 'manual'
   return (
-    <div className="flex items-start gap-3 rounded-lg px-3 py-2.5 hover:bg-secondary/60 transition-colors">
-      <Checkbox
-        id={`addr-${addressee.id}`}
-        checked={checked}
-        onCheckedChange={() => onToggle(addressee.id)}
-        className="mt-0.5"
-      />
-      <Label
-        htmlFor={`addr-${addressee.id}`}
-        className="flex-1 cursor-pointer font-normal"
-      >
-        <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
-          <span className="font-medium text-navy">{addressee.label}</span>
-          {addressee.klub && (
-            <Badge variant="secondary" className="text-[10px] font-normal">
-              {addressee.klub}
-            </Badge>
-          )}
-          <DeliveryIcon mode={addressee.deliveryMode} />
-        </span>
-        {addressee.role && (
-          <span className="mt-0.5 block text-xs text-muted-foreground leading-snug">
-            {addressee.role}
+    <div className="rounded-lg px-3 py-2.5 hover:bg-secondary/60 transition-colors">
+      <div className="flex items-start gap-3">
+        <Checkbox
+          id={`addr-${addressee.id}`}
+          checked={checked}
+          onCheckedChange={() => onToggle(addressee.id)}
+          className="mt-0.5"
+        />
+        <Label htmlFor={`addr-${addressee.id}`} className="flex-1 cursor-pointer font-normal">
+          <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span className="font-medium text-navy">{addressee.label}</span>
+            {addressee.klub && (
+              <Badge variant="secondary" className="text-[10px] font-normal">
+                {addressee.klub}
+              </Badge>
+            )}
+            <DeliveryIcon mode={addressee.deliveryMode} />
           </span>
-        )}
-      </Label>
+          {addressee.role && (
+            <span className="mt-0.5 block text-xs text-muted-foreground leading-snug">
+              {addressee.role}
+            </span>
+          )}
+        </Label>
+      </div>
+      {isManual && checked && (
+        <div className="mt-2 pl-7 space-y-1.5">
+          <Input
+            type="email"
+            inputMode="email"
+            placeholder="adres e-mail adresata"
+            value={manualEmails[addressee.id] ?? ''}
+            onChange={(e) => onManualEmailChange(addressee.id, e.target.value)}
+            className="border-border focus:ring-amber"
+          />
+          {addressee.note && (
+            <p className="text-xs text-muted-foreground leading-snug">{addressee.note}</p>
+          )}
+        </div>
+      )}
     </div>
   )
 }
@@ -89,14 +108,18 @@ function GroupBlock({
   selectedIds,
   onToggle,
   onSetMany,
+  manualEmails,
+  onManualEmailChange,
 }: {
   group: { id: DisplayGroup; label: string; description: string }
   addressees: Addressee[]
   selectedIds: Set<string>
   onToggle: (id: string) => void
   onSetMany: (ids: string[], checked: boolean) => void
+  manualEmails: Record<string, string>
+  onManualEmailChange: (id: string, value: string) => void
 }) {
-  const mailableIds = addressees.map((a) => a.id)
+  const ids = addressees.map((a) => a.id)
   const selectedInGroup = addressees.filter((a) => selectedIds.has(a.id)).length
   const allSelected = selectedInGroup === addressees.length && addressees.length > 0
 
@@ -118,7 +141,7 @@ function GroupBlock({
             variant="outline"
             size="sm"
             className="h-7 text-xs border-navy/30 text-navy"
-            onClick={() => onSetMany(mailableIds, !allSelected)}
+            onClick={() => onSetMany(ids, !allSelected)}
           >
             {allSelected ? 'Odznacz wszystkie' : 'Zaznacz wszystkie'}
           </Button>
@@ -131,6 +154,8 @@ function GroupBlock({
             addressee={a}
             checked={selectedIds.has(a.id)}
             onToggle={onToggle}
+            manualEmails={manualEmails}
+            onManualEmailChange={onManualEmailChange}
           />
         ))}
       </div>
@@ -142,23 +167,18 @@ export function AddresseePicker({
   selectedIds,
   onToggle,
   onSetMany,
-  manualEmail,
+  manualEmails,
   onManualEmailChange,
 }: AddresseePickerProps) {
   const [optionalOpen, setOptionalOpen] = useState(false)
 
-  const manualAddressee = PRIORITY_ADDRESSEES.find((a) => a.deliveryMode === 'manual')
+  const mojPosel = PRIORITY_ADDRESSEES.find((a) => a.id === 'moj-posel')
   const fullKzSelected = FULL_KZ_SEJM_ADDRESSEES.filter((a) => selectedIds.has(a.id)).length
   const allKzSelected = fullKzSelected === FULL_KZ_SEJM_ADDRESSEES.length
 
   return (
     <div className="space-y-4">
       {DISPLAY_GROUPS.map((group) => {
-        // Adresat "mój poseł" obsługiwany osobnym blokiem z polem e-mail.
-        const groupAddressees = PRIORITY_ADDRESSEES.filter(
-          (a) => a.displayGroup === group.id && a.deliveryMode !== 'manual',
-        )
-
         if (group.id === 'lokalny') {
           return (
             <div key={group.id} className="rounded-xl border border-border overflow-hidden">
@@ -169,34 +189,34 @@ export function AddresseePicker({
                 </p>
               </div>
               <div className="p-4 space-y-3">
-                {manualAddressee && (
+                {mojPosel && (
                   <div className="flex items-start gap-3">
                     <Checkbox
-                      id={`addr-${manualAddressee.id}`}
-                      checked={selectedIds.has(manualAddressee.id)}
-                      onCheckedChange={() => onToggle(manualAddressee.id)}
+                      id={`addr-${mojPosel.id}`}
+                      checked={selectedIds.has(mojPosel.id)}
+                      onCheckedChange={() => onToggle(mojPosel.id)}
                       className="mt-0.5"
                     />
                     <Label
-                      htmlFor={`addr-${manualAddressee.id}`}
+                      htmlFor={`addr-${mojPosel.id}`}
                       className="cursor-pointer font-medium text-navy"
                     >
                       Chcę dopisać swojego posła / posłankę
                     </Label>
                   </div>
                 )}
-                {manualAddressee && selectedIds.has(manualAddressee.id) && (
+                {mojPosel && selectedIds.has(mojPosel.id) && (
                   <div className="space-y-2 pl-7">
                     <Input
                       type="email"
                       inputMode="email"
                       placeholder="imie.nazwisko@sejm.gov.pl"
-                      value={manualEmail}
-                      onChange={(e) => onManualEmailChange(e.target.value)}
+                      value={manualEmails[mojPosel.id] ?? ''}
+                      onChange={(e) => onManualEmailChange(mojPosel.id, e.target.value)}
                       className="border-border focus:ring-amber"
                     />
                     <a
-                      href={manualAddressee.externalUrl}
+                      href={mojPosel.externalUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-xs text-teal hover:underline underline-offset-2"
@@ -211,6 +231,9 @@ export function AddresseePicker({
           )
         }
 
+        const groupAddressees = PRIORITY_ADDRESSEES.filter(
+          (a) => a.displayGroup === group.id && a.deliveryMode !== 'manual',
+        )
         return (
           <GroupBlock
             key={group.id}
@@ -219,6 +242,8 @@ export function AddresseePicker({
             selectedIds={selectedIds}
             onToggle={onToggle}
             onSetMany={onSetMany}
+            manualEmails={manualEmails}
+            onManualEmailChange={onManualEmailChange}
           />
         )
       })}
@@ -235,11 +260,7 @@ export function AddresseePicker({
               <FileText className="h-4 w-4" />
               Rozszerz listę adresatów (opcjonalni — media, senatorowie, pełna komisja)
             </span>
-            {optionalOpen ? (
-              <ChevronUp className="h-4 w-4" />
-            ) : (
-              <ChevronDown className="h-4 w-4" />
-            )}
+            {optionalOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
           </Button>
         </CollapsibleTrigger>
         <CollapsibleContent className="space-y-4 pt-4">
@@ -249,14 +270,13 @@ export function AddresseePicker({
             return (
               <GroupBlock
                 key={`opt-${group.id}`}
-                group={{
-                  ...group,
-                  label: `${group.label} — dodatkowi`,
-                }}
+                group={{ ...group, label: `${group.label} — dodatkowi` }}
                 addressees={opt}
                 selectedIds={selectedIds}
                 onToggle={onToggle}
                 onSetMany={onSetMany}
+                manualEmails={manualEmails}
+                onManualEmailChange={onManualEmailChange}
               />
             )
           })}
@@ -302,6 +322,8 @@ export function AddresseePicker({
                     addressee={a}
                     checked={selectedIds.has(a.id)}
                     onToggle={onToggle}
+                    manualEmails={manualEmails}
+                    onManualEmailChange={onManualEmailChange}
                   />
                 ))}
               </div>

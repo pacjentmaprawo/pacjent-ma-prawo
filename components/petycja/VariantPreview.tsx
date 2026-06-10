@@ -10,7 +10,7 @@ import { VARIANTS, VARIANT_ORDER, composeMessage } from '@/lib/petycja/variants'
 
 export function VariantPreview() {
   return (
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion type="single" collapsible defaultValue={VARIANT_ORDER[0]} className="w-full">
       {VARIANT_ORDER.map((id) => {
         const variant = VARIANTS[id]
         const msg = composeMessage(variant)
