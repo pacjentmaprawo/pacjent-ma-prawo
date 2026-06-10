@@ -73,7 +73,7 @@ export function MethodPage({
           </div>
         )}
 
-        {/* PROFIL DOWODOWY — Wariant B+ wg Perplexity v25 */}
+        {/* Profil dowodowy */}
         {(method.highestEvidenceType || method.clinicalStatus || method.evidenceSignal || method.evidenceContext || method.evidenceGap) && (
           <div className="mt-4 rounded-lg border bg-card p-5 text-sm space-y-3">
             <div className="flex flex-wrap items-center gap-2 border-b pb-2">
