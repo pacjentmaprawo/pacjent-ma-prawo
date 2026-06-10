@@ -177,6 +177,54 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Czego się domagamy — 7 zasad */}
+      <section className="py-16 lg:py-24 bg-cream border-t border-border">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3 text-center">Czego się domagamy</p>
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-navy text-center mb-4">
+            Siedem zasad zamiast blankietowego zakazu
+          </h2>
+          <p className="text-navy/80 leading-relaxed text-center max-w-3xl mx-auto mb-10">
+            Nie zgadzamy się, by w demokratycznym państwie prawa jeden urzędnik — powoływany przez
+            premiera, niebędący sądem — jednostronnie decydował, które metody leczenia są dla nas
+            dostępne. Popieramy ściganie oszustów, ale domagamy się regulacji opartej na zasadach:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5">
+            {[
+              ['Prawo pacjenta do wyboru terapii', 'O sposobie leczenia — w tym o terapiach komplementarnych i wspomagających — decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.'],
+              ['Dostęp do terapii komplementarnych i alternatywnych', 'Bez blankietowej eliminacji legalnych metod — w tym dostępnych legalnymi drogami (badanie kliniczne, eksperyment leczniczy za świadomą zgodą).'],
+              ['Mądra regulacja zamiast zakazu — na wzór Europy', 'Uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny.'],
+              ['Wolność debaty i wypowiedzi', 'Ustawa ściga czyn — oszustwo w złej wierze — a nie wypowiedź lekarza, naukowca czy pacjenta o leczeniu.'],
+              ['Żaden urząd ponad sądem', 'Merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (jak decyzje UOKiK kontroluje SOKiK); natychmiastowa wykonalność tylko wyjątkowo, z szybką ścieżką odwoławczą.'],
+              ['Domniemanie niewinności', 'Nieprawomocne decyzje nie są publikowane ani wykonywane jak wyroki, zanim potwierdzi je sąd.'],
+              ['Nikt nie zostaje bez opieki', 'Wykluczenie świadczeniodawcy nie może oznaczać pozostawienia jego pacjentów bez ciągłości leczenia.'],
+            ].map(([title, desc], index) => (
+              <Card key={index} className="card-accent-teal border border-border rounded-xl shadow-sm">
+                <CardContent className="p-5 lg:p-6">
+                  <div className="flex items-start gap-3">
+                    <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-navy text-background text-sm font-serif font-semibold">
+                      {index + 1}
+                    </span>
+                    <div>
+                      <h3 className="font-semibold text-navy mb-1">{title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/petycja-ud207">
+              <Button size="lg" className="bg-red-orange text-background font-semibold hover:bg-red-orange/90 px-8">
+                Wyślij apel obywatelski
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Patient Casus Teaser Section */}
       <section className="py-16 lg:py-20 bg-background">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">

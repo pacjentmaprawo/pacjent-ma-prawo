@@ -33,17 +33,13 @@ const STEPS = [
 ]
 
 const POSTULATY = [
-  'Klauzula świadomej zgody pacjenta jako ustawowe wyłączenie z sankcji (nowy art. 67zj ust. 3) — 5 warunków łącznych; ocena uwzględnia preferencje pacjenta jako element EBM.',
-  'Gradacja dowodów (OCEBM lub GRADE) zamiast blankietowego pojęcia „aktualnej wiedzy medycznej”.',
-  'Wyłączenie spod sankcji wypowiedzi naukowej, debaty o metodach leczenia i relacji pacjenta o własnym doświadczeniu — ustawa ma ścigać czyn, nie wypowiedź (art. 54 i art. 73 Konstytucji RP).',
-  'Obowiązek wskazania w decyzji RPP podmiotu NFZ przejmującego pacjentów — ciągłość opieki.',
-  'Usunięcie funkcjonalnego odwrócenia ciężaru dowodu z art. 67zl ust. 4.',
-  'Wyłączenia dla świadczeń w legalnych trybach: badania kliniczne, eksperyment leczniczy (art. 21 i nast. ustawy o zawodach lekarza, za zgodą komisji bioetycznej), compassionate use, named patient, import docelowy, legalne stosowanie w UE/EOG. Dla substancji niezarejestrowanych dla ludzi właściwą drogą pozostaje badanie kliniczne lub eksperyment leczniczy.',
-  'Niezależna kontrola sądowa decyzji RPP: odwołanie ze skutkiem wstrzymującym wykonanie decyzji tymczasowej i jej publikację; rozdzielenie funkcji prowadzenia sprawy, karania, publikacji i egzekucji (art. 45 Konstytucji RP).',
-  'Vacatio legis 12 miesięcy zamiast 3.',
-  'Publiczne konsultacje z organizacjami pacjentów wszystkich grup chorobowych — z ujawnieniem konfliktów interesów podmiotów opiniujących projekt.',
-  'Zakaz publikacji nieprawomocnych decyzji RPP (domniemanie niewinności).',
-  'Równoległe uregulowanie ciągłości opieki w NFZ w tym samym pakiecie legislacyjnym.',
+  'Prawo pacjenta do wyboru terapii — o sposobie leczenia, w tym o terapiach komplementarnych i wspomagających, decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.',
+  'Dostęp do terapii komplementarnych i alternatywnych — bez blankietowej eliminacji legalnych metod; w tym dostępnych legalnymi drogami (badanie kliniczne, eksperyment leczniczy za świadomą zgodą — jedyna legalna ścieżka dla substancji niezarejestrowanych dla ludzi).',
+  'Mądra regulacja zamiast zakazu, na wzór Europy — uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny.',
+  'Wolność debaty i wypowiedzi — ustawa ściga czyn (oszustwo w złej wierze), nie wypowiedź lekarza, naukowca czy pacjenta o leczeniu.',
+  'Żaden urząd ponad sądem — merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (jak decyzje UOKiK kontroluje SOKiK); natychmiastowa wykonalność tylko wyjątkowo, z szybką ścieżką odwoławczą.',
+  'Domniemanie niewinności — nieprawomocne decyzje nie są publikowane ani wykonywane jak wyroki, zanim potwierdzi je sąd.',
+  'Nikt nie zostaje bez opieki — wykluczenie świadczeniodawcy nie może oznaczać pozostawienia jego pacjentów bez ciągłości leczenia.',
 ]
 
 const HASHTAGS = ['#PacjentMaPrawo', '#UD207', '#PrawoDoBezpiecznejOpieki', '#VetoDlaUD207']
@@ -120,8 +116,8 @@ export default function PetycjaUD207Page() {
             Czego konkretnie domaga się apel
           </h2>
           <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-            Jedenaście poprawek sanacyjnych, które zachowują cel ustawy i ograniczają jej ryzyka
-            konstytucyjne. Pełną analizę prawną znajdziesz na stronie{' '}
+            Siedem zasad, na których powinna oprzeć się regulacja — zachowują cel ustawy i ograniczają
+            jej poważne ryzyka konstytucyjne. Pełną analizę prawną znajdziesz na stronie{' '}
             <Link href="/co-proponujemy" className="text-teal underline underline-offset-2">
               Co proponujemy
             </Link>

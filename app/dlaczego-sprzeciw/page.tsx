@@ -25,8 +25,8 @@ const reasons = [
   },
   {
     number: 4,
-    title: 'Potrzebny jest model rozróżniający kategorie — i gradacja dowodów',
-    content: 'Oszustwo, eksperyment kliniczny, użycie off-label, terapia wspomagająca o udokumentowanym oparciu dowodowym i medycyna integracyjna to różne kategorie, wymagające różnego traktowania prawnego. Kryterium „czy metoda jest w wytycznych” nie jest tożsame z „czy metoda ma oparcie dowodowe” — bez gradacji ten sam przepis obejmuje zarówno szarlatana, jak i terapię popartą badaniami.'
+    title: 'Potrzebny jest model rozróżniający kategorie',
+    content: 'Oszustwo, eksperyment kliniczny, użycie off-label, terapia wspomagająca i medycyna integracyjna to różne kategorie, wymagające różnego traktowania prawnego — zamiast jednej blankietowej etykiety „pseudomedycyny”, która obejmuje zarówno szarlatana, jak i terapię popartą badaniami.'
   },
   {
     number: 5,
@@ -63,7 +63,7 @@ const reasons = [
 const proposals = [
   'Precyzyjne definicje',
   'Gradacja ryzyka',
-  'Ocena poziomu dowodów (GRADE, OCEBM)',
+  'Realna kontrola sądowa decyzji RPP (model UOKiK)',
   'Poszanowanie świadomego wyboru pacjenta',
   'Obowiązek informacji dla pacjenta',
   'Zakaz zastępowania terapii standardowej',

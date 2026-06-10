@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Co proponujemy zamiast',
-  description: 'Klauzula świadomej zgody pacjenta + ciągłość opieki + gradacja dowodów. Pakiet obywatelski nie tylko krytykuje UD207 — proponuje konkretny model wyłączenia ustawowego oparty o autonomię pacjenta.',
+  description: 'Klauzula świadomej zgody pacjenta + ciągłość opieki + realna kontrola sądowa decyzji RPP. Pakiet obywatelski nie tylko krytykuje UD207 — proponuje konkretny model wyłączenia ustawowego oparty o autonomię pacjenta.',
 }
 
 const conditions = [
@@ -312,11 +312,12 @@ export default function CoProponujemyPage() {
               <div className="w-12 h-12 bg-red-orange/10 rounded-lg flex items-center justify-center mb-4">
                 <Scale className="h-6 w-6 text-amber" />
               </div>
-              <h3 className="font-semibold text-navy mb-2">Filar 2: Gradacja dowodów</h3>
+              <h3 className="font-semibold text-navy mb-2">Filar 2: Realna kontrola sądowa decyzji RPP</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Pojęcie „aktualnej wiedzy medycznej" wymaga ustawowego odesłania do
-                <strong> OCEBM lub GRADE</strong> — systemów oceny poziomu dowodów. „Zgodne/niezgodne"
-                bez gradacji to nadmierna prostota niezgodna z praktyką EBM.
+                Decyzje Rzecznika Praw Pacjenta powinny podlegać <strong>merytorycznej kontroli
+                niezależnego sądu powszechnego</strong> — analogicznie do kontroli decyzji UOKiK przez
+                Sąd Ochrony Konkurencji i Konsumentów — a nie tylko ocenie ich legalności. Rygor
+                natychmiastowej wykonalności wyłącznie wyjątkowo, z szybką ścieżką odwoławczą.
               </p>
             </CardContent>
           </Card>
