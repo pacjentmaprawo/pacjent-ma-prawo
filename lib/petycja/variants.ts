@@ -50,16 +50,16 @@ Realna szansa na sanację projektu istnieje obecnie w toku prac parlamentarnych;
 
 Gdyby jednak ustawa została uchwalona bez wprowadzenia poprawek sanacyjnych, zwracam się z prośbą o rozważenie — w terminie 21 dni od przedstawienia ustawy do podpisu (art. 122 ust. 2 Konstytucji RP) — odmowy jej podpisania i zwrotu do Sejmu (art. 122 ust. 5) lub skierowania ustawy do Trybunału Konstytucyjnego w trybie kontroli prewencyjnej (art. 122 ust. 3).
 
-Pełna treść petycji i lista 9 poprawek: ${PETITION_URL}`,
+Pełna treść apelu i lista 9 poprawek: ${PETITION_URL}`,
   },
   B: {
     id: 'B',
     label: 'Wariant B — Sejmowa Komisja Zdrowia (9 poprawek)',
     audience: 'Sejm — Komisja Zdrowia',
-    subject: 'Petycja obywatelska ws. projektu UD207 (druk 2598) — 9 poprawek sanacyjnych',
+    subject: 'Apel obywatelski ws. projektu UD207 (druk 2598) — 9 poprawek sanacyjnych',
     body: `Szanowni Państwo Posłowie,
 
-w nawiązaniu do pierwszego czytania projektu UD207 (druk sejmowy nr 2598) w Sejmowej Komisji Zdrowia w dniu 9 czerwca 2026 r. zwracam się z apelem obywatelskim o wprowadzenie w toku dalszych prac następujących poprawek sanacyjnych. Zachowują one cel projektu (ochrona pacjentów przed pseudoterapiami oferowanymi w złej wierze) i jednocześnie usuwają wady konstytucyjne — naruszenie zasady określoności prawa (art. 2 Konstytucji RP), proporcjonalności (art. 31 ust. 3) oraz domniemania niewinności (art. 42 ust. 3).
+w nawiązaniu do pierwszego czytania projektu UD207 (druk sejmowy nr 2598) w Sejmowej Komisji Zdrowia w dniu 9 czerwca 2026 r. zwracam się z apelem obywatelskim o wprowadzenie w toku dalszych prac następujących poprawek sanacyjnych. Zachowują one cel projektu (ochrona pacjentów przed pseudoterapiami oferowanymi w złej wierze) i jednocześnie ograniczają poważne ryzyka konstytucyjne — w obszarze zasady określoności prawa (art. 2 Konstytucji RP), proporcjonalności (art. 31 ust. 3) oraz domniemania niewinności (art. 42 ust. 3).
 
 ${POSTULATY_SKROT}
 
@@ -69,7 +69,7 @@ Pełna analiza prawna i proponowane brzmienie poszczególnych przepisów (m.in. 
     id: 'C',
     label: 'Wariant C — Senat RP (tor równoległy)',
     audience: 'Senat — Komisja Zdrowia',
-    subject: 'Petycja obywatelska ws. projektu UD207 (druk 2598) — apel do Senatu RP',
+    subject: 'Apel obywatelski ws. projektu UD207 (druk 2598) — do Senatu RP',
     body: `Szanowni Państwo Senatorowie,
 
 zwracam się do Senatu RP z apelem obywatelskim o wprowadzenie 9 poprawek sanacyjnych do projektu UD207 (druk sejmowy nr 2598), gdyby wpłynął on do Senatu bez ich uwzględnienia w Sejmie. Jest to apel komplementarny do kierowanego równolegle do Sejmowej Komisji Zdrowia.
@@ -80,7 +80,7 @@ ${POSTULATY_SKROT}
 
 W razie braku poprawek na poziomie Sejmu, Senat dysponuje narzędziami umożliwiającymi ich wprowadzenie w trybie art. 121 Konstytucji RP, łącznie z odrzuceniem ustawy.
 
-Pełna treść petycji i analiza prawna: ${PETITION_URL} oraz ${PROPOSAL_URL}`,
+Pełna treść apelu i analiza prawna: ${PETITION_URL} oraz ${PROPOSAL_URL}`,
   },
   D: {
     id: 'D',
@@ -101,7 +101,7 @@ Argumentacja prawna i dokumentacja: ${PETITION_URL}`,
     id: 'E',
     label: 'Wariant E — Redakcje i dziennikarze',
     audience: 'Media',
-    subject: 'UD207 (druk 2598) — obywatelska petycja i konstruktywna alternatywa',
+    subject: 'UD207 (druk 2598) — apel obywatelski i konstruktywna alternatywa',
     body: `Szanowna Redakcjo,
 
 jako obywatel(ka) zainteresowany(a) losami projektu UD207 (druk sejmowy nr 2598, pierwsze czytanie 9 czerwca 2026 r.) chciał(a)bym zwrócić uwagę na aspekty dotychczas niedostatecznie obecne w przekazie publicznym:
@@ -123,7 +123,7 @@ Pełna dokumentacja konstytucyjna, prawna i empiryczna: ${PETITION_URL}`,
 
 zwracam się z prośbą o rozważenie objęcia pakietu dokumentów obywatelskich dot. projektu UD207 (druk sejmowy nr 2598) konsultacją prawną pro bono Helsińskiej Fundacji Praw Człowieka.
 
-Petycja podnosi cztery główne zarzuty konstytucyjne: naruszenie zasady określoności prawa (art. 2 Konstytucji RP), proporcjonalności (art. 31 ust. 3) z dwiema strukturalnymi lukami testu, funkcjonalne odwrócenie ciężaru dowodu (art. 67zl ust. 4 projektu) oraz penalizację na podstawie pojęcia niedookreślonego (art. 42 Konstytucji RP).
+Apel podnosi cztery główne zarzuty konstytucyjne: naruszenie zasady określoności prawa (art. 2 Konstytucji RP), proporcjonalności (art. 31 ust. 3) z dwiema strukturalnymi lukami testu, funkcjonalne odwrócenie ciężaru dowodu (art. 67zl ust. 4 projektu) oraz penalizację na podstawie pojęcia niedookreślonego (art. 42 Konstytucji RP).
 
 Z uwagi na etap prac sejmowych (pierwsze czytanie 9 czerwca 2026 r.) prosimy o ewentualne przekazanie wstępnej oceny w trybie pilnym.
 
@@ -131,7 +131,9 @@ Pełna dokumentacja: ${PETITION_URL}`,
   },
 }
 
-export const VARIANT_ORDER: VariantId[] = ['B', 'C', 'A', 'D', 'E', 'F']
+// Kolejność wyświetlania i grupowania — alfabetyczna (A–F), aby etykieta wariantu
+// zgadzała się z pozycją na liście (Wariant A pierwszy, Wariant B drugi itd.).
+export const VARIANT_ORDER: VariantId[] = ['A', 'B', 'C', 'D', 'E', 'F']
 
 // ─────────────────────────────────────────────────────────────────────────────
 // FORMUŁKI „PRZYBLIŻ SIEBIE” — wstawiane jednym kliknięciem do pola tekstowego
@@ -192,7 +194,7 @@ export const SELF_INTRO_FORMULAS: SelfIntroFormula[] = [
   {
     id: 'prawnik',
     label: 'Prawnik / ekspert prawa',
-    text: 'Jestem prawnikiem. Niniejsza petycja zawiera argumentację konstytucyjną, którą popieram z perspektywy zawodowej — w szczególności zarzuty z art. 2, art. 31 ust. 3 i art. 42 Konstytucji RP.',
+    text: 'Jestem prawnikiem. Niniejsze pismo zawiera argumentację konstytucyjną, którą popieram z perspektywy zawodowej — w szczególności zarzuty z art. 2, art. 31 ust. 3 i art. 42 Konstytucji RP.',
   },
   {
     id: 'obywatel',

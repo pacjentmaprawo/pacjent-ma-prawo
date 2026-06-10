@@ -15,6 +15,7 @@ export type AddresseeCategory =
   | 'rpp'
   | 'media-branzowe'
   | 'media-obywatelskie'
+  | 'media-mainstream'
   | 'hfhr'
   | 'lokalny'
 
@@ -299,7 +300,7 @@ export const PRIORITY_ADDRESSEES: Addressee[] = [
     deliveryMode: 'external_form',
     externalUrl: 'https://formularze.brpo.gov.pl/formularz_wniosek_ogolny',
     variantSuggestion: 'D',
-    note: 'BRPO przyjmuje wnioski przez formularz internetowy. Treść skopiujesz jednym kliknięciem i wkleisz w formularzu.',
+    note: 'BRPO przyjmuje wnioski przez formularz internetowy. Krok po kroku: kliknij „Kopiuj treść wniosku” (wariant D), otwórz formularz BRPO i wklej skopiowaną treść w polu wiadomości.',
   },
   // — Pomoc prawna i media —
   {
@@ -463,6 +464,20 @@ export const OPTIONAL_ADDRESSEES: Addressee[] = [
     deliveryMode: 'mailto',
     variantSuggestion: 'E',
   },
+  {
+    id: 'rymanowski',
+    label: 'red. Bogdan Rymanowski',
+    role: 'Dziennikarz / publicysta — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Brak publicznie zweryfikowanego adresu redakcyjnego — wpisz kontakt, którym dysponujesz (np. przez kanał programu / media społecznościowe).',
+  },
 ]
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -550,3 +565,21 @@ export const ALL_ADDRESSEES: Addressee[] = [
 export function getAddresseeById(id: string): Addressee | undefined {
   return ALL_ADDRESSEES.find((a) => a.id === id)
 }
+
+/**
+ * Adresaci zaznaczeni domyślnie — rdzeń strategiczny (9 osób): prezydium Komisji Zdrowia Sejmu,
+ * przewodnicząca Komisji Zdrowia Senatu, Prezydent oraz RPO. Pozostali adresaci są widoczni,
+ * ale domyślnie odznaczeni — użytkownik dodaje ich świadomie. Krótsza lista poprawia konwersję,
+ * ogranicza wrażenie masowości i skraca treść mailto (mniejsze ryzyko obcięcia w kliencie poczty).
+ */
+export const CORE_DEFAULT_IDS: string[] = [
+  'golbik-przew-kz-sejm',
+  'gelert-wiceprzew',
+  'hok-wiceprzew',
+  'wicha-wiceprzew',
+  'tomczak-wiceprzew',
+  'sojka-wiceprzew',
+  'malecka-libera-przew-kz-senat',
+  'prezydent-nawrocki',
+  'rpo-wiacek',
+]

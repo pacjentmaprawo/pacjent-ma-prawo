@@ -40,7 +40,7 @@ export default function HomePage() {
                 size="lg"
                 className="bg-red-orange text-background font-semibold hover:bg-red-orange/90 hover:scale-[1.02] transition-all px-8 py-6 text-base"
               >
-                Wyślij petycję
+                Wyślij apel
               </Button>
             </Link>
             <Link href="/projekt">
@@ -326,7 +326,7 @@ export default function HomePage() {
             Chcesz, aby projekt został poprawiony?
           </h2>
           <p className="text-background/90 text-lg mb-8 max-w-2xl mx-auto">
-            Wyślij petycję obywatelską z konkretnymi poprawkami do posłów, senatorów, Prezydenta,
+            Wyślij apel obywatelski z konkretnymi poprawkami do posłów, senatorów, Prezydenta,
             RPO i mediów — w kilka minut, z własnej skrzynki e-mail.
           </p>
           <Link href="/petycja-ud207">
@@ -334,7 +334,7 @@ export default function HomePage() {
               size="lg"
               className="bg-background text-navy font-semibold hover:bg-background/90 hover:scale-[1.02] transition-all px-10 py-6 text-base"
             >
-              Wyślij petycję ws. UD207
+              Wyślij apel ws. UD207
             </Button>
           </Link>
           <p className="text-background/80 mt-6 text-sm">

@@ -4,11 +4,13 @@ import { Card, CardContent } from '@/components/ui/card'
 import { MousePointerClick, UserRound, MailCheck, ShieldCheck, Hash } from 'lucide-react'
 import { PetitionForm } from '@/components/petycja/PetitionForm'
 import { VariantPreview } from '@/components/petycja/VariantPreview'
+import { SubmissionCounter } from '@/components/petycja/SubmissionCounter'
+import { PETITION_SECTIONS } from '@/lib/petycja/petitionText'
 
 export const metadata: Metadata = {
-  title: 'Wyślij petycję ws. UD207',
+  title: 'Wyślij apel obywatelski ws. UD207',
   description:
-    'Wyślij petycję obywatelską ws. projektu UD207 do posłów, senatorów, Prezydenta, RPO i mediów. Gotowe pisma, wybór adresatów, wysyłka jednym kliknięciem z własnej skrzynki.',
+    'Wyślij apel obywatelski ws. projektu UD207 do posłów, senatorów, Prezydenta, RPO i mediów. Gotowe pisma, wybór adresatów, wysyłka jednym kliknięciem z własnej skrzynki.',
   alternates: { canonical: '/petycja-ud207' },
 }
 
@@ -51,23 +53,34 @@ export default function PetycjaUD207Page() {
       <section className="hero-gradient py-12 lg:py-16 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">
-            Petycja obywatelska
+            Apel obywatelski
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-6 text-balance">
-            Wyślij petycję ws. projektu UD207
+            Wyślij apel obywatelski ws. projektu UD207
           </h1>
           <p className="text-navy/80 leading-relaxed mb-4">
             Pierwsze czytanie projektu UD207 (druk sejmowy nr 2598) odbyło się w Sejmowej Komisji
             Zdrowia 9 czerwca 2026 r. Prace trwają — i to teraz można realnie wpłynąć na kształt
             ustawy. Popieramy ochronę pacjentów przed nieuczciwymi świadczeniodawcami, ale
-            domagamy się konkretnych poprawek, które usuną wady konstytucyjne projektu.
+            domagamy się konkretnych poprawek, które ograniczą poważne ryzyka konstytucyjne projektu.
           </p>
-          <p className="text-navy/80 leading-relaxed">
-            Ten formularz przygotuje za Ciebie gotowe pisma i pomoże wysłać je do właściwych
+          <p className="text-navy/80 leading-relaxed mb-5">
+            To narzędzie przygotuje za Ciebie gotowe pisma i pomoże wysłać je do właściwych
             adresatów — w kilka minut, z Twojej własnej skrzynki e-mail.
           </p>
+          <div className="rounded-lg border border-navy/15 bg-secondary/70 px-4 py-3">
+            <p className="text-sm text-navy/75 leading-relaxed">
+              <strong className="text-navy">Uwaga:</strong> to narzędzie przygotowuje
+              indywidualne pisma obywatelskie, które wysyłasz samodzielnie z własnej skrzynki.
+              Nie jest formalną platformą zbierania podpisów pod jedną petycją w rozumieniu
+              ustawy o petycjach — każdy uczestnik występuje we własnym imieniu.
+            </p>
+          </div>
         </div>
       </section>
+
+      {/* Duży licznik wysłanych pism */}
+      <SubmissionCounter />
 
       {/* Jak to działa */}
       <section className="py-10 lg:py-12 bg-cream">
@@ -102,10 +115,10 @@ export default function PetycjaUD207Page() {
       <section className="py-12 lg:py-16 bg-cream border-t border-border">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl font-semibold text-navy mb-3">
-            Czego konkretnie domaga się petycja
+            Czego konkretnie domaga się apel
           </h2>
           <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-            Dziewięć poprawek sanacyjnych, które zachowują cel ustawy i usuwają jej wady
+            Dziewięć poprawek sanacyjnych, które zachowują cel ustawy i ograniczają jej ryzyka
             konstytucyjne. Pełną analizę prawną znajdziesz na stronie{' '}
             <Link href="/co-proponujemy" className="text-teal underline underline-offset-2">
               Co proponujemy
@@ -138,6 +151,37 @@ export default function PetycjaUD207Page() {
           <Card className="border border-border rounded-xl">
             <CardContent className="p-2 sm:p-4">
               <VariantPreview />
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Pełna treść petycji */}
+      <section className="py-12 lg:py-16 bg-cream border-t border-border">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-2xl font-semibold text-navy mb-3">
+            Pełna treść pisma (apelu)
+          </h2>
+          <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+            Poniżej publikujemy kompletny tekst apelu (pkt I–VI). W krokach powyżej, w sekcji
+            wysyłki, możesz skopiować całość lub pobrać ją jako PDF.
+          </p>
+          <Card className="border border-border rounded-xl">
+            <CardContent className="p-6 lg:p-8 space-y-6">
+              {PETITION_SECTIONS.map((section) => (
+                <div key={section.heading}>
+                  <h3 className="font-serif text-lg font-semibold text-navy mb-2">
+                    {section.heading}
+                  </h3>
+                  <div className="space-y-3">
+                    {section.paragraphs.map((p, i) => (
+                      <p key={i} className="text-sm text-navy/85 leading-relaxed">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </CardContent>
           </Card>
         </div>
