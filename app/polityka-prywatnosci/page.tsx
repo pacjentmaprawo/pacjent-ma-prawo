@@ -41,21 +41,20 @@ export default function PolitykaPrywatnosciPage() {
           <p className="text-navy/80 leading-relaxed mb-2">Dane przetwarzamy na podstawie art. 6 ust. 1 lit. a RODO (zgoda) oraz art. 6 ust. 1 lit. f (uzasadniony interes — odpowiedź na zapytanie). Cel:</p>
           <ul className="list-disc pl-6 text-navy/80 mb-6 space-y-1">
             <li>Odpowiedź na zapytanie przesłane formularzem kontaktowym.</li>
-            <li>Rejestracja podpisu pod apelem obywatelskim (po integracji z platformą petycyjną).</li>
+            <li>Obsługa dobrowolnej kopii (BCC) wysłanego apelu — wyłącznie po zaznaczeniu opcji w narzędziu „Wyślij apel” (szczegóły niżej).</li>
           </ul>
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">4. Okres przechowywania danych</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
             Wiadomości z formularza kontaktowego przechowujemy przez okres niezbędny do udzielenia odpowiedzi
-            i przez 12 miesięcy później (dla ewentualnych pytań uzupełniających). Dane z petycji
-            — wyłącznie w celu udokumentowania poparcia apelu, na podstawie zgody (art. 6 ust. 1 lit. a RODO).
+            i przez 12 miesięcy później (dla ewentualnych pytań uzupełniających). Dobrowolne kopie (BCC) apeli — do zakończenia procesu legislacyjnego nad UD207, nie dłużej niż 12 miesięcy, a następnie usunięcie.
           </p>
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">5. Odbiorcy danych</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
             Dane mogą być przetwarzane przez dostawców usług technicznych niezbędnych do działania platformy,
-            komunikacji i obsługi petycji — w szczególności dostawcę hostingu (Vercel), poczty elektronicznej
-            (dostawca szyfrowanej poczty na terenie UE) oraz platformy petycyjnej. Dane nie są sprzedawane ani udostępniane
+            komunikacji i analityki — w szczególności dostawcę hostingu i analityki (Vercel) oraz poczty elektronicznej
+            (dostawca szyfrowanej poczty na terenie UE). Dane nie są sprzedawane ani udostępniane
             komercyjnie.
           </p>
 
@@ -103,9 +102,11 @@ export default function PolitykaPrywatnosciPage() {
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">7. Cookies i analytics</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
-            Platforma korzysta z usług hostingowych Vercel. Vercel może zbierać podstawowe metryki techniczne
-            (czas ładowania strony, błędy). Nie używamy plików cookies do śledzenia użytkowników ani narzędzi
-            analitycznych typu Google Analytics, Meta Pixel itp.
+            Platforma korzysta z usług hostingu i analityki Vercel (Vercel Web Analytics). Narzędzie to działa
+            bez plików cookies i bez identyfikatorów śledzących — zbiera wyłącznie zagregowane, anonimowe
+            metryki (np. liczba odsłon, kraj, typ urządzenia, czas ładowania, błędy) i nie pozwala
+            zidentyfikować pojedynczego użytkownika. Nie używamy plików cookies do śledzenia ani narzędzi
+            profilujących typu Google Analytics czy Meta Pixel.
           </p>
 
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">8. Zmiany polityki</h2>

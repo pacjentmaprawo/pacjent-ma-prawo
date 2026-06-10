@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge'
 
 export const metadata: Metadata = {
   title: 'Dlaczego sprzeciw',
-  description: 'Osiem powodów obywatelskiego sprzeciwu wobec projektu UD207. Analiza proporcjonalności, precyzji i skutków regulacji — w tym brak ciągłości opieki pacjentów.',
+  description: 'Dziesięć powodów obywatelskiego sprzeciwu wobec projektu UD207. Analiza proporcjonalności, precyzji i skutków regulacji — w tym brak ciągłości opieki pacjentów.',
 }
 
 const reasons = [
@@ -15,38 +15,48 @@ const reasons = [
   },
   {
     number: 2,
+    title: 'Prawo pacjenta do wyboru terapii jest częścią EBM, nie wyjątkiem od niej',
+    content: 'Medycyna oparta na dowodach (EBM) z definicji łączy trzy elementy: najlepsze dostępne dowody naukowe, doświadczenie kliniczne oraz preferencje i wartości pacjenta. Zawężając ocenę wyłącznie do tego, czy metoda figuruje w wytycznych, projekt pomija trzeci filar — i odbiera pacjentowi rolę, którą sam standard EBM mu przyznaje. Poszanowanie świadomego wyboru pacjenta nie jest odstępstwem od medycyny opartej na dowodach, lecz jej elementem.'
+  },
+  {
+    number: 3,
     title: 'Pojęcie pseudomedycyny nie może być zbyt szerokie',
     content: 'Brak precyzyjnej definicji to ryzyko arbitralnej oceny i objęcia praktyk, które nie są oszustwem.'
   },
   {
-    number: 3,
-    title: 'Decyzje tymczasowe mogą wywołać nieodwracalne skutki',
-    content: 'Ostrzeżenie publiczne lub kara wymierzona przed ostatecznym zakończeniem postępowania może zniszczyć reputację i działalność, nawet jeśli ostatecznie postępowanie zostanie umorzone.'
-  },
-  {
     number: 4,
-    title: 'Lekarze mogą przestać rozmawiać o metodach wspomagających',
-    content: 'Efekt mrożący dla wolności rozmowy medycznej narusza relację pacjent–lekarz, która jest fundamentem opieki zdrowotnej.'
+    title: 'Potrzebny jest model rozróżniający kategorie — i gradacja dowodów',
+    content: 'Oszustwo, eksperyment kliniczny, użycie off-label, terapia wspomagająca o udokumentowanym oparciu dowodowym i medycyna integracyjna to różne kategorie, wymagające różnego traktowania prawnego. Kryterium „czy metoda jest w wytycznych” nie jest tożsame z „czy metoda ma oparcie dowodowe” — bez gradacji ten sam przepis obejmuje zarówno szarlatana, jak i terapię popartą badaniami.'
   },
   {
     number: 5,
+    title: 'Decyzje tymczasowe i publikacja przed prawomocnością mogą wywołać nieodwracalne skutki',
+    content: 'Ostrzeżenie publiczne lub decyzja tymczasowa ogłoszone przed ostatecznym zakończeniem postępowania mogą zniszczyć reputację i działalność — nawet jeśli postępowanie zostanie później umorzone. Publikowanie nieprawomocnych rozstrzygnięć trudno pogodzić z domniemaniem niewinności (art. 42 ust. 3 Konstytucji RP).'
+  },
+  {
+    number: 6,
+    title: 'Jeden urząd nie powinien łączyć zbyt wielu ról',
+    content: 'Projekt kumuluje w Rzeczniku Praw Pacjenta funkcje organu prowadzącego postępowanie, nakładającego sankcję, publikującego rozstrzygnięcie i kontrolującego jego wykonanie. Połączenie tych ról bez niezależnej kontroli sądowej na wczesnym etapie budzi poważne wątpliwości co do gwarancji rzetelnego postępowania (art. 45 Konstytucji RP).'
+  },
+  {
+    number: 7,
+    title: 'Lekarze i naukowcy mogą przestać otwarcie mówić o metodach wspomagających',
+    content: 'Ryzyko kar finansowych może wywołać efekt mrożący nie tylko w rozmowie lekarza z pacjentem, ale też w debacie naukowej i w informowaniu o legalnych terapiach wspomagających — także tych refundowanych w innych krajach UE. Wolność wypowiedzi i badań naukowych (art. 54 i art. 73 Konstytucji RP) jest tu wartością współchronioną.'
+  },
+  {
+    number: 8,
     title: 'Pacjenci mogą zostać wypchnięci poza system',
     content: 'Zamiast być chronieni, pacjenci szukający terapii wspomagających mogą zostać zepchnięci do szarej strefy, gdzie ryzyko jest wyższe.'
   },
   {
-    number: 6,
+    number: 9,
     title: 'Projekt wymaga pełnej transparentności interesariuszy',
     content: 'Kto opiniował projekt, kto brał udział w konsultacjach, jakie konflikty interesów zostały ujawnione — to elementy publicznego zaufania do procesu legislacyjnego.'
   },
   {
-    number: 7,
-    title: 'Potrzebny jest model rozróżniający kategorie',
-    content: 'Oszustwo, eksperyment kliniczny, użycie off-label, terapia wspomagająca, medycyna integracyjna — to różne kategorie wymagające różnego traktowania prawnego.'
-  },
-  {
-    number: 8,
+    number: 10,
     title: 'Brakuje przepisów o ciągłości opieki pacjentów',
-    content: 'UD207 rozszerza kompetencje represyjne RPP, ale nie zawiera ŻADNYCH przepisów o tym, co dzieje się z pacjentami wykluczonego lekarza lub zamkniętego podmiotu. Casus z 2025 r. (zob. sekcja „Co dzieje się z pacjentami") pokazuje, że bez takich gwarancji ustawowych pacjenci pozostają sami — mimo apeli do urzędów.'
+    content: 'UD207 rozszerza kompetencje represyjne RPP, ale nie zawiera ŻADNYCH przepisów o tym, co dzieje się z pacjentami wykluczonego lekarza lub zamkniętego podmiotu. Casus z 2025 r. (zob. sekcja „Co dzieje się z pacjentami”) pokazuje, że bez takich gwarancji ustawowych pacjenci pozostają sami — mimo apeli do urzędów.'
   },
 ]
 
@@ -54,6 +64,7 @@ const proposals = [
   'Precyzyjne definicje',
   'Gradacja ryzyka',
   'Ocena poziomu dowodów (GRADE, OCEBM)',
+  'Poszanowanie świadomego wyboru pacjenta',
   'Obowiązek informacji dla pacjenta',
   'Zakaz zastępowania terapii standardowej',
   'Realna procedura odwoławcza',
@@ -67,7 +78,7 @@ export default function DlaczegoSprzeciwPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">Argumentacja</p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
-            Osiem powodów obywatelskiego sprzeciwu
+            Dziesięć powodów obywatelskiego sprzeciwu
           </h1>
           <p className="text-navy/80 leading-relaxed">
             Ten sprzeciw nie dotyczy celu projektu UD207 — ten jest słuszny. Dotyczy zakresu,

@@ -33,13 +33,15 @@ const STEPS = [
 ]
 
 const POSTULATY = [
-  'Klauzula świadomej zgody pacjenta jako ustawowe wyłączenie z sankcji (nowy art. 67zj ust. 3) — 5 warunków łącznych.',
+  'Klauzula świadomej zgody pacjenta jako ustawowe wyłączenie z sankcji (nowy art. 67zj ust. 3) — 5 warunków łącznych; ocena uwzględnia preferencje pacjenta jako element EBM.',
   'Gradacja dowodów (OCEBM lub GRADE) zamiast blankietowego pojęcia „aktualnej wiedzy medycznej”.',
+  'Wyłączenie spod sankcji wypowiedzi naukowej, debaty o metodach leczenia i relacji pacjenta o własnym doświadczeniu — ustawa ma ścigać czyn, nie wypowiedź (art. 54 i art. 73 Konstytucji RP).',
   'Obowiązek wskazania w decyzji RPP podmiotu NFZ przejmującego pacjentów — ciągłość opieki.',
   'Usunięcie funkcjonalnego odwrócenia ciężaru dowodu z art. 67zl ust. 4.',
-  'Wyłączenia dla świadczeń w legalnych trybach: badania kliniczne, eksperyment leczniczy (art. 21 i nast. ustawy o zawodach lekarza, za zgodą komisji bioetycznej), compassionate use, named patient, import docelowy, legalne stosowanie w UE/EOG — to jedyna legalna droga dla substancji niezarejestrowanych dla ludzi.',
+  'Wyłączenia dla świadczeń w legalnych trybach: badania kliniczne, eksperyment leczniczy (art. 21 i nast. ustawy o zawodach lekarza, za zgodą komisji bioetycznej), compassionate use, named patient, import docelowy, legalne stosowanie w UE/EOG. Dla substancji niezarejestrowanych dla ludzi właściwą drogą pozostaje badanie kliniczne lub eksperyment leczniczy.',
+  'Niezależna kontrola sądowa decyzji RPP: odwołanie ze skutkiem wstrzymującym wykonanie decyzji tymczasowej i jej publikację; rozdzielenie funkcji prowadzenia sprawy, karania, publikacji i egzekucji (art. 45 Konstytucji RP).',
   'Vacatio legis 12 miesięcy zamiast 3.',
-  'Publiczne konsultacje z organizacjami pacjentów wszystkich grup chorobowych.',
+  'Publiczne konsultacje z organizacjami pacjentów wszystkich grup chorobowych — z ujawnieniem konfliktów interesów podmiotów opiniujących projekt.',
   'Zakaz publikacji nieprawomocnych decyzji RPP (domniemanie niewinności).',
   'Równoległe uregulowanie ciągłości opieki w NFZ w tym samym pakiecie legislacyjnym.',
 ]
@@ -118,7 +120,7 @@ export default function PetycjaUD207Page() {
             Czego konkretnie domaga się apel
           </h2>
           <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-            Dziewięć poprawek sanacyjnych, które zachowują cel ustawy i ograniczają jej ryzyka
+            Jedenaście poprawek sanacyjnych, które zachowują cel ustawy i ograniczają jej ryzyka
             konstytucyjne. Pełną analizę prawną znajdziesz na stronie{' '}
             <Link href="/co-proponujemy" className="text-teal underline underline-offset-2">
               Co proponujemy

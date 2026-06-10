@@ -18,21 +18,23 @@ export interface PetitionVariant {
 const PETITION_URL = 'https://pacjentmaprawo.pl/petycja-ud207'
 const PROPOSAL_URL = 'https://pacjentmaprawo.pl/co-proponujemy'
 
-/** Skrócona lista 9 poprawek sanacyjnych — wspólna dla pism do parlamentu. */
+/** Skrócona lista 11 poprawek sanacyjnych — wspólna dla pism do parlamentu. */
 const POSTULATY_SKROT = `Pakiet kluczowy (zakres sankcji):
-1. Klauzula świadomej zgody pacjenta jako ustawowe wyłączenie z sankcji (nowy art. 67zj ust. 3) — pięć warunków łącznych: pisemna informacja o poziomie dowodów (OCEBM/GRADE), pisemna świadoma zgoda (art. 16–17 ustawy o prawach pacjenta, art. 5 Konwencji z Oviedo), brak odwodzenia od leczenia konwencjonalnego, zarejestrowany podmiot leczniczy z dokumentacją, brak zastępowania leczenia o udokumentowanej skuteczności.
+1. Klauzula świadomej zgody pacjenta jako ustawowe wyłączenie z sankcji (nowy art. 67zj ust. 3) — pięć warunków łącznych: pisemna informacja o poziomie dowodów (OCEBM/GRADE), pisemna świadoma zgoda (art. 16–17 ustawy o prawach pacjenta, art. 5 Konwencji z Oviedo), brak odwodzenia od leczenia konwencjonalnego, zarejestrowany podmiot leczniczy z dokumentacją, brak zastępowania leczenia o udokumentowanej skuteczności. Ocena uwzględnia preferencje pacjenta jako element medycyny opartej na dowodach (EBM).
 2. Gradacja dowodów (OCEBM lub GRADE) zamiast blankietowego pojęcia „aktualnej wiedzy medycznej”.
-3. Obowiązek wskazania w każdej decyzji RPP konkretnego podmiotu w NFZ przejmującego pacjentów (ciągłość opieki).
-4. Usunięcie funkcjonalnego odwrócenia ciężaru dowodu z art. 67zl ust. 4.
+3. Wyłączenie spod sankcji wypowiedzi naukowej, debaty o metodach leczenia oraz relacji pacjenta o własnym doświadczeniu — ustawa powinna ścigać czyn, nie wypowiedź (art. 54 i art. 73 Konstytucji RP).
+4. Obowiązek wskazania w każdej decyzji RPP konkretnego podmiotu w NFZ przejmującego pacjentów (ciągłość opieki).
+5. Usunięcie funkcjonalnego odwrócenia ciężaru dowodu z art. 67zl ust. 4.
 
 Pakiet proceduralny:
-5. Wyłączenia dla świadczeń w legalnych trybach: badania kliniczne, eksperyment leczniczy (art. 21 i nast. ustawy o zawodach lekarza, za zgodą komisji bioetycznej), compassionate use (art. 83 rozp. 726/2004/WE), named patient program, indywidualne sprowadzenie (art. 4 ust. 7–9 Prawa farmaceutycznego), świadczenia legalnie stosowane w innych państwach UE/EOG. To jedyna legalna droga dla substancji niezarejestrowanych dla ludzi.
-6. Vacatio legis 12 miesięcy zamiast 3 (linia orzecznicza TK).
-7. Publiczne konsultacje z organizacjami pacjentów wszystkich grup chorobowych — nie tylko onkologicznych.
-8. Zakaz publikacji nieprawomocnych decyzji RPP (domniemanie niewinności, art. 42 ust. 3 Konstytucji RP).
+6. Wyłączenia dla świadczeń w legalnych trybach: badania kliniczne, eksperyment leczniczy (art. 21 i nast. ustawy o zawodach lekarza, za zgodą komisji bioetycznej), compassionate use (art. 83 rozp. 726/2004/WE), named patient program, indywidualne sprowadzenie (art. 4 ust. 7–9 Prawa farmaceutycznego), świadczenia legalnie stosowane w innych państwach UE/EOG. Dla substancji niezarejestrowanych dla ludzi właściwą drogą pozostaje badanie kliniczne lub eksperyment leczniczy za świadomą zgodą pacjenta.
+7. Niezależna kontrola sądowa decyzji RPP: odwołanie ze skutkiem wstrzymującym wykonanie decyzji tymczasowej i jej publikację oraz rozdzielenie funkcji prowadzenia sprawy, karania, publikacji i egzekucji (art. 45 Konstytucji RP).
+8. Vacatio legis 12 miesięcy zamiast 3 (linia orzecznicza TK).
+9. Publiczne konsultacje z organizacjami pacjentów wszystkich grup chorobowych — z ujawnieniem konfliktów interesów podmiotów opiniujących projekt.
+10. Zakaz publikacji nieprawomocnych decyzji RPP (domniemanie niewinności, art. 42 ust. 3 Konstytucji RP).
 
 Postulat systemowy:
-9. Równoległe uregulowanie ciągłości opieki w NFZ w tym samym pakiecie legislacyjnym.`
+11. Równoległe uregulowanie ciągłości opieki w NFZ w tym samym pakiecie legislacyjnym.`
 
 export const VARIANTS: Record<VariantId, PetitionVariant> = {
   A: {
@@ -50,13 +52,13 @@ Realna szansa na sanację projektu istnieje obecnie w toku prac parlamentarnych;
 
 Gdyby jednak ustawa została uchwalona bez wprowadzenia poprawek sanacyjnych, zwracam się z prośbą o rozważenie — w terminie 21 dni od przedstawienia ustawy do podpisu (art. 122 ust. 2 Konstytucji RP) — odmowy jej podpisania i zwrotu do Sejmu (art. 122 ust. 5) lub skierowania ustawy do Trybunału Konstytucyjnego w trybie kontroli prewencyjnej (art. 122 ust. 3).
 
-Pełna treść apelu i lista 9 poprawek: ${PETITION_URL}`,
+Pełna treść apelu i lista 11 poprawek: ${PETITION_URL}`,
   },
   B: {
     id: 'B',
-    label: 'Wariant B — Sejmowa Komisja Zdrowia (9 poprawek)',
+    label: 'Wariant B — Sejmowa Komisja Zdrowia (11 poprawek)',
     audience: 'Sejm — Komisja Zdrowia',
-    subject: 'Apel obywatelski ws. projektu UD207 (druk 2598) — 9 poprawek sanacyjnych',
+    subject: 'Apel obywatelski ws. projektu UD207 (druk 2598) — 11 poprawek sanacyjnych',
     body: `Szanowni Państwo Posłowie,
 
 w nawiązaniu do pierwszego czytania projektu UD207 (druk sejmowy nr 2598) w Sejmowej Komisji Zdrowia w dniu 9 czerwca 2026 r. zwracam się z apelem obywatelskim o wprowadzenie w toku dalszych prac następujących poprawek sanacyjnych. Zachowują one cel projektu (ochrona pacjentów przed pseudoterapiami oferowanymi w złej wierze) i jednocześnie ograniczają poważne ryzyka konstytucyjne — w obszarze zasady określoności prawa (art. 2 Konstytucji RP), proporcjonalności (art. 31 ust. 3) oraz domniemania niewinności (art. 42 ust. 3).
@@ -72,7 +74,7 @@ Pełna analiza prawna i proponowane brzmienie poszczególnych przepisów (m.in. 
     subject: 'Apel obywatelski ws. projektu UD207 (druk 2598) — do Senatu RP',
     body: `Szanowni Państwo Senatorowie,
 
-zwracam się do Senatu RP z apelem obywatelskim o wprowadzenie 9 poprawek sanacyjnych do projektu UD207 (druk sejmowy nr 2598), gdyby wpłynął on do Senatu bez ich uwzględnienia w Sejmie. Jest to apel komplementarny do kierowanego równolegle do Sejmowej Komisji Zdrowia.
+zwracam się do Senatu RP z apelem obywatelskim o wprowadzenie 11 poprawek sanacyjnych do projektu UD207 (druk sejmowy nr 2598), gdyby wpłynął on do Senatu bez ich uwzględnienia w Sejmie. Jest to apel komplementarny do kierowanego równolegle do Sejmowej Komisji Zdrowia.
 
 Rola Senatu w testowaniu projektów pod kątem konstytucyjności ma szczególne znaczenie wobec regulacji penalizujących obszary medyczne, w których brak jednoznacznej granicy między świadczeniami zweryfikowanymi a wspomagającymi.
 
@@ -129,11 +131,26 @@ Z uwagi na etap prac sejmowych (pierwsze czytanie 9 czerwca 2026 r.) prosimy o e
 
 Pełna dokumentacja: ${PETITION_URL}`,
   },
+  G: {
+    id: 'G',
+    label: 'Wariant G — Prezes Rady Ministrów (autopoprawka)',
+    audience: 'Rząd — Prezes Rady Ministrów',
+    subject: 'Apel obywatelski ws. projektu UD207 (druk 2598) — wniosek o autopoprawkę',
+    body: `Szanowny Panie Premierze,
+
+projekt UD207 (druk sejmowy nr 2598) został przyjęty przez Radę Ministrów i skierowany do Sejmu; jego pierwsze czytanie w Sejmowej Komisji Zdrowia odbyło się 9 czerwca 2026 r. Jako wnioskodawca rządowy Rada Ministrów dysponuje możliwością wniesienia autopoprawki w toku prac parlamentarnych.
+
+Popieram cel projektu — ochronę pacjentów przed świadczeniodawcami działającymi w złej wierze. Zwracam się jednak z apelem obywatelskim o wprowadzenie autopoprawki obejmującej poniższe poprawki sanacyjne, które zachowują cel ustawy, a usuwają poważne ryzyka konstytucyjne (określoność prawa — art. 2 Konstytucji RP, proporcjonalność — art. 31 ust. 3, domniemanie niewinności — art. 42 ust. 3).
+
+${POSTULATY_SKROT}
+
+Pełna analiza prawna i proponowane brzmienie przepisów: ${PROPOSAL_URL} oraz ${PETITION_URL}`,
+  },
 }
 
 // Kolejność wyświetlania i grupowania — alfabetyczna (A–F), aby etykieta wariantu
 // zgadzała się z pozycją na liście (Wariant A pierwszy, Wariant B drugi itd.).
-export const VARIANT_ORDER: VariantId[] = ['A', 'B', 'C', 'D', 'E', 'F']
+export const VARIANT_ORDER: VariantId[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 
 // ─────────────────────────────────────────────────────────────────────────────
 // FORMUŁKI „PRZYBLIŻ SIEBIE” — wstawiane jednym kliknięciem do pola tekstowego

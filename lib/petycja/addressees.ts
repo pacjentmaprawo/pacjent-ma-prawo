@@ -17,19 +17,21 @@ export type AddresseeCategory =
   | 'media-obywatelskie'
   | 'media-mainstream'
   | 'hfhr'
+  | 'premier'
   | 'lokalny'
 
 export type AddresseePriority = 'krytyczny' | 'wysoki' | 'sredni' | 'niski'
 
 export type DeliveryMode = 'mailto' | 'external_form' | 'manual'
 
-export type VariantId = 'A' | 'B' | 'C' | 'D' | 'E' | 'F'
+export type VariantId = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G'
 
 /** Grupa wyświetlana w interfejsie — porządkuje listę adresatów dla osoby wypełniającej. */
 export type DisplayGroup =
   | 'sejm'
   | 'senat'
   | 'prezydent-kontrola'
+  | 'rzad'
   | 'pomoc-media'
   | 'lokalny'
 
@@ -71,6 +73,12 @@ export const DISPLAY_GROUPS: { id: DisplayGroup; label: string; description: str
     id: 'prezydent-kontrola',
     label: 'Prezydent i instytucje kontroli',
     description: 'Prezydent (weto / Trybunał Konstytucyjny — warunkowo) oraz Rzecznik Praw Obywatelskich.',
+  },
+  {
+    id: 'rzad',
+    label: 'Rząd — wnioskodawca projektu',
+    description:
+      'Rada Ministrów wniosła projekt i może zgłosić autopoprawkę na etapie sejmowym. Adresat opcjonalny.',
   },
   {
     id: 'pomoc-media',
@@ -361,6 +369,20 @@ export const PRIORITY_ADDRESSEES: Addressee[] = [
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const OPTIONAL_ADDRESSEES: Addressee[] = [
+  // Rząd — wnioskodawca projektu (autopoprawka)
+  {
+    id: 'tusk-premier',
+    label: 'Premier Donald Tusk (KPRM)',
+    role: 'Wnioskodawca rządowy — apel o autopoprawkę do projektu',
+    email: 'kontakt@kprm.gov.pl',
+    category: 'premier',
+    displayGroup: 'rzad',
+    priority: 'sredni',
+    defaultChecked: false,
+    deliveryMode: 'mailto',
+    variantSuggestion: 'G',
+    note: 'Oficjalny adres KPRM dla obywateli (kontakt@kprm.gov.pl). Rada Ministrów jest wnioskodawcą projektu i może wnieść autopoprawkę na etapie sejmowym.',
+  },
   // Pozostali senatorowie Komisji Zdrowia
   {
     id: 'matecka-senat',

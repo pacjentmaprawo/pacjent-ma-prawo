@@ -8,4 +8,5 @@
   </g>
   <path d="M 14 26 L 10 38 L 26 38 L 22 26 Z" fill="#0F2A47" stroke="#0F2A47" stroke-width="2" stroke-linejoin="round"/>
   <path d="M 42 26 L 38 38 L 54 38 L 50 26 Z" fill="#0F2A47" stroke="#0F2A47" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M 32 8 C 30 8 28 10 28 12 C 28 15 32 18 32 18 C 32
+  <path d="M 32 8 C 30 8 28 10 28 12 C 28 15 32 18 32 18 C 32 18 36 15 36 12 C 36 10 34 8 32 8 Z" fill="#C4523D"/>
+</svg>
