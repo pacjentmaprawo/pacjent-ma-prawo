@@ -89,4 +89,4 @@ export const FULL_PETITION_TEXT: string = [
   'Pełna dokumentacja: pacjentmaprawo.pl',
 ]
   .join('\n')
-  .trim()
+  .t

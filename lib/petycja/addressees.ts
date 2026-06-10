@@ -562,24 +562,4 @@ export const ALL_ADDRESSEES: Addressee[] = [
   ...FULL_KZ_SEJM_ADDRESSEES,
 ]
 
-export function getAddresseeById(id: string): Addressee | undefined {
-  return ALL_ADDRESSEES.find((a) => a.id === id)
-}
-
-/**
- * Adresaci zaznaczeni domyślnie — rdzeń strategiczny (9 osób): prezydium Komisji Zdrowia Sejmu,
- * przewodnicząca Komisji Zdrowia Senatu, Prezydent oraz RPO. Pozostali adresaci są widoczni,
- * ale domyślnie odznaczeni — użytkownik dodaje ich świadomie. Krótsza lista poprawia konwersję,
- * ogranicza wrażenie masowości i skraca treść mailto (mniejsze ryzyko obcięcia w kliencie poczty).
- */
-export const CORE_DEFAULT_IDS: string[] = [
-  'golbik-przew-kz-sejm',
-  'gelert-wiceprzew',
-  'hok-wiceprzew',
-  'wicha-wiceprzew',
-  'tomczak-wiceprzew',
-  'sojka-wiceprzew',
-  'malecka-libera-przew-kz-senat',
-  'prezydent-nawrocki',
-  'rpo-wiacek',
-]
+export function getAddresseeById(id: string): Ad

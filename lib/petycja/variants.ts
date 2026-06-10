@@ -251,3 +251,4 @@ export function buildMailtoUrl({ emails, subject, body, bcc }: MailtoOptions): s
 }
 
 export const CONTACT_BCC = 'pacjentmaprawo@proton.me'
+        

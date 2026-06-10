@@ -223,18 +223,4 @@ export default function PetycjaUD207Page() {
                   <h3 className="font-semibold text-navy mb-2">Twoja prywatność</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Ten formularz działa w całości w Twojej przeglądarce. Nie zakładamy konta,
-                    nie zbieramy ani nie przechowujemy Twoich danych osobowych, nie wysyłamy
-                    niczego w Twoim imieniu. Wiadomości otwierają się w Twoim własnym programie
-                    pocztowym — to Ty decydujesz, co i do kogo wyślesz. Jeśli zaznaczysz opcję
-                    „prześlij nam kopię”, Twój adres trafi wyłącznie do ukrytej kopii (BCC)
-                    wybranej wiadomości i posłuży jedynie statystyce kampanii.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-    </div>
-  )
-}
+                    nie zbieramy ani nie przechow
