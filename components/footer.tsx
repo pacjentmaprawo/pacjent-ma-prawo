@@ -152,5 +152,3 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
-}
