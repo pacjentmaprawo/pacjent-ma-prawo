@@ -162,7 +162,6 @@ export function PetitionForm() {
     })
   }
 
-  // Po otwarciu wiadomości / formularza — anonimowy licznik (raz na przeglądarkę).
   const handleSendClick = () => {
     fireAnalytics('mailto_opened')
     registerSubmission().then((res) => {
@@ -339,7 +338,6 @@ export function PetitionForm() {
         )}
       </section>
 
-      {/* SEKCJA WYSYŁKI */}
       {showSend && totalRecipients > 0 && (
         <section id="sekcja-wyslij" aria-labelledby="wyslij-naglowek" className="scroll-mt-24">
           <Separator className="mb-10" />
@@ -355,16 +353,15 @@ export function PetitionForm() {
             Możesz też pobrać kopię pisma w PDF dla siebie.
           </p>
 
-          {/* Pełna treść petycji — kopiuj / PDF */}
           <Card className="card-accent-navy border border-border rounded-xl mb-6 bg-secondary/40">
             <CardContent className="p-5">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <h3 className="font-serif text-base font-semibold text-navy">
-                    Pełna treść petycji (pkt I–VI)
+                    Pełna treść pisma (apelu, pkt I–VI)
                   </h3>
                   <p className="text-xs text-muted-foreground mt-0.5">
-                    Maile zawierają zwięzły list. Jeśli chcesz wysłać pełną petycję, skopiuj jej
+                    Maile zawierają zwięzły list. Jeśli chcesz wysłać pełny apel, skopiuj jego
                     całość i wklej do wiadomości lub pobierz jako PDF.
                   </p>
                 </div>
@@ -374,7 +371,7 @@ export function PetitionForm() {
                     variant="outline"
                     size="sm"
                     className="border-navy/30 text-navy"
-                    onClick={() => copyText(FULL_PETITION_TEXT, 'Pełna treść petycji skopiowana.')}
+                    onClick={() => copyText(FULL_PETITION_TEXT, 'Pełna treść apelu skopiowana.')}
                   >
                     <Copy className="h-4 w-4 mr-2" />
                     Kopiuj pełną treść
@@ -387,7 +384,7 @@ export function PetitionForm() {
                     onClick={() => downloadPetitionPdf()}
                   >
                     <FileText className="h-4 w-4 mr-2" />
-                    Pełna petycja (PDF)
+                    Pełny apel (PDF)
                   </Button>
                 </div>
               </div>
@@ -465,45 +462,118 @@ export function PetitionForm() {
               )
             })}
 
-            {/* Adresaci formularzowi (np. RPO) */}
-            {externalTargets.map((a) => {
-              const variant = VARIANTS[a.variantSuggestion]
-              return (
-                <Card key={a.id} className="card-accent-amber border border-border rounded-xl">
-                  <CardContent className="p-5 lg:p-6">
-                    <p className="text-xs font-medium text-amber uppercase tracking-wider mb-1">
-                      Formularz internetowy
-                    </p>
-                    <h3 className="font-serif text-lg font-semibold text-navy mb-1">{a.label}</h3>
-                    {a.note && <p className="text-sm text-muted-foreground mb-4">{a.note}</p>}
-                    <div className="flex flex-wrap gap-2">
-                      <a
-                        href={a.externalUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={handleSendClick}
-                      >
-                        <Button
-                          type="button"
-                          className="bg-navy text-background font-medium hover:bg-navy/90"
-                        >
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          Otwórz formularz
-                        </Button>
-                      </a>
+            {externalTargets.map((a) => (
+              <Card key={a.id} className="card-accent-amber border border-border rounded-xl">
+                <CardContent className="p-5 lg:p-6">
+                  <p className="text-xs font-medium text-amber uppercase tracking-wider mb-1">
+                    Formularz internetowy
+                  </p>
+                  <h3 className="font-serif text-lg font-semibold text-navy mb-1">{a.label}</h3>
+                  {a.note && <p className="text-sm text-muted-foreground mb-4">{a.note}</p>}
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href={a.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={handleSendClick}
+                    >
                       <Button
                         type="button"
-                        variant="outline"
-                        className="border-navy/30 text-navy"
-                        onClick={() => copyMessage(a.variantSuggestion)}
+                        className="bg-navy text-background font-medium hover:bg-navy/90"
                       >
-                        <Copy className="h-4 w-4 mr-2" />
-                        Kopiuj treść wniosku
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Otwórz formularz
                       </Button>
-                      <Button
-                        type="button"
-                        variant="outline"
-                        className="border-navy/30 text-navy"
-                        onClick={() => pdfMessage(a.variantSuggestion, a.label)}
-                      >
-                        <FileDown classN
+                    </a>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="border-navy/30 text-navy"
+                      onClick={() => copyMessage(a.variantSuggestion)}
+                    >
+                      <Copy className="h-4 w-4 mr-2" />
+                      Kopiuj treść wniosku
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="border-navy/30 text-navy"
+                      onClick={() => pdfMessage(a.variantSuggestion, a.label)}
+                    >
+                      <FileDown className="h-4 w-4 mr-2" />
+                      Kopia PDF
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <Card className="card-accent-amber border border-border rounded-xl mt-6 bg-cream">
+            <CardContent className="p-5 lg:p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <Share2 className="h-5 w-5 text-amber" />
+                <h3 className="font-serif text-lg font-semibold text-navy">
+                  Wysłałeś? Pomóż dotrzeć dalej
+                </h3>
+              </div>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                Im więcej osób wyśle apel, tym większa presja na poprawę projektu. Udostępnij
+                znajomym — to zajmuje sekundę.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <Button
+                  type="button"
+                  className="bg-navy text-background font-medium hover:bg-navy/90"
+                  onClick={shareFacebook}
+                >
+                  <Facebook className="h-4 w-4 mr-2" />
+                  Udostępnij na Facebooku
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="border-navy/30 text-navy"
+                  onClick={shareX}
+                >
+                  <Twitter className="h-4 w-4 mr-2" />
+                  Udostępnij na X
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="border-navy/30 text-navy"
+                  onClick={() => copyText(SHARE_URL, 'Link skopiowany do schowka.')}
+                >
+                  <Link2 className="h-4 w-4 mr-2" />
+                  Kopiuj link
+                </Button>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {SHARE_HASHTAGS.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full bg-navy/5 px-3 py-1 text-xs font-medium text-navy"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {sendCopy && (
+            <p className="mt-4 text-xs text-muted-foreground">
+              Kopia do {CONTACT_BCC} zostanie dodana w polu BCC każdej wiadomości e-mail.
+            </p>
+          )}
+
+          <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
+            <ArrowDown className="h-4 w-4" />
+            Zmieniłeś zdanie? Wróć do kroku 1, zmień zaznaczenie i kliknij „Przygotuj” ponownie.
+          </div>
+        </section>
+      )}
+    </div>
+  )
+}

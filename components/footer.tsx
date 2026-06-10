@@ -35,7 +35,7 @@ function Logo() {
 
 function CopyEmailButton() {
   const email = 'kontakt@pacjentmaprawo.pl'
-  
+
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(email)
@@ -64,8 +64,8 @@ export function Footer() {
       <div className="border-t border-background/15">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
           <p className="text-xs text-background/60 text-center leading-relaxed">
-            Strona ma charakter informacyjny i obywatelski. Nie stanowi porady medycznej ani prawnej. 
-            W sprawach zdrowotnych skonsultuj się z lekarzem, w sprawach prawnych z profesjonalnym pełnomocnikiem. 
+            Strona ma charakter informacyjny i obywatelski. Nie stanowi porady medycznej ani prawnej.
+            W sprawach zdrowotnych skonsultuj się z lekarzem, w sprawach prawnych z profesjonalnym pełnomocnikiem.
             Strona nie reprezentuje stanowiska żadnej partii politycznej.
           </p>
         </div>
@@ -152,3 +152,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  )
+}

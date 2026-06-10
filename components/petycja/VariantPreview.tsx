@@ -33,4 +33,7 @@ export function VariantPreview() {
             </AccordionContent>
           </AccordionItem>
         )
- 
+      })}
+    </Accordion>
+  )
+}
