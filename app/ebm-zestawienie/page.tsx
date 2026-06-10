@@ -30,7 +30,7 @@ const substances: Substance[] = [
   {
     no: 2,
     name: 'Witamina C dożylna (IVC)',
-    source: 'NRL pkt 2 + wywiad RPP 21.01.2025 + WSA 2854/23',
+    source: 'NRL pkt 2 + wywiad RPP 21.01.2025',
     ocebm: '2b',
     grade: 'Moderate',
     regulatory: 'Pascorbin® (DE) na niedobór; brak rejestracji onko',
@@ -54,7 +54,7 @@ const substances: Substance[] = [
   {
     no: 5,
     name: 'Salinomycyna',
-    source: 'NRL pkt 5 + WSA 2854/23',
+    source: 'NRL Nr 2/21/VIII pkt 5',
     ocebm: '5 (+ 3–4 obs.)',
     grade: 'Very low',
     regulatory: 'LEK WETERYNARYJNY; brak rejestracji dla ludzi',
@@ -62,7 +62,7 @@ const substances: Substance[] = [
   {
     no: 6,
     name: 'Kurkumina',
-    source: 'NRL pkt 6 + wywiad RPP + WSA 2854/23',
+    source: 'NRL pkt 6 + wywiad RPP',
     ocebm: '3–4',
     grade: 'Low',
     regulatory: 'Suplement diety',
@@ -94,7 +94,7 @@ const substances: Substance[] = [
   {
     no: 10,
     name: 'Galwanoterapia / bioelektroterapia',
-    source: 'NRL pkt 10 + wywiad RPP („laptop") + WSA 2854/23',
+    source: 'NRL pkt 10 + wywiad RPP („laptop")',
     ocebm: '5',
     grade: 'Very low',
     regulatory: 'Heterogeniczna kategoria; ≠ TTFields/Optune (FDA-approved GBM)',
@@ -118,7 +118,7 @@ const substances: Substance[] = [
   {
     no: 13,
     name: 'Bioelektroterapia',
-    source: 'WSA V SA/Wa 2854/23 (= NRL pkt 10)',
+    source: 'NRL Nr 2/21/VIII pkt 10',
     ocebm: '5',
     grade: 'Very low',
     regulatory: 'Generyczna kategoria; ≠ TTFields/Optune',
@@ -148,7 +148,7 @@ const paradoxes = [
       evidence:
         'Bodeker et al. 2024 (PACMAN 2.1), Redox Biology, PMID 39369582 — RCT fazy 2, n=34, OS 16,0 vs 8,3 mies. (HR=0,46; p=0,030)',
       ocebm: 'OCEBM 2b',
-      pl: '„Pseudomedycyna" — kara 245 000 zł (WSA 2854/23); sankcja UD207 do 1 mln zł',
+      pl: '„Pseudomedycyna" wg stanowiska RPP/NRL; w obecnym stanie prawnym możliwe sankcje administracyjne, a wg projektu UD207 — do 1 mln zł',
     },
     drug: {
       title: 'Bewacizumab (Avastin) w nawrotowym GBM',
@@ -208,11 +208,9 @@ export default function EBMZestawieniePage() {
           </h1>
           <p className="text-lg text-navy/80 leading-relaxed">
             Dla 15 substancji publicznie wskazanych przez Naczelną Radę Lekarską
-            (Stanowisko Nr 2/21/VIII z 12.03.2021), Rzecznika Praw Pacjenta
-            (wywiad Termedia z 21.01.2025) lub Wojewódzki Sąd Administracyjny w Warszawie
-            (V SA/Wa 2854/23 z 29.10.2025; V SA/Wa 767/24 z 23.10.2024) — zebraliśmy najwyższe
-            dostępne dowody EBM. Wszystkie sygnatury, daty i PMID/DOI zweryfikowane w bazach
-            pierwotnych.
+            (Stanowisko Nr 2/21/VIII z 12.03.2021) oraz Rzecznika Praw Pacjenta
+            (wywiad Termedia z 21.01.2025) — zebraliśmy najwyższe dostępne dowody EBM.
+            Wszystkie daty i PMID/DOI zweryfikowane w bazach pierwotnych.
           </p>
         </div>
       </section>
@@ -384,3 +382,4 @@ export default function EBMZestawieniePage() {
     </div>
   )
 }
+                                                                                                                                          

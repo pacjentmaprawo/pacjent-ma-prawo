@@ -212,18 +212,13 @@ export default function SalinomycynaPage() {
       additionalSources={
         <>
           <p>
-            Dodatkowe źródła do salinomycyny — paradoks NRL Nr 2/21/VIII i casus WSA V SA/Wa 2854/23:
+            Dodatkowe źródła do salinomycyny — podstawa naukowa i ścieżki legalnego stosowania:
           </p>
           <ul>
-            <li>Stanowisko Naczelnej Rady Lekarskiej Nr 2/21/VIII z 12.03.2021 — lista 11 substancji
-            (poz. 5: salinomycyna)</li>
-            <li>Wyrok WSA Warszawa V SA/Wa 2854/23 z 29.10.2025 — kara administracyjna 245 000 zł
-            dla podmiotu leczniczego stosującego m.in. salinomycynę</li>
-            <li>Sygnatury orzeczeń NSL 9.01.2025 (zawieszenie lekarza) i SN II ZK 90/25 z 8.12.2025
-            (uchylenie kasacyjne — orzeczenie samorządu uznane za wadliwe proceduralnie)</li>
-          </ul>
-        </>
-      }
-    />
-  )
-}
+            <li>Gupta et al. 2009, <em>Cell</em> (PMID 19682730) — identyfikacja aktywności wobec
+            nowotworowych komórek macierzystych (dane przedkliniczne, in vitro)</li>
+            <li>Naujokat &amp; Steinhart 2012 (PMID 23251084) — przegląd mechanizmów
+            przeciwnowotworowych salinomycyny</li>
+            <li>Pochodne salinomycyny — prace zespołu UAM Poznań (Antoszczak, Huczyński): kierunek
+            zwiększania selektywności i obniżania toksyczności (badania wczesne, nie kliniczne)</li>
+            <li>Rejestr badań kli

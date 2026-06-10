@@ -137,7 +137,7 @@ export default function CoProponujemyPage() {
           <div className="flex items-center gap-3 mb-6">
             <Scale className="h-6 w-6 text-navy" />
             <h2 className="font-serif text-2xl font-semibold text-navy">
-              Brzmienie proponowane do art. 67zj UD207 (nowy ust. 3)
+              Brzmienie proponowane do art. 67zj UD207 (nowy ust. 3–5)
             </h2>
           </div>
           <Card className="border border-border rounded-xl bg-background">
@@ -163,11 +163,75 @@ export default function CoProponujemyPage() {
                 <p className="not-italic">
                   <strong>4)</strong> świadczenie zostało wykonane przez podmiot leczniczy wpisany do
                   rejestru podmiotów wykonujących działalność leczniczą, z prowadzeniem dokumentacji
-                  medycznej zgodnie z rozdziałem 7 ustawy o prawach pacjenta."
+                  medycznej zgodnie z rozdziałem 7 ustawy o prawach pacjenta;
+                </p>
+                <p className="not-italic">
+                  <strong>5)</strong> metoda nie zastępuje leczenia o udokumentowanej skuteczności,
+                  gdy jest ono dostępne i medycznie wskazane — chyba że pacjent, po pełnej informacji,
+                  odmawia takiego leczenia w wykonaniu przysługującego mu prawa."
                 </p>
               </blockquote>
             </CardContent>
           </Card>
+
+          <div className="mt-6 flex items-center gap-3">
+            <Scale className="h-5 w-5 text-navy" />
+            <h3 className="font-serif text-xl font-semibold text-navy">
+              Nowy ust. 4 — legalne ścieżki terapii eksperymentalnych
+            </h3>
+          </div>
+          <p className="text-sm text-muted-foreground mt-2 mb-4 leading-relaxed">
+            Klauzula świadomej zgody chroni świadczenia z preparatami zarejestrowanymi i stosowanymi
+            off-label. Substancje i metody jeszcze niezarejestrowane wymagają osobnej, równie wyraźnej
+            kotwicy — dlatego proponujemy drugi ustęp, który potwierdza, że świadczenia realizowane
+            w już istniejących, reglamentowanych trybach prawnych nie są „pseudomedycyną".
+          </p>
+          <Card className="border border-border rounded-xl bg-background">
+            <CardContent className="p-6 lg:p-8">
+              <blockquote className="text-navy/90 leading-relaxed italic border-l-4 border-teal pl-4 space-y-3">
+                <p>
+                  „Praktyką, o której mowa w ust. 1, nie jest również udzielenie świadczenia
+                  z zastosowaniem produktu leczniczego lub metody nieposiadających pozwolenia na
+                  dopuszczenie do obrotu albo stosowanych poza zakresem takiego pozwolenia, jeżeli
+                  jest ono realizowane w ramach co najmniej jednej z dróg przewidzianych prawem:
+                </p>
+                <p className="not-italic">
+                  <strong>1)</strong> badania klinicznego (rozporządzenie UE nr 536/2014), na
+                  podstawie pozwolenia i pozytywnej opinii komisji bioetycznej;
+                </p>
+                <p className="not-italic">
+                  <strong>2)</strong> <strong>eksperymentu leczniczego</strong> w rozumieniu art. 21
+                  i nast. ustawy o zawodach lekarza i lekarza dentysty, za zgodą komisji bioetycznej
+                  i na podstawie świadomej zgody pacjenta;
+                </p>
+                <p className="not-italic">
+                  <strong>3)</strong> indywidualnego lub wyjątkowego stosowania (compassionate use)
+                  zgodnie z art. 83 rozporządzenia (WE) nr 726/2004;
+                </p>
+                <p className="not-italic">
+                  <strong>4)</strong> importu docelowego (art. 4 ust. 7–9 Prawa farmaceutycznego),
+                  jeżeli produkt jest dopuszczony do obrotu w innym państwie;
+                </p>
+                <p className="not-italic">
+                  <strong>5)</strong> świadczenia legalnie stosowanego lub finansowanego ze środków
+                  publicznych w innym państwie UE lub EOG.
+                </p>
+                <p className="not-italic">
+                  Do świadczeń tych przepisy ust. 3 stosuje się odpowiednio.{' '}
+                  <strong>Ust. 5:</strong> wyłączenia nie obejmują oszustwa, zatajenia ryzyka,
+                  obietnicy wyleczenia ani działania bez kwalifikacji — te pozostają karalne na
+                  zasadach ogólnych."
+                </p>
+              </blockquote>
+            </CardContent>
+          </Card>
+          <p className="text-xs text-muted-foreground mt-3 leading-relaxed">
+            Ust. 4 niczego nie liberalizuje — odsyła wyłącznie do ściśle reglamentowanych dróg
+            (badanie kliniczne, eksperyment leczniczy z komisją bioetyczną, compassionate use, import
+            docelowy). Poza nimi zastosowanie substancji niezarejestrowanej pozostaje nielegalne.
+            Wyłączenie usuwa jedynie ryzyko nakładania na te legalne tryby dodatkowej sankcji
+            „pseudomedycznej".
+          </p>
         </div>
       </section>
 
@@ -236,87 +300,6 @@ export default function CoProponujemyPage() {
               </div>
               <h3 className="font-semibold text-navy mb-2">Filar 1: Klauzula świadomej zgody</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Pacjent po pełnej informacji może wybrać terapię komplementarną, eksperymentalną
-                (compassionate use, named-patient) lub off-label — bez sankcji administracyjnej.
-                Mechanizm opisany powyżej.
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border border-border rounded-xl">
-            <CardContent className="p-6">
-              <div className="w-12 h-12 bg-red-orange/10 rounded-lg flex items-center justify-center mb-4">
-                <Scale className="h-6 w-6 text-amber" />
-              </div>
-              <h3 className="font-semibold text-navy mb-2">Filar 2: Gradacja dowodów</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Pojęcie „aktualnej wiedzy medycznej" wymaga ustawowego odesłania do
-                <strong> OCEBM lub GRADE</strong> — systemów oceny poziomu dowodów. „Zgodne/niezgodne"
-                bez gradacji to nadmierna prostota niezgodna z praktyką EBM.
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border border-border rounded-xl">
-            <CardContent className="p-6">
-              <div className="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center mb-4">
-                <FileText className="h-6 w-6 text-navy" />
-              </div>
-              <h3 className="font-semibold text-navy mb-2">Filar 3: Ciągłość opieki</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Każda decyzja RPP wyłączająca lekarza/podmiot powinna zawierać <strong>obowiązek
-                wskazania konkretnego podmiotu NFZ</strong> przejmującego pacjentów — z zachowaniem
-                harmonogramu leczenia onkologicznego i innych ścieżek krytycznych.
-                Casus z 2025 r. pokazał, że bez tego pacjenci są pozostawieni sami sobie.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-cream py-16">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-2xl font-semibold text-navy mb-4">
-            Pełna analiza prawna
-          </h2>
-          <p className="text-navy/80 leading-relaxed mb-8">
-            Klauzula świadomej zgody jest opisana w Rekomendacji 16 (Sekcja Konstytucyjna)
-            i Rekomendacji 12 (Memorandum prawne) wraz z pełnym uzasadnieniem konstytucyjnym.
-            Dokumenty dostępne do pobrania w bazie dokumentów.
-          </p>
-          <div className="flex flex-wrap gap-3 justify-center">
-            <Link href="/dokumenty">
-              <Button className="bg-navy text-background hover:bg-navy/90">
-                <FileText className="h-4 w-4 mr-2" />
-                Baza dokumentów
-              </Button>
-            </Link>
-            <Link href="/dlaczego-sprzeciw">
-              <Button variant="outline" className="border-navy text-navy hover:bg-navy/5">
-                Osiem powodów sprzeciwu
-              </Button>
-            </Link>
-            <Link href="/co-z-pacjentami">
-              <Button variant="outline" className="border-navy text-navy hover:bg-navy/5">
-                Co dzieje się z pacjentami
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Stopka kontekstu */}
-      <section className="py-12 bg-background border-t border-border">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            Treść opracowana w oparciu o Sekcję Konstytucyjną (§10 i §13 Rekomendacja 16)
-            oraz Memorandum prawne UD207 (sekcja C Rekomendacja 12) pakietu obywatelskiego.
-            Postulat klauzuli świadomej zgody jest spójny z międzynarodowym standardem informed
-            consent — art. 5 Konwencji z Oviedo, art. 8 EKPC (orzecznictwo *Pretty*, *Vavřička*,
-            *Jehovah's Witnesses of Moscow*), art. 3 Karty Praw Podstawowych UE, art. 47 i 41
-            Konstytucji RP, art. 16–17 ustawy o prawach pacjenta. Aktualizacja: maj 2026.
-          </p>
-        </div>
-      </section>
-    </div>
-  )
-}
+                Pacjent po pełnej informacji może wybrać terapię komplementarną, off-label lub
+                eksperymentalną prowadzoną w legalnym trybie (badanie kliniczne, eksperyment leczniczy
+           

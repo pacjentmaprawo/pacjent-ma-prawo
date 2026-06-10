@@ -24,7 +24,7 @@ export const PETITION_SECTIONS: PetitionSection[] = [
       '3. Ciągłość opieki — obowiązek wskazania podmiotu przejmującego. Każda decyzja Rzecznika Praw Pacjenta wyłączająca świadczeniodawcę z możliwości udzielania świadczeń powinna zawierać obowiązek wskazania konkretnego podmiotu w systemie NFZ przejmującego dotychczasowych pacjentów — z zachowaniem harmonogramu leczenia. Bez tego elementu sankcja administracyjna oznacza pozostawienie pacjentów bez opieki.',
       '4. Usunięcie funkcjonalnego odwrócenia ciężaru dowodu z art. 67zl ust. 4. W postępowaniu administracyjnym ciężar dowodu powinien spoczywać na organie (art. 7, art. 77 k.p.a.). Obecne brzmienie projektu, przerzucające ciężar wykazania zgodności świadczenia z „aktualną wiedzą medyczną” na świadczeniodawcę, w warunkach pojęcia niedookreślonego rodzi poważne ryzyko nierównowagi proceduralnej.',
       'B. Poprawki proceduralne i okresowe',
-      '5. Wyłączenia dla świadczeń legalnie zarejestrowanych w obrocie międzynarodowym: świadczeń realizowanych w trybie badania klinicznego zatwierdzonego przez URPL i właściwą komisję bioetyczną; programów compassionate use (art. 83 rozp. 726/2004/WE); named patient program; indywidualnego sprowadzenia produktu leczniczego (art. 4 ust. 7–9 Prawa farmaceutycznego); świadczeń realizowanych w ramach umów refundacyjnych w innych państwach UE/EOG.',
+      '5. Wyłączenia dla świadczeń realizowanych w legalnych trybach przewidzianych prawem: badania klinicznego zatwierdzonego przez URPL i właściwą komisję bioetyczną; eksperymentu leczniczego w rozumieniu art. 21 i nast. ustawy o zawodach lekarza i lekarza dentysty, prowadzonego za zgodą komisji bioetycznej i na podstawie świadomej zgody pacjenta; programów compassionate use (art. 83 rozp. 726/2004/WE); named patient program; indywidualnego sprowadzenia produktu leczniczego (art. 4 ust. 7–9 Prawa farmaceutycznego); świadczeń legalnie stosowanych lub refundowanych w innych państwach UE/EOG. Tryb eksperymentu leczniczego oraz badania klinicznego jest jedyną legalną drogą dla substancji nieposiadających rejestracji dla ludzi — wyłączenie usuwa wobec nich ryzyko nakładania dodatkowej sankcji „pseudomedycznej”.',
       '6. Vacatio legis 12 miesięcy zamiast 3. Trybunał Konstytucyjny w wyroku K 47/14 wskazał, że regulacje penalizujące obszary dotychczas legalnej działalności wymagają rozszerzonego okresu dostosowawczego. Trzymiesięczna vacatio legis nie spełnia tego standardu.',
       '7. Konsultacje z reprezentatywnymi organizacjami pacjentów wszystkich grup chorobowych. Obowiązek przeprowadzenia, w okresie vacatio legis, publicznych i udokumentowanych konsultacji z reprezentatywnymi organizacjami pacjentów — nie tylko onkologicznymi, ale obejmującymi również pacjentów kardiologicznych, autoimmunologicznych, metabolicznych, neurologicznych i z chorobami rzadkimi.',
       '8. Zakaz publikacji nieprawomocnych decyzji RPP. Publikowanie nieprawomocnych decyzji administracyjnych RPP narusza domniemanie niewinności (art. 42 ust. 3 Konstytucji RP) i prowadzi do nieodwracalnych skutków reputacyjnych przed rozstrzygnięciem sprawy. Publikacja powinna następować dopiero po prawomocnym (lub ostatecznym) rozstrzygnięciu w postępowaniu sądowoadministracyjnym.',
@@ -76,17 +76,4 @@ export const PETITION_SECTIONS: PetitionSection[] = [
       'Składający apel popiera cel projektu w zakresie ochrony pacjentów przed świadczeniodawcami działającymi w złej wierze. Wskazuje natomiast, że obecny tekst UD207: nie spełnia konstytucyjnych standardów określoności prawa i proporcjonalności; nie wypełnia strukturalnej luki w systemie publicznej opieki zdrowotnej (NFZ); nie został poprzedzony rzetelnymi konsultacjami z reprezentatywnymi organizacjami pacjentów wszystkich grup chorobowych; powiela mechanizmy represyjne, których strukturalne wady wykazała już praktyka orzecznicza Sądu Najwyższego ws. odpowiedzialności zawodowej; ustawia Polskę poza głównym nurtem regulacyjnym UE i WHO.',
       'Pakiet obywatelski przedstawia konkretną alternatywę opartą na trzech filarach: (1) klauzula świadomej zgody pacjenta jako ustawowe wyłączenie z sankcji administracyjnej; (2) gradacja dowodów (OCEBM lub GRADE) zamiast pojęcia blankietowego; (3) ciągłość opieki w NFZ jako obowiązek każdej decyzji RPP wyłączającej świadczeniodawcę.',
       'Hierarchia oczekiwań wobec procesu legislacyjnego: (1) Sejm (Komisja Zdrowia, pełna izba) — wprowadzenie poprawek sanacyjnych z pkt 1–8; (2) Senat — równoległy tor sanacyjny lub odrzucenie projektu w razie braku poprawek; (3) Prezydent RP — odmowa podpisu (art. 122 ust. 5) lub skierowanie do TK (art. 122 ust. 3) wyłącznie w razie uchwalenia ustawy bez poprawek; (4) Rzecznik Praw Obywatelskich — równolegle, ocena konstytucyjności i ewentualne wystąpienie do TK (art. 191 ust. 1 pkt 1 Konstytucji RP).',
-      'Pełna dokumentacja konstytucyjna, prawna i empiryczna dostępna jest publicznie na stronie pacjentmaprawo.pl (sekcje: „Co proponujemy zamiast”, „Sekcja konstytucyjna”, „Memorandum prawne UD207”).',
-    ],
-  },
-]
-
-/** Pełny tekst petycji jako jeden ciąg — do skopiowania do schowka / wklejenia w e-mailu. */
-export const FULL_PETITION_TEXT: string = [
-  PETITION_TITLE,
-  '',
-  ...PETITION_SECTIONS.flatMap((s) => [s.heading, ...s.paragraphs, '']),
-  'Pełna dokumentacja: pacjentmaprawo.pl',
-]
-  .join('\n')
-  .t
+      'Pełna dokumentacja konstytucyjna, prawna i empiryczna dostępna jest publicznie na stronie pacjentmaprawo.pl (sekcje: „Co proponujemy zamiast”

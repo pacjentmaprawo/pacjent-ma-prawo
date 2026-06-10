@@ -79,18 +79,6 @@ const documents: Doc[] = [
     externalLabel: 'Otwórz na EEAS',
   },
   {
-    id: 5,
-    title: 'Wyrok WSA V SA/Wa 2854/23 — kara administracyjna wobec podmiotu leczniczego',
-    description: 'Orzeczenie WSA w Warszawie z 29.10.2025 — kara administracyjna 245 tys. zł wobec podmiotu leczniczego stosującego terapie wspomagające w modelu prywatnym.',
-    category: 'orzecznictwo',
-    date: '29.10.2025',
-    sourceType: 'Orzeczenie',
-    sourceIcon: Scale,
-    externalUrl: 'https://alertmedyczny.pl/sad-salinomycyna-wlewy-z-witaminy-c-kurkumina-i-bio-elektroterapie-to-nie-sa-terapie-onkologiczne/',
-    externalLabel: 'Omówienie wyroku (Alert Medyczny)',
-    searchHint: 'Pełny tekst wyroku: orzeczenia.nsa.gov.pl/cbo/find?word=V+SA/Wa+2854/23 (Centralna Baza Orzeczeń Sądów Administracyjnych — wpisz sygnaturę dokładnie, ze spacjami).',
-  },
-  {
     id: 6,
     title: 'Postanowienie SN III KK 212/18',
     description: 'Sąd Najwyższy o ocenie zgodności z „aktualną wiedzą medyczną" — wymaga dowodu z opinii biegłych, in dubio pro reo (art. 5 § 2 k.p.k.).',
@@ -300,7 +288,7 @@ export default function DokumentyPage() {
       <section className="py-12 bg-cream border-t border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm text-muted-foreground text-center leading-relaxed">
-            Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, alertmedyczny.pl, medRxiv, nil.org.pl, termedia.pl)
+            Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, medRxiv, nil.org.pl, termedia.pl)
             lub stanowią własne opracowania pakietu obywatelskiego. Własne dokumenty są dostępne do bezpłatnego pobrania w formacie PDF.
             Linki zewnętrzne prowadzą bezpośrednio do tekstów źródłowych. Wszystkie weryfikowane: maj 2026.
           </p>
@@ -309,3 +297,4 @@ export default function DokumentyPage() {
     </div>
   )
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

@@ -26,7 +26,7 @@ const POSTULATY_SKROT = `Pakiet kluczowy (zakres sankcji):
 4. Usunięcie funkcjonalnego odwrócenia ciężaru dowodu z art. 67zl ust. 4.
 
 Pakiet proceduralny:
-5. Wyłączenia dla świadczeń legalnych: badania kliniczne, compassionate use (art. 83 rozp. 726/2004/WE), named patient program, indywidualne sprowadzenie (art. 4 ust. 7–9 Prawa farmaceutycznego), świadczenia refundowane w innych państwach UE/EOG.
+5. Wyłączenia dla świadczeń w legalnych trybach: badania kliniczne, eksperyment leczniczy (art. 21 i nast. ustawy o zawodach lekarza, za zgodą komisji bioetycznej), compassionate use (art. 83 rozp. 726/2004/WE), named patient program, indywidualne sprowadzenie (art. 4 ust. 7–9 Prawa farmaceutycznego), świadczenia legalnie stosowane w innych państwach UE/EOG. To jedyna legalna droga dla substancji niezarejestrowanych dla ludzi.
 6. Vacatio legis 12 miesięcy zamiast 3 (linia orzecznicza TK).
 7. Publiczne konsultacje z organizacjami pacjentów wszystkich grup chorobowych — nie tylko onkologicznych.
 8. Zakaz publikacji nieprawomocnych decyzji RPP (domniemanie niewinności, art. 42 ust. 3 Konstytucji RP).
@@ -246,9 +246,4 @@ export function buildMailtoUrl({ emails, subject, body, bcc }: MailtoOptions): s
   // URLSearchParams koduje spacje jako '+', ale klienci poczty oczekują %20.
   const query = params.toString().replace(/\+/g, '%20')
   // Adresy e-mail zawierają wyłącznie znaki bezpieczne dla mailto (RFC 6068),
-  // dlatego listy odbiorców nie kodujemy — uniknięcie problemów z %40 w klientach poczty.
-  return `mailto:${to}?${query}`
-}
-
-export const CONTACT_BCC = 'pacjentmaprawo@proton.me'
-        
+  // dlat

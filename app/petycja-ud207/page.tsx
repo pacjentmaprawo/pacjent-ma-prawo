@@ -37,7 +37,7 @@ const POSTULATY = [
   'Gradacja dowodów (OCEBM lub GRADE) zamiast blankietowego pojęcia „aktualnej wiedzy medycznej”.',
   'Obowiązek wskazania w decyzji RPP podmiotu NFZ przejmującego pacjentów — ciągłość opieki.',
   'Usunięcie funkcjonalnego odwrócenia ciężaru dowodu z art. 67zl ust. 4.',
-  'Wyłączenia dla świadczeń legalnych (badania kliniczne, compassionate use, named patient, import docelowy, refundacja w UE/EOG).',
+  'Wyłączenia dla świadczeń w legalnych trybach: badania kliniczne, eksperyment leczniczy (art. 21 i nast. ustawy o zawodach lekarza, za zgodą komisji bioetycznej), compassionate use, named patient, import docelowy, legalne stosowanie w UE/EOG — to jedyna legalna droga dla substancji niezarejestrowanych dla ludzi.',
   'Vacatio legis 12 miesięcy zamiast 3.',
   'Publiczne konsultacje z organizacjami pacjentów wszystkich grup chorobowych.',
   'Zakaz publikacji nieprawomocnych decyzji RPP (domniemanie niewinności).',
@@ -221,6 +221,4 @@ export default function PetycjaUD207Page() {
                 <ShieldCheck className="h-6 w-6 flex-shrink-0 text-teal" />
                 <div>
                   <h3 className="font-semibold text-navy mb-2">Twoja prywatność</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Ten formularz działa w całości w Twojej przeglądarce. Nie zakładamy konta,
-                    nie zbieramy ani nie przechow
+                  <p className="text-sm t
