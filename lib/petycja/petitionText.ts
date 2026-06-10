@@ -24,7 +24,7 @@ export const PETITION_SECTIONS: PetitionSection[] = [
       '5. Żaden urząd ponad sądem. Decyzje Rzecznika Praw Pacjenta muszą podlegać realnej, merytorycznej kontroli niezależnego sądu powszechnego — analogicznie do kontroli decyzji UOKiK przez Sąd Ochrony Konkurencji i Konsumentów — a nie wyłącznie ocenie ich legalności przez sąd administracyjny. Rygor natychmiastowej wykonalności powinien być dopuszczalny tylko wyjątkowo, z mocnym uzasadnieniem i szybką ścieżką odwoławczą.',
       '6. Domniemanie niewinności. Nieprawomocne decyzje nie mogą być publikowane ani wykonywane jak prawomocne wyroki, zanim potwierdzi je sąd (art. 42 ust. 3 Konstytucji RP).',
       '7. Nikt nie zostaje bez opieki. Wykluczenie świadczeniodawcy nie może oznaczać pozostawienia jego pacjentów bez ciągłości leczenia — decyzja powinna wskazywać podmiot przejmujący opiekę w ramach NFZ.',
-      'Klauzula bezpieczeństwa. W razie uchwalenia ustawy bez uwzględnienia powyższych zasad wnosimy o odmowę podpisania ustawy przez Prezydenta RP (art. 122 ust. 5 Konstytucji RP) lub o skierowanie jej do Trybunału Konstytucyjnego (art. 122 ust. 3 Konstytucji RP). Szczegółowe uzasadnienie konstytucyjne oraz proponowane brzmienie przepisów zawiera Memorandum prawne dostępne na pacjentmaprawo.pl.
+      'Klauzula bezpieczeństwa. W razie uchwalenia ustawy bez uwzględnienia powyższych zasad wnosimy o odmowę podpisania ustawy przez Prezydenta RP (art. 122 ust. 5 Konstytucji RP) lub o skierowanie jej do Trybunału Konstytucyjnego (art. 122 ust. 3 Konstytucji RP). Szczegółowe uzasadnienie konstytucyjne oraz proponowane brzmienie przepisów zawiera Memorandum prawne dostępne na pacjentmaprawo.pl.',
     ],
   },
   {
