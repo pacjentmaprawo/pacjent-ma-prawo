@@ -246,4 +246,8 @@ export function buildMailtoUrl({ emails, subject, body, bcc }: MailtoOptions): s
   // URLSearchParams koduje spacje jako '+', ale klienci poczty oczekują %20.
   const query = params.toString().replace(/\+/g, '%20')
   // Adresy e-mail zawierają wyłącznie znaki bezpieczne dla mailto (RFC 6068),
-  // dlat
+  // dlatego listy odbiorców nie kodujemy — uniknięcie problemów z %40 w klientach poczty.
+  return `mailto:${to}?${query}`
+}
+
+export const CONTACT_BCC = 'pacjentmaprawo@proton.me'

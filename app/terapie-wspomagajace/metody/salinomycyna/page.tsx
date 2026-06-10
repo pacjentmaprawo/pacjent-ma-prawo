@@ -221,4 +221,16 @@ export default function SalinomycynaPage() {
             przeciwnowotworowych salinomycyny</li>
             <li>Pochodne salinomycyny — prace zespołu UAM Poznań (Antoszczak, Huczyński): kierunek
             zwiększania selektywności i obniżania toksyczności (badania wczesne, nie kliniczne)</li>
-            <li>Rejestr badań kli
+            <li>Rejestr badań klinicznych <strong>clinicaltrials.gov</strong> — weryfikacja
+            aktualnych protokołów, do których pacjent mógłby się kwalifikować</li>
+            <li>Ścieżki prawne stosowania u ludzi: badanie kliniczne, <strong>eksperyment leczniczy</strong>
+            (art. 21 i nast. ustawy o zawodach lekarza, za zgodą komisji bioetycznej), compassionate
+            use, named patient program, indywidualne sprowadzenie z zagranicy</li>
+            <li>Stanowisko NRL Nr 2/21/VIII (12.03.2021) — wymienia salinomycynę; w pakiecie
+            obywatelskim zestawiane z aktualnym stanem wiedzy biomedycznej („paradoks NRL")</li>
+          </ul>
+        </>
+      }
+    />
+  )
+}

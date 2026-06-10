@@ -1,13 +1,12 @@
-// Pełna treść petycji obywatelskiej ws. projektu UD207 (pkt I–VI).
+// Pełna treść apelu obywatelskiego ws. projektu UD207 (pkt I–VI).
 // Używana do: (1) wyświetlenia pełnego dokumentu na stronie, (2) przycisku „Kopiuj pełną treść".
 
 export const PETITION_TITLE =
   'Apel obywatelski ws. projektu ustawy UD207 (druk sejmowy nr 2598, tzw. „lex szarlatan”)'
 
-/** Sekcje pełnej petycji — do renderowania na stronie. */
+/** Sekcje pełnego apelu — do renderowania na stronie. */
 export interface PetitionSection {
   heading: string
-  /** Akapity sekcji (zwykły tekst; renderowane jako <p>). */
   paragraphs: string[]
 }
 
@@ -37,7 +36,7 @@ export const PETITION_SECTIONS: PetitionSection[] = [
     heading: 'II. Uzasadnienie konstytucyjne',
     paragraphs: [
       '1. Naruszenie zasady określoności prawa (art. 2 Konstytucji RP). Projekt UD207 wprowadza penalizację świadczeń niezgodnych z „aktualną wiedzą medyczną” bez precyzyjnego zdefiniowania tego pojęcia. W orzecznictwie Sądu Najwyższego (postanowienie z 5 czerwca 2019 r., III KK 212/18) wskazano, że ocena zgodności postępowania lekarza z „aktualną wiedzą medyczną” wymaga każdorazowo dowodu z opinii biegłych, a wątpliwości należy rozstrzygać in dubio pro reo (art. 5 § 2 k.p.k.). Wymóg ten wynika z zasady lex certa. Trybunał Konstytucyjny w wyroku P 29/13 wskazał, że krótka vacatio legis przy regulacji dotykającej praw majątkowych i osobistych pacjentów stanowi naruszenie zasady przyzwoitej legislacji.',
-      '2. Naruszenie zasady proporcjonalności (art. 31 ust. 3 Konstytucji RP) — dwie strukturalne luki. Luka pierwsza — ciągłość opieki w NFZ: budżet NFZ w 2025 r. przekroczył 220 mld zł, ale Polska wydaje na ochronę zdrowia 8,1% PKB wobec średniej OECD 9,2%. System publiczny od lat nie zapewnia ciągłości opieki w onkologii, kardiologii, chorobach autoimmunologicznych, metabolicznych, neurologicznych i przewlekłych. Część pacjentów korzysta ze świadczeń poza NFZ właśnie z powodu tej niewydolności. Projekt zaostrza penalizację świadczeniodawców, nie usuwając pierwotnej przyczyny zjawiska — środek nie jest „niezbędny” w rozumieniu art. 31 ust. 3, skoro istnieje środek mniej dotkliwy. Luka druga — deficyt reprezentatywności: w aktach projektu i Ocenie Skutków Regulacji nie wskazano żadnej publicznej konsultacji ani ankiety wśród pacjentów ani ich reprezentatywnych organizacji obejmujących pełne spektrum chorób objętych regulacją. Organizacje pacjenckie cytowane jako „głos pacjentów” mają udokumentowane powiązania finansowe z przemysłem farmaceutycznym, co rodzi pytanie o reprezentatywność tego głosu — zwłaszcza wobec pacjentów z chorobami przewlekłymi, autoimmunologicznymi, metabolicznymi, neurologicznymi i kardiologicznymi, których organizacji nie zaproszono do konsultacji.',
+      '2. Naruszenie zasady proporcjonalności (art. 31 ust. 3 Konstytucji RP) — dwie strukturalne luki. Luka pierwsza — ciągłość opieki w NFZ: budżet NFZ w 2025 r. przekroczył 220 mld zł, ale Polska wydaje na ochronę zdrowia 8,1% PKB wobec średniej OECD 9,2%. System publiczny od lat nie zapewnia ciągłości opieki w onkologii, kardiologii, chorobach autoimmunologicznych, metabolicznych, neurologicznych i przewlekłych. Część pacjentów korzysta ze świadczeń poza NFZ właśnie z powodu tej niewydolności. Projekt zaostrza penalizację świadczeniodawców, nie usuwając pierwotnej przyczyny zjawiska — środek nie jest „niezbędny” w rozumieniu art. 31 ust. 3, skoro istnieje środek mniej dotkliwy. Luka druga — deficyt reprezentatywności: w aktach projektu i Ocenie Skutków Regulacji nie wskazano żadnej publicznej konsultacji ani ankiety wśród pacjentów ani ich reprezentatywnych organizacji obejmujących pełne spektrum chorób objętych regulacją. Organizacje pacjenckie cytowane jako „głos pacjentów” mają udokumentowane powiązania finansowe z przemysłem farmaceutycznym, co rodzi pytanie o reprezentatywność tego głosu.',
       '3. Naruszenie autonomii pacjenta (art. 47 Konstytucji RP + Konwencja z Oviedo). Konwencja z Oviedo (Rada Europy, 1997) gwarantuje pacjentowi prawo do świadomego wyboru świadczeń zdrowotnych. Wyrok ETPC Jehovah’s Witnesses of Moscow v. Russia (skarga 302/02, 10 czerwca 2010 r.) potwierdza, że prawo pacjenta do dokonywania własnych wyborów medycznych wynika z art. 8 EKPC. UD207 ogranicza tę autonomię w obszarze świadczeń uzupełniających, bez różnicowania między metodami zweryfikowanymi w badaniach klinicznych (np. terapia fotodynamiczna PDT — zarejestrowana przez FDA dla 6 wskazań onkologicznych; tlenoterapia hiperbaryczna HBOT — refundowana przez NFZ dla 14 wskazań) a praktykami niezweryfikowanymi.',
       '4. Funkcjonalne odwrócenie ciężaru dowodu (art. 67zl ust. 4 projektu). Projektowany przepis obarcza świadczeniodawcę obowiązkiem udowodnienia zgodności świadczenia z „aktualną wiedzą medyczną” w sytuacji, gdy granice pojęcia są nieostre, a ciężar dowodu w postępowaniu administracyjnym powinien spoczywać na organie (art. 7, art. 77 k.p.a.). Konstrukcja ta rodzi poważne ryzyko nierównowagi proceduralnej.',
       '5. Penalizacja na podstawie pojęcia niedookreślonego (art. 42 Konstytucji RP). Zasada nullum crimen sine lege certa wymaga precyzyjnego określenia znamion czynu zabronionego. Pojęcie „aktualnej wiedzy medycznej” jako element znamion przewinienia administracyjnego (a w konsekwencji penalnego) nie spełnia tego standardu.',
@@ -76,4 +75,17 @@ export const PETITION_SECTIONS: PetitionSection[] = [
       'Składający apel popiera cel projektu w zakresie ochrony pacjentów przed świadczeniodawcami działającymi w złej wierze. Wskazuje natomiast, że obecny tekst UD207: nie spełnia konstytucyjnych standardów określoności prawa i proporcjonalności; nie wypełnia strukturalnej luki w systemie publicznej opieki zdrowotnej (NFZ); nie został poprzedzony rzetelnymi konsultacjami z reprezentatywnymi organizacjami pacjentów wszystkich grup chorobowych; powiela mechanizmy represyjne, których strukturalne wady wykazała już praktyka orzecznicza Sądu Najwyższego ws. odpowiedzialności zawodowej; ustawia Polskę poza głównym nurtem regulacyjnym UE i WHO.',
       'Pakiet obywatelski przedstawia konkretną alternatywę opartą na trzech filarach: (1) klauzula świadomej zgody pacjenta jako ustawowe wyłączenie z sankcji administracyjnej; (2) gradacja dowodów (OCEBM lub GRADE) zamiast pojęcia blankietowego; (3) ciągłość opieki w NFZ jako obowiązek każdej decyzji RPP wyłączającej świadczeniodawcę.',
       'Hierarchia oczekiwań wobec procesu legislacyjnego: (1) Sejm (Komisja Zdrowia, pełna izba) — wprowadzenie poprawek sanacyjnych z pkt 1–8; (2) Senat — równoległy tor sanacyjny lub odrzucenie projektu w razie braku poprawek; (3) Prezydent RP — odmowa podpisu (art. 122 ust. 5) lub skierowanie do TK (art. 122 ust. 3) wyłącznie w razie uchwalenia ustawy bez poprawek; (4) Rzecznik Praw Obywatelskich — równolegle, ocena konstytucyjności i ewentualne wystąpienie do TK (art. 191 ust. 1 pkt 1 Konstytucji RP).',
-      'Pełna dokumentacja konstytucyjna, prawna i empiryczna dostępna jest publicznie na stronie pacjentmaprawo.pl (sekcje: „Co proponujemy zamiast”
+      'Pełna dokumentacja konstytucyjna, prawna i empiryczna dostępna jest publicznie na stronie pacjentmaprawo.pl (sekcje: „Co proponujemy zamiast”, „Sekcja konstytucyjna”, „Memorandum prawne UD207”).',
+    ],
+  },
+]
+
+/** Pełny tekst apelu jako jeden ciąg — do skopiowania do schowka / wklejenia w e-mailu. */
+export const FULL_PETITION_TEXT: string = [
+  PETITION_TITLE,
+  '',
+  ...PETITION_SECTIONS.flatMap((s) => [s.heading, ...s.paragraphs, '']),
+  'Pełna dokumentacja: pacjentmaprawo.pl',
+]
+  .join('\n')
+  .trim()

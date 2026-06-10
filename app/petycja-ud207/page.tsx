@@ -111,7 +111,7 @@ export default function PetycjaUD207Page() {
         </div>
       </section>
 
-      {/* Co zawiera petycja */}
+      {/* Co zawiera apel */}
       <section className="py-12 lg:py-16 bg-cream border-t border-border">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl font-semibold text-navy mb-3">
@@ -156,7 +156,7 @@ export default function PetycjaUD207Page() {
         </div>
       </section>
 
-      {/* Pełna treść petycji */}
+      {/* Pełna treść apelu */}
       <section className="py-12 lg:py-16 bg-cream border-t border-border">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl font-semibold text-navy mb-3">
@@ -221,4 +221,20 @@ export default function PetycjaUD207Page() {
                 <ShieldCheck className="h-6 w-6 flex-shrink-0 text-teal" />
                 <div>
                   <h3 className="font-semibold text-navy mb-2">Twoja prywatność</h3>
-                  <p className="text-sm t
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Ten formularz działa w całości w Twojej przeglądarce. Nie zakładamy konta,
+                    nie zbieramy ani nie przechowujemy Twoich danych osobowych, nie wysyłamy
+                    niczego w Twoim imieniu. Wiadomości otwierają się w Twoim własnym programie
+                    pocztowym — to Ty decydujesz, co i do kogo wyślesz. Jeśli zaznaczysz opcję
+                    „prześlij nam kopię”, Twój adres trafi wyłącznie do ukrytej kopii (BCC)
+                    wybranej wiadomości i posłuży jedynie statystyce kampanii.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    </div>
+  )
+}

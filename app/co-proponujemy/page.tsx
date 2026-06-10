@@ -302,4 +302,86 @@ export default function CoProponujemyPage() {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Pacjent po pełnej informacji może wybrać terapię komplementarną, off-label lub
                 eksperymentalną prowadzoną w legalnym trybie (badanie kliniczne, eksperyment leczniczy
-           
+                z komisją bioetyczną, compassionate use, import docelowy) — bez dodatkowej sankcji
+                administracyjnej. Mechanizm (ust. 3–5) opisany powyżej.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="border border-border rounded-xl">
+            <CardContent className="p-6">
+              <div className="w-12 h-12 bg-red-orange/10 rounded-lg flex items-center justify-center mb-4">
+                <Scale className="h-6 w-6 text-amber" />
+              </div>
+              <h3 className="font-semibold text-navy mb-2">Filar 2: Gradacja dowodów</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Pojęcie „aktualnej wiedzy medycznej" wymaga ustawowego odesłania do
+                <strong> OCEBM lub GRADE</strong> — systemów oceny poziomu dowodów. „Zgodne/niezgodne"
+                bez gradacji to nadmierna prostota niezgodna z praktyką EBM.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="border border-border rounded-xl">
+            <CardContent className="p-6">
+              <div className="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center mb-4">
+                <FileText className="h-6 w-6 text-navy" />
+              </div>
+              <h3 className="font-semibold text-navy mb-2">Filar 3: Ciągłość opieki</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Każda decyzja RPP wyłączająca lekarza/podmiot powinna zawierać <strong>obowiązek
+                wskazania konkretnego podmiotu NFZ</strong> przejmującego pacjentów — z zachowaniem
+                harmonogramu leczenia onkologicznego i innych ścieżek krytycznych.
+                Casus z 2025 r. pokazał, że bez tego pacjenci są pozostawieni sami sobie.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-cream py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-serif text-2xl font-semibold text-navy mb-4">
+            Pełna analiza prawna
+          </h2>
+          <p className="text-navy/80 leading-relaxed mb-8">
+            Klauzula świadomej zgody jest opisana w Rekomendacji 16 (Sekcja Konstytucyjna)
+            i Rekomendacji 12 (Memorandum prawne) wraz z pełnym uzasadnieniem konstytucyjnym.
+            Dokumenty dostępne do pobrania w bazie dokumentów.
+          </p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/dokumenty">
+              <Button className="bg-navy text-background hover:bg-navy/90">
+                <FileText className="h-4 w-4 mr-2" />
+                Baza dokumentów
+              </Button>
+            </Link>
+            <Link href="/dlaczego-sprzeciw">
+              <Button variant="outline" className="border-navy text-navy hover:bg-navy/5">
+                Osiem powodów sprzeciwu
+              </Button>
+            </Link>
+            <Link href="/co-z-pacjentami">
+              <Button variant="outline" className="border-navy text-navy hover:bg-navy/5">
+                Co dzieje się z pacjentami
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Stopka kontekstu */}
+      <section className="py-12 bg-background border-t border-border">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Treść opracowana w oparciu o Sekcję Konstytucyjną (§10 i §13 Rekomendacja 16)
+            oraz Memorandum prawne UD207 (sekcja C Rekomendacja 12) pakietu obywatelskiego.
+            Postulat klauzuli świadomej zgody jest spójny z międzynarodowym standardem informed
+            consent — art. 5 Konwencji z Oviedo, art. 8 EKPC (orzecznictwo *Pretty*, *Vavřička*,
+            *Jehovah's Witnesses of Moscow*), art. 3 Karty Praw Podstawowych UE, art. 47 i 41
+            Konstytucji RP, art. 16–17 ustawy o prawach pacjenta. Aktualizacja: maj 2026.
+          </p>
+        </div>
+      </section>
+    </div>
+  )
+}

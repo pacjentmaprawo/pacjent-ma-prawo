@@ -76,4 +76,44 @@ export default function PolitykaPrywatnosciPage() {
             <li><strong>Cel:</strong> wyłącznie statystyka i koordynacja kampanii obywatelskiej ws. UD207.</li>
             <li><strong>Zakres danych:</strong> Twój adres e-mail (jako nadawcy) oraz treść wysłanej wiadomości.</li>
             <li><strong>Podstawa prawna:</strong> Twoja zgoda wyrażona zaznaczeniem opcji (art. 6 ust. 1 lit. a RODO).</li>
-            <li><strong>Okres przechowywania:</strong> do zakończenia procesu legislacyjnego nad UD207, nie dłużej niż 12 miesięcy,
+            <li><strong>Okres przechowywania:</strong> do zakończenia procesu legislacyjnego nad UD207, nie dłużej niż 12 miesięcy, a następnie usunięcie.</li>
+            <li><strong>Dostęp:</strong> wyłącznie koordynatorzy inicjatywy obywatelskiej; brak udostępniania komercyjnego.</li>
+            <li><strong>Wycofanie / usunięcie:</strong> w każdej chwili napisz na <a href="mailto:pacjentmaprawo@proton.me" className="text-teal underline">pacjentmaprawo@proton.me</a> — usuniemy Twój adres i treść.</li>
+          </ul>
+          <p className="text-navy/80 leading-relaxed mb-6">
+            <strong>Licznik wysłanych apeli.</strong> Strona pokazuje zbiorczą liczbę wysłanych pism.
+            Licznik przechowuje wyłącznie jedną liczbę całkowitą — nie zawiera adresów, treści ani
+            danych pozwalających zidentyfikować osobę.
+          </p>
+
+          <h2 className="font-serif text-2xl font-semibold text-navy mb-4">6. Twoje prawa</h2>
+          <p className="text-navy/80 leading-relaxed mb-2">Masz prawo do:</p>
+          <ul className="list-disc pl-6 text-navy/80 mb-6 space-y-1">
+            <li>dostępu do swoich danych (art. 15 RODO)</li>
+            <li>sprostowania danych (art. 16 RODO)</li>
+            <li>usunięcia danych — „prawo do bycia zapomnianym" (art. 17 RODO)</li>
+            <li>ograniczenia przetwarzania (art. 18 RODO)</li>
+            <li>przenoszenia danych (art. 20 RODO)</li>
+            <li>sprzeciwu wobec przetwarzania (art. 21 RODO)</li>
+            <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO, ul. Stawki 2, 00-193 Warszawa)</li>
+          </ul>
+          <p className="text-navy/80 leading-relaxed mb-6">
+            Aby zrealizować dowolne z tych praw, wyślij wiadomość na <a href="mailto:kontakt@pacjentmaprawo.pl" className="text-teal underline">kontakt@pacjentmaprawo.pl</a>.
+          </p>
+
+          <h2 className="font-serif text-2xl font-semibold text-navy mb-4">7. Cookies i analytics</h2>
+          <p className="text-navy/80 leading-relaxed mb-6">
+            Platforma korzysta z usług hostingowych Vercel. Vercel może zbierać podstawowe metryki techniczne
+            (czas ładowania strony, błędy). Nie używamy plików cookies do śledzenia użytkowników ani narzędzi
+            analitycznych typu Google Analytics, Meta Pixel itp.
+          </p>
+
+          <h2 className="font-serif text-2xl font-semibold text-navy mb-4">8. Zmiany polityki</h2>
+          <p className="text-navy/80 leading-relaxed mb-6">
+            Zastrzegamy sobie prawo do aktualizacji niniejszej polityki. Aktualna wersja jest zawsze dostępna na tej stronie. Data ostatniej aktualizacji widnieje u góry dokumentu.
+          </p>
+        </div>
+      </section>
+    </div>
+  )
+}
