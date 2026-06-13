@@ -193,7 +193,7 @@ export default function HomePage() {
             {[
               ['Prawo pacjenta do wyboru terapii', 'O sposobie leczenia — w tym o terapiach komplementarnych i wspomagających — decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.'],
               ['Dostęp do terapii komplementarnych i alternatywnych', 'Bez blankietowej eliminacji legalnych metod — w tym dostępnych legalnymi drogami (badanie kliniczne, eksperyment leczniczy za świadomą zgodą).'],
-              ['Mądra regulacja zamiast zakazu — na wzór Europy', 'Uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny.'],
+              ['Mądra regulacja zamiast zakazu — na wzór Europy', 'Uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny. Legalnie wykonywane zawody wspomagające — fizjoterapeuci, dietetycy, masażyści, zielarze, akupunkturzyści i inni — nie mogą być stygmatyzowane ani wypychane z rynku.'],
               ['Wolność debaty i wypowiedzi', 'Ustawa ściga czyn — oszustwo w złej wierze — a nie wypowiedź lekarza, naukowca czy pacjenta o leczeniu.'],
               ['Żaden urząd ponad sądem', 'Merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (jak decyzje UOKiK kontroluje SOKiK); natychmiastowa wykonalność tylko wyjątkowo, z szybką ścieżką odwoławczą.'],
               ['Domniemanie niewinności', 'Nieprawomocne decyzje nie są publikowane ani wykonywane jak wyroki, zanim potwierdzi je sąd.'],

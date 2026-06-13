@@ -380,7 +380,10 @@ export default function CoProponujemyPage() {
             Sprzeciw to nie wszystko. Polska może — wzorem innych państw europejskich —
             zakorzenić medycynę integracyjną w systemie: z regulacją, standardami jakości
             i nadzorem, które realnie chronią pacjenta. To kierunek, który rozwija naukę,
-            podnosi jakość usług i odciąża przeciążony system zdrowia.
+            podnosi jakość usług i odciąża przeciążony system zdrowia. Obejmuje też ochronę legalnie
+            wykonywanych zawodów wspomagających — fizjoterapeutów, dietetyków, masażystów, zielarzy,
+            akupunkturzystów i innych — których praca wspiera pacjentów i którzy nie mogą być
+            stygmatyzowani ani wypychani z rynku.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="border border-border rounded-xl bg-background">

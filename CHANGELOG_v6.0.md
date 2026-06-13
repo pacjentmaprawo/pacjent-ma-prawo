@@ -47,3 +47,18 @@ renderowanych — strona operuje teraz argumentem strukturalnym, nie pojedynczym
 
 # v6.0.6 (13.06.2026)
 - KOREKTA TYTUŁU: usunięto z apelu (petitionText.ts) frazę 'oraz ustawy o systemie powiadamiania ratunkowego'. Zweryfikowano u źródła pierwotnego (sejm.gov.pl, tekst 2598-ustawa.docx): oficjalny tytuł druku 2598 = 'o zmianie ustawy o prawach pacjenta i Rzeczniku Praw Pacjenta' (tylko ten jeden akt; zgodnie z ZTP tytuł wymienia wszystkie nowelizowane akty).
+
+
+# v6.0.7 (13.06.2026)
+- SPÓJNOŚĆ PETYCJI: do treści apelu (petitionText.ts) dodano cztery wcześniej brakujące wątki, by petycja odpowiadała stronom informacyjnym i pismu do Prezydenta:
+  * zasada 2 — szybka, odbiurokratyzowana ścieżka onkologiczna + finansowanie z własnych środków (nie obciąża państwa);
+  * uzasadnienie II.2 — pod-inkluzywność (omija zarejestrowanych poza UE) + kontrproduktywność kosztowa (katastrofalne obciążenie przeciążonego NFZ);
+  * stanowisko VI — kierunek pozytywny (wsparcie rozwoju/badań/standaryzacji medycyny integracyjnej).
+
+
+# v6.0.8 (13.06.2026)
+- Petycja (zasada 3) + pismo do Prezydenta: dodano wyraźną obronę legalnie wykonywanych ZAWODÓW i usług wspomagających (fizjoterapeuci, dietetycy, masażyści, zielarze, akupunkturzyści i inni) — regulacja przez kwalifikacje/rejestr (wzór Heilpraktiker/ÖÄK), nie penalizacja; nie wolno ich stygmatyzować ani wypychać z rynku. (Pismo: skonsolidowano postulaty do 7, wróciło do 3 stron.)
+
+
+# v6.0.9 (13.06.2026)
+- Obrona zawodów wspomagających także w POSTULATACH i treściach informacyjnych: rozszerzono zasadę 3 (7 zasad) na stronie głównej i na /petycja-ud207 oraz sekcję 'Pozytywny kierunek' na /co-proponujemy — nazwane zawody (fizjoterapeuci, dietetycy, masażyści, zielarze, akupunkturzyści i inni) + 'nie mogą być stygmatyzowane ani wypychane z rynku'. Spójne z apelem i pismem do Prezydenta.

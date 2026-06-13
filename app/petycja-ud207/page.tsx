@@ -35,7 +35,7 @@ const STEPS = [
 const POSTULATY = [
   'Prawo pacjenta do wyboru terapii — o sposobie leczenia, w tym o terapiach komplementarnych i wspomagających, decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.',
   'Dostęp do terapii komplementarnych i alternatywnych — bez blankietowej eliminacji legalnych metod; w tym dostępnych legalnymi drogami (badanie kliniczne, eksperyment leczniczy za świadomą zgodą — jedyna legalna ścieżka dla substancji niezarejestrowanych dla ludzi).',
-  'Mądra regulacja zamiast zakazu, na wzór Europy — uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny.',
+  'Mądra regulacja zamiast zakazu, na wzór Europy — uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny. Legalnie wykonywane zawody wspomagające (fizjoterapeuci, dietetycy, masażyści, zielarze, akupunkturzyści i inni) nie mogą być stygmatyzowane ani wypychane z rynku.',
   'Wolność debaty i wypowiedzi — ustawa ściga czyn (oszustwo w złej wierze), nie wypowiedź lekarza, naukowca czy pacjenta o leczeniu.',
   'Żaden urząd ponad sądem — merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (jak decyzje UOKiK kontroluje SOKiK); natychmiastowa wykonalność tylko wyjątkowo, z szybką ścieżką odwoławczą.',
   'Domniemanie niewinności — nieprawomocne decyzje nie są publikowane ani wykonywane jak wyroki, zanim potwierdzi je sąd.',
