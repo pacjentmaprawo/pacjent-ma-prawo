@@ -84,8 +84,8 @@ const patientImpactCards = [
   },
   {
     icon: FileWarning,
-    title: 'Brak realnej pomocy ze strony organu ochronnego',
-    body: 'Udokumentowany casus z 2025 r. (zob. „Co z pacjentami") pokazuje, że nawet gdy pacjenci kierują apele do urzędów — w tym do Rzecznika Praw Pacjenta, którego ustawowym zadaniem jest ich ochrona — nie odnotowano publicznej, merytorycznej interwencji zapewniającej zastępczą opiekę. Projekt UD207 wzmacnia uprawnienia represyjne tego samego organu, nie nakładając obowiązków pozytywnych.'
+    title: 'Pełne ryzyko błędnej decyzji po stronie obywatela',
+    body: 'RPP to organ administracyjny, nie sąd, a decyzje objęte rygorem natychmiastowej wykonalności wywołują skutki, zanim sąd zdąży je skontrolować — część z nich jest nieodwracalna (zob. „Co z pacjentami"). Projekt nie przewiduje funduszu odszkodowawczego, szybkiego trybu wstrzymania wykonania ani odpowiedzialności organu za decyzje później uchylone. UD207 wzmacnia uprawnienia represyjne, nie nakładając obowiązków pozytywnych ani zabezpieczeń.'
   },
   {
     icon: Users,
@@ -220,7 +220,7 @@ export default function ProjektPage() {
           <div className="mt-12 text-center">
             <Link href="/co-z-pacjentami">
               <Button variant="outline" className="border-navy text-navy hover:bg-navy/5">
-                Zobacz pełny casus z 2025 r. →
+                Co, jeśli decyzja okaże się błędna? →
               </Button>
             </Link>
           </div>

@@ -2,69 +2,62 @@ import type { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { AlertTriangle, FileText, Users } from 'lucide-react'
+import { AlertTriangle, FileText, Users, ShieldOff } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Co dzieje się z pacjentami',
-  description: 'Casus z 2025 r.: gdy lekarz zostaje wykluczony, kilkudziesięciu pacjentów onkologicznych traci opiekę z dnia na dzień. Apele do urzędów. Brak reakcji RPP. UD207 nie zawiera przepisów o ciągłości opieki.',
+  description: 'Decyzje RPP z rygorem natychmiastowej wykonalności wywołują skutki, zanim sąd zdąży je skontrolować. Część skutków jest nieodwracalna. UD207 nie przewiduje funduszu odszkodowawczego ani mechanizmu zabezpieczeń.',
 }
 
-const timeline = [
+const poszkodowani = [
   {
-    date: '9 stycznia 2025',
-    title: 'Orzeczenie Naczelnego Sądu Lekarskiego',
-    body: 'NSL zawiesza na 1 rok prawo wykonywania zawodu lekarzowi opiekującemu się od kilkunastu lat pacjentami onkologicznymi w ambulatoryjnej klinice integracyjnej. Orzeczenie natychmiast wykonalne.',
-    type: 'event',
+    icon: Users,
+    title: 'Pacjent',
+    body: 'Przerwana terapia onkologiczna lub inna ścieżka krytyczna nie czeka na wyrok. Utrata lekarza prowadzącego z dnia na dzień, brak kontynuacji leczenia, pogorszenie stanu zdrowia — to skutki, których późniejsze uchylenie decyzji nie cofa. W medycynie czas bywa nieodwracalny.',
   },
   {
-    date: '10 stycznia 2025',
-    title: 'Pacjenci tracą opiekę z dnia na dzień',
-    body: 'Kilkudziesięciu pacjentów onkologicznych w trakcie aktywnych terapii zostaje pozbawionych lekarza prowadzącego. W publicznie dostępnych materiałach nie odnaleźliśmy informacji o wskazanej procedurze awaryjnej ani o lekarzu zastępczym.',
-    type: 'consequence',
+    icon: ShieldOff,
+    title: 'Świadczeniodawca',
+    body: 'Mały gabinet lekarski, zielarnia, prywatny podmiot leczniczy, który otrzyma decyzję natychmiast wykonalną, traci pacjentów, płynność i reputację, zanim sąd zdąży sprawę rozpoznać. Gdy decyzja zostaje po latach uchylona, przedsiębiorstwo często już nie istnieje. Wygranie procesu nie odbudowuje firmy ani zaufania.',
+  },
+]
+
+const luki = [
+  {
+    title: 'Brak funduszu odszkodowawczego',
+    body: 'Projekt nie tworzy żadnego mechanizmu kompensacji dla pacjentów ani przedsiębiorców, których decyzja administracyjna zostanie później uznana za wadliwą. Skutek błędu organu obciąża wyłącznie obywatela.',
   },
   {
-    date: 'styczeń – grudzień 2025',
-    title: 'Apele pacjentów do urzędów państwowych',
-    body: 'Pacjenci kierują pisemne apele do Ministerstwa Zdrowia, Naczelnej Izby Lekarskiej, Narodowego Funduszu Zdrowia oraz Rzecznika Praw Pacjenta — organu, którego ustawowym zadaniem jest ochrona praw pacjentów. Pacjenci publicznie dokumentują swoją sytuację i apelują o przywrócenie ciągłości opieki.',
-    type: 'action',
+    title: 'Brak szybkiego trybu wstrzymania wykonania',
+    body: 'Rygor natychmiastowej wykonalności oznacza, że skutki następują od razu, a ścieżka odwoławcza biegnie miesiącami. Brak realnej, ekspresowej procedury zawieszenia wykonania do czasu kontroli sądowej.',
   },
   {
-    date: 'styczeń – grudzień 2025',
-    title: 'Brak publicznej, merytorycznej reakcji RPP',
-    body: 'Mimo udokumentowanych apeli kilkudziesięciu pacjentów, w publicznie dostępnych materiałach nie odnotowano publicznej, merytorycznej interwencji RPP zapewniającej pacjentom ciągłość opieki w okresie 11 miesięcy.',
-    type: 'gap',
+    title: 'Brak mechanizmu ciągłości opieki',
+    body: 'Projekt rozszerza kompetencje represyjne, ale nie zawiera żadnego przepisu o tym, co dzieje się z pacjentami wykluczonego lekarza lub zamkniętego podmiotu — kto i w jakim trybie przejmuje ich leczenie.',
   },
   {
-    date: 'grudzień 2025',
-    title: 'Sąd Najwyższy uchyla orzeczenie NSL',
-    body: 'SN uwzględnia kasację, uchyla orzeczenie NSL z 9.01.2025, umarza całe postępowanie. W uzasadnieniu wskazuje na rażące naruszenia prawa do obrony w postępowaniu przed sądem lekarskim. Lekarz odzyskuje prawo wykonywania zawodu.',
-    type: 'resolution',
-  },
-  {
-    date: 'styczeń 2026',
-    title: 'Bilans: ~11 miesięcy bez opieki',
-    body: 'Przez około jedenaście miesięcy kilkudziesięciu pacjentów onkologicznych pozostawało bez lekarza w wyniku decyzji, którą SN ocenił jako wadliwą proceduralnie. W publicznie dostępnych materiałach nie odnaleźliśmy informacji o skutecznym mechanizmie zapewnienia pacjentom ciągłości opieki w tym okresie.',
-    type: 'bilans',
+    title: 'Brak odpowiedzialności organu za decyzje uchylone',
+    body: 'Ustawa nie przewiduje żadnej konsekwencji po stronie organu w razie wydania decyzji, którą sąd następnie uchyli. Asymetria ryzyka jest pełna: organ działa natychmiast, koszt błędu ponosi obywatel.',
   },
 ]
 
 const wnioski = [
   {
-    title: 'Pytanie o zdolność systemu do zapewnienia ciągłości opieki',
-    body: 'Nie można uzasadniać rozszerzania kompetencji represyjnych RPP do 1 mln zł kary i decyzji tymczasowych w sytuacji, w której w publicznie dostępnych materiałach nie odnotowano publicznej interwencji organu zapewniającej pacjentom ciągłość opieki. To autonomiczny zarzut z art. 31 ust. 3 Konstytucji RP.',
+    title: 'Nieproporcjonalność środka (art. 31 ust. 3)',
+    body: 'Środek wywołujący skutki nieodwracalne przed kontrolą sądową jest nadmierny tam, gdzie dostępne są środki mniej dotkliwe (np. wykonalność wstrzymana do czasu rozpoznania, decyzja tymczasowa o wąskim zakresie). Test proporcjonalności wymaga, by dolegliwość nie wykraczała poza to, co konieczne.',
   },
   {
-    title: 'UD207 nie reguluje ciągłości opieki',
-    body: 'Projekt rozszerza kompetencje represyjne, ale NIE zawiera żadnych przepisów o tym, co dzieje się z pacjentami wykluczonego lekarza lub zamkniętego podmiotu. To strukturalna luka regulacyjna naruszająca art. 68 ust. 1 Konstytucji RP (prawo do ochrony zdrowia).',
+    title: 'Pozorne prawo do sądu (art. 45)',
+    body: 'Prawo do sądu ma być realne, nie iluzoryczne. Kontrola sądowa, która działa dopiero po wystąpieniu nieodwracalnej szkody — zdrowotnej u pacjenta, majątkowej u przedsiębiorcy — nie spełnia tej funkcji. Wygrany proces nie przywraca utraconego zdrowia ani zlikwidowanej działalności.',
   },
   {
-    title: 'Niższy standard proceduralny niż samorząd zawodowy',
-    body: 'SN uznał standard proceduralny postępowania przed sądem lekarskim w 2025 r. za niewystarczający. UD207 w art. 64a wprowadza model decyzji tymczasowych z wyłączeniem art. 10 i 81 KPA — czyli o jeszcze NIŻSZYM standardzie niż ten, który SN już zakwestionował.',
+    title: 'Luka w ochronie zdrowia (art. 68 ust. 1)',
+    body: 'Brak mechanizmu ciągłości opieki dla pacjentów dotkniętych decyzją oznacza, że pacjenci w trakcie aktywnych terapii mogą zostać bez prowadzącego. To strukturalna luka regulacyjna w obszarze, który Konstytucja powierza ochronie państwa.',
   },
   {
-    title: 'Efekt mnożnikowy w skali masowej',
-    body: 'Jeśli kilkudziesięciu pacjentów jednego lekarza wymagało pomocy systemu w sytuacji wykluczenia, to po wejściu UD207 może dojść do skutków dotyczących znaczącej grupy pacjentów. Bez danych ilościowych w OSR nie można jednak oszacować precyzyjnie, ilu pacjentów może zostać dotkniętych skutkami decyzji administracyjnych — właśnie dlatego konieczna jest rzetelna analiza skali zjawiska.',
+    title: 'Naruszenie zaufania do państwa (art. 2)',
+    body: 'Zasada demokratycznego państwa prawnego obejmuje bezpieczeństwo prawne i ochronę przed nieodwracalnymi skutkami wadliwych rozstrzygnięć. Nakładanie pełnego ryzyka błędu organu na obywatela, bez jakiejkolwiek kompensacji, podważa tę zasadę.',
   },
 ]
 
@@ -75,19 +68,20 @@ export default function CoZPacjentamiPage() {
       <section className="hero-gradient py-12 lg:py-20 border-b border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">
-            Casus empiryczny — 2025 r.
+            Skutki decyzji natychmiast wykonalnych
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
-            Co dzieje się z pacjentami, gdy lekarz zostaje wykluczony
+            Co, jeśli decyzja okaże się błędna?
           </h1>
           <p className="text-lg text-navy/80 leading-relaxed">
-            To nie jest scenariusz hipotetyczny. To udokumentowany przebieg sytuacji z 2025 r.
-            Pokazuje strukturalną lukę, której UD207 nie naprawia — przeciwnie, pogłębia.
+            Rzecznik Praw Pacjenta to organ administracyjny, nie sąd. Każdy organ orzekający
+            masowo popełnia pewien odsetek błędów. Gdy decyzja jest natychmiast wykonalna,
+            jej skutki następują, zanim sąd zdąży ją skontrolować — a część z nich jest nieodwracalna.
           </p>
         </div>
       </section>
 
-      {/* Wprowadzenie */}
+      {/* W skrócie */}
       <section className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
         <Card className="border border-red-orange/30 bg-red-orange/5 rounded-xl">
           <CardContent className="p-6 lg:p-8">
@@ -98,12 +92,13 @@ export default function CoZPacjentamiPage() {
                   W skrócie
                 </h2>
                 <p className="text-navy/80 leading-relaxed">
-                  W styczniu 2025 r. samorząd zawodowy lekarzy zawiesił prawo wykonywania zawodu
-                  lekarzowi opiekującemu się pacjentami onkologicznymi w klinice integracyjnej. Kilkudziesięciu pacjentów
-                  w trakcie aktywnych terapii zostało pozbawionych lekarza z dnia na dzień.
-                  Pisali do urzędów państwowych — w tym do RPP. <strong>W publicznie dostępnych materiałach nie odnaleźliśmy informacji o skutecznym mechanizmie zapewnienia tym pacjentom ciągłości opieki.</strong> W grudniu
-                  2025 r. Sąd Najwyższy uchylił orzeczenie samorządu jako wadliwe proceduralnie —
-                  ale przez 11 miesięcy nikt nie zapewnił pacjentom ciągłości opieki.
+                  Wyobraźmy sobie, że choćby <strong>5 na 100</strong> decyzji RPP okaże się
+                  błędnych — to ostrożne, hipotetyczne założenie dla organu działającego na dużą
+                  skalę. Przy rygorze natychmiastowej wykonalności każda taka pomyłka uderza
+                  natychmiast: pacjent traci terapię, przedsiębiorca traci firmę. Gdy sąd po
+                  miesiącach uchyli decyzję, <strong>szkoda jest już często nieodwracalna</strong>.
+                  UD207 nie przewiduje ani funduszu odszkodowawczego, ani szybkiego trybu
+                  wstrzymania wykonania, ani odpowiedzialności organu za decyzje później uchylone.
                 </p>
               </div>
             </div>
@@ -111,61 +106,59 @@ export default function CoZPacjentamiPage() {
         </Card>
       </section>
 
-      {/* Timeline */}
+      {/* Kto ponosi skutki */}
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-16">
         <h2 className="font-serif text-2xl font-semibold text-navy mb-8">
-          Chronologia
+          Kto ponosi skutki błędnej decyzji
         </h2>
-        <div className="space-y-4">
-          {timeline.map((item, index) => (
-            <Card key={index} className="border border-border rounded-xl">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0">
-                    <Badge className="bg-secondary text-secondary-foreground">
-                      {item.date}
-                    </Badge>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {poszkodowani.map((item, index) => {
+            const Icon = item.icon
+            return (
+              <Card key={index} className="border border-border rounded-xl">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3 mb-2">
+                    <Icon className="h-6 w-6 text-red-orange flex-shrink-0 mt-0.5" />
+                    <h3 className="font-semibold text-navy">{item.title}</h3>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-navy mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{item.body}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                  <p className="text-muted-foreground leading-relaxed mt-3">{item.body}</p>
+                </CardContent>
+              </Card>
+            )
+          })}
         </div>
       </section>
 
-      {/* Strona pacjentów */}
+      {/* Czego brakuje w UD207 */}
       <section className="bg-cream py-12 border-y border-border">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <Card className="border border-border rounded-xl bg-background">
-            <CardContent className="p-6 lg:p-8">
-              <div className="flex items-start gap-3 mb-4">
-                <Users className="h-6 w-6 text-teal flex-shrink-0 mt-0.5" />
-                <div>
-                  <h2 className="font-serif text-xl font-semibold text-navy mb-2">
-                    Głos pacjentów
-                  </h2>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    Pacjenci dotknięci wykluczeniem swojego lekarza w 2025 r. publicznie
-                    udokumentowali swoją sytuację. To autentyczny głos osób, których
-                    bezpośrednio dotyczy luka systemowa opisana wyżej. Sprawę rozstrzygnął
-                    Sąd Najwyższy — Izba Odpowiedzialności Zawodowej — orzeczeniem z grudnia
-                    2025 r., uchylając wcześniejsze rozstrzygnięcie samorządu lekarskiego.
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-2xl font-semibold text-navy mb-8">
+            Czego brakuje w UD207
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {luki.map((item, index) => (
+              <Card key={index} className="border border-border rounded-xl bg-background">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3 mb-2">
+                    <Badge className="bg-red-orange/10 text-red-orange flex-shrink-0">
+                      Brak
+                    </Badge>
+                    <h3 className="font-semibold text-navy">{item.title}</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+                    {item.body}
                   </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Wnioski dla UD207 */}
+      {/* Wnioski konstytucyjne */}
       <section className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="font-serif text-2xl font-semibold text-navy mb-8">
-          Cztery wnioski konstytucyjne z casusu
+          Cztery wnioski konstytucyjne
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {wnioski.map((item, index) => (
@@ -205,10 +198,10 @@ export default function CoZPacjentamiPage() {
               instytucji, której ochrona była rzekomym celem projektu.
             </p>
             <p>
-              Casus z 2025 r. pokazuje asymetrię systemu: <strong>mechanizmy sankcji administracyjnych są
-              operacyjnie sprawne, natomiast mechanizm zapewnienia pacjentom ciągłości opieki — w publicznie
-              dostępnych materiałach — nie został uruchomiony</strong>. UD207 wzmacnia pierwszy element, nie
-              naprawiając drugiego.
+              Projekt ujawnia asymetrię systemu: <strong>mechanizmy sankcji administracyjnych są
+              operacyjnie sprawne i natychmiast wykonalne, natomiast mechanizmy zabezpieczające —
+              ciągłość opieki pacjenta, kompensacja błędu, ochrona przedsiębiorcy — nie zostały
+              przewidziane</strong>. UD207 wzmacnia pierwszy element, nie tworząc drugiego.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -220,7 +213,7 @@ export default function CoZPacjentamiPage() {
             </Link>
             <Link href="/dlaczego-sprzeciw">
               <Button variant="outline" className="border-navy text-navy hover:bg-navy/5">
-                Osiem powodów sprzeciwu
+                Powody sprzeciwu
               </Button>
             </Link>
           </div>
@@ -231,11 +224,11 @@ export default function CoZPacjentamiPage() {
       <section className="py-12 bg-background border-t border-border">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Strona opisuje udokumentowany casus z 2025 r. Treści oparte na publicznych źródłach
-            (TVN24, Rzeczpospolita, Termedia, Medexpress, baza orzeczeń NSA, baza orzeczeń SN),
-            publicznych relacjach pacjentów oraz na własnej analizie
-            prawnej pakietu obywatelskiego. Nazwisko lekarza w pakiecie publicznym celowo pomijane —
-            argument dotyczy llekarza generycznie, nie indywidualnego przypadku.
+            Strona przedstawia generalny argument o ryzyku decyzji administracyjnych objętych
+            rygorem natychmiastowej wykonalności. Liczbowa ilustracja (5 na 100) ma charakter
+            wyłącznie hipotetyczny i służy unaocznieniu mechanizmu — nie jest danymi o rzeczywistym
+            odsetku błędów. Argument opiera się na konstrukcji prawnej projektu UD207 oraz na
+            analizie prawnej pakietu obywatelskiego.
           </p>
         </div>
       </section>

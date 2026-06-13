@@ -56,7 +56,7 @@ const reasons = [
   {
     number: 10,
     title: 'Brakuje przepisów o ciągłości opieki pacjentów',
-    content: 'UD207 rozszerza kompetencje represyjne RPP, ale nie zawiera ŻADNYCH przepisów o tym, co dzieje się z pacjentami wykluczonego lekarza lub zamkniętego podmiotu. Casus z 2025 r. (zob. sekcja „Co dzieje się z pacjentami”) pokazuje, że bez takich gwarancji ustawowych pacjenci pozostają sami — mimo apeli do urzędów.'
+    content: 'UD207 rozszerza kompetencje represyjne RPP, ale nie zawiera ŻADNYCH przepisów o tym, co dzieje się z pacjentami wykluczonego lekarza lub zamkniętego podmiotu. Skoro przy rygorze natychmiastowej wykonalności skutki błędnej decyzji bywają nieodwracalne (zob. sekcja „Co dzieje się z pacjentami”), brak mechanizmu ciągłości opieki i funduszu odszkodowawczego oznacza, że całe ryzyko błędu organu ponosi pacjent i przedsiębiorca.'
   },
 ]
 

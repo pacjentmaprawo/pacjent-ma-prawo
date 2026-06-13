@@ -239,28 +239,28 @@ export default function HomePage() {
                     Wymiar humanitarny
                   </p>
                   <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-navy mb-3">
-                    Co stało się z pacjentami onkologicznymi w 2025 roku
+                    Co, jeśli decyzja okaże się błędna?
                   </h2>
                 </div>
               </div>
               <p className="text-navy/80 leading-relaxed mb-4">
-                9 stycznia 2025 r. Naczelny Sąd Lekarski zawiesił na rok prawo wykonywania zawodu
-                lekarzowi opiekującemu się pacjentami onkologicznymi w klinice integracyjnej. Z dnia
-                na dzień kilkudziesięciu pacjentów straciło opiekę. Pisali do urzędów państwowych —
-                w tym do Rzecznika Praw Pacjenta — w publicznie dostępnych materiałach
-                nie odnaleźliśmy informacji o udzielonej im pomocy.
+                Rzecznik Praw Pacjenta to organ administracyjny, nie sąd. Każdy organ orzekający na
+                dużą skalę popełnia pewien odsetek błędów. Gdy decyzja jest objęta rygorem
+                natychmiastowej wykonalności, jej skutki następują, zanim sąd zdąży ją skontrolować —
+                a część z nich jest nieodwracalna.
               </p>
               <p className="text-navy/80 leading-relaxed mb-6">
-                W grudniu 2025 r. orzeczenie zostało uchylone w toku postępowania kasacyjnego jako
-                wadliwe proceduralnie. Przez 11 miesięcy pacjenci pozostawali bez opieki, mimo apeli.
-                Casus pokazuje, jak nieprecyzyjne kryteria mogą przerwać ciągłość opieki onkologicznej.
+                Pacjent traci terapię, mały gabinet lekarski czy zielarnia traci pacjentów i płynność.
+                Gdy sąd po miesiącach uchyli decyzję, firmy już często nie ma, a utraconego zdrowia
+                nikt nie przywróci. UD207 nie przewiduje funduszu odszkodowawczego ani szybkiego trybu
+                wstrzymania wykonania.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/co-z-pacjentami"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-red-orange text-background font-medium rounded-lg hover:bg-red-orange/90 transition-colors"
                 >
-                  Czytaj pełną historię
+                  Zobacz, kto ponosi skutki
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>

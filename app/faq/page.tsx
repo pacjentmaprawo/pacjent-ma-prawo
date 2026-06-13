@@ -74,8 +74,8 @@ const faqItems = [
   },
   {
     id: 'q13',
-    question: 'Co stało się z pacjentami lekarza, którego wykluczono w 2025 r.?',
-    answer: 'W styczniu 2025 r. Naczelny Sąd Lekarski zawiesił na 1 rok prawo wykonywania zawodu lekarzowi opiekującemu się pacjentami onkologicznymi w klinice integracyjnej. Kilkudziesięciu pacjentów onkologicznych straciło opiekę z dnia na dzień. Pisali do urzędów państwowych, w tym do RPP — nie otrzymali pomocy. W grudniu 2025 r. Sąd Najwyższy uchylił orzeczenie samorządu jako wadliwe proceduralnie. Przez 11 miesięcy pacjenci pozostawali bez opieki, mimo apeli. Sprawę dokumentuje orzeczenie Sądu Najwyższego z grudnia 2025 r. (Izba Odpowiedzialności Zawodowej). Pełen opis: zob. /co-z-pacjentami.'
+    question: 'Co dzieje się z pacjentami, gdy decyzja RPP okaże się błędna?',
+    answer: 'Rzecznik Praw Pacjenta to organ administracyjny, nie sąd, a każdy organ orzekający na dużą skalę popełnia pewien odsetek błędów. Przy rygorze natychmiastowej wykonalności skutki takiej decyzji następują, zanim sąd zdąży ją skontrolować — i część z nich jest nieodwracalna: przerwana terapia onkologiczna, zamknięty gabinet lekarski lub zielarnia, utrata pacjentów i płynności. Gdy sąd po miesiącach uchyli decyzję, utraconego zdrowia ani zlikwidowanej firmy nikt już nie przywróci. UD207 nie przewiduje funduszu odszkodowawczego, szybkiego trybu wstrzymania wykonania ani mechanizmu zapewnienia pacjentom ciągłości opieki. Pełen argument: zob. /co-z-pacjentami.'
   },
 ]
 

@@ -331,7 +331,7 @@ export default function CoProponujemyPage() {
                 Każda decyzja RPP wyłączająca lekarza/podmiot powinna zawierać <strong>obowiązek
                 wskazania konkretnego podmiotu NFZ</strong> przejmującego pacjentów — z zachowaniem
                 harmonogramu leczenia onkologicznego i innych ścieżek krytycznych.
-                Casus z 2025 r. pokazał, że bez tego pacjenci są pozostawieni sami sobie.
+                Bez takiego obowiązku pacjenci w trakcie aktywnych terapii zostają sami sobie.
               </p>
             </CardContent>
           </Card>
