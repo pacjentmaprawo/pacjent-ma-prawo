@@ -62,3 +62,12 @@ renderowanych — strona operuje teraz argumentem strukturalnym, nie pojedynczym
 
 # v6.0.9 (13.06.2026)
 - Obrona zawodów wspomagających także w POSTULATACH i treściach informacyjnych: rozszerzono zasadę 3 (7 zasad) na stronie głównej i na /petycja-ud207 oraz sekcję 'Pozytywny kierunek' na /co-proponujemy — nazwane zawody (fizjoterapeuci, dietetycy, masażyści, zielarze, akupunkturzyści i inni) + 'nie mogą być stygmatyzowane ani wypychane z rynku'. Spójne z apelem i pismem do Prezydenta.
+
+
+# v6.1.0 (13.06.2026)
+- ZAŁĄCZNIKI PDF: podmieniono 7 dokumentów na nowe, ZANONIMIZOWANE wersje (usunięto sygn. 2854/23, 245 tys., datę 9.01.2025, 4-substancyjną koniunkcję, URL pacjentów, ID statusów X, błędny tytuł). Podniesiono wersje: Apel v2.1, Memorandum v2.2, Sekcja v3.1, Załącznik 1 v1.11, Załącznik 3 v2.3, Memo Ekonomiczne v1.1, Brief Medialny v1.1. pdfUrl na /dokumenty zaktualizowane; stare PDF-y przeniesione do old/.
+- Edytowalne źródła (.md + .docx) w katalogu projektu: Dokumenty_zrodlowe_AKTUALNE/. Indeks: INDEKS_PAKIETU_AKTUALNY.md.
+
+
+# v6.1.1 (13.06.2026)
+- Do 7 dokumentów-załączników (te same wersje v2.1/v2.2/v3.1/v1.11/v2.3/v1.1/v1.1) dopisano nowe wątki argumentacyjne, tematycznie: pod-inkluzywność (proporcjonalność), obrona zawodów wspomagających (Heilpraktiker/ÖÄK), szybka ścieżka onkologiczna + finansowanie z własnych środków, pozytywny kierunek (asymetria finansowania badań — »bez badań« to nie »niebezpieczne«, wsparcie rozwoju). Zachowano zamek EBM (bez przeceniania skuteczności). PDF-y zregenerowane (pandoc/xelatex), edytowalne .docx odświeżone.

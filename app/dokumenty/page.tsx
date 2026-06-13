@@ -121,7 +121,7 @@ const documents: Doc[] = [
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.1.pdf',
+    pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.2.pdf',
   },
   {
     id: 9,
@@ -131,7 +131,7 @@ const documents: Doc[] = [
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.pdf',
+    pdfUrl: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.1.pdf',
   },
   {
     id: 10,
@@ -141,7 +141,7 @@ const documents: Doc[] = [
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Sekcja_Konstytucyjna_v3.0_do_Zalacznik_1_v1.10.pdf',
+    pdfUrl: '/dokumenty/Sekcja_Konstytucyjna_v3.1_do_Zalacznik_1_v1.11.pdf',
   },
   {
     id: 11,
@@ -151,7 +151,7 @@ const documents: Doc[] = [
     date: '17.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.10.pdf',
+    pdfUrl: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.11.pdf',
   },
   {
     id: 12,
@@ -161,7 +161,7 @@ const documents: Doc[] = [
     date: '18.05.2026',
     sourceType: 'Materiał prasowy',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Brief_Medialny_Publiczny_v1.pdf',
+    pdfUrl: '/dokumenty/Brief_Medialny_Publiczny_v1.1.pdf',
   },
   {
     id: 13,
@@ -171,7 +171,7 @@ const documents: Doc[] = [
     date: '17.05.2026',
     sourceType: 'Apel obywatelski',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Apel_do_Prezydenta_Nawrockiego_v2_ACTIVATED.pdf',
+    pdfUrl: '/dokumenty/Apel_do_Prezydenta_Nawrockiego_v2.1.pdf',
   },
   {
     id: 15,
@@ -191,7 +191,7 @@ const documents: Doc[] = [
     date: '21.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Zalacznik_3_v2.2_Mapa_onkologii_integracyjnej_EBM.pdf',
+    pdfUrl: '/dokumenty/Zalacznik_3_v2.3_Mapa_onkologii_integracyjnej_EBM.pdf',
     searchHint: 'Mapa współczesnej onkologii integracyjnej obejmująca 40 obszarów EBM oraz 7 modeli regulacyjnych Wielkiej Brytanii, Niemiec, Francji, Belgii, Holandii, Włoch i Austrii. Kluczowa teza: państwa europejskie stosują gradację, nie blankietowe etykiety. UD207 odchyla się od europejskiego standardu regulacyjnego.',
   },
 ]
