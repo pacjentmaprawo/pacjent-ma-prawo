@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge'
 
 export const metadata: Metadata = {
   title: 'Dlaczego sprzeciw',
-  description: 'Dziesięć powodów obywatelskiego sprzeciwu wobec projektu UD207. Analiza proporcjonalności, precyzji i skutków regulacji — w tym brak ciągłości opieki pacjentów.',
+  description: 'Jedenaście powodów obywatelskiego sprzeciwu wobec projektu UD207. Analiza proporcjonalności, precyzji i skutków regulacji — w tym brak ciągłości opieki pacjentów.',
 }
 
 const reasons = [
@@ -58,6 +58,11 @@ const reasons = [
     title: 'Brakuje przepisów o ciągłości opieki pacjentów',
     content: 'UD207 rozszerza kompetencje represyjne RPP, ale nie zawiera ŻADNYCH przepisów o tym, co dzieje się z pacjentami wykluczonego lekarza lub zamkniętego podmiotu. Skoro przy rygorze natychmiastowej wykonalności skutki błędnej decyzji bywają nieodwracalne (zob. sekcja „Co dzieje się z pacjentami”), brak mechanizmu ciągłości opieki i funduszu odszkodowawczego oznacza, że całe ryzyko błędu organu ponosi pacjent i przedsiębiorca.'
   },
+  {
+    number: 11,
+    title: 'Ustawa omija realnie nieuczciwych, a uderza w krajowych i uczciwych',
+    content: 'Nieuczciwy podmiot może zarejestrować działalność poza Unią Europejską i oferować swoje produkty lub usługi spoza zasięgu ustawy — wobec takich podmiotów Rzecznik może najwyżej opublikować ostrzeżenie. Realnie obciążeni zostaną więc krajowi, działający jawnie świadczeniodawcy. Środek, który nie sięga głównego źródła nadużyć, a dotkliwie obciąża uczciwych, trudno uznać za proporcjonalny i niezbędny w rozumieniu art. 31 ust. 3 Konstytucji RP.'
+  },
 ]
 
 const proposals = [
@@ -78,7 +83,7 @@ export default function DlaczegoSprzeciwPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3">Argumentacja</p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4 text-balance">
-            Dziesięć powodów obywatelskiego sprzeciwu
+            Jedenaście powodów obywatelskiego sprzeciwu
           </h1>
           <p className="text-navy/80 leading-relaxed">
             Ten sprzeciw nie dotyczy celu projektu UD207 — ten jest słuszny. Dotyczy zakresu,

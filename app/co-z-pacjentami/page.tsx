@@ -193,9 +193,12 @@ export default function CoZPacjentamiPage() {
             </p>
             <p>
               Pacjenci wybierający medycynę integracyjną w sektorze prywatnym <strong>odciążają NFZ</strong> —
-              pokrywają koszty z własnych środków, nie obciążają kolejek. UD207 likwiduje ten
-              segment i wymusza powrót pacjentów do systemu publicznego — pogłębiając kryzys
-              instytucji, której ochrona była rzekomym celem projektu.
+              pokrywają koszty z własnych środków, nie obciążają kolejek. System publiczny jest już
+              dziś przeciążony i nie oferuje tym pacjentom realnej alternatywy we wspomaganiu leczenia.
+              UD207 likwiduje ten prywatny segment i wymusza powrót pacjentów do systemu publicznego —
+              co grozi <strong>dodatkowym, potencjalnie katastrofalnym obciążeniem</strong> już
+              przeciążonego systemu ochrony zdrowia, a więc pogłębieniem kryzysu instytucji, której
+              ochrona była rzekomym celem projektu.
             </p>
             <p>
               Projekt ujawnia asymetrię systemu: <strong>mechanizmy sankcji administracyjnych są

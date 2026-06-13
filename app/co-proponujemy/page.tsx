@@ -232,6 +232,35 @@ export default function CoProponujemyPage() {
             Wyłączenie usuwa jedynie ryzyko nakładania na te legalne tryby dodatkowej sankcji
             „pseudomedycznej".
           </p>
+
+          <Card className="mt-6 border border-red-orange/30 bg-red-orange/5 rounded-xl">
+            <CardContent className="p-6 lg:p-8">
+              <h3 className="font-serif text-xl font-semibold text-navy mb-3">
+                Szybka ścieżka, gdy liczy się każdy dzień
+              </h3>
+              <p className="text-navy/80 leading-relaxed mb-3">
+                Dla pacjenta onkologicznego czas jest częścią leczenia — nie może on czekać
+                miesiącami na rozstrzygnięcia proceduralne. Dlatego postulujemy dwie rzeczy:
+              </p>
+              <p className="text-navy/80 leading-relaxed mb-3">
+                <strong>Po pierwsze</strong> — dla świadczeń wspomagających z użyciem preparatów
+                zarejestrowanych oraz stosowanych off-label powinna wystarczać pełna pisemna
+                informacja i <strong>świadoma zgoda pacjenta</strong>, bez dodatkowych formalności
+                i bez zbędnej zwłoki. To jest dokładnie istota klauzuli z ust. 3.
+              </p>
+              <p className="text-navy/80 leading-relaxed mb-3">
+                <strong>Po drugie</strong> — ścieżki eksperymentalne (eksperyment leczniczy, badanie
+                kliniczne) dla pacjentów onkologicznych powinny być realnie przyspieszone
+                i odbiurokratyzowane, przy zachowaniu jedynie niezbędnego minimum gwarancji
+                (świadoma zgoda, dokumentacja, opinia komisji bioetycznej w trybie pilnym).
+              </p>
+              <p className="text-navy/80 leading-relaxed">
+                Świadczenia te pacjenci finansują z <strong>własnych środków</strong> — nie obciążają
+                budżetu państwa ani kolejek NFZ. Państwo nic nie traci, a pacjent zyskuje czas,
+                który w onkologii bywa nieodwracalny.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -338,6 +367,68 @@ export default function CoProponujemyPage() {
         </div>
       </section>
 
+      {/* Pozytywny kierunek */}
+      <section className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="rounded-2xl border border-teal/30 bg-teal/5 p-6 lg:p-10">
+          <p className="text-sm font-medium text-teal tracking-wider uppercase mb-3">
+            Pozytywny kierunek
+          </p>
+          <h2 className="font-serif text-2xl font-semibold text-navy mb-4">
+            Wspierać i uporządkować, nie likwidować
+          </h2>
+          <p className="text-navy/80 leading-relaxed mb-8 max-w-3xl">
+            Sprzeciw to nie wszystko. Polska może — wzorem innych państw europejskich —
+            zakorzenić medycynę integracyjną w systemie: z regulacją, standardami jakości
+            i nadzorem, które realnie chronią pacjenta. To kierunek, który rozwija naukę,
+            podnosi jakość usług i odciąża przeciążony system zdrowia.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="border border-border rounded-xl bg-background">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-teal/10 rounded-lg flex items-center justify-center mb-4">
+                  <BookOpen className="h-6 w-6 text-teal" />
+                </div>
+                <h3 className="font-semibold text-navy mb-2">Wzór europejski</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Niemcy, Szwajcaria, Austria i Włochy zintegrowały wybrane metody komplementarne
+                  ze swoimi systemami — z regulacją, kwalifikacjami i, w części, refundacją.
+                  Polska może czerpać z tych modeli zamiast iść pod prąd.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border border-border rounded-xl bg-background">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-red-orange/10 rounded-lg flex items-center justify-center mb-4">
+                  <Scale className="h-6 w-6 text-amber" />
+                </div>
+                <h3 className="font-semibold text-navy mb-2">„Bez badań” to nie „niebezpieczne”</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Brak dowodów wysokiej jakości nie przesądza ani o nieskuteczności, ani
+                  o niebezpieczeństwie metody — bywa skutkiem braku finansowania. Badanie III fazy
+                  to lata i dziesiątki do setek milionów; stać na nie niemal wyłącznie komercyjnych
+                  sponsorów. Substancje bez patentu (naturalne, repurposed) są w tym systemie
+                  strukturalnie upośledzone niezależnie od potencjału.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border border-border rounded-xl bg-background">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center mb-4">
+                  <Check className="h-6 w-6 text-navy" />
+                </div>
+                <h3 className="font-semibold text-navy mb-2">Rola państwa</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Zamiast represji — wsparcie niezależnych badań, standaryzacji i nadzoru jakości
+                  świadczeń integracyjnych. To jednocześnie podnosi bezpieczeństwo pacjentów,
+                  rozwija polską naukę i odciąża system (pacjenci finansują wspomaganie sami).
+                  Uporządkowanie zamiast spychania do szarej strefy.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-cream py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
@@ -358,7 +449,7 @@ export default function CoProponujemyPage() {
             </Link>
             <Link href="/dlaczego-sprzeciw">
               <Button variant="outline" className="border-navy text-navy hover:bg-navy/5">
-                Osiem powodów sprzeciwu
+                Powody sprzeciwu
               </Button>
             </Link>
             <Link href="/co-z-pacjentami">

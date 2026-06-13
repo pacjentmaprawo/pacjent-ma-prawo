@@ -14,7 +14,7 @@ export const PETITION_SECTIONS: PetitionSection[] = [
   {
     heading: 'I. Przedmiot pisma',
     paragraphs: [
-      'Składam niniejsze pismo (apel obywatelski) jako obywatelka/obywatel Rzeczypospolitej Polskiej w sprawie projektu ustawy o zmianie ustawy o prawach pacjenta i Rzeczniku Praw Pacjenta oraz ustawy o systemie powiadamiania ratunkowego (UD207, druk sejmowy nr 2598), którego pierwsze czytanie odbyło się w Sejmowej Komisji Zdrowia 9 czerwca 2026 r.',
+      'Składam niniejsze pismo (apel obywatelski) jako obywatelka/obywatel Rzeczypospolitej Polskiej w sprawie projektu ustawy o zmianie ustawy o prawach pacjenta i Rzeczniku Praw Pacjenta (UD207, druk sejmowy nr 2598), którego pierwsze czytanie odbyło się w Sejmowej Komisji Zdrowia 9 czerwca 2026 r.',
       'My, pacjentki i pacjenci, nie zgadzamy się, by w demokratycznym państwie prawa jeden urzędnik — Rzecznik Praw Pacjenta, powoływany przez Prezesa Rady Ministrów, niebędący ani sądem, ani ciałem przedstawicielskim — jednostronnie i bez merytorycznej kontroli sądu kształtował rynek świadczeń zdrowotnych w Polsce i decydował, które metody leczenia są dla nas dostępne. Popieramy ściganie oszustów. Sprzeciwiamy się temu, by walka z oszustwem stała się pretekstem do odebrania pacjentom prawa wyboru i skupienia władzy nad medycyną w rękach jednego organu.',
       'Wnosimy o oparcie regulacji na następujących zasadach:',
       '1. Prawo pacjenta do wyboru terapii. O sposobie leczenia — w tym o terapiach komplementarnych i wspomagających — decyduje świadomy pacjent wspólnie z lekarzem, a nie urząd.',
@@ -41,14 +41,14 @@ export const PETITION_SECTIONS: PetitionSection[] = [
     heading: 'III. Strukturalne wady postępowań ws. odpowiedzialności zawodowej',
     paragraphs: [
       'W praktyce orzeczniczej Sądu Najwyższego pojawiły się już przypadki uchylania prawomocnych orzeczeń samorządu lekarskiego ws. odpowiedzialności zawodowej z powodu rażących naruszeń proceduralnych, obejmujących: naruszenie prawa do obrony (art. 6 EKPC, art. 45 Konstytucji RP), przedawnienie czynu w postępowaniu zawodowym oraz brak wymaganej opinii biegłych przy ocenie zgodności postępowania lekarza z pojęciem niedookreślonym, jakim jest „aktualna wiedza medyczna”.',
-      'Wykazuje to, że już w obecnym stanie prawnym mechanizmy represji wobec lekarzy stosujących świadczenia uzupełniające produkują orzeczenia, które nie wytrzymują testu kasacyjnego. Projekt UD207 — wzmacniający uprawnienia Rzecznika Praw Pacjenta do publikacji nieprawomocnych decyzji oraz nakładania kar administracyjnych do 500 000 zł — rozszerza ten mechanizm, nie usuwając jego wad strukturalnych.',
+      'Wykazuje to, że już w obecnym stanie prawnym mechanizmy represji wobec lekarzy stosujących świadczenia uzupełniające produkują orzeczenia, które nie wytrzymują testu kasacyjnego. Projekt UD207 — wzmacniający uprawnienia Rzecznika Praw Pacjenta do publikacji nieprawomocnych decyzji oraz nakładania kar administracyjnych do 1 000 000 zł — rozszerza ten mechanizm, nie usuwając jego wad strukturalnych.',
     ],
   },
   {
     heading: 'IV. Kumulacja represji w obecnym stanie prawnym',
     paragraphs: [
       'W aktualnym porządku prawnym funkcjonują już mechanizmy kontroli świadczeniodawców działające równolegle w czterech torach: postępowanie zawodowe w samorządzie lekarskim (rzecznicy odpowiedzialności zawodowej, sądy lekarskie, kasacja w Sądzie Najwyższym — Izba Odpowiedzialności Zawodowej); postępowanie administracyjne przed Rzecznikiem Praw Pacjenta (kary administracyjne, decyzje rygorystyczne, kontrola sądowoadministracyjna w WSA i NSA); postępowanie karne (art. 160, art. 162 k.k. w przypadku narażenia pacjenta na niebezpieczeństwo; art. 58 ustawy o zawodach lekarza i lekarza dentysty); postępowanie cywilne (odpowiedzialność deliktowa, naruszenie praw pacjenta).',
-      'Uzupełnienie ich uprawnieniami z UD207 (kary do 500 000 zł, publikacja nieprawomocnych decyzji, rozszerzone uprawnienia RPP) ma charakter kumulacji represji, a nie wypełnienia luki regulacyjnej. W teście Engela (ETPC, Engel v. Netherlands) oraz w doktrynie ne bis in idem (ETPC, Menci v. Italy) konstrukcja taka prowadzi do ryzyka naruszenia art. 4 Protokołu 7 EKPC. Trybunał Konstytucyjny w wyroku P 124/15 wskazał, że nakładanie sankcji administracyjnych równolegle z sankcjami karnymi za ten sam czyn wymaga restryktywnej oceny pod kątem proporcjonalności.',
+      'Uzupełnienie ich uprawnieniami z UD207 (kary do 1 000 000 zł, publikacja nieprawomocnych decyzji, rozszerzone uprawnienia RPP) ma charakter kumulacji represji, a nie wypełnienia luki regulacyjnej. W teście Engela (ETPC, Engel v. Netherlands) oraz w doktrynie ne bis in idem (ETPC, Menci v. Italy) konstrukcja taka prowadzi do ryzyka naruszenia art. 4 Protokołu 7 EKPC. Trybunał Konstytucyjny w wyroku P 124/15 wskazał, że nakładanie sankcji administracyjnych równolegle z sankcjami karnymi za ten sam czyn wymaga restryktywnej oceny pod kątem proporcjonalności.',
     ],
   },
   {
