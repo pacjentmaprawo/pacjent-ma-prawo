@@ -9,7 +9,7 @@ const navLinks = [
   { href: '/projekt', label: 'Co zmienia projekt' },
   { href: '/medycyna-integracyjna', label: 'Na tle Europy' },
   { href: '/terapie-wspomagajace', label: 'Terapie wspomagające' },
-  { href: '/ebm', label: 'EBM' },
+  
   { href: '/prawa-pacjenta', label: 'Prawa pacjenta' },
   { href: '/dlaczego-sprzeciw', label: 'Dlaczego sprzeciw' },
   { href: '/dokumenty', label: 'Dokumenty' },
