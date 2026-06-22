@@ -173,27 +173,6 @@ const documents: Doc[] = [
     sourceIcon: FileText,
     pdfUrl: '/dokumenty/Apel_do_Prezydenta_Nawrockiego_v2.1.pdf',
   },
-  {
-    id: 15,
-    title: 'OCEANic Protocol — przegląd kosztów medycyny integracyjnej w onkologii (w toku)',
-    description: 'Protokół przeglądu systematycznego dotyczącego kosztów medycyny integracyjnej w onkologii. Źródło: medRxiv. Materiał nie jest dokumentem WHO ani UE i nie stanowi finalnego przeglądu wyników — przegląd w toku.',
-    category: 'analizy',
-    date: '05.05.2025',
-    sourceType: 'Publikacja naukowa',
-    sourceIcon: FileText,
-    pdfUrl: '/dokumenty/OCEANic_preprint_medRxiv_2025.pdf',
-  },
-  {
-    id: 17,
-    title: 'Załącznik 3 — Mapa onkologii integracyjnej + komparatystyka 7 krajów UE/UK',
-    description: 'Rozszerzona analiza obejmująca: (I) 15 substancji wskazywanych przez polskie organy + (II) 25 metod onkologii integracyjnej z gradacją dowodową A-E + (III) 3 pary paradoksu refundacyjnego + (IV) wnioski + (V) modele regulacyjne 7 państw UE/UK (UK NICE, Niemcy G-BA, Francja HAS, Belgia Loi Colla, Holandia, Włochy Toskania, Austria ÖÄK) z tabelą zbiorczą. Argument konstytucyjny: lex certa + proporcjonalność.',
-    category: 'analizy',
-    date: '21.05.2026',
-    sourceType: 'Analiza pakietu',
-    sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Zalacznik_3_v2.3_Mapa_onkologii_integracyjnej_EBM.pdf',
-    searchHint: 'Mapa współczesnej onkologii integracyjnej obejmująca 40 obszarów EBM oraz 7 modeli regulacyjnych Wielkiej Brytanii, Niemiec, Francji, Belgii, Holandii, Włoch i Austrii. Kluczowa teza: państwa europejskie stosują gradację, nie blankietowe etykiety. UD207 odchyla się od europejskiego standardu regulacyjnego.',
-  },
 ]
 
 const categoryColors: Record<Category, string> = {

@@ -8,7 +8,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'FAQ',
-  description: 'Często zadawane pytania o projekcie UD207, medycynie integracyjnej i prawach pacjenta.',
+  description: 'Często zadawane pytania o projekcie UD207, terapiach wspomagających i prawach pacjenta.',
 }
 
 const faqItems = [

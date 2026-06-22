@@ -143,7 +143,7 @@ export default function DlaMediaPage() {
                 <p><strong>Czas odpowiedzi:</strong> zwykle 2–3 dni robocze</p>
                 <p className="pt-2">
                   Możemy zorganizować rozmowę z prawnikiem konstytucyjnym lub ekspertem
-                  medycyny integracyjnej współpracującym z platformą.
+                  terapii wspomagających współpracującym z platformą.
                 </p>
               </div>
             </CardContent>
