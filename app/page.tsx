@@ -258,12 +258,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Czego się domagamy — 7 zasad */}
+      {/* Czego się domagamy — 9 zasad */}
       <section className="py-16 lg:py-24 bg-cream border-t border-border">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3 text-center">Czego się domagamy</p>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-navy text-center mb-4">
-            Siedem zasad zamiast blankietowego zakazu
+            Dziewięć zasad zamiast blankietowego zakazu
           </h2>
           <p className="text-navy/80 leading-relaxed text-center max-w-3xl mx-auto mb-10">
             Nie zgadzamy się, by w demokratycznym państwie prawa jeden urzędnik — powoływany przez
@@ -276,6 +276,8 @@ export default function HomePage() {
               ['Dostęp do legalnych terapii wspomagających', 'Bez blankietowej eliminacji legalnych metod — w tym dostępnych legalnymi drogami (badanie kliniczne, eksperyment leczniczy za świadomą zgodą, off-label, import docelowy).'],
               ['Mądra regulacja zamiast zakazu — na wzór Europy', 'Uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny. Legalnie wykonywane zawody wspomagające — fizjoterapeuci, dietetycy, masażyści, zielarze, akupunkturzyści i inni — nie mogą być stygmatyzowane ani wypychane z rynku.'],
               ['Wolność debaty i wypowiedzi', 'Ustawa ściga czyn — oszustwo w złej wierze — a nie wypowiedź lekarza, naukowca czy pacjenta o leczeniu.'],
+              ['Dezinformacja — osobny tryb, nie natychmiastowa kara', 'Spory o metody rozstrzygać w jawnym rejestrze z prawem do odpowiedzi i korekty, a nie natychmiast wykonalną sankcją — symetrycznie, w obie strony (art. 54 i 73 Konstytucji RP).'],
+              ['Jawna procedura ekspercka', 'Zanim padnie kara, niezależna ocena z gradacją dowodów (GRADE/HTA/ESMO-MCBS) i ujawnianiem konfliktów interesów — Rzecznik nie może jednoosobowo orzekać o „aktualnej wiedzy medycznej” bez transparentnej procedury, jak ma to UOKiK.'],
               ['Żaden urząd ponad sądem', 'Merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (jak decyzje UOKiK kontroluje SOKiK); natychmiastowa wykonalność tylko wyjątkowo, z szybką ścieżką odwoławczą.'],
               ['Domniemanie niewinności', 'Nieprawomocne decyzje nie są publikowane ani wykonywane jak wyroki, zanim potwierdzi je sąd.'],
               ['Nikt nie zostaje bez opieki', 'Wykluczenie świadczeniodawcy nie może oznaczać pozostawienia jego pacjentów bez ciągłości leczenia.'],
@@ -371,7 +373,7 @@ export default function HomePage() {
               </p>
               <p className="text-navy/80 leading-relaxed mb-4">
                 Co więcej, ta sama miara dowodowa zastosowana uczciwie obejmuje także część
-                leków onkologicznych dopuszczonych warunkowo na punktach surogatowych — w analizie dopuszczeń EMA z lat 2009–2013 większość wskazań onkologicznych weszła na rynek bez dowodu wydłużenia życia. Blankietowa etykieta „niezgodne z aktualną wiedzą medyczną" bez gradacji
+                leków onkologicznych dopuszczonych warunkowo na punktach surogatowych — w analizie dopuszczeń EMA z lat 2009–2013 ok. 57% wskazań onkologicznych weszło na rynek na punktach surogatowych, bez dowodu wydłużenia życia, a wśród leków FDA z przyspieszonej ścieżki korzyść kliniczną po ponad pięciu latach potwierdziła mniej niż połowa. Blankietowa etykieta „niezgodne z aktualną wiedzą medyczną" bez gradacji
                 uderzałaby więc również w fragmenty medycyny konwencjonalnej.
               </p>
               <p className="text-navy/80 leading-relaxed mb-6">
