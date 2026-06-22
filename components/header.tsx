@@ -17,6 +17,7 @@ type NavGroup = { label: string; items: NavLink[] }
 
 const startLink: NavLink = { href: '/', label: 'Start' }
 const kontaktLink: NavLink = { href: '/kontakt', label: 'Kontakt' }
+const programLink: NavLink = { href: '/program', label: 'Nasz program' }
 
 const groups: NavGroup[] = [
   {
@@ -82,6 +83,13 @@ export function Header() {
               {startLink.label}
             </Link>
 
+            <Link
+              href={programLink.href}
+              className="px-3 py-2 text-sm font-medium text-cream/80 hover:text-cream transition-colors rounded-md hover:bg-white/10 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-orange focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+            >
+              {programLink.label}
+            </Link>
+
             {groups.map((group) => (
               <DropdownMenu key={group.label}>
                 <DropdownMenuTrigger className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-cream/80 hover:text-cream transition-colors rounded-md hover:bg-white/10 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-orange focus-visible:ring-offset-2 focus-visible:ring-offset-navy">
@@ -137,6 +145,14 @@ export function Header() {
                       className="px-4 py-3 text-base font-semibold text-navy hover:bg-secondary rounded-lg transition-colors"
                     >
                       {startLink.label}
+                    </Link>
+
+                    <Link
+                      href={programLink.href}
+                      onClick={() => setOpen(false)}
+                      className="px-4 py-3 text-base font-semibold text-navy hover:bg-secondary rounded-lg transition-colors"
+                    >
+                      {programLink.label}
                     </Link>
 
                     {groups.map((group) => (
