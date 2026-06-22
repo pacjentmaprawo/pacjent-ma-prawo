@@ -9,6 +9,9 @@ import {
   Globe,
   Building2,
   HeartCrack,
+  Scale,
+  Users,
+  Gavel,
   ArrowRight
 } from 'lucide-react'
 
@@ -28,11 +31,11 @@ export default function HomePage() {
             Wiedzieć. Pytać. Decydować.
           </p>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed text-pretty">
-            Obywatelska platforma o prawach pacjenta, medycynie integracyjnej i skutkach projektu nowelizacji
-            <strong className="text-navy"> (UD207)</strong>, potocznie nazywanego <em>„lex szarlatan"</em>.
-            Popieramy ochronę pacjentów przed oszustwem — ale sprzeciwiamy się rozwiązaniom, które mogą
-            ograniczyć świadomą decyzję pacjenta, wolność rozmowy z lekarzem i rozwój bezpiecznej
-            medycyny integracyjnej.
+            Obywatelska platforma o prawach pacjenta i skutkach projektu nowelizacji
+            <strong className="text-navy"> (UD207)</strong>, potocznie zwanego <em>„lex szarlatan"</em>.
+            Popieramy ochronę pacjentów przed oszustwem — ale sprzeciwiamy się przepisom tak nieostrym,
+            że mogą ograniczyć świadomą decyzję pacjenta, wolność rozmowy z lekarzem i dostęp do
+            legalnych terapii wspomagających.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Link href="/petycja-ud207">
@@ -75,8 +78,9 @@ export default function HomePage() {
                   Prawo do informacji
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Pacjent ma prawo wiedzieć, jakie są dostępne metody leczenia — konwencjonalne, 
-                  komplementarne i integracyjne. Bez rzetelnej informacji świadoma decyzja jest niemożliwa.
+                  Pacjent ma prawo wiedzieć, jakie są dostępne metody leczenia — konwencjonalne
+                  i wspomagające, wraz z poziomem dowodów i ryzykiem. Bez rzetelnej informacji
+                  świadoma decyzja jest niemożliwa.
                 </p>
               </CardContent>
             </Card>
@@ -123,8 +127,8 @@ export default function HomePage() {
           <p className="text-base sm:text-lg text-navy/80 leading-relaxed">
             Każde oszustwo medyczne powinno być ścigane — w tym fałszywe obietnice wyleczenia, 
             zniechęcanie do leczenia onkologicznego czy wykorzystywanie chorych. Problem zaczyna się wtedy, 
-            gdy przepisy są tak szerokie, że mogą objąć także odpowiedzialnych lekarzy, terapie wspomagające 
-            o udokumentowanej skuteczności, debatę naukową czy medycynę integracyjną prowadzoną zgodnie 
+            gdy przepisy są tak szerokie, że mogą objąć także odpowiedzialnych lekarzy, legalne terapie
+            wspomagające o udokumentowanym działaniu, debatę naukową i świadczenia udzielane zgodnie
             z bezpieczeństwem i zgodą pacjenta.
           </p>
         </div>
@@ -134,13 +138,13 @@ export default function HomePage() {
       <section className="py-16 lg:py-24 risk-section-bg">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-navy text-center mb-12">
-            Pięć głównych ryzyk projektu UD207
+            Sześć głównych ryzyk projektu UD207
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 title: 'Nieprecyzyjna definicja pseudomedycyny',
-                desc: 'Projekt nie definiuje wystarczająco precyzyjnie, co odróżnia szarlatanerię od terapii wspomagającej. Niejasność kryteriów to ryzyko arbitralnej oceny.'
+                desc: 'Projekt nie definiuje wystarczająco precyzyjnie, co odróżnia szarlatanerię od legalnej terapii wspomagającej. Niejasność kryteriów to ryzyko arbitralnej oceny.'
               },
               {
                 title: 'Decyzje administracyjne przed pełnym wyjaśnieniem',
@@ -151,12 +155,16 @@ export default function HomePage() {
                 desc: 'Ryzyko kar finansowych może zniechęcać lekarzy do rozmowy z pacjentami o legalnych terapiach wspomagających — także tych, które są refundowane w innych krajach UE.'
               },
               {
-                title: 'Brak rozróżnienia: oszustwo / off-label / integracyjna',
-                desc: 'Projekt nie wprowadza wyraźnej granicy między oszustwem a terapią wspomagającą, eksperymentem klinicznym, użyciem off-label czy medycyną integracyjną.'
+                title: 'Brak rozróżnienia: oszustwo / off-label / terapia wspomagająca',
+                desc: 'Projekt nie wprowadza wyraźnej granicy między oszustwem a legalną terapią wspomagającą, eksperymentem leczniczym, badaniem klinicznym czy użyciem off-label.'
               },
               {
-                title: 'Ryzyko eliminacji medycyny integracyjnej',
-                desc: 'Bez precyzyjnych definicji projekt może doprowadzić do administracyjnej eliminacji legalnych ośrodków medycyny integracyjnej, działających zgodnie z aktualną wiedzą medyczną.'
+                title: 'Ryzyko eliminacji legalnych terapii wspomagających',
+                desc: 'Bez precyzyjnych definicji i gradacji dowodów projekt może doprowadzić do administracyjnej eliminacji legalnych świadczeń wspomagających, udzielanych zgodnie z prawem i wiedzą medyczną.'
+              },
+              {
+                title: 'Brak gwarancji ciągłości opieki',
+                desc: 'Projekt nie reguluje, co dzieje się z pacjentami w trakcie leczenia, gdy organ wyłączy lekarza, gabinet lub ośrodek — to najpoważniejszy skutek dla samych pacjentów.'
               }
             ].map((risk, index) => (
               <Card key={index} className="card-accent-red border border-border rounded-xl shadow-sm card-lift">
@@ -177,6 +185,79 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* NEW: Co zmieniła podkomisja + nowe argumenty */}
+      <section className="py-16 lg:py-24 bg-background border-t border-border">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3 text-center">Po podkomisji z 17 czerwca 2026</p>
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-navy text-center mb-4">
+            Najsurowszy reżim trafił w najbardziej bezbronnych
+          </h2>
+          <p className="text-navy/80 leading-relaxed text-center max-w-3xl mx-auto mb-10">
+            Podkomisja zawęziła zakaz „metod niebędących świadczeniem zdrowotnym" do czterech grup —
+            osób małoletnich, chorych onkologicznie, ciężko i nieuleczalnie chorych oraz osób
+            z zaburzeniami psychicznymi — i dodała przesłankę „zagrożenia dla zdrowia lub życia".
+            To nie ochrona najsłabszych, lecz skupienie najostrzejszego reżimu na tych, którzy mają
+            najmniej sił, by się bronić.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5">
+            <Card className="card-accent-red border border-border rounded-xl shadow-sm">
+              <CardContent className="p-6">
+                <div className="w-10 h-10 bg-red-orange/10 rounded-lg flex items-center justify-center mb-3">
+                  <Users className="h-5 w-5 text-red-orange" />
+                </div>
+                <h3 className="font-semibold text-navy mb-2">Cztery grupy najbardziej bezbronnych</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Przykład: akupunktura na nudności po chemioterapii — metoda z wytycznych ASCO/SIO,
+                  stosowana za świadomą zgodą pacjenta i za wiedzą onkologa — i tak może podpaść pod
+                  reżim ustawy, bo pacjent ma diagnozę onkologiczną.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="card-accent-teal border border-border rounded-xl shadow-sm">
+              <CardContent className="p-6">
+                <div className="w-10 h-10 bg-teal/10 rounded-lg flex items-center justify-center mb-3">
+                  <Scale className="h-5 w-5 text-teal" />
+                </div>
+                <h3 className="font-semibold text-navy mb-2">Organ, który karze — bez zaplecza eksperckiego</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Rzecznik Praw Pacjenta (prawnik) miałby jednoosobowo orzekać i nakładać kary do 1 mln zł
+                  o „zgodności z aktualną wiedzą medyczną" — spornej nawet wśród specjalistów — bez
+                  transparentnej, niezależnej procedury oceny z gradacją dowodów. UOKiK, działając zbliżonymi narzędziami, ma jawne wytyczne metodologiczne — RPP nie (ryzyko arbitralności,
+                  art. 2, 7 i 45 Konstytucji RP).
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="card-accent-teal border border-border rounded-xl shadow-sm">
+              <CardContent className="p-6">
+                <div className="w-10 h-10 bg-teal/10 rounded-lg flex items-center justify-center mb-3">
+                  <ShieldCheck className="h-5 w-5 text-teal" />
+                </div>
+                <h3 className="font-semibold text-navy mb-2">Podwójny standard dowodów</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Ta sama miara EBM, zastosowana uczciwie, obejmuje też część leków onkologicznych
+                  dopuszczonych warunkowo (na surogatowych punktach końcowych, z niskim ESMO-MCBS).
+                  „Brak mocnych badań" nie zawsze znaczy „nieskuteczne" — często znaczy „brak środków
+                  na badania taniej, niepatentowalnej substancji".
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="card-accent-red border border-border rounded-xl shadow-sm">
+              <CardContent className="p-6">
+                <div className="w-10 h-10 bg-red-orange/10 rounded-lg flex items-center justify-center mb-3">
+                  <Gavel className="h-5 w-5 text-red-orange" />
+                </div>
+                <h3 className="font-semibold text-navy mb-2">Symetria „dezinformacji"</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Jeśli „kwestionowanie uznanych metod" ma być dezinformacją, to fałszywe odsądzanie
+                  terapii o udokumentowanym działaniu jest tym samym. Jednokierunkowy przepis uderza
+                  w wolność wypowiedzi i wolność badań naukowych (art. 54 i 73 Konstytucji RP).
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Czego się domagamy — 7 zasad */}
       <section className="py-16 lg:py-24 bg-cream border-t border-border">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -191,8 +272,8 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5">
             {[
-              ['Prawo pacjenta do wyboru terapii', 'O sposobie leczenia — w tym o terapiach komplementarnych i wspomagających — decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.'],
-              ['Dostęp do terapii komplementarnych i alternatywnych', 'Bez blankietowej eliminacji legalnych metod — w tym dostępnych legalnymi drogami (badanie kliniczne, eksperyment leczniczy za świadomą zgodą).'],
+              ['Prawo pacjenta do wyboru terapii', 'O sposobie leczenia — w tym o legalnych terapiach wspomagających — decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.'],
+              ['Dostęp do legalnych terapii wspomagających', 'Bez blankietowej eliminacji legalnych metod — w tym dostępnych legalnymi drogami (badanie kliniczne, eksperyment leczniczy za świadomą zgodą, off-label, import docelowy).'],
               ['Mądra regulacja zamiast zakazu — na wzór Europy', 'Uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny. Legalnie wykonywane zawody wspomagające — fizjoterapeuci, dietetycy, masażyści, zielarze, akupunkturzyści i inni — nie mogą być stygmatyzowane ani wypychane z rynku.'],
               ['Wolność debaty i wypowiedzi', 'Ustawa ściga czyn — oszustwo w złej wierze — a nie wypowiedź lekarza, naukowca czy pacjenta o leczeniu.'],
               ['Żaden urząd ponad sądem', 'Merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (jak decyzje UOKiK kontroluje SOKiK); natychmiastowa wykonalność tylko wyjątkowo, z szybką ścieżką odwoławczą.'],
@@ -287,6 +368,11 @@ export default function HomePage() {
                 nie stosuje blankietowej definicji „pseudomedycyny". Wszystkie stosują
                 <strong> gradację dowodową</strong>: rozróżniają metodę, wskazanie,
                 kwalifikacje osoby wykonującej, status dowodowy i ryzyko dla pacjenta.
+              </p>
+              <p className="text-navy/80 leading-relaxed mb-4">
+                Co więcej, ta sama miara dowodowa zastosowana uczciwie obejmuje także część
+                leków onkologicznych dopuszczonych warunkowo na punktach surogatowych — w analizie dopuszczeń EMA z lat 2009–2013 większość wskazań onkologicznych weszła na rynek bez dowodu wydłużenia życia. Blankietowa etykieta „niezgodne z aktualną wiedzą medyczną" bez gradacji
+                uderzałaby więc również w fragmenty medycyny konwencjonalnej.
               </p>
               <p className="text-navy/80 leading-relaxed mb-6">
                 UD207 — operując jedną definicją w art. 67zj niezależnie od tych

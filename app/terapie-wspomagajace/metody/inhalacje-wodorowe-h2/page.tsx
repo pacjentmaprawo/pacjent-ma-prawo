@@ -36,8 +36,8 @@ export default function H2InhalacjePage() {
             <li><strong>Selektywna neutralizacja •OH i ONOO⁻</strong> — najbardziej destrukcyjnych rodników</li>
             <li><strong>Zachowanie ROS sygnalizacyjnych</strong> potrzebnych do działania immunologicznego</li>
             <li>Modulacja szlaków <strong>NF-κB, PI3K/Akt, MAPK</strong></li>
-            <li>Działanie <strong>przeciwzapalne, antyoksydacyjne</strong>; potencjalnie pro-apoptotyczne wobec komórek nowotworowych</li>
-            <li>Gaz inhalowany osiąga stężenie terapeutyczne we krwi w 2h — <strong>100× skuteczniej niż woda wodorowa</strong></li>
+            <li>Działanie <strong>przeciwzapalne, antyoksydacyjne</strong>; w modelach przedklinicznych opisywano także działanie pro-apoptotyczne — nie jest to dowód skuteczności klinicznej</li>
+            <li>Gaz inhalowany osiąga wyższe stężenie wodoru we krwi niż woda wodorowa (dane farmakokinetyczne)</li>
           </ul>
           <p>
             Kluczowy paradoks rozwiązany przez Liu 2025 (<PMIDLink pmid="41020280">PMID 41020280</PMIDLink>)
@@ -50,7 +50,7 @@ export default function H2InhalacjePage() {
       }
       indications={
         <>
-          <p><strong>Najsilniejsze wskazania kliniczne (GRADE: low):</strong></p>
+          <p><strong>Badane zastosowania (GRADE: niska pewność):</strong></p>
           <ul>
             <li><strong>Redukcja toksyczności radioterapii</strong> — zapalenie jelit (Liu 2025), mucositis i ototoksyczność
             (Chitapanarux 2024)</li>
@@ -58,7 +58,7 @@ export default function H2InhalacjePage() {
             <li><strong>Ochrona narządów</strong> (nerki, wątroba, serce) podczas chemio</li>
           </ul>
           <p>
-            <strong>Najwyższy status regulacyjny na świecie:</strong> Japonia, <strong>Advanced Medical Care B</strong>
+            <strong>Status regulacyjny:</strong> Japonia, <strong>Advanced Medical Care B</strong>
             (Klasa 2B) od grudnia 2016 — zatwierdzony przez MHLW (jRCTs031180352).
           </p>
         </>
@@ -82,7 +82,7 @@ export default function H2InhalacjePage() {
       safety={
         <>
           <p>
-            <strong>Najlepszy profil bezpieczeństwa spośród wszystkich metod na tej stronie.</strong>
+            <strong>Korzystny profil bezpieczeństwa w dotychczasowych badaniach klinicznych.</strong>
             We wszystkich opublikowanych badaniach klinicznych: brak poważnych zdarzeń niepożądanych związanych z H₂.
             Chitapanarux 2024: 100% compliance, 330 sesji bez NZD. Liu 2025: ↓ CRP, NLR, IL-6, łagodniejsze zapalenie jelit.
           </p>

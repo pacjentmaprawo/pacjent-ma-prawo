@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     default: 'Pacjent Ma Prawo — Wiedzieć. Pytać. Decydować.',
     template: '%s | Pacjent Ma Prawo',
   },
-  description: 'Obywatelska platforma informacyjna o prawach pacjenta, medycynie integracyjnej i skutkach projektu określanego jako "lex szarlatan". Treści oparte na źródłach publicznych.',
-  keywords: ['prawa pacjenta', 'medycyna integracyjna', 'medycyna komplementarna', 'lex szarlatan', 'UD207', 'RPP', 'WHO TCIM', 'świadoma zgoda', 'autonomia pacjenta'],
+  description: 'Obywatelska platforma informacyjna o prawach pacjenta, legalnych terapiach wspomagających i skutkach projektu określanego jako "lex szarlatan". Treści oparte na źródłach publicznych.',
+  keywords: ['prawa pacjenta', 'terapie wspomagające', 'onkologia', 'lex szarlatan', 'UD207', 'RPP', 'WHO TCIM', 'świadoma zgoda', 'autonomia pacjenta'],
   authors: [{ name: 'Pacjent Ma Prawo' }],
   openGraph: {
     title: 'Pacjent Ma Prawo — Wiedzieć. Pytać. Decydować.',
-    description: 'Obywatelska platforma informacyjna o prawach pacjenta, medycynie integracyjnej i skutkach projektu określanego jako "lex szarlatan".',
+    description: 'Obywatelska platforma informacyjna o prawach pacjenta, legalnych terapiach wspomagających i skutkach projektu określanego jako "lex szarlatan".',
     url: 'https://pacjentmaprawo.pl',
     siteName: 'Pacjent Ma Prawo',
     locale: 'pl_PL',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Pacjent Ma Prawo — Wiedzieć. Pytać. Decydować.',
-    description: 'Obywatelska platforma informacyjna o prawach pacjenta, medycynie integracyjnej i skutkach projektu określanego jako "lex szarlatan".',
+    description: 'Obywatelska platforma informacyjna o prawach pacjenta, legalnych terapiach wspomagających i skutkach projektu określanego jako "lex szarlatan".',
   },
   robots: {
     index: true,
