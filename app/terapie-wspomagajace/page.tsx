@@ -21,7 +21,7 @@ export default function TerapieWspomagajacePage() {
             Terapie wspomagające towarzyszą leczeniu onkologicznemu na całym świecie. Nie chodzi o
             zastępowanie leczenia o udokumentowanej skuteczności, lecz o wspomaganie pacjenta — za jego
             świadomą zgodą, obok terapii standardowej. Domagamy się ich cywilizowanego uregulowania,
-            a nie wycinania na podstawie haseł, błędnych faktów i nagonki.
+            a nie eliminowania całej kategorii świadczeń na podstawie nieprecyzyjnych kryteriów.
           </p>
         </div>
       </section>
@@ -51,7 +51,7 @@ export default function TerapieWspomagajacePage() {
                 <h2 className="font-semibold text-navy mb-2">„Aktualna wiedza medyczna" to gradacja</h2>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Dowody naukowe mają poziomy — od opinii i serii przypadków po randomizowane badania
-                  i metaanalizy. „Brak dużego badania" nie znaczy „nieskuteczne". Prawo nie może działać
+                  i metaanalizy. „Brak dużego badania" nie jest dowodem nieskuteczności — ale nie jest też dowodem skuteczności. Prawo nie może działać
                   zero-jedynkowo „medycyna kontra pseudomedycyna"; musi stosować gradację dowodów, ryzyka,
                   celu świadczenia i informacji dla pacjenta.
                 </p>

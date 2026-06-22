@@ -21,8 +21,8 @@ const PROPOSAL_URL = 'https://pacjentmaprawo.pl/co-proponujemy'
 /** Skrócona lista postulatów obywatelskich — wspólna dla pism do parlamentu. */
 const POSTULATY_SKROT = `Wnosimy o oparcie regulacji na następujących zasadach:
 
-1. Prawo pacjenta do wyboru terapii — o sposobie leczenia, w tym o terapiach komplementarnych i wspomagających, decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.
-2. Dostęp do terapii komplementarnych i alternatywnych — bez blankietowej eliminacji legalnych metod, w tym dostępnych legalnymi drogami: badania klinicznego i eksperymentu leczniczego za świadomą zgodą pacjenta (jedyna legalna ścieżka dla substancji niezarejestrowanych dla ludzi).
+1. Prawo pacjenta do wyboru terapii — o sposobie leczenia, w tym o legalnych terapiach wspomagających, decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.
+2. Dostęp do legalnych terapii wspomagających — bez blankietowej eliminacji legalnych metod, w tym dostępnych legalnymi drogami: badania klinicznego, eksperymentu leczniczego za świadomą zgodą, off-label i importu docelowego (jedyna legalna ścieżka dla substancji niezarejestrowanych dla ludzi).
 3. Mądra regulacja zamiast zakazu, na wzór Europy — uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny.
 4. Wolność debaty i wypowiedzi — ustawa ściga czyn (oszustwo w złej wierze), nie wypowiedź lekarza, naukowca czy pacjenta o leczeniu (art. 54 i art. 73 Konstytucji RP).
 5. Żaden urząd ponad sądem — merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (model UOKiK — Sąd Ochrony Konkurencji i Konsumentów), nie tylko ocena legalności; rygor natychmiastowej wykonalności wyłącznie wyjątkowo, z szybką ścieżką odwoławczą.

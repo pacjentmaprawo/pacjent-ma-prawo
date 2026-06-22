@@ -121,7 +121,7 @@ const documents: Doc[] = [
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.2.pdf',
+    pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.3.pdf',
   },
   {
     id: 9,
@@ -141,7 +141,7 @@ const documents: Doc[] = [
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Sekcja_Konstytucyjna_v3.1_do_Zalacznik_1_v1.11.pdf',
+    pdfUrl: '/dokumenty/Sekcja_Konstytucyjna_v3.2_do_Zalacznik_1_v1.11.pdf',
   },
   {
     id: 11,
@@ -155,23 +155,23 @@ const documents: Doc[] = [
   },
   {
     id: 12,
-    title: 'Brief medialny publiczny v1 — UD207',
-    description: 'Pakiet prasowy: fakty, problemy konstytucyjne, propozycja klauzuli świadomej zgody, casus 2025 r. Wersja publiczna (Obieg A) — neutralna, oparta o publiczne źródła.',
+    title: 'Brief medialny publiczny — UD207',
+    description: 'Pakiet prasowy: fakty, problemy konstytucyjne, jawna procedura ekspercka, podwójny standard dowodów, propozycja klauzuli świadomej zgody. Wersja publiczna zaktualizowana po podkomisji z 17.06.2026.',
     category: 'media',
-    date: '18.05.2026',
+    date: '22.06.2026',
     sourceType: 'Materiał prasowy',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Brief_Medialny_Publiczny_v1.1.pdf',
+    pdfUrl: '/dokumenty/Brief_Medialny_Publiczny_v1.2.pdf',
   },
   {
     id: 13,
-    title: 'Apel do Prezydenta RP (v2 ACTIVATED)',
-    description: 'Apel obywatelski o weto Prezydenta na podstawie art. 122 ust. 3 Konstytucji RP (wersja aktywowana po przejściu w Sejmie).',
+    title: 'Apel do Prezydenta RP — wniosek o kontrolę TK',
+    description: 'Apel obywatelski o skierowanie ustawy UD207 do Trybunału Konstytucyjnego (art. 122 ust. 3 Konstytucji RP) w razie uchwalenia bez poprawek. Zaktualizowany po podkomisji 17.06.2026 (cztery grupy, jawna procedura ekspercka, podwójny standard).',
     category: 'stanowiska',
-    date: '17.05.2026',
+    date: '22.06.2026',
     sourceType: 'Apel obywatelski',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Apel_do_Prezydenta_Nawrockiego_v2.1.pdf',
+    pdfUrl: '/dokumenty/Apel_do_Prezydenta_Nawrockiego_v2.2.pdf',
   },
 ]
 
@@ -269,7 +269,7 @@ export default function DokumentyPage() {
           <p className="text-sm text-muted-foreground text-center leading-relaxed">
             Wszystkie dokumenty pochodzą ze źródeł publicznych (rcl.gov.pl, gov.pl, apps.who.int, eeas.europa.eu, sn.pl, orzeczenia.nsa.gov.pl, pracodawcydlazdrowia.pl, medRxiv, nil.org.pl, termedia.pl)
             lub stanowią własne opracowania pakietu obywatelskiego. Własne dokumenty są dostępne do bezpłatnego pobrania w formacie PDF.
-            Linki zewnętrzne prowadzą bezpośrednio do tekstów źródłowych. Wszystkie weryfikowane: maj 2026.
+            Linki zewnętrzne prowadzą bezpośrednio do tekstów źródłowych. Wszystkie weryfikowane: czerwiec 2026.
           </p>
         </div>
       </section>

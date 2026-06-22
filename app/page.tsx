@@ -193,11 +193,11 @@ export default function HomePage() {
             Najsurowszy reżim trafił w najbardziej bezbronnych
           </h2>
           <p className="text-navy/80 leading-relaxed text-center max-w-3xl mx-auto mb-10">
-            Podkomisja zawęziła zakaz „metod niebędących świadczeniem zdrowotnym" do czterech grup —
+            Według zapisu wideo z posiedzenia, dostępnego w archiwum transmisji Sejmu, podkomisja zawęziła zakaz „metod niebędących świadczeniem zdrowotnym" do czterech grup —
             osób małoletnich, chorych onkologicznie, ciężko i nieuleczalnie chorych oraz osób
             z zaburzeniami psychicznymi — i dodała przesłankę „zagrożenia dla zdrowia lub życia".
-            To nie ochrona najsłabszych, lecz skupienie najostrzejszego reżimu na tych, którzy mają
-            najmniej sił, by się bronić.
+            To wymaga szczególnie silnych gwarancji — najostrzejsze narzędzia mają dotyczyć grup
+            o najwyższej wrażliwości i najmniejszej zdolności obrony.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5">
             <Card className="card-accent-red border border-border rounded-xl shadow-sm">
@@ -208,8 +208,8 @@ export default function HomePage() {
                 <h3 className="font-semibold text-navy mb-2">Cztery grupy najbardziej bezbronnych</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Przykład: akupunktura na nudności po chemioterapii — metoda z wytycznych ASCO/SIO,
-                  stosowana za świadomą zgodą pacjenta i za wiedzą onkologa — i tak może podpaść pod
-                  reżim ustawy, bo pacjent ma diagnozę onkologiczną.
+                  stosowana za świadomą zgodą pacjenta i za wiedzą onkologa — może rodzić pytanie, czy nie
+                  zostanie błędnie zakwalifikowana pod reżim ustawy, tylko z uwagi na onkologiczną diagnozę pacjenta.
                 </p>
               </CardContent>
             </Card>
@@ -236,8 +236,8 @@ export default function HomePage() {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Ta sama miara EBM, zastosowana uczciwie, obejmuje też część leków onkologicznych
                   dopuszczonych warunkowo (na surogatowych punktach końcowych, z niskim ESMO-MCBS).
-                  „Brak mocnych badań" nie zawsze znaczy „nieskuteczne" — często znaczy „brak środków
-                  na badania taniej, niepatentowalnej substancji".
+                  „Brak mocnych badań" nie zawsze znaczy „nieskuteczne" — może wynikać też z braku środków
+                  na badania taniej, niepatentowalnej substancji — choć brak badań nie jest dowodem skuteczności".
                 </p>
               </CardContent>
             </Card>

@@ -21,7 +21,7 @@ export default function PolitykaPrywatnosciPage() {
           <h2 className="font-serif text-2xl font-semibold text-navy mb-4">1. Administrator danych</h2>
           <p className="text-navy/80 leading-relaxed mb-6">
             Administratorem danych osobowych przetwarzanych w związku z korzystaniem z platformy
-            pacjentmaprawo.pl jest <strong>inicjatywa obywatelska Pacjent Ma Prawo</strong>.
+            pacjentmaprawo.pl jest <strong>Stowarzyszenie „Pacjent Ma Prawo”</strong> (organizacja obywatelska).
             Kontakt z administratorem: <a href="mailto:kontakt@pacjentmaprawo.pl" className="text-teal underline">kontakt@pacjentmaprawo.pl</a>.
           </p>
 
@@ -54,7 +54,7 @@ export default function PolitykaPrywatnosciPage() {
           <p className="text-navy/80 leading-relaxed mb-6">
             Dane mogą być przetwarzane przez dostawców usług technicznych niezbędnych do działania platformy,
             komunikacji i analityki — w szczególności dostawcę hostingu i analityki (Vercel) oraz poczty elektronicznej
-            (dostawca szyfrowanej poczty na terenie UE). Dane nie są sprzedawane ani udostępniane
+            (dostawca szyfrowanej poczty z siedzibą w Szwajcarii — państwie objętym decyzją Komisji Europejskiej stwierdzającą odpowiedni stopień ochrony danych). Dane nie są sprzedawane ani udostępniane
             komercyjnie.
           </p>
 

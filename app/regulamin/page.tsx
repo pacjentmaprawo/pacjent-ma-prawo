@@ -12,7 +12,7 @@ export default function RegulaminPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-amber tracking-wider uppercase mb-3">Zasady korzystania</p>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">Regulamin</h1>
-          <p className="text-lg text-muted-foreground">Ostatnia aktualizacja: 18 maja 2026 r.</p>
+          <p className="text-lg text-muted-foreground">Ostatnia aktualizacja: 22 czerwca 2026 r.</p>
         </div>
       </section>
 

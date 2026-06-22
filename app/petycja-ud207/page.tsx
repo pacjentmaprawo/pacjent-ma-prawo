@@ -33,10 +33,12 @@ const STEPS = [
 ]
 
 const POSTULATY = [
-  'Prawo pacjenta do wyboru terapii — o sposobie leczenia, w tym o terapiach komplementarnych i wspomagających, decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.',
-  'Dostęp do terapii komplementarnych i alternatywnych — bez blankietowej eliminacji legalnych metod; w tym dostępnych legalnymi drogami (badanie kliniczne, eksperyment leczniczy za świadomą zgodą — jedyna legalna ścieżka dla substancji niezarejestrowanych dla ludzi).',
+  'Prawo pacjenta do wyboru terapii — o sposobie leczenia, w tym o legalnych terapiach wspomagających, decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.',
+  'Dostęp do legalnych terapii wspomagających — bez blankietowej eliminacji legalnych metod; w tym dostępnych legalnymi drogami (badanie kliniczne, eksperyment leczniczy za świadomą zgodą, off-label, import docelowy — jedyna legalna ścieżka dla substancji niezarejestrowanych dla ludzi).',
   'Mądra regulacja zamiast zakazu, na wzór Europy — uregulowanie paramedycyny przez kwalifikacje i rejestr (Heilpraktiker w Niemczech, dyplomy ÖÄK w Austrii, model szwajcarski), nie penalizacja całej dziedziny. Legalnie wykonywane zawody wspomagające (fizjoterapeuci, dietetycy, masażyści, zielarze, akupunkturzyści i inni) nie mogą być stygmatyzowane ani wypychane z rynku.',
   'Wolność debaty i wypowiedzi — ustawa ściga czyn (oszustwo w złej wierze), nie wypowiedź lekarza, naukowca czy pacjenta o leczeniu.',
+  'Dezinformacja w osobnym trybie, nie pod natychmiastową karą — spory o metody rozstrzygane w jawnym rejestrze z prawem do odpowiedzi i korekty, symetrycznie (art. 54 i 73 Konstytucji RP).',
+  'Jawna procedura ekspercka — zanim padnie kara, niezależna ocena z gradacją dowodów (GRADE/HTA/ESMO-MCBS) i ujawnianiem konfliktów interesów; RPP nie może orzekać o „aktualnej wiedzy medycznej” bez transparentnej procedury, jak ma to UOKiK.',
   'Żaden urząd ponad sądem — merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (jak decyzje UOKiK kontroluje SOKiK); natychmiastowa wykonalność tylko wyjątkowo, z szybką ścieżką odwoławczą.',
   'Domniemanie niewinności — nieprawomocne decyzje nie są publikowane ani wykonywane jak wyroki, zanim potwierdzi je sąd.',
   'Nikt nie zostaje bez opieki — wykluczenie świadczeniodawcy nie może oznaczać pozostawienia jego pacjentów bez ciągłości leczenia.',
@@ -116,7 +118,7 @@ export default function PetycjaUD207Page() {
             Czego konkretnie domaga się apel
           </h2>
           <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-            Siedem zasad, na których powinna oprzeć się regulacja — zachowują cel ustawy i ograniczają
+            Dziewięć zasad, na których powinna oprzeć się regulacja — zachowują cel ustawy i ograniczają
             jej poważne ryzyka konstytucyjne. Pełną analizę prawną znajdziesz na stronie{' '}
             <Link href="/co-proponujemy" className="text-teal underline underline-offset-2">
               Co proponujemy

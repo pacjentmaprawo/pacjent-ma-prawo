@@ -196,7 +196,7 @@ export default function CoZPacjentamiPage() {
               pokrywają koszty z własnych środków, nie obciążają kolejek. System publiczny jest już
               dziś przeciążony i nie oferuje tym pacjentom realnej alternatywy we wspomaganiu leczenia.
               UD207 likwiduje ten prywatny segment i wymusza powrót pacjentów do systemu publicznego —
-              co grozi <strong>dodatkowym, potencjalnie katastrofalnym obciążeniem</strong> już
+              co grozi <strong>dodatkowym, dotkliwym obciążeniem</strong> już
               przeciążonego systemu ochrony zdrowia, a więc pogłębieniem kryzysu instytucji, której
               ochrona była rzekomym celem projektu.
             </p>
