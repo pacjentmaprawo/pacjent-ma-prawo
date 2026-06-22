@@ -30,7 +30,7 @@ export interface MethodPageProps {
   what: React.ReactNode
   /** Mechanizm działania (sekcja 2) */
   howItWorks: React.ReactNode
-  /** Wskazania kliniczne — pełna lista z opisem (sekcja 4) */
+  /** Badane zastosowania — pełna lista z opisem (sekcja 4) */
   indications: React.ReactNode
   /** Przeciwwskazania i interakcje (sekcja 5) */
   contraindications: React.ReactNode
@@ -167,7 +167,7 @@ export function MethodPage({
       {/* 4. INDICATIONS */}
       <section aria-labelledby="indications">
         <h2 id="indications" className="mb-4 font-serif text-2xl font-semibold">
-          Wskazania kliniczne
+          Badane zastosowania
         </h2>
         <div className="prose prose-stone max-w-none dark:prose-invert">{indications}</div>
       </section>

@@ -33,7 +33,7 @@ const groups: NavGroup[] = [
     label: 'Wiedza i dowody',
     items: [
       { href: '/terapie-wspomagajace', label: 'Terapie wspomagające' },
-      { href: '/medycyna-integracyjna', label: 'Medycyna integracyjna' },
+      { href: '/medycyna-integracyjna', label: 'Na tle Europy' },
       { href: '/ebm', label: 'EBM — aktualna wiedza medyczna' },
       { href: '/prawa-pacjenta', label: 'Prawa pacjenta' },
     ],
