@@ -281,7 +281,7 @@ export function AddresseePicker({
             )
           })}
 
-          {/* Pełny skład Komisji Zdrowia Sejmu (39 posłów) */}
+          {/* Pełny skład Komisji Zdrowia Sejmu */}
           <div className="rounded-xl border border-amber/40 bg-amber/5 overflow-hidden">
             <div className="flex flex-wrap items-start justify-between gap-2 px-4 py-3 border-b border-amber/30">
               <div className="flex-1 min-w-[12rem]">
@@ -310,24 +310,22 @@ export function AddresseePicker({
                     )
                   }
                 >
-                  {allKzSelected ? 'Odznacz wszystkich' : 'Dodaj wszystkich (39)'}
+                  {allKzSelected ? 'Odznacz wszystkich' : `Dodaj wszystkich (${FULL_KZ_SEJM_ADDRESSEES.length})`}
                 </Button>
               </div>
             </div>
-            {fullKzSelected > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 p-1">
-                {FULL_KZ_SEJM_ADDRESSEES.map((a) => (
-                  <AddresseeRow
-                    key={a.id}
-                    addressee={a}
-                    checked={selectedIds.has(a.id)}
-                    onToggle={onToggle}
-                    manualEmails={manualEmails}
-                    onManualEmailChange={onManualEmailChange}
-                  />
-                ))}
-              </div>
-            )}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 p-1">
+              {FULL_KZ_SEJM_ADDRESSEES.map((a) => (
+                <AddresseeRow
+                  key={a.id}
+                  addressee={a}
+                  checked={selectedIds.has(a.id)}
+                  onToggle={onToggle}
+                  manualEmails={manualEmails}
+                  onManualEmailChange={onManualEmailChange}
+                />
+              ))}
+            </div>
           </div>
         </CollapsibleContent>
       </Collapsible>
