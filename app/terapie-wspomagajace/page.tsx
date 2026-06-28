@@ -53,7 +53,10 @@ export default function TerapieWspomagajacePage() {
                   Dowody naukowe mają poziomy — od opinii i serii przypadków po randomizowane badania
                   i metaanalizy. „Brak dużego badania" nie jest dowodem nieskuteczności — ale nie jest też dowodem skuteczności. Prawo nie może działać
                   zero-jedynkowo „medycyna kontra pseudomedycyna"; musi stosować gradację dowodów, ryzyka,
-                  celu świadczenia i informacji dla pacjenta.
+                  celu świadczenia i informacji dla pacjenta. Co istotne, sama medycyna oparta na dowodach (EBM) to
+                  z definicji nie tylko badania — łączy najlepsze dowody naukowe, doświadczenie kliniczne lekarza oraz
+                  wartości i decyzję pacjenta (Sackett, BMJ 1996). Ze świadczeń wspomagających korzysta przy tym znaczna
+                  część pacjentów onkologicznych (szacunki: ok. 1/3 do 70%; w Polsce brak precyzyjnego badania).
                 </p>
               </CardContent>
             </Card>

@@ -55,6 +55,8 @@ const foundations = [
   { law: 'art. 8 EKPC', body: 'Pretty v. UK; Vavřička v. Czechy; Jehovah\'s Witnesses of Moscow v. Russia — autonomia decyzji medycznych.' },
   { law: 'art. 5 Konwencji z Oviedo', body: '„An intervention in the health field may only be carried out after the person concerned has given free and informed consent."' },
   { law: 'art. 3 Karty Praw Podstawowych UE', body: 'Integralność osoby z explicytnym wymogiem świadomej zgody.' },
+  { law: 'art. 68 ust. 1 Konstytucji RP', body: 'Prawo do ochrony zdrowia — obejmuje m.in. ciągłość opieki; podstawa żądania, by decyzja organu nie pozostawiała pacjentów bez leczenia.' },
+  { law: 'European Code of Cancer Practice', body: 'Europejski Kodeks Praktyki Onkologicznej (European Cancer Organisation, 2021) — 10 praw pacjenta onkologicznego, m.in. jakość życia oraz integracja opieki wspierającej i paliatywnej.' },
   { law: 'Modele zagraniczne', body: 'W wybranych państwach europejskich istnieją odrębne modele regulowania praktyk komplementarnych — np. w Niemczech (model Heilpraktiker) i w Szwajcarii (art. 118a Konstytucji, refundacja wybranych metod CAM). Pokazują one, że możliwe jest rozróżnienie między oszustwem, praktyką wspomagającą i autonomią pacjenta.' },
 ]
 

@@ -222,7 +222,7 @@ export default function HomePage() {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Rzecznik Praw Pacjenta (prawnik) miałby jednoosobowo orzekać i nakładać kary do 1 mln zł
                   o „zgodności z aktualną wiedzą medyczną" — spornej nawet wśród specjalistów — bez
-                  transparentnej, niezależnej procedury oceny z gradacją dowodów. UOKiK, działając zbliżonymi narzędziami, ma jawne wytyczne metodologiczne — RPP nie (ryzyko arbitralności,
+                  transparentnej, niezależnej procedury oceny z gradacją dowodów. UOKiK, działając zbliżonymi narzędziami, opiera się na jawnych wytycznych metodologicznych — RPP nie. Reżimy prawne obu organów są odmienne; chodzi o zasadę przejrzystości i kontroli, nie o zrównanie kompetencji (ryzyko arbitralności,
                   art. 2, 7 i 45 Konstytucji RP).
                 </p>
               </CardContent>

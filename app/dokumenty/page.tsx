@@ -121,7 +121,7 @@ const documents: Doc[] = [
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.3.pdf',
+    pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.4.pdf',
   },
   {
     id: 9,
@@ -131,7 +131,7 @@ const documents: Doc[] = [
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.1.pdf',
+    pdfUrl: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.2.pdf',
   },
   {
     id: 10,
@@ -141,7 +141,7 @@ const documents: Doc[] = [
     date: '18.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Sekcja_Konstytucyjna_v3.2_do_Zalacznik_1_v1.11.pdf',
+    pdfUrl: '/dokumenty/Sekcja_Konstytucyjna_v3.3_do_Zalacznik_1_v1.11.pdf',
   },
   {
     id: 11,
@@ -151,7 +151,7 @@ const documents: Doc[] = [
     date: '17.05.2026',
     sourceType: 'Analiza pakietu',
     sourceIcon: FileText,
-    pdfUrl: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.11.pdf',
+    pdfUrl: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.12.pdf',
   },
   {
     id: 12,

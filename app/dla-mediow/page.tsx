@@ -28,27 +28,27 @@ const downloads = [
   {
     title: 'Brief medialny publiczny v1 — UD207',
     format: 'PDF, ok. 8 stron',
-    url: '/dokumenty/Brief_Medialny_Publiczny_v1.pdf',
+    url: '/dokumenty/Brief_Medialny_Publiczny_v1.2.pdf',
   },
   {
     title: 'Memorandum prawne UD207',
     format: 'PDF, ok. 18 stron',
-    url: '/dokumenty/Memorandum_prawne_UD207_v2.0.pdf',
+    url: '/dokumenty/Memorandum_prawne_UD207_v2.4.pdf',
   },
   {
     title: 'Sekcja Konstytucyjna — 14 niezgodności',
     format: 'PDF, ok. 22 strony',
-    url: '/dokumenty/Sekcja_Konstytucyjna_v3.0_do_Zalacznik_1_v1.10.pdf',
+    url: '/dokumenty/Sekcja_Konstytucyjna_v3.3_do_Zalacznik_1_v1.11.pdf',
   },
   {
     title: 'Memo Ekonomiczne — UD207 w cieniu kryzysu NFZ',
     format: 'PDF, ok. 14 stron',
-    url: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.pdf',
+    url: '/dokumenty/Memo_Ekonomiczne_NFZ_v1.2.pdf',
   },
   {
     title: 'Załącznik 1 — Policy Paper EBM',
     format: 'PDF, ok. 50 stron',
-    url: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.10.pdf',
+    url: '/dokumenty/Zalacznik_1_Policy_Paper_EBM_v1.12.pdf',
   },
 ]
 

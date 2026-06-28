@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 }
 
 const wantList = [
-  'Państwowego, niezależnego od przemysłu finansowania badań nad substancjami i terapiami, którymi przemysł farmaceutyczny się nie zajmuje, bo są niepatentowalne — tak jak w USA robi to wyspecjalizowane centrum badawcze przy NIH (NCCIH), z budżetem rzędu 180 mln USD rocznie.',
+  'Państwowego, niezależnego od przemysłu finansowania badań nad substancjami i terapiami, którymi przemysł farmaceutyczny się nie zajmuje, bo są niepatentowalne (substancje naturalne, leki repozycjonowane) — tak jak w USA robi to wyspecjalizowane centrum badawcze przy NIH (NCCIH), z budżetem rzędu 180 mln USD rocznie.',
   'Zakorzenienia w nauce i kształceniu: kierunków i szkoleń na uczelniach, standardów dla zawodów okołomedycznych i ścieżek certyfikacji.',
   'Standardów jakości i bezpieczeństwa dla gabinetów, ośrodków i osób wykonujących te świadczenia — z realnym nadzorem.',
   'Rzetelnej edukacji pacjentów z oficjalnych, sprawdzalnych źródeł — na wzór akademickich towarzystw onkologii integracyjnej.',
@@ -35,7 +35,8 @@ const coiLaws = [
   { title: 'Jawność płatności (USA)', body: 'Physician Payments Sunshine Act i publiczna baza Open Payments: raportowaniu podlega każde świadczenie powyżej 10 USD, baza jest jawna i aktualizowana co roku, a za brak raportowania grożą kary. Postulujemy nadanie mocy ustawowej polskiemu kodeksowi przejrzystości.' },
   { title: 'Limit i niezależność (EMA)', body: 'Kryteria Europejskiej Agencji Leków: ograniczenie kwoty od pojedynczej firmy, obowiązek publikowania rocznych sprawozdań finansowych, kodeks postępowania i coroczna weryfikacja — warunek udziału organizacji w pracach regulatora.' },
   { title: 'Deklaracje COI (UE, HTA)', body: 'Rozporządzenie UE 2021/2282 o ocenie technologii medycznych: eksperci i pacjenci deklarują interesy, a osoby z interesem w sektorze producenta ocenianej technologii nie mogą uczestniczyć w ocenie.' },
-  { title: 'Postulat dla Polski', body: 'Ustawowy obowiązek ujawniania finansowania i deklaracji COI przez organizacje i ekspertów zabierających głos w procesie legislacyjnym lub zasiadających w ciałach przy organach (w tym przy RPP); publiczny rejestr; próg finansowania z przemysłu dla podmiotów występujących jako „reprezentacja pacjentów”.' },
+  { title: 'Postulat dla Polski', body: 'Ustawowy obowiązek ujawniania finansowania i deklaracji COI przez organizacje, podmioty reprezentujące pacjentów, ekspertów medycznych, autorów wytycznych i towarzystwa naukowe — gdy zabierają głos w procesie legislacyjnym lub zasiadają w ciałach przy organach (w tym przy RPP); publiczny rejestr; próg finansowania z przemysłu dla podmiotów występujących jako „reprezentacja pacjentów”.' },
+  { title: 'Lekarze, towarzystwa i wytyczne', body: 'Powiązania finansowe dotyczą nie tylko organizacji pacjenckich. Niezależne badania wiążą płatności przemysłu z ordynacją lekarzy (więcej leków promowanych, wyższe koszty bez dowodu lepszych wyników), a konflikty interesów opisano u autorów wytycznych i w towarzystwach naukowych. Postulujemy jawność płatności i zarządzanie COI w tworzeniu wytycznych (standardy GRADE/AGREE II) — strukturalnie, bez stawiania zarzutów konkretnym osobom. Wzorce represji wobec korupcji: niemieckie §299a/299b StGB.' },
 ]
 
 const registryRules = [
