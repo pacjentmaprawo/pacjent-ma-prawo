@@ -54,7 +54,7 @@ export default function PolitykaPrywatnosciPage() {
           <p className="text-navy/80 leading-relaxed mb-6">
             Dane mogą być przetwarzane przez dostawców usług technicznych niezbędnych do działania platformy,
             komunikacji i analityki — w szczególności dostawcę hostingu i analityki (Vercel) oraz poczty elektronicznej
-            (dostawca szyfrowanej poczty z siedzibą w Szwajcarii — państwie objętym decyzją Komisji Europejskiej stwierdzającą odpowiedni stopień ochrony danych). Dane nie są sprzedawane ani udostępniane
+            (skrzynka kontaktowa stowarzyszenia kontakt@pacjentmaprawo.pl obsługiwana na własnej infrastrukturze pocztowej). Dane nie są sprzedawane ani udostępniane
             komercyjnie.
           </p>
 
@@ -68,7 +68,7 @@ export default function PolitykaPrywatnosciPage() {
           </p>
           <p className="text-navy/80 leading-relaxed mb-2">
             <strong>Dobrowolna kopia do nas (opcja BCC).</strong> Jeżeli — i tylko jeżeli — zaznaczysz
-            opcję „Prześlij nam też kopię”, adres <a href="mailto:pacjentmaprawo@proton.me" className="text-teal underline">pacjentmaprawo@proton.me</a>{' '}
+            opcję „Prześlij nam też kopię”, adres <a href="mailto:kontakt@pacjentmaprawo.pl" className="text-teal underline">kontakt@pacjentmaprawo.pl</a>{' '}
             zostanie dodany do ukrytej kopii (BCC) wysyłanej przez Ciebie wiadomości. W takim przypadku:
           </p>
           <ul className="list-disc pl-6 text-navy/80 mb-3 space-y-1">
@@ -77,7 +77,7 @@ export default function PolitykaPrywatnosciPage() {
             <li><strong>Podstawa prawna:</strong> Twoja zgoda wyrażona zaznaczeniem opcji (art. 6 ust. 1 lit. a RODO).</li>
             <li><strong>Okres przechowywania:</strong> do zakończenia procesu legislacyjnego nad UD207, nie dłużej niż 12 miesięcy, a następnie usunięcie.</li>
             <li><strong>Dostęp:</strong> wyłącznie koordynatorzy inicjatywy obywatelskiej; brak udostępniania komercyjnego.</li>
-            <li><strong>Wycofanie / usunięcie:</strong> w każdej chwili napisz na <a href="mailto:pacjentmaprawo@proton.me" className="text-teal underline">pacjentmaprawo@proton.me</a> — usuniemy Twój adres i treść.</li>
+            <li><strong>Wycofanie / usunięcie:</strong> w każdej chwili napisz na <a href="mailto:kontakt@pacjentmaprawo.pl" className="text-teal underline">kontakt@pacjentmaprawo.pl</a> — usuniemy Twój adres i treść.</li>
           </ul>
           <p className="text-navy/80 leading-relaxed mb-6">
             <strong>Licznik wysłanych apeli.</strong> Strona pokazuje zbiorczą liczbę wysłanych pism.
