@@ -500,10 +500,164 @@ export const OPTIONAL_ADDRESSEES: Addressee[] = [
     requiresVerification: true,
     note: 'Brak publicznie zweryfikowanego adresu redakcyjnego — wpisz kontakt, którym dysponujesz (np. przez kanał programu / media społecznościowe).',
   },
+  {
+    id: 'kanal-zero',
+    label: 'Kanał Zero (redakcja)',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'tvn24-fakty',
+    label: 'TVN24 / „Fakty” (redakcja)',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'tvp-info',
+    label: 'TVP Info (redakcja)',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'polsat-news',
+    label: 'Polsat News (redakcja)',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'onet-krajzdrowie',
+    label: 'Onet — dział Kraj / Zdrowie',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'wirtualna-polska',
+    label: 'Wirtualna Polska — redakcja',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'gazeta-wyborcza',
+    label: 'Gazeta Wyborcza — redakcja',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'rzeczpospolita',
+    label: 'Rzeczpospolita — redakcja',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'rmf-fm',
+    label: 'RMF FM — redakcja',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'radio-zet',
+    label: 'Radio ZET — redakcja',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
+  {
+    id: 'tok-fm',
+    label: 'TOK FM — redakcja',
+    role: 'Redakcja medialna — wpisz adres redakcyjny lub kontaktowy',
+    email: '',
+    category: 'media-mainstream',
+    displayGroup: 'pomoc-media',
+    priority: 'niski',
+    defaultChecked: false,
+    deliveryMode: 'manual',
+    variantSuggestion: 'E',
+    requiresVerification: true,
+    note: 'Wpisz/zweryfikuj adres redakcyjny (formularz lub adres kontaktowy z oficjalnej strony redakcji).',
+  },
 ]
 
 // ─────────────────────────────────────────────────────────────────────────────
-// PEŁNY SKŁAD KOMISJI ZDROWIA SEJMU — opcjonalny pakiet zbiorczy (39 posłów)
+// PEŁNY SKŁAD KOMISJI ZDROWIA SEJMU — opcjonalny pakiet zbiorczy (aktualny skim komisji — weryfikacja 28.06.2026)
 // Schemat e-mail: imie.nazwisko@sejm.gov.pl (znaki diakrytyczne usuwane).
 // Pakiet oznaczony jako wymagający weryfikacji — duża skala wysyłki.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -512,51 +666,48 @@ interface PoselSeed {
   imie: string
   nazwisko: string
   klub: string
+  podkom?: boolean // członek podkomisji ZDR04N (druk 2598)
 }
 
+// Aktualny skład Komisji Zdrowia Sejmu (sejm.gov.pl, weryfikacja 28.06.2026): 40 posłów.
+// Poniżej 32 członków SPOZA prezydium oraz spoza B. Piechy i J. Szczurek-Żelazko
+// (te osoby figurują osobno powyżej). Prezydium (Golbik, Gelert, Hok, Sójka,
+// Tomczak, Wicha) także wymienione osobno wyżej.
+// podkom: członkowie podkomisji ZDR04N rozpatrującej druk 2598 (9-osobowa).
 const FULL_KZ_SEJM_SEED: PoselSeed[] = [
   { imie: 'Jacek', nazwisko: 'Bogucki', klub: 'PiS' },
-  { imie: 'Krzysztof', nazwisko: 'Bojarski', klub: 'KO' },
+  { imie: 'Krzysztof', nazwisko: 'Bojarski', klub: 'KO', podkom: true },
+  { imie: 'Bożena', nazwisko: 'Borowiec', klub: 'Lewica' },
   { imie: 'Tadeusz', nazwisko: 'Chrzan', klub: 'PiS' },
   { imie: 'Alicja', nazwisko: 'Chybicka', klub: 'KO' },
-  { imie: 'Janusz', nazwisko: 'Cieszyński', klub: 'PiS' },
-  { imie: 'Anna', nazwisko: 'Dąbrowska-Banaszek', klub: 'PiS' },
+  { imie: 'Janusz', nazwisko: 'Cieszyński', klub: 'PiS', podkom: true },
+  { imie: 'Anna', nazwisko: 'Dąbrowska-Banaszek', klub: 'PiS', podkom: true },
+  { imie: 'Roman', nazwisko: 'Fritz', klub: 'Konfederacja' },
   { imie: 'Włodzisław', nazwisko: 'Giziński', klub: 'KO' },
   { imie: 'Czesław', nazwisko: 'Hoc', klub: 'PiS' },
   { imie: 'Fryderyk', nazwisko: 'Kapinos', klub: 'PiS' },
-  { imie: 'Iwona', nazwisko: 'Karolewska', klub: 'KO' },
-  { imie: 'Władysław', nazwisko: 'Kosiniak-Kamysz', klub: 'PSL-TD' },
+  { imie: 'Urszula', nazwisko: 'Koszutska', klub: 'KO' },
   { imie: 'Iwona', nazwisko: 'Kozłowska', klub: 'KO' },
   { imie: 'Anna', nazwisko: 'Kwiecień', klub: 'PiS' },
   { imie: 'Ewa', nazwisko: 'Leniart', klub: 'PiS' },
   { imie: 'Grzegorz', nazwisko: 'Lorek', klub: 'PiS' },
   { imie: 'Radosław', nazwisko: 'Lubczyk', klub: 'PSL-TD' },
-  { imie: 'Rajmund', nazwisko: 'Miller', klub: 'KO' },
-  { imie: 'Joanna', nazwisko: 'Mucha', klub: 'Polska 2050' },
+  { imie: 'Joanna', nazwisko: 'Mucha', klub: 'Polska2050' },
   { imie: 'Grzegorz', nazwisko: 'Napieralski', klub: 'KO' },
-  { imie: 'Norbert', nazwisko: 'Pietrykowski', klub: 'Polska 2050' },
-  { imie: 'Grzegorz', nazwisko: 'Płaczek', klub: 'Konfederacja' },
+  { imie: 'Karolina', nazwisko: 'Pawliczak', klub: 'KO' },
+  { imie: 'Norbert', nazwisko: 'Pietrykowski', klub: 'Centrum', podkom: true },
   { imie: 'Jerzy', nazwisko: 'Polaczek', klub: 'PiS' },
   { imie: 'Elżbieta', nazwisko: 'Polak', klub: 'KO' },
+  { imie: 'Paweł', nazwisko: 'Rychlik', klub: 'PiS' },
   { imie: 'Krystyna', nazwisko: 'Skowrońska', klub: 'KO' },
+  { imie: 'Anna', nazwisko: 'Sobolak', klub: 'KO' },
+  { imie: 'Agnieszka', nazwisko: 'Soin', klub: 'PiS' },
+  { imie: 'Katarzyna', nazwisko: 'Stachowicz', klub: 'KO' },
+  { imie: 'Witold', nazwisko: 'Tumanowicz', klub: 'Konfederacja' },
   { imie: 'Patryk', nazwisko: 'Wicher', klub: 'PiS' },
-  { imie: 'Ryszard', nazwisko: 'Wilk', klub: 'Konfederacja' },
-  { imie: 'Jolanta', nazwisko: 'Zięba-Gzik', klub: 'PSL-TD' },
+  { imie: 'Marcelina', nazwisko: 'Zawisza', klub: 'Razem' },
+  { imie: 'Jolanta', nazwisko: 'Zięba-Gzik', klub: 'PSL-TD', podkom: true },
 ]
-
-/** Zamienia polskie znaki na łacińskie i buduje slug e-mailowy. */
-function slugifyForEmail(value: string): string {
-  const map: Record<string, string> = {
-    ą: 'a', ć: 'c', ę: 'e', ł: 'l', ń: 'n', ó: 'o', ś: 's', ź: 'z', ż: 'z',
-    Ą: 'a', Ć: 'c', Ę: 'e', Ł: 'l', Ń: 'n', Ó: 'o', Ś: 's', Ź: 'z', Ż: 'z',
-  }
-  return value
-    .split('')
-    .map((ch) => map[ch] ?? ch)
-    .join('')
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-}
 
 export const FULL_KZ_SEJM_ADDRESSEES: Addressee[] = FULL_KZ_SEJM_SEED.map((p) => {
   const id = `kz-sejm-${slugifyForEmail(p.imie)}-${slugifyForEmail(p.nazwisko)}`
@@ -564,11 +715,13 @@ export const FULL_KZ_SEJM_ADDRESSEES: Addressee[] = FULL_KZ_SEJM_SEED.map((p) =>
   return {
     id,
     label: `${p.imie} ${p.nazwisko}`,
-    role: 'Członek Komisji Zdrowia Sejmu',
+    role: p.podkom
+      ? 'Członek podkomisji ZDR04N (druk 2598) — Komisja Zdrowia Sejmu'
+      : 'Członek Komisji Zdrowia Sejmu',
     email,
     category: 'sejm-czlonek',
     displayGroup: 'sejm',
-    priority: 'niski',
+    priority: p.podkom ? 'sredni' : 'niski',
     defaultChecked: false,
     deliveryMode: 'mailto',
     variantSuggestion: 'B',
