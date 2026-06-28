@@ -709,6 +709,19 @@ const FULL_KZ_SEJM_SEED: PoselSeed[] = [
   { imie: 'Jolanta', nazwisko: 'Zięba-Gzik', klub: 'PSL-TD', podkom: true },
 ]
 
+function slugifyForEmail(value: string): string {
+  const map: Record<string, string> = {
+    ą: 'a', ć: 'c', ę: 'e', ł: 'l', ń: 'n', ó: 'o', ś: 's', ź: 'z', ż: 'z',
+    Ą: 'a', Ć: 'c', Ę: 'e', Ł: 'l', Ń: 'n', Ó: 'o', Ś: 's', Ź: 'z', Ż: 'z',
+  }
+  return value
+    .split('')
+    .map((ch) => map[ch] ?? ch)
+    .join('')
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+}
+
 export const FULL_KZ_SEJM_ADDRESSEES: Addressee[] = FULL_KZ_SEJM_SEED.map((p) => {
   const id = `kz-sejm-${slugifyForEmail(p.imie)}-${slugifyForEmail(p.nazwisko)}`
   const email = `${slugifyForEmail(p.imie)}.${slugifyForEmail(p.nazwisko)}@sejm.gov.pl`
