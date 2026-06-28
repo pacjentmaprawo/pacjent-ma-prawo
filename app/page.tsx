@@ -263,13 +263,20 @@ export default function HomePage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-3 text-center">Czego się domagamy</p>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-navy text-center mb-4">
-            Dziewięć zasad zamiast blankietowego zakazu
+            Jedenaście zasad zamiast blankietowego zakazu
           </h2>
           <p className="text-navy/80 leading-relaxed text-center max-w-3xl mx-auto mb-10">
             Nie zgadzamy się, by w demokratycznym państwie prawa jeden urzędnik — powoływany przez
             premiera, niebędący sądem — jednostronnie decydował, które metody leczenia są dla nas
             dostępne. Popieramy ściganie oszustów, ale domagamy się regulacji opartej na zasadach:
           </p>
+          <div className="max-w-3xl mx-auto mb-10 rounded-xl border border-red-orange/30 bg-red-orange/5 p-5 lg:p-6">
+            <p className="text-navy/90 leading-relaxed">
+              <strong className="text-navy">Chronimy także bezpieczeństwo finansowe NFZ — i spokój pacjentów.</strong>{' '}
+              Prywatne, samoopłacane wspieranie pacjentów dziś odciąża przeciążony i niedofinansowany system
+              publiczny (Polska wydaje na zdrowie 8,1% PKB wobec 9,2% średniej OECD). Zamknięcie tego sektora uderza na kilku poziomach naraz: w budżet — drastycznym wzrostem kosztów (szacunkowo rzędu setek milionów złotych rocznie), w pacjentów — utratą wsparcia i dłuższymi kolejkami, oraz w zaufanie obywateli do ochrony zdrowia. To nie ochrona systemu, lecz dodatkowe obciążenie systemu już dziś w kryzysie.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5">
             {[
               ['Prawo pacjenta do wyboru terapii', 'O sposobie leczenia — w tym o legalnych terapiach wspomagających — decyduje świadomy pacjent wspólnie z lekarzem, nie urząd.'],
@@ -281,6 +288,8 @@ export default function HomePage() {
               ['Żaden urząd ponad sądem', 'Merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (jak decyzje UOKiK kontroluje SOKiK); natychmiastowa wykonalność tylko wyjątkowo, z szybką ścieżką odwoławczą.'],
               ['Domniemanie niewinności', 'Nieprawomocne decyzje nie są publikowane ani wykonywane jak wyroki, zanim potwierdzi je sąd.'],
               ['Nikt nie zostaje bez opieki', 'Wykluczenie świadczeniodawcy nie może oznaczać pozostawienia jego pacjentów bez ciągłości leczenia.'],
+              ['Cywilizowane ramy rozwoju zamiast represji', 'Państwo porządkuje obszar terapii wspomagających zamiast wypychać go do szarej strefy: standardy jakości i bezpieczeństwa, kształcenie ekspertów (zawody medyczne, okołomedyczne i niemedyczne) oraz tworzenie możliwości i finansowanie niezależnych badań nad metodami niepatentowalnymi.'],
+              ['Jawność finansowania i konfliktów interesów', 'Obowiązek ujawniania finansowania z przemysłu i deklaracji COI przez organizacje, ekspertów i autorów wytycznych zabierających głos w procesie legislacyjnym lub w ciałach przy organach (w tym przy RPP); publiczny rejestr — wzór: Sunshine Act, kryteria EMA.'],
             ].map(([title, desc], index) => (
               <Card key={index} className="card-accent-teal border border-border rounded-xl shadow-sm">
                 <CardContent className="p-5 lg:p-6">

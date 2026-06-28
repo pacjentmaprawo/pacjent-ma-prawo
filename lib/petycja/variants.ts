@@ -29,7 +29,12 @@ const POSTULATY_SKROT = `Wnosimy o oparcie regulacji na następujących zasadach
 6. Jawna procedura ekspercka — zanim padnie kara, niezależna ocena z gradacją dowodów (GRADE/HTA/ESMO-MCBS) i ujawnianiem konfliktów interesów; RPP nie może orzekać o „aktualnej wiedzy medycznej” bez transparentnej procedury.
 7. Żaden urząd ponad sądem — merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (model UOKiK — Sąd Ochrony Konkurencji i Konsumentów), nie tylko ocena legalności; rygor natychmiastowej wykonalności wyłącznie wyjątkowo, z szybką ścieżką odwoławczą.
 8. Domniemanie niewinności — zakaz publikacji i wykonywania nieprawomocnych decyzji RPP, zanim potwierdzi je sąd (art. 42 ust. 3 Konstytucji RP).
-9. Nikt nie zostaje bez opieki — obowiązek wskazania w decyzji RPP podmiotu NFZ przejmującego pacjentów wykluczonego świadczeniodawcy.`
+9. Nikt nie zostaje bez opieki — obowiązek wskazania w decyzji RPP podmiotu NFZ przejmującego pacjentów wykluczonego świadczeniodawcy.
+10. Cywilizowane ramy rozwoju zamiast represji — standardy jakości i bezpieczeństwa, kształcenie i dokształcanie ekspertów (zawody medyczne, okołomedyczne i niemedyczne) oraz tworzenie możliwości i finansowanie niezależnych badań nad metodami niepatentowalnymi, zamiast wypychania dziedziny do szarej strefy.
+11. Jawność finansowania i konfliktów interesów — obowiązek ujawniania finansowania z przemysłu i deklaracji COI przez organizacje, ekspertów i autorów wytycznych zabierających głos w procesie legislacyjnym lub w ciałach przy organach (w tym przy RPP); publiczny rejestr (wzór: Sunshine Act, kryteria EMA).`
+
+/** Rama ekonomiczna — ochrona finansów NFZ (front-facing, neutralna). */
+const NFZ_RAMA = `Chronimy także bezpieczeństwo finansowe NFZ — i spokój pacjentów. Prywatne, samoopłacane wspieranie pacjentów dziś odciąża przeciążony i niedofinansowany system publiczny (Polska wydaje na zdrowie 8,1% PKB wobec 9,2% średniej OECD). Zamknięcie tego sektora uderza na kilku poziomach naraz: w budżet — drastycznym wzrostem kosztów (szacunkowo rzędu setek milionów złotych rocznie), w pacjentów — utratą wsparcia i dłuższymi kolejkami, oraz w zaufanie obywateli do ochrony zdrowia. To nie ochrona systemu, lecz dodatkowe obciążenie systemu już dziś w kryzysie.`
 
 export const VARIANTS: Record<VariantId, PetitionVariant> = {
   A: {
@@ -42,6 +47,10 @@ export const VARIANTS: Record<VariantId, PetitionVariant> = {
 zwracam się z apelem obywatelskim w sprawie projektu ustawy o zmianie ustawy o prawach pacjenta i Rzeczniku Praw Pacjenta (UD207, druk sejmowy nr 2598), którego pierwsze czytanie odbyło się w Sejmowej Komisji Zdrowia 9 czerwca 2026 r.
 
 Popieram cel projektu — ochronę pacjentów przed świadczeniodawcami działającymi w złej wierze. Sprzeciwiam się jednak technice regulacyjnej, która penalizuje na podstawie pojęcia niedookreślonego („aktualna wiedza medyczna”), odwraca ciężar dowodu w postępowaniu administracyjnym (art. 67zl ust. 4) i nie usuwa strukturalnej luki w ciągłości opieki NFZ.
+
+${POSTULATY_SKROT}
+
+${NFZ_RAMA}
 
 Realna szansa na sanację projektu istnieje obecnie w toku prac parlamentarnych; apele równoległe kieruję do Sejmowej i Senackiej Komisji Zdrowia.
 
@@ -60,6 +69,8 @@ w nawiązaniu do pierwszego czytania projektu UD207 (druk sejmowy nr 2598) w Sej
 
 ${POSTULATY_SKROT}
 
+${NFZ_RAMA}
+
 Pełna analiza prawna i proponowane brzmienie poszczególnych przepisów (m.in. art. 67zj ust. 3) są dostępne publicznie: ${PROPOSAL_URL} oraz ${PETITION_URL}`,
   },
   C: {
@@ -74,6 +85,8 @@ zwracam się do Senatu RP z apelem obywatelskim o wprowadzenie postulatów sanac
 Rola Senatu w testowaniu projektów pod kątem konstytucyjności ma szczególne znaczenie wobec regulacji penalizujących obszary medyczne, w których brak jednoznacznej granicy między świadczeniami zweryfikowanymi a wspomagającymi.
 
 ${POSTULATY_SKROT}
+
+${NFZ_RAMA}
 
 W razie braku poprawek na poziomie Sejmu, Senat dysponuje narzędziami umożliwiającymi ich wprowadzenie w trybie art. 121 Konstytucji RP, łącznie z odrzuceniem ustawy.
 
@@ -138,6 +151,8 @@ projekt UD207 (druk sejmowy nr 2598) został przyjęty przez Radę Ministrów i 
 Popieram cel projektu — ochronę pacjentów przed świadczeniodawcami działającymi w złej wierze. Zwracam się jednak z apelem obywatelskim o wprowadzenie autopoprawki obejmującej poniższe poprawki sanacyjne, które zachowują cel ustawy, a usuwają poważne ryzyka konstytucyjne (określoność prawa — art. 2 Konstytucji RP, proporcjonalność — art. 31 ust. 3, domniemanie niewinności — art. 42 ust. 3).
 
 ${POSTULATY_SKROT}
+
+${NFZ_RAMA}
 
 Pełna analiza prawna i proponowane brzmienie przepisów: ${PROPOSAL_URL} oraz ${PETITION_URL}`,
   },

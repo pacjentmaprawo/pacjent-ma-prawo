@@ -124,6 +124,16 @@ const documents: Doc[] = [
     pdfUrl: '/dokumenty/Memorandum_prawne_UD207_v2.4.pdf',
   },
   {
+    id: 17,
+    title: 'Założenia programowe stowarzyszenia — misja i analiza',
+    description: 'Program inicjatywy „Pacjent Ma Prawo": misja (państwowa, ekspercka opieka nad terapiami wspomagającymi — standardy jakości, kształcenie ekspertów, finansowanie niezależnych badań), niezależna ocena zamiast arbitralności, jawność finansowania i konfliktów interesów oraz bezpieczny model rejestru rzetelności informacji.',
+    category: 'analizy',
+    date: '22.06.2026',
+    sourceType: 'Dokument programowy',
+    sourceIcon: FileText,
+    pdfUrl: '/dokumenty/Zalozenia_programowe_stowarzyszenia.pdf',
+  },
+  {
     id: 9,
     title: 'Memo Ekonomiczne — UD207 w cieniu kryzysu NFZ',
     description: 'Analiza skutków ekonomicznych regulacji + paradoks ekonomiczny + casus 2025 r. (§7) + wnioski dla Polski (§8) + Model Tor 2 jako alternatywa.',

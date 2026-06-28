@@ -42,6 +42,8 @@ const POSTULATY = [
   'Żaden urząd ponad sądem — merytoryczna kontrola decyzji RPP przez niezależny sąd powszechny (jak decyzje UOKiK kontroluje SOKiK); natychmiastowa wykonalność tylko wyjątkowo, z szybką ścieżką odwoławczą.',
   'Domniemanie niewinności — nieprawomocne decyzje nie są publikowane ani wykonywane jak wyroki, zanim potwierdzi je sąd.',
   'Nikt nie zostaje bez opieki — wykluczenie świadczeniodawcy nie może oznaczać pozostawienia jego pacjentów bez ciągłości leczenia.',
+  'Cywilizowane ramy rozwoju zamiast represji — państwo porządkuje obszar terapii wspomagających: standardy jakości i bezpieczeństwa, kształcenie i dokształcanie ekspertów (zawody medyczne, okołomedyczne i niemedyczne) oraz tworzenie możliwości i finansowanie niezależnych badań nad metodami niepatentowalnymi, zamiast wypychania dziedziny do szarej strefy.',
+  'Jawność finansowania i konfliktów interesów — ustawowy obowiązek ujawniania finansowania z przemysłu i deklaracji COI przez organizacje, ekspertów i autorów wytycznych zabierających głos w procesie legislacyjnym lub zasiadających w ciałach przy organach (w tym przy RPP); publiczny rejestr (wzór: Sunshine Act, kryteria EMA).',
 ]
 
 const HASHTAGS = ['#PacjentMaPrawo', '#UD207', '#PrawoDoBezpiecznejOpieki', '#VetoDlaUD207']
@@ -118,13 +120,20 @@ export default function PetycjaUD207Page() {
             Czego konkretnie domaga się apel
           </h2>
           <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-            Dziewięć zasad, na których powinna oprzeć się regulacja — zachowują cel ustawy i ograniczają
+            Jedenaście zasad, na których powinna oprzeć się regulacja — zachowują cel ustawy i ograniczają
             jej poważne ryzyka konstytucyjne. Pełną analizę prawną znajdziesz na stronie{' '}
             <Link href="/co-proponujemy" className="text-teal underline underline-offset-2">
               Co proponujemy
             </Link>
             .
           </p>
+          <div className="mb-6 rounded-xl border border-red-orange/30 bg-red-orange/5 p-4">
+            <p className="text-sm text-navy/90 leading-relaxed">
+              <strong>Chronimy także bezpieczeństwo finansowe NFZ — i spokój pacjentów.</strong>{' '}
+              Prywatne, samoopłacane wspieranie pacjentów dziś odciąża przeciążony i niedofinansowany system
+              publiczny (Polska wydaje na zdrowie 8,1% PKB wobec 9,2% średniej OECD). Zamknięcie tego sektora uderza na kilku poziomach naraz: w budżet — drastycznym wzrostem kosztów (szacunkowo rzędu setek milionów złotych rocznie), w pacjentów — utratą wsparcia i dłuższymi kolejkami, oraz w zaufanie obywateli do ochrony zdrowia. To nie ochrona systemu, lecz dodatkowe obciążenie systemu już dziś w kryzysie.
+            </p>
+          </div>
           <ol className="space-y-3">
             {POSTULATY.map((p, i) => (
               <li key={i} className="flex items-start gap-3">
