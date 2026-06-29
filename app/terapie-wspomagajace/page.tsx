@@ -78,7 +78,11 @@ export default function TerapieWspomagajacePage() {
                   celu świadczenia i informacji dla pacjenta. Co istotne, sama medycyna oparta na dowodach (EBM) to
                   z definicji nie tylko badania — łączy najlepsze dowody naukowe, doświadczenie kliniczne lekarza oraz
                   wartości i decyzję pacjenta (Sackett, BMJ 1996). Ze świadczeń wspomagających korzysta przy tym znaczna
-                  część pacjentów onkologicznych — także w Polsce: w badaniu przekrojowym w ośrodku onkologicznym (n=208) korzystanie z metod komplementarnych deklarowało aż 85% chorych (Ann Agric Environ Med).
+                  część pacjentów onkologicznych — także w Polsce. Polskie badania przekrojowe podają odsetki od ok. 24%
+                  (badanie wieloetapowe, n=310; Biuletyn PTO 2021) do ponad 80% w pojedynczych ośrodkach (n=208;
+                  Ann Agric Environ Med). Rozbieżność wynika z metodologii i doboru pacjentów — najwyższe wartości
+                  z jednego ośrodka nie są reprezentatywne dla całej populacji — ale samo korzystanie z terapii
+                  wspomagających jest zjawiskiem powszechnym.
                 </p>
               </CardContent>
             </Card>
