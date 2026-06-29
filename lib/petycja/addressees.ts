@@ -351,7 +351,7 @@ export const PRIORITY_ADDRESSEES: Addressee[] = [
   {
     id: 'moj-posel',
     label: 'Mój poseł / moja posłanka',
-    role: 'Wpisz e-mail swojego przedstawiciela (wyszukaj na sejm.gov.pl)',
+    role: 'Wpisz e-mail posła/posłanki — zwykle imię.nazwisko@sejm.pl (potwierdź na sejm.gov.pl)',
     email: '',
     category: 'lokalny',
     displayGroup: 'lokalny',

@@ -30,7 +30,7 @@ const luki = [
   },
   {
     title: 'Brak szybkiego trybu wstrzymania wykonania',
-    body: 'Rygor natychmiastowej wykonalności oznacza, że skutki następują od razu, a ścieżka odwoławcza biegnie miesiącami. Brak realnej, ekspresowej procedury zawieszenia wykonania do czasu kontroli sądowej.',
+    body: 'Rygor natychmiastowej wykonalności oznacza, że skutki następują od razu, a ścieżka odwoławcza biegnie miesiącami, a w praktyce nawet latami. Brak realnej, ekspresowej procedury zawieszenia wykonania do czasu kontroli sądowej.',
   },
   {
     title: 'Brak mechanizmu ciągłości opieki',
@@ -39,6 +39,10 @@ const luki = [
   {
     title: 'Brak odpowiedzialności organu za decyzje uchylone',
     body: 'Ustawa nie przewiduje żadnej konsekwencji po stronie organu w razie wydania decyzji, którą sąd następnie uchyli. Asymetria ryzyka jest pełna: organ działa natychmiast, koszt błędu ponosi obywatel.',
+  },
+  {
+    title: 'Brak merytorycznej kontroli decyzji RPP',
+    body: 'Gdy RPP uzna terapię za niezgodną z „aktualną wiedzą medyczną”, trafności tej oceny nie można podważyć co do meritum. Odwołanie przysługuje wyłącznie do sądu administracyjnego, który bada legalność decyzji — czy zapadła zgodnie z procedurą — a nie jej treść merytoryczną. O tym, co jest „zgodne z aktualną wiedzą medyczną”, rozstrzyga więc de facto jednoosobowo organ, a kontrola sądowa pozostaje iluzoryczna.',
   },
 ]
 
@@ -96,7 +100,7 @@ export default function CoZPacjentamiPage() {
                   błędnych — to ostrożne, hipotetyczne założenie dla organu działającego na dużą
                   skalę. Przy rygorze natychmiastowej wykonalności każda taka pomyłka uderza
                   natychmiast: pacjent traci terapię, przedsiębiorca traci firmę. Gdy sąd po
-                  miesiącach uchyli decyzję, <strong>szkoda jest już często nieodwracalna</strong>.
+                  latach uchyli decyzję, <strong>szkoda jest już często nieodwracalna</strong>.
                   UD207 nie przewiduje ani funduszu odszkodowawczego, ani szybkiego trybu
                   wstrzymania wykonania, ani odpowiedzialności organu za decyzje później uchylone.
                 </p>
