@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Scale, Heart, Mail, Facebook, Twitter } from 'lucide-react'
+import { Scale, Heart, Mail, Facebook, Users } from 'lucide-react'
 import { toast } from 'sonner'
 
 const navLinks = [
@@ -111,19 +111,25 @@ export function Footer() {
               </p>
               <div className="flex items-center gap-4 pt-2">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61591666882632"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-background/70 hover:text-amber transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-navy rounded"
-                  aria-label="Facebook"
+                  aria-label="Facebook — Strona Pacjent Ma Prawo"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/groups/2257943158354451"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-background/70 hover:text-amber transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-navy rounded"
-                  aria-label="Twitter"
+                  aria-label="Grupa na Facebooku — Pacjent Ma Prawo – społeczność"
                 >
-                  <Twitter className="h-5 w-5" />
+                  <Users className="h-5 w-5" />
                 </a>
+                {/* Instagram: dodaj po założeniu konta @pacjentmaprawo:
+                <a href="https://instagram.com/pacjentmaprawo" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-amber transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-navy rounded" aria-label="Instagram"><Instagram className="h-5 w-5" /></a> */}
               </div>
             </div>
           </div>
