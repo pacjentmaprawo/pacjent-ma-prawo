@@ -26,6 +26,28 @@ export default function TerapieWspomagajacePage() {
         </div>
       </section>
 
+      <section className="py-10 lg:py-12 bg-background border-t border-border">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl border border-border bg-cream/60 p-6">
+            <h2 className="font-semibold text-navy mb-2">Dlaczego to ważne — w skrócie</h2>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Projekt UD207 czyni z „zgodności z aktualną wiedzą medyczną" granicę między legalnym
+              świadczeniem a „praktyką pseudomedyczną". Terapię uznaną za niezgodną z tą wiedzą można
+              potraktować jako naruszenie praw pacjenta i objąć sankcjami. Problem w tym, że pojęcie
+              „aktualnej wiedzy medycznej" nie ma definicji legalnej. Zwykle odsyła ono do wiedzy
+              weryfikowalnej badaniami oraz do doświadczenia klinicznego lekarza — i z tym się nie spieramy.
+              Wątpliwości budzi co innego: w uzasadnieniu projektu standard ten utożsamia się dodatkowo
+              z akceptacją w wytycznych towarzystw naukowych. Wytyczne nie są jednak normą prawną —
+              powstają z opóźnieniem, różnią się między sobą, a wydające je towarzystwa same bywają
+              finansowane przez przemysł farmaceutyczny. Rodzi to pytanie, czy odzwierciedlają wyłącznie
+              najnowszą wiedzę medyczną, czy także oczekiwania sponsorów. Podniesienie wytycznych do roli
+              granicy legalności oznaczałoby, że o tym, co wolno, decyduje de facto dokument branżowy, a
+              terapia z dowodami, lecz jeszcze poza wytyczną, mogłaby zostać uznana za bezprawną.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 lg:py-20 bg-cream">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -38,7 +60,7 @@ export default function TerapieWspomagajacePage() {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Świadczenia wspomagające są stosowane w wielu krajach Europy (Niemcy, Austria, Szwajcaria,
                   Francja, Belgia, Holandia, Wielka Brytania) w ramach kwalifikacji i rejestrów, a towarzystwa
-                  naukowe (m.in. ASCO/SIO, ESMO, MASCC, DEGRO) wydają wytyczne onkologii wspomagającej.
+                  naukowe (m.in. ASCO/SIO, ESMO, MASCC, DEGRO) wydają wytyczne onkologii wspomagającej i coraz częściej uwzględniają takie metody w swoich rekomendacjach.
                   To także element aktualnej wiedzy medycznej — nie margines poza nią.
                 </p>
               </CardContent>
@@ -56,7 +78,7 @@ export default function TerapieWspomagajacePage() {
                   celu świadczenia i informacji dla pacjenta. Co istotne, sama medycyna oparta na dowodach (EBM) to
                   z definicji nie tylko badania — łączy najlepsze dowody naukowe, doświadczenie kliniczne lekarza oraz
                   wartości i decyzję pacjenta (Sackett, BMJ 1996). Ze świadczeń wspomagających korzysta przy tym znaczna
-                  część pacjentów onkologicznych (szacunki: ok. 1/3 do 70%; w Polsce brak precyzyjnego badania).
+                  część pacjentów onkologicznych — także w Polsce: w badaniu przekrojowym w ośrodku onkologicznym (n=208) korzystanie z metod komplementarnych deklarowało aż 85% chorych (Ann Agric Environ Med).
                 </p>
               </CardContent>
             </Card>
