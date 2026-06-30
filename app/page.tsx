@@ -62,6 +62,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Głos pacjenta */}
+      <section className="py-16 lg:py-24 bg-background border-y border-border">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm font-medium text-red-orange tracking-wider uppercase mb-4 text-center">
+            Głos pacjenta
+          </p>
+          <blockquote className="border-l-4 border-red-orange pl-6 space-y-4">
+            <p className="font-serif text-xl sm:text-2xl text-navy leading-relaxed">
+              „Nie wychodzimy z tej choroby jak z przeziębienia — jesteśmy w niej dzień i noc."
+            </p>
+            <p className="text-base text-navy/80 leading-relaxed">
+              Pacjenci onkologiczni i ich bliscy uczą się swojej choroby każdego dnia: czytają badania,
+              sprawdzają bezpieczeństwo i skuteczność terapii. W decyzjach o własnym leczeniu są jak saperzy —
+              pomylić się można tylko raz. To my, po wyjściu z kilkuminutowej wizyty, podejmujemy najtrudniejsze
+              decyzje naszego życia i to my na końcu za nie odpowiadamy. Nikt — nawet najlepszy lekarz, który
+              widzi nas kilka minut — nie zna codziennego przebiegu naszej choroby lepiej niż my, którzy żyjemy
+              z nią całą dobę.
+            </p>
+            <p className="text-base font-medium text-navy leading-relaxed">
+              Prosimy więc: chrońcie nas, ale rozmawiajcie z nami jak z równoprawną stroną — decydujcie z nami,
+              nie za nas.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
       {/* Three Principle Cards */}
       <section className="py-16 lg:py-24 bg-cream">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
