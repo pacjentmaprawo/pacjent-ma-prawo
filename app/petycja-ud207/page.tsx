@@ -66,11 +66,6 @@ export default function PetycjaUD207Page() {
             ustawy. Popieramy ochronę pacjentów przed nieuczciwymi świadczeniodawcami, ale
             domagamy się konkretnych poprawek, które ograniczą poważne ryzyka konstytucyjne projektu.
           </p>
-          <p className="text-navy/90 leading-relaxed mb-4 border-l-4 border-red-orange pl-4 italic">
-            Robimy to jako pacjenci onkologiczni i ich bliscy — ludzie, którzy są w chorobie każdego dnia
-            i sami podejmują najtrudniejsze decyzje swojego życia. Prosimy, by przy tej ustawie chroniono nas,
-            rozmawiając z nami jak z równoprawną stroną — i decydowano z nami, nie za nas. Twój głos to wzmacnia.
-          </p>
           <p className="text-navy/80 leading-relaxed mb-5">
             To narzędzie przygotuje za Ciebie gotowe pisma i pomoże wysłać je do właściwych
             adresatów — w kilka minut, z Twojej własnej skrzynki e-mail.
